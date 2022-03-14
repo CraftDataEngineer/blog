@@ -7,8 +7,8 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'les-copains', // Usually your GitHub org/user name.
-  projectName: 'dive-into', // Usually your repo name.
+  organizationName: 'craft-data-engineer', // Usually your GitHub org/user name.
+  projectName: 'blog', // Usually your repo name.
   themeConfig: {
     algolia: {
       apiKey: '53af7952396e5be48d55cbb3785cf3b8',
@@ -22,11 +22,8 @@ module.exports = {
 
       //... other Algolia params
     },
-    gtag: {
-      trackingID: 'G-XN0PYBT2T9',
-    },
     navbar: {
-      title: 'Les Copains',
+      title: 'CraftDataEngineer',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -40,7 +37,7 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://caminale.github.io/dive-into/',
+          href: 'https://craftdataengineer.github.io/blog/',
           label: 'github',
           position: 'right',
         },
@@ -83,8 +80,8 @@ module.exports = {
               to: 'blog',
             },
             {
-              label: 'Gitlab',
-              href: 'https://gitlab.com/les-copains/dive-into',
+              label: 'Github',
+              href: 'https://github.com/CraftDataEngineer/blog',
             },
           ],
         },
@@ -100,13 +97,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://gitlab.com/les-copains/dive-into/'
+            'https://github.com/CraftDataEngineer/blog/'
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://gitlab.com/les-copains/dive-into',
+            'https://github.com/CraftDataEngineer/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
