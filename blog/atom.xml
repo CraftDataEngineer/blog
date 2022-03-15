@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://craftdataengineer.github.io/blog</id>
+    <title>Craft Data Engineer Blog</title>
+    <updated>2021-03-23T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://craftdataengineer.github.io/blog"/>
+    <subtitle>Craft Data Engineer Blog</subtitle>
+    <icon>https://craftdataengineer.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Example]]></title>
+        <id>example</id>
+        <link href="https://craftdataengineer.github.io/blog/blog/example"/>
+        <updated>2021-03-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></summary>
+    </entry>
+</feed>
