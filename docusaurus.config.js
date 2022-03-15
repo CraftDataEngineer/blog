@@ -10,6 +10,11 @@ module.exports = {
   organizationName: 'CraftDataEngineer', // Usually your GitHub org/user name.
   projectName: 'blog', // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: true,
+      respectPrefersColorScheme: true,
+    },
     algolia: {
       apiKey: 'b72d4e9e38b1ae07487893bad95e433c',
       indexName: 'blog',
@@ -23,7 +28,6 @@ module.exports = {
       //... other Algolia params
     },
     navbar: {
-      title: 'CraftDataEngineer',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -35,59 +39,41 @@ module.exports = {
           label: 'Posts',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://craftdataengineer.github.io/blog/',
-          label: 'github',
-          position: 'right',
-        },
+        {to: 'blog', label: 'Blog', position: 'left'}
       ],
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'dolt',
-              to: 'docs/',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
-              label: 'Github',
-              href: 'https://github.com/CraftDataEngineer/blog',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Craft Data Engineer, Inc.`,
     },
+  },
+  customFields: {
+    sections: {
+      demo: {
+        lines: [
+          "Decouverez le metier du Data Engineer",
+          "&",
+          "Devenez un expert de la donnée.",
+        ],
+        cta: {
+          text: "Workflows & Components",
+          link: "docs/components",
+        },
+      },
+      hero: {
+        description: "Clutch provides everything you need to improve your developers' experience and operational capabilities. It comes with several out-of-the-box features for managing cloud-native infrastructure, but is easily configured or extended to interact with whatever you run, wherever you run it.",
+        buttons: {
+          first: {
+            url: "docs/about/what-is-clutch",
+            text: "Learn More",
+          },
+          second: {
+            url: "docs/getting-started/build-guides",
+            text: "Get Started",
+          },
+        },
+      },
+    }
   },
   presets: [
     [
@@ -98,6 +84,9 @@ module.exports = {
           // Please change this to your repo.
           editUrl:
             'https://github.com/CraftDataEngineer/blog/'
+        },
+        gtag: {
+          trackingID: 'G-XN0PYBT2T9',
         },
         blog: {
           showReadingTime: true,

@@ -5,6 +5,13 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+import classnames from 'classnames';
+import HomepageHeader from "../components/HomePageHeader";
+import HomePageTeaser from "../components/HomePageTeaser";
+import HomepageModules from "../components/HomePageModules";
+import HomePageFormateur from "../components/HomePageFormateur";
+
+
 
 const features = [
   {
@@ -54,31 +61,55 @@ function Feature({imageUrl, title, description}) {
   );
 }
 
+
+
+function Hero({ tagline, config }) {
+    return (
+        <header className={classnames('hero hero--primary', styles.heroSection)}>
+            <div className={classnames("container", styles.container, styles.heroContainer)}>
+                <h1 className="hero__title">{tagline}</h1>
+                <h4 className={classnames(styles.heroDescription)}>{config.description}</h4>
+                <div className={styles.buttons}>
+                    <Link
+                        className={classnames(
+                            'button button--outline button--lg',
+                            styles.button,
+                            styles.blueBtn,
+                        )}
+                        to={useBaseUrl(config.buttons.first.url)}>
+                        {config.buttons.first.text}
+                    </Link>
+                    <Link
+                        className={classnames(
+                            'button button--outline button--lg',
+                            styles.button,
+                            styles.greenBtn,
+                        )}
+                        to={useBaseUrl(config.buttons.second.url)}>
+                        {config.buttons.second.text}
+                    </Link>
+                </div>
+            </div>
+            <div style={{width: "20%", margin: "0 5% 5% 5%"}}>
+                <img src={useBaseUrl("img/microsite/home.svg")} alt="home icon" />
+            </div>
+        </header>
+    );
+};
+
 export default function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
-  return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
-        <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
-            <Link
-              className={clsx(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted,
-              )}
-              to={useBaseUrl('docs/')}>
-              Clique
-            </Link>
-          </div>
-        </div>
-      </header>
+    const sections = siteConfig.customFields.sections;
+    return (
+    <Layout title={`${siteConfig.title}`} description="Description will go into a meta tag in <head />">
+        <HomepageHeader/>
+        <HomePageTeaser config={siteConfig}  />
+        <HomepageModules/>
+        <HomePageFormateur/>
+
       <main>
-        {features && features.length > 0 && (
+          {features && features.length > 0 && (
           <section className={styles.features}>
             <div className="container">
               <div className="row">
@@ -90,6 +121,7 @@ export default function Home() {
           </section>
         )}
       </main>
+
     </Layout>
   );
 }
