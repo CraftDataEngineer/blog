@@ -14,11 +14,13 @@ jobs:
       - name: Setup Yarn
         uses: DerYeger/yarn-setup-action@master
         with:
-          node-version: 17
+          node-version: 16
+
       - name: Build 🛠
         run: yarn build
+
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.5
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
-          branch: pages-💻 # The branch the action should deploy to.
+          branch: gh-pages # The branch the action should deploy to.
           folder: build # The folder the action should deploy.

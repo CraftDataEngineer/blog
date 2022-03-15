@@ -2,8 +2,8 @@
 module.exports = {
   title: 'Craft Data Engineer',
   tagline: 'En cours de réalisation',
-  url: 'https://craftdataengineer.github.io/',
-  baseUrl: '/blog/',
+  url: 'https://blog.craft-data-engineer.com/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
