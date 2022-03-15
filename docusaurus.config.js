@@ -2,12 +2,12 @@
 module.exports = {
   title: 'Craft Data Engineer',
   tagline: 'En cours de réalisation',
-  url: 'https://craftdataengineer.github.io',
-  baseUrl: '/',
+  url: 'https://craftdataengineer.github.io/',
+  baseUrl: '/blog/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'craft-data-engineer', // Usually your GitHub org/user name.
+  organizationName: 'CraftDataEngineer', // Usually your GitHub org/user name.
   projectName: 'blog', // Usually your repo name.
   themeConfig: {
     algolia: {
