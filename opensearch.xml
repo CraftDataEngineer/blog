@@ -4,8 +4,8 @@
   <ShortName>Craft Data Engineer</ShortName>
   <Description>Search Craft Data Engineer</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://craftdataengineer.github.io/blog/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://craftdataengineer.github.io//blog/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://craftdataengineer.github.io//blog/opensearch.xml" />
-  <moz:SearchForm>https://craftdataengineer.github.io//blog/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">http://blog.craft-data-engineer.com/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="http://blog.craft-data-engineer.com//search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="http://blog.craft-data-engineer.com//opensearch.xml" />
+  <moz:SearchForm>http://blog.craft-data-engineer.com//</moz:SearchForm>
 </OpenSearchDescription>
