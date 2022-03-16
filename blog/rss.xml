@@ -2,14 +2,14 @@
 <rss version="2.0">
     <channel>
         <title>Craft Data Engineer Blog</title>
-        <link>http://blog.craft-data-engineer.com/blog</link>
+        <link>https://blog.craft-data-engineer.com/blog</link>
         <description>Craft Data Engineer Blog</description>
         <lastBuildDate>Tue, 23 Mar 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[Example]]></title>
-            <link>http://blog.craft-data-engineer.com/blog/example</link>
+            <link>https://blog.craft-data-engineer.com/blog/example</link>
             <guid>example</guid>
             <pubDate>Tue, 23 Mar 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></description>
