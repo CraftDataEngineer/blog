@@ -9,7 +9,7 @@ function HomePageFormateur() {
 
         return (
             <div className={classnames(styles.formateurContainer)}>
-                <div className={classnames("container")}>
+                <div className={classnames("container")} style={{paddingLeft : "200px"}}>
                     <h6 className={classnames(styles.formateurTitle)}> <span >Formateurs</span></h6>
                     <h3 className={classnames(styles.formateurTeaser)}> <span >On Partage avec vous Notre Experience ! </span></h3>
                 </div>
