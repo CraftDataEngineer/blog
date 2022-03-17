@@ -131,7 +131,7 @@ function Footer() {
       className={classnames('footer',
         styles.footerDark,
       )} >
-      <div style={{ backgroundColor : "black !important"}} className="container container-fluid">
+      <div style={{ backgroundColor : "!important"}} className="container container-fluid">
         {links &&
           links.length > 0 &&
           (isMultiColumnFooterLinks(links) ? (

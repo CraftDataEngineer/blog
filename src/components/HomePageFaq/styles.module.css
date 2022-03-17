@@ -1,27 +1,28 @@
 
 
 .faqContainer {
-  #background: linear-gradient(-4deg,black 13%,#ffffff  13%);
   padding-top: 100px;
   padding-bottom: 10%;
 }
 
 
 .gridContainer {
-  background: rgba(108, 122, 137, 0.3);
-  border-radius: 30px;;
+  background: rgba(228, 233, 237, 0.4);
+  border-radius: 30px;
   overflow: hidden;
+  font-size: 1.5rem;
+  font-family: Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
 .faqTitle {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   color: #25366b;
   text-align: center;
   font-family: Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
 .faqSubTitle {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #25366b;
   font-family: Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
@@ -29,7 +30,7 @@
 .faqTeaser {
   font-weight: 900;
   line-height: 2.5rem;
-  font-size: 2.25rem;
+  font-size: 3rem;
   letter-spacing: -.025em;
   display: block;
   --tw-text-opacity: 1;
@@ -39,7 +40,7 @@
 }
 
 .faqDescription {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 300;
   color: grey;

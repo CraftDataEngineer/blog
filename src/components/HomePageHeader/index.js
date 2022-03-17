@@ -15,9 +15,9 @@ function HomepageHeader() {
                         <h6 className={classnames(stylesModule.headTitle)}> <span >{siteConfig.title}</span></h6>
                         <h3 className={classnames(stylesModule.headTeaser)}> <span >Decouverez le metier du Data Engineer.</span></h3>
                         <p className={classnames(stylesModule.headDescription)}>
-                            <span >Devenez un expert de du traitement et stockage des données ! </span>
-                            <span > Amener la culture craft au coeur de vos developpemnts !</span>
-                            <span > Amener la culture craft au coeur de vos developpemnts !</span>
+                            <span >Devenez un expert de du traitement et stockage des données !
+                                Amener la culture craft au coeur de vos developpemnts !
+                             Amener la culture craft au coeur de vos developpemnts !</span>
                         </p>
                     </div>
                     <div className="col col--5">

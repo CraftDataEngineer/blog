@@ -30,50 +30,37 @@ module.exports = {
     navbar: {
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo.svg'
       },
       items: [
         {
           to: 'docs/',
           activeBasePath: 'docs',
-          label: 'Posts',
+          label: 'BLOG',
           position: 'left',
-        },
-        {to: 'blog', label: 'Blog', position: 'left'}
-      ],
+        }
+        ],
     },
     footer: {
       style: 'dark',
+      links: [
+        {
+          label: 'Stack Overflow',
+          href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+        },
+        {
+          label: 'Linkedin',
+          href: 'https://discordapp.com/invite/docusaurus',
+        },
+        {
+          label: 'Twitter',
+          href: 'https://twitter.com/docusaurus',
+        }
+      ],
       copyright: `Copyright © ${new Date().getFullYear()} Craft Data Engineer, Inc.`,
     },
   },
   customFields: {
-    sections: {
-      demo: {
-        lines: [
-          "Decouverez le metier du Data Engineer",
-          "&",
-          "Devenez un expert de la donnée.",
-        ],
-        cta: {
-          text: "Workflows & Components",
-          link: "docs/components",
-        },
-      },
-      hero: {
-        description: "Clutch provides everything you need to improve your developers' experience and operational capabilities. It comes with several out-of-the-box features for managing cloud-native infrastructure, but is easily configured or extended to interact with whatever you run, wherever you run it.",
-        buttons: {
-          first: {
-            url: "docs/about/what-is-clutch",
-            text: "Learn More",
-          },
-          second: {
-            url: "docs/getting-started/build-guides",
-            text: "Get Started",
-          },
-        },
-      },
-    }
   },
   presets: [
     [

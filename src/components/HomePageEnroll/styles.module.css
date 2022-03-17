@@ -1,6 +1,5 @@
 .featureProfile {
-  height: 400px;
-  width: 400px;
+  padding-top: 10px;
 }
 
 .enrollContainer {
@@ -11,18 +10,18 @@
 
 
 .gridContainer {
-  padding: 5%;
+  padding: 2%;
 }
 
 .enrollTitle {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   color: #25366b;
   text-align: center;
   font-family: Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
 .enrollSubTitle {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #25366b;
   font-family: Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
@@ -30,7 +29,7 @@
 .enrollTeaser {
   font-weight: 900;
   line-height: 2.5rem;
-  font-size: 2.25rem;
+  font-size: 3rem;
   letter-spacing: -.025em;
   display: block;
   --tw-text-opacity: 1;
@@ -40,7 +39,7 @@
 }
 
 .enrollDescription {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 300;
   color: grey;
@@ -49,7 +48,7 @@
 }
 
 .enrollDescriptionPoints {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 300;
   color: grey;
@@ -59,12 +58,7 @@
 
 
 
-html {
-  font-style: normal;
-  font-size: 1.5rem;
-  text-align: left;
-  position: relative;
-}
+
 
 .heroSection {
   padding: 4rem 0;

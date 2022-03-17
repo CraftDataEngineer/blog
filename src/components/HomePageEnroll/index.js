@@ -1,7 +1,8 @@
 import styles from "./styles.module.css";
 import React from "react";
 import classnames from "classnames";
-import sam  from '../../../static/img/enroll/uncle-sam.png';
+import sam  from '../../../static/img/enroll/learn-1.jpg';
+import Link from "@docusaurus/core/lib/client/exports/Link";
 
 
 function HomePageEnroll() {
@@ -19,17 +20,17 @@ function HomePageEnroll() {
                     <div className="row ">
                         <div className="col "/>
                         <div className="col col--4">
-                            <div className="card-demo shadow--lw">
-                                <div className="card">
-                                    <div className="card__image">
-                                        <img
+                            <div className="card-demo " >
+                                <div className="card shadow--lw" style={{  borderRadius: "30px"}}>
+                                    <div className={classnames("card__image")}>
+                                        <img className={classnames(styles.featureProfile)}
                                             src={sam}
                                             alt="Image alt text"
-                                            title="Logo Title Text 1"
+                                            title="Inscrivez-vous"
                                         />
                                     </div>
                                     <div className="card__body ">
-                                        <h4 className={classnames(styles.enrollSubTitle)} >Apprenez :</h4>
+                                        <h4 className={classnames(styles.enrollSubTitle)} >Apprenez</h4>
                                         <ul style={{ listStyleType: "square" }} className={classnames(styles.enrollDescriptionPoints)}>
                                             <li >A faire du code de qualité </li>
                                             <li >Tous sur le stockage des données  </li>
@@ -37,7 +38,7 @@ function HomePageEnroll() {
                                         </ul>
                                     </div>
                                     <div className="card__footer ">
-                                        <button className="button button--outline button--primary button--block shadow--md ">Inscrivez vous</button>
+                                        <Link to="/blog/form/" style={{ textDecoration: 'none' }}> <button className="button button--outline button--primary button--block shadow--lw ">Rejoindre la liste d'attente</button></Link>
                                     </div>
                                 </div>
                             </div>

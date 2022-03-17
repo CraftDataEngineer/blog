@@ -8,15 +8,15 @@
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #25366b;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
+  --ifm-color-primary-dark: #626479;
+  --ifm-color-primary-darker: black;
   --ifm-color-primary-darkest: rgb(26, 136, 112);
   --ifm-color-primary-light: rgb(70, 203, 174);
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
   --ifm-navbar-shadow: #ffff;
-  --ifm-font-weight-semibold:200;
+  --ifm-font-weight-semibold:400;
   --ifm-navbar-link-color: grey;
 }
 
@@ -25,12 +25,4 @@
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
-}
-
-html {
-  font-family: Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-  font-style: normal;
-  font-size: 0.5rem;
-  text-align: left;
-  position: relative;
 }

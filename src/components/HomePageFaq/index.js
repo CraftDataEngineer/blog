@@ -1,6 +1,7 @@
 import styles from "./styles.module.css";
 import React from "react";
 import classnames from "classnames";
+import questions from "../../../static/img/faq/questions.png";
 
 
 class HomePageFaq extends React.Component  {
@@ -34,13 +35,19 @@ class HomePageFaq extends React.Component  {
     render() {
         return (
             <div className={classnames(styles.faqContainer)}>
-                <div className={classnames("container")}>
+                <div className={classnames("container")} style={{paddingBottom:"50px"}}>
                     <h6 className={classnames(styles.faqTitle)}><span>FAQ</span></h6>
                     <h3 className={classnames(styles.faqTeaser)}><span>Questions les plus fréquentes </span></h3>
                 </div>
-                <div className={classnames(styles.gridContainer,"container")}>
-                    <div className="row " style={{paddingTop:"10%",paddingBottom:"10%"}}>
-                        <div className="col "/>
+                <div className={classnames(styles.gridContainer,"container","shadow--md")}>
+                    <div className="row " style={{paddingTop:"5%",paddingBottom:"5%"}}>
+                        <div className="col ">
+                            <img
+                                src={questions}
+                                alt="Image alt text"
+                                title="Faq"
+                            />
+                        </div>
                         <div className="col col--7">
                             <div className={`menu__list-item-collapsible ${this.state.show_q_1 ? "" : "menu__list-item--collapsed"}`}  onClick={this.openQ1} >
                                 <a className="menu__link menu__link--sublist">Comment financer ma formation ? CPF, AIF,
