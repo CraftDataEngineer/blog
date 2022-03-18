@@ -10,6 +10,11 @@ module.exports = {
   organizationName: 'CraftDataEngineer', // Usually your GitHub org/user name.
   projectName: 'blog', // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: true,
+      respectPrefersColorScheme: true,
+    },
     algolia: {
       apiKey: 'b72d4e9e38b1ae07487893bad95e433c',
       indexName: 'blog',
@@ -23,71 +28,39 @@ module.exports = {
       //... other Algolia params
     },
     navbar: {
-      title: 'CraftDataEngineer',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo.svg'
       },
       items: [
         {
           to: 'docs/',
           activeBasePath: 'docs',
-          label: 'Posts',
+          label: 'BLOG',
           position: 'left',
-        },
-        {to: 'blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://craftdataengineer.github.io/blog/',
-          label: 'github',
-          position: 'right',
-        },
-      ],
+        }
+        ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'dolt',
-              to: 'docs/',
-            },
-          ],
+          label: 'Stack Overflow',
+          href: 'https://stackoverflow.com/questions/tagged/docusaurus',
         },
         {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
+          label: 'Linkedin',
+          href: 'https://discordapp.com/invite/docusaurus',
         },
         {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
-              label: 'Github',
-              href: 'https://github.com/CraftDataEngineer/blog',
-            },
-          ],
-        },
+          label: 'Twitter',
+          href: 'https://twitter.com/docusaurus',
+        }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Craft Data Engineer, Inc.`,
     },
+  },
+  customFields: {
   },
   presets: [
     [
@@ -98,6 +71,9 @@ module.exports = {
           // Please change this to your repo.
           editUrl:
             'https://github.com/CraftDataEngineer/blog/'
+        },
+        gtag: {
+          trackingID: 'G-XN0PYBT2T9',
         },
         blog: {
           showReadingTime: true,
