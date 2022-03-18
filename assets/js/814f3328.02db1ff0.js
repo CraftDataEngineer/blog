@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdive_into=self.webpackChunkdive_into||[]).push([[535],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Example","permalink":"/blog/example"}]}')}}]);

@@ -13,5 +13,12 @@
         <link href="https://blog.craft-data-engineer.com/blog/example"/>
         <updated>2021-03-23T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></summary>
+        <content type="html"><![CDATA[<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</em></p><h1>Lorem Ipsum:</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit ametn</p>]]></content>
+        <author>
+            <name>LOCA, LUMA &amp; SBE</name>
+            <uri>https://gitlab.com/les-copains</uri>
+        </author>
+        <category label="example" term="example"/>
+        <category label="docusaurus" term="docusaurus"/>
     </entry>
 </feed>

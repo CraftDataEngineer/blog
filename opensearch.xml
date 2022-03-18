@@ -5,7 +5,7 @@
   <Description>Search Craft Data Engineer</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <Image width="16" height="16" type="image/x-icon">https://blog.craft-data-engineer.com/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://blog.craft-data-engineer.com//search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://blog.craft-data-engineer.com//opensearch.xml" />
-  <moz:SearchForm>https://blog.craft-data-engineer.com//</moz:SearchForm>
+  <Url type="text/html" method="get" template="https://blog.craft-data-engineer.com/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://blog.craft-data-engineer.com/opensearch.xml" />
+  <moz:SearchForm>https://blog.craft-data-engineer.com/</moz:SearchForm>
 </OpenSearchDescription>
