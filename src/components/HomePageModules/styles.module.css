@@ -8,6 +8,13 @@
 .featureSvg {
   height: 1000px;
   width: 1000px;
+
+}
+
+@media (max-width: 800px) {
+  .moduleSvg {
+    display: none;
+  }
 }
 
 .moduleContainer {

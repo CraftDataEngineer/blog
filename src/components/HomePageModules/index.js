@@ -7,7 +7,7 @@ import stylesModule from "./styles.module.css";
 
 function HomepageModules() {
     return (
-        <div className={classnames(styles.moduleContainer)}>
+        <div className={classnames(styles.moduleContainer,styles.moduleSvg)}>
             <div className={classnames("container")}>
                 <h6 className={classnames(styles.modulesTitle)}><span>Craft Data Engineer</span></h6>
                 <h3 className={classnames(styles.modulesTeaser)}><span>Decouverez le metier du Data Engineer.</span>
@@ -15,7 +15,7 @@ function HomepageModules() {
                 <p className={classnames(styles.modulesDescription)}>
                     <span>Devenez un expert de du traitement et stockage des données ! </span>
                 </p>
-                <div className="text--center">
+                <div className={classnames("text--center")}>
                     <YourSvg className={stylesModule.featureSvg} alt={"test"}/>
                 </div>
             </div>

@@ -3,6 +3,7 @@ import useDocusaurusContext from "@docusaurus/core/lib/client/exports/useDocusau
 import stylesModule from './styles.module.css';
 import YourSvg  from '../../../static/img/de_glob.svg';
 import classnames from "classnames";
+import styles from "../HomePageModules/styles.module.css";
 
 
 function HomepageHeader() {
@@ -21,7 +22,7 @@ function HomepageHeader() {
                         </p>
                     </div>
                     <div className="col col--5">
-                        <div className="text--center">
+                        <div className={classnames("text--center",styles.moduleSvg)}>
                             <YourSvg className={stylesModule.featureSvg} alt={"test"} />
                         </div>
                     </div>

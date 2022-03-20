@@ -11,6 +11,12 @@
 
 }
 
+@media (max-width: 800px) {
+  .moduleSvg {
+    display: none;
+  }
+}
+
 .featureBook {
   height: 100px;
   width: 100px;
