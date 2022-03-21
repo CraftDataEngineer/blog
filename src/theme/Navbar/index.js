@@ -25,7 +25,8 @@ import Logo from '@theme/Logo';
 import IconMenu from '@theme/IconMenu';
 import IconClose from '@theme/IconClose';
 import styles from './styles.module.css';
-import Link from "@docusaurus/core/lib/client/exports/Link"; // retrocompatible with v1
+import Link from "@docusaurus/core/lib/client/exports/Link";
+import classnames from "classnames"; // retrocompatible with v1
 
 const DefaultNavItemPosition = 'right';
 
@@ -150,7 +151,7 @@ function NavbarMobileSidebar({sidebarShown, toggleSidebar}) {
     toggleSidebar,
   });
   return (
-    <div className="navbar-sidebar">
+    <div  className={classnames("navbar-sidebar")}>
       <div className="navbar-sidebar__brand">
         <Logo
           className="navbar__brand"
@@ -262,8 +263,10 @@ export default function Navbar() {
               onChange={colorModeToggle.toggle}
             />
           )}
-          <Link to="/form/" style={{ textDecoration: 'none' }}> <button className="button   button--primary" >Rejoindre la liste d'attente</button></Link>
-          {!hasSearchNavbarItem && <SearchBar />}
+          <Link to="/form/" >
+            <button className="button   button--primary button--sm"  >Rejoindre la liste d'attente</button>
+          </Link>
+          {!hasSearchNavbarItem && !mobileSidebar.shouldRender && <SearchBar />}
         </div>
       </div>
 
