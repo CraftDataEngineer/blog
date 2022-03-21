@@ -22,7 +22,7 @@ function HomepageHeader() {
                         </p>
                     </div>
                     <div className="col col--5">
-                        <div className={classnames("text--center",styles.moduleSvg)}>
+                        <div className={classnames("text--center")}>
                             <YourSvg className={stylesModule.featureSvg} alt={"test"} />
                         </div>
                     </div>

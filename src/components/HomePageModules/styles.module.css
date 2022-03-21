@@ -6,14 +6,14 @@
 }
 
 .featureSvg {
-  height: 1000px;
-  width: 1000px;
-
+  height: 90%;
+  width: 80%;
 }
 
 @media (max-width: 800px) {
   .moduleSvg {
-    display: none;
+    height: 500px;
+    width: 300px;
   }
 }
 
@@ -37,6 +37,7 @@
   letter-spacing: -.025em;
   display: block;
   --tw-text-opacity: 1;
+  color: black;
   tab-size: 4;
   font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }

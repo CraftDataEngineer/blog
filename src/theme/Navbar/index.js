@@ -262,7 +262,7 @@ export default function Navbar() {
               onChange={colorModeToggle.toggle}
             />
           )}
-          <Link to="/docs/" style={{ textDecoration: 'none' }}> <button className="button   button--primary" >Rejoindre la liste d'attente</button></Link>
+          <Link to="/form/" style={{ textDecoration: 'none' }}> <button className="button   button--primary" >Rejoindre la liste d'attente</button></Link>
           {!hasSearchNavbarItem && <SearchBar />}
         </div>
       </div>

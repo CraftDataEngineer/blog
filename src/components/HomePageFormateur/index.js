@@ -16,7 +16,7 @@ function HomePageFormateur() {
                  <div className={classnames(styles.gridContainer)}>
                     <div className="row row--no-gutters">
                         <div className="col ">
-                            <img className={styles.featureProfile} src={loca} alt={"loca"}/>
+                            <img className={classnames(styles.featureProfile,styles.mediaProfile)} src={loca} alt={"loca"}/>
                         </div>
                         <div className="col col--7">
                             <p className={classnames(styles.formateurDescription,"text-center")}>
@@ -36,7 +36,7 @@ You’ve seen what we do in our case studies... Now it’s time for you to have 
                             </p>
                         </div>
                         <div className="col ">
-                            <img className={styles.featureProfile} src={sbe} alt={"sbe"}/>
+                            <img className={classnames(styles.featureProfile,styles.mediaProfile)} src={sbe} alt={"sbe"}/>
                         </div>
                     </div>
                  </div>

@@ -38,7 +38,7 @@ function HomePageEnroll() {
                                         </ul>
                                     </div>
                                     <div className="card__footer ">
-                                        <Link to="/docs/" style={{ textDecoration: 'none' }}> <button className="button button--outline button--primary button--block shadow--lw ">Rejoindre la liste d'attente</button></Link>
+                                        <Link to="/form/" style={{ textDecoration: 'none' }}> <button className="button button--outline button--primary button--block shadow--lw ">Rejoindre la liste d'attente</button></Link>
                                     </div>
                                 </div>
                             </div>
