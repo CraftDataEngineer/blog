@@ -30,7 +30,6 @@ function HomePageEnroll() {
                                         />
                                     </div>
                                     <div className="card__body ">
-                                        <h4 className={classnames(styles.enrollSubTitle)} >Apprenez</h4>
                                         <ul className={classnames(styles.enrollDescriptionPoints)}>
                                             <li >A faire du code de qualité </li>
                                             <li >Tous sur le stockage des données  </li>

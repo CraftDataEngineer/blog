@@ -10,7 +10,7 @@ function HomepageHeader() {
     const {siteConfig} = useDocusaurusContext();
     return (
     <header className={classnames('hero hero--primary headTest', stylesModule.heroSection)}>
-            <div className="container" style={{paddingBottom: "150px",paddingTop:"10%"}}>
+            <div className="container" style={{paddingBottom: "180px",paddingTop:"10%"}}>
                 <div className="row">
                     <div className="col col--7">
                         <h6 className={classnames(stylesModule.headTitle)}> <span >{siteConfig.title}</span></h6>

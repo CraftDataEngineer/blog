@@ -30,3 +30,35 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+
+/* Parcours Animation. */
+#firstText, #secondText, #thirdText {
+  transition: all 2s ease;
+}
+
+#firstText {
+  transform: translateX(-100%);
+}
+
+#thirdText {
+  transform: translateX(100%);
+}
+
+#secondText  {
+  transform: translateX(-100%);
+}
+
+
+
+#parcours:hover #firstText {
+  transform: translateX(5%);
+}
+
+#parcours:hover #thirdText {
+  transform: translateX(0%);
+}
+
+#parcours:hover #secondText {
+  transform: translateX(0%);
+}
