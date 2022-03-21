@@ -1,4 +1,15 @@
 
+.featureSvg {
+  height: 85%;
+  width: 85%;
+}
+
+@media screen and (max-width: 800px){
+  .mediaProfile {
+    display: none;
+  }
+}
+
 
 .faqContainer {
   padding-top: 100px;

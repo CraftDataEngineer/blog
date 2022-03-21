@@ -4,6 +4,12 @@
   width: 100%;
 }
 
+@media screen and (max-width: 800px){
+  .mediaProfile {
+    display: none;
+  }
+}
+
 .formateurContainer {
   background-color: black;
   padding-top: 1%;

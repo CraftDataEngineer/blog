@@ -31,35 +31,42 @@ export default function ContactUs() {
             <div className={classnames("container")} style={{paddingBottom: "200px"}}>
                 <form className={classnames(styles.formContainer,"shadow--md")}>
                     <div className="row row--no-gutters ">
-                            <div className="col col--1"/>
-                            <div className="col col--2">
-                                <div className="field">
+                        <div className="col col--1"/>
+                        <div className="col col--2">
+                            <div className="field">
                                 <label>Email : </label>
-                                </div>
                             </div>
-                            <div className="col col--5">
-                                <input type="email" name="email" className="button--block"
-                                        style={{ fontSize: "0.9rem"}}/>
-                            </div>
+                        </div>
+                        <div className="col col--5">
+                            <input type="email" name="email" className="button--block"
+                                   style={{ fontSize: "0.9rem"}}/>
+                        </div>
                     </div>
                     <div className="row row--no-gutters " style={{ paddingTop: "10px"}}>
-                            <div className="col col--1"/>
-                            <div className="col col--2">
-                                <div className="field">
+                        <div className="col col--1"/>
+                        <div className="col col--2">
+                            <div className="field">
                                 <label>Questions : </label>
-                                </div>
                             </div>
-                            <div className="col col--5">
+                        </div>
+                        <div className="col col--5">
                                 <textarea name="questions" rows="10" className="button--block"
-                                        style={{ rows:"40" ,cols:"50"}}/>
-                            </div>
+                                          style={{ rows:"40" ,cols:"50"}}/>
+                        </div>
                     </div>
                     <div className="row row--no-gutters " style={{ paddingTop: "10px"}}>
-                            <div className="col col--4">
-                            </div>
-                            <div className="col col--3">
-                                <button className="button button--sm button--block button--outline button--primary" >Envoyer</button>
-                            </div>
+                        <div className="col col--3"/>
+                        <div className="col col--5">
+                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"/>
+                            <label> Je suis intéressé(e) par la formation</label>
+                        </div>
+                    </div>
+                    <div className="row row--no-gutters " style={{ paddingTop: "10px"}}>
+                        <div className="col col--4">
+                        </div>
+                        <div className="col col--3">
+                            <button className="button button--block button--outline button--primary" >Envoyer</button>
+                        </div>
                     </div>
                 </form>
             </div>

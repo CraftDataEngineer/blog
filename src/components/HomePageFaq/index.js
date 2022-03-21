@@ -43,6 +43,7 @@ class HomePageFaq extends React.Component  {
                     <div className="row " style={{paddingTop:"5%",paddingBottom:"5%"}}>
                         <div className="col ">
                             <img
+                                className={classnames(styles.featureSvg,styles.mediaProfile)}
                                 src={questions}
                                 alt="Image alt text"
                                 title="Faq"

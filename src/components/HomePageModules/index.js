@@ -8,7 +8,7 @@ import stylesModule from "./styles.module.css";
 function HomepageModules() {
     return (
         <div className={classnames(styles.moduleContainer)}>
-            <div className={classnames("container")}>
+            <div className={classnames("container")} style={{paddingBottom: "3%"}}>
                 <h6 className={classnames(styles.modulesTitle)}><span>Craft Data Engineer</span></h6>
                 <h3 className={classnames(styles.modulesTeaser)}><span>Decouverez le metier du Data Engineer.</span>
                 </h3>
