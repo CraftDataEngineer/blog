@@ -1,7 +1,7 @@
 
 .featureSvg {
-  height: 85%;
-  width: 85%;
+  height: 150px;
+  width: 250px;
 }
 
 @media screen and (max-width: 800px){
@@ -50,6 +50,14 @@
   text-align: center;
   color: black;
   font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+.faqQuestion {
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 500;
+  color: black;
+  font-family: Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
 .faqDescription {

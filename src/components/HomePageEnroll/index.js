@@ -1,7 +1,7 @@
 import styles from "./styles.module.css";
 import React from "react";
 import classnames from "classnames";
-import sam  from '../../../static/img/enroll/learn-1.jpg';
+import sam  from '../../../static/img/enroll/course.jpg';
 import Link from "@docusaurus/core/lib/client/exports/Link";
 
 
@@ -31,7 +31,7 @@ function HomePageEnroll() {
                                     </div>
                                     <div className="card__body ">
                                         <h4 className={classnames(styles.enrollSubTitle)} >Apprenez</h4>
-                                        <ul style={{ listStyleType: "square" }} className={classnames(styles.enrollDescriptionPoints)}>
+                                        <ul className={classnames(styles.enrollDescriptionPoints)}>
                                             <li >A faire du code de qualité </li>
                                             <li >Tous sur le stockage des données  </li>
                                             <li >Tous sur le traitement des données  </li>

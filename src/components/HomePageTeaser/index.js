@@ -4,12 +4,25 @@ import classnames from "classnames";
 import DataFilesPng from '../../../static/img/teaser/data_files.png';
 import BookPng from '../../../static/img/teaser/book.png';
 
+const MOBILE_SIZE = 800
 
 class HomePageTeaser extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {showAlpha: true, showBeta: false};
+        this.state = {showAlpha: true, showBeta: false , isMobile:false};
+
+    }
+
+    componentDidMount() {
+
+        this.setState({
+            isMobile:  window.innerWidth <= 800
+        });
+        console.log("heeere");
+        console.log(window.innerWidth);
+        console.log(this.state.isMobile);
+
 
     }
 
@@ -42,7 +55,7 @@ class HomePageTeaser extends React.Component {
                 </div>
                 <div className={classnames("container")}
                      style={{color: "#ffff", background: "rgba(189, 195, 199, 0.2)", height: "1000%"}}>
-                    <ul className="tabs tabs--block">
+                    <ul className={`tabs ${this.state.isMobile ? "" : "tabs--block"}`}>
                         <li className={`tabs__item ${this.state.showAlpha ? "tabs__item--active" : ""}`}
                             style={{color: "#ffff"}} onClick={this.openAlpha}>Théorie
                         </li>
@@ -55,7 +68,7 @@ class HomePageTeaser extends React.Component {
                         <div className="row" style={{padding: "10% 10% 0 10%"}}>
                             <div className="col">
                                 <div>
-                                    <img className={styles.featureFiles} src={DataFilesPng} alt={"test"}/>
+                                    <img className={classnames(styles.featureFiles,styles.moduleSvg)} src={DataFilesPng} alt={"test"}/>
                                 </div>
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Decouverez le metier du Data Engineer.</span>
                                 </h3>
@@ -65,7 +78,7 @@ class HomePageTeaser extends React.Component {
                             </div>
                             <div className="col">
                                 <div>
-                                    <img className={styles.featureFiles} src={DataFilesPng} alt={"test"}/>
+                                    <img className={classnames(styles.featureFiles,styles.moduleSvg)} src={DataFilesPng} alt={"test"}/>
                                 </div>
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Decouverez le metier du Data Engineer.</span>
                                 </h3>
@@ -76,7 +89,7 @@ class HomePageTeaser extends React.Component {
                         <div className="row" style={{padding: "10% 10% 10% 10%"}}>
                             <div className="col">
                                 <div>
-                                    <img className={styles.featureFiles} src={DataFilesPng} alt={"test"}/>
+                                    <img className={classnames(styles.featureFiles,styles.moduleSvg)} src={DataFilesPng} alt={"test"}/>
                                 </div>
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Decouverez le metier du Data Engineer.</span>
                                 </h3>
@@ -85,7 +98,7 @@ class HomePageTeaser extends React.Component {
                                 </p></div>
                             <div className="col">
                                 <div>
-                                    <img className={styles.featureFiles} src={DataFilesPng} alt={"test"}/>
+                                    <img className={classnames(styles.featureFiles,styles.moduleSvg)} src={DataFilesPng} alt={"test"}/>
                                 </div>
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Decouverez le metier du Data Engineer.</span>
                                 </h3>
@@ -99,7 +112,7 @@ class HomePageTeaser extends React.Component {
                         <div className="row" style={{padding: "10% 10% 0 10%"}}>
                             <div className="col">
                                 <div>
-                                    <img className={styles.featureBook} src={BookPng} alt={"test"}/>
+                                    <img className={classnames(styles.featureFiles,styles.moduleSvg)} src={BookPng} alt={"test"}/>
                                 </div>
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Decouverez le metier du Data Engineer.</span>
                                 </h3>
@@ -109,7 +122,7 @@ class HomePageTeaser extends React.Component {
                             </div>
                             <div className="col">
                                 <div>
-                                    <img className={styles.featureBook} src={BookPng} alt={"test"}/>
+                                    <img className={classnames(styles.featureFiles,styles.moduleSvg)} src={BookPng} alt={"test"}/>
                                 </div>
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Decouverez le metier du Data Engineer.</span>
                                 </h3>
@@ -120,7 +133,7 @@ class HomePageTeaser extends React.Component {
                         <div className="row" style={{padding: "10% 10% 10% 10%"}}>
                             <div className="col">
                                 <div>
-                                    <img className={styles.featureBook} src={BookPng} alt={"test"}/>
+                                    <img className={classnames(styles.featureFiles,styles.moduleSvg)} src={BookPng} alt={"test"}/>
                                 </div>
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Decouverez le metier du Data Engineer.</span>
                                 </h3>
@@ -129,7 +142,7 @@ class HomePageTeaser extends React.Component {
                                 </p></div>
                             <div className="col">
                                 <div>
-                                    <img className={styles.featureBook} src={BookPng} alt={"test"}/>
+                                    <img className={classnames(styles.featureFiles,styles.moduleSvg)} src={BookPng} alt={"test"}/>
                                 </div>
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Decouverez le metier du Data Engineer.</span>
                                 </h3>

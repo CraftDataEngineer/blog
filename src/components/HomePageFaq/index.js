@@ -41,7 +41,8 @@ class HomePageFaq extends React.Component  {
                 </div>
                 <div className={classnames(styles.gridContainer,"container","shadow--md")}>
                     <div className="row " style={{paddingTop:"5%",paddingBottom:"5%"}}>
-                        <div className="col ">
+                        <div className="col col--1"/>
+                        <div className="col col--2">
                             <img
                                 className={classnames(styles.featureSvg,styles.mediaProfile)}
                                 src={questions}
@@ -49,9 +50,9 @@ class HomePageFaq extends React.Component  {
                                 title="Faq"
                             />
                         </div>
-                        <div className="col col--7">
+                        <div className="col col--7" style={{paddingTop:"3%"}}>
                             <div className={`menu__list-item-collapsible ${this.state.show_q_1 ? "" : "menu__list-item--collapsed"}`}  onClick={this.openQ1} >
-                                <a className="menu__link menu__link--sublist">Comment financer ma formation ? CPF, AIF,
+                                <a  className={classnames(styles.faqQuestion, "menu__link menu__link--sublist")} >Comment financer ma formation ? CPF, AIF,
                                     Abondements ?</a>
                             </div>
                             { this.state.show_q_1 && <p className={classnames(styles.faqDescription, "menu__link")}>
@@ -64,7 +65,7 @@ class HomePageFaq extends React.Component  {
                             </p>
                             }
                             <div className={`menu__list-item-collapsible ${this.state.show_q_2 ? "" : "menu__list-item--collapsed"}`}  onClick={this.openQ2}>
-                                <a className="menu__link menu__link--sublist">Comment s’organise la formation ?</a>
+                                <a className={classnames(styles.faqQuestion, "menu__link menu__link--sublist")}>Comment s’organise la formation ?</a>
                             </div>
                             {this.state.show_q_2 && <p className={classnames(styles.faqDescription, "menu__link")}>
                                 <span>La formation est composée d’une partie d’e-learning coaché sur notre plateforme
@@ -74,7 +75,7 @@ class HomePageFaq extends React.Component  {
                             </p>
                             }
                             <div className={`menu__list-item-collapsible ${this.state.show_q_3 ? "" : "menu__list-item--collapsed"}`}  onClick={this.openQ3}>
-                                <a className="menu__link menu__link--sublist">Un programme fait pour moi ?</a>
+                                <a className={classnames(styles.faqQuestion, "menu__link menu__link--sublist")}>Un programme fait pour moi ?</a>
                             </div>
                             {this.state.show_q_3 && <p className={classnames(styles.faqDescription, "menu__link")}>
                                 <ul style={{ listStyleType: "circle" }}>
@@ -88,7 +89,7 @@ class HomePageFaq extends React.Component  {
                             </p>
                             }
                         </div>
-                        <div className="col"/>
+                        <div className="col col--2"/>
                     </div>
                 </div>
             </div>
