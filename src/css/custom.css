@@ -62,3 +62,50 @@
 #parcours:hover #secondText {
   transform: translateX(0%);
 }
+
+#skeletonHeader {
+  animation: fadeInUp 2s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  
+}
+
+#bolt1 , #bolt2  ,#bolt3  {
+  opacity: 0;
+  animation: dropIn 12s ease forwards 3;
+  animation-delay: calc(var(--order) * 400ms);
+}
+
+@keyframes dropIn {
+  10% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  25% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  50%{
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%)
+  }
+
+}

@@ -1,9 +1,8 @@
 import React from "react";
 import useDocusaurusContext from "@docusaurus/core/lib/client/exports/useDocusaurusContext";
 import stylesModule from './styles.module.css';
-import YourSvg  from '../../../static/img/de_glob.svg';
+import YourSvg  from '../../../static/img/header/header.svg';
 import classnames from "classnames";
-import styles from "../HomePageModules/styles.module.css";
 
 
 function HomepageHeader() {
