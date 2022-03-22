@@ -50,7 +50,7 @@ class HomePageFaq extends React.Component  {
                                 title="Faq"
                             />
                         </div>
-                        <div className="col col--7" style={{paddingTop:"3%"}}>
+                        <div className="col col--7" style={{paddingTop:"1%"}}>
                             <div className={`menu__list-item-collapsible ${this.state.show_q_1 ? "" : "menu__list-item--collapsed"}`}  onClick={this.openQ1} >
                                 <a  className={classnames(styles.faqQuestion, "menu__link menu__link--sublist")} >Comment financer ma formation ? CPF, AIF,
                                     Abondements ?</a>
@@ -77,7 +77,7 @@ class HomePageFaq extends React.Component  {
                             <div className={`menu__list-item-collapsible ${this.state.show_q_3 ? "" : "menu__list-item--collapsed"}`}  onClick={this.openQ3}>
                                 <a className={classnames(styles.faqQuestion, "menu__link menu__link--sublist")}>Un programme fait pour moi ?</a>
                             </div>
-                            {this.state.show_q_3 && <p className={classnames(styles.faqDescription, "menu__link")}>
+                            {this.state.show_q_3 && <div className={classnames(styles.faqDescription, "menu__link")}>
                                 <ul style={{ listStyleType: "circle" }}>
                                     <li>
                                         Bac +3 en mathématiques (niveau 6) ou bac +5 en sciences (niveau 7)
@@ -86,7 +86,7 @@ class HomePageFaq extends React.Component  {
                                         Compréhension du langage SQL et des systèmes Linux
                                     </li>
                                 </ul>
-                            </p>
+                            </div>
                             }
                         </div>
                         <div className="col col--2"/>

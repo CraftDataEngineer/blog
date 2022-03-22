@@ -1,20 +1,29 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState} from 'react';
 import emailjs from '@emailjs/browser';
 import classnames from "classnames";
 import styles from "./styles.module.css"
-import questions from "../../../static/img/faq/questions.png";
+import Link from "@docusaurus/core/lib/client/exports/Link";
+
+const SERVICE_ID = 'service_kmjngyo'
+const TEMPLATE_ID = 'template_1t3e77o'
+const USER_ID = 'XelOog_ZvkGiZ60Ty'
 
 export default function ContactUs() {
+
+    const [send, setSend] = useState(false);
+    const [error, setError] = useState(false);
+
     const form = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
-
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID)
             .then((result) => {
                 console.log(result.text);
+                setSend(true)
             }, (error) => {
                 console.log(error.text);
+                setError(true)
             });
     };
 
@@ -29,44 +38,70 @@ export default function ContactUs() {
                 </p>
             </div>
             <div className={classnames("container")} style={{paddingBottom: "200px"}}>
-                <form className={classnames(styles.formContainer,"shadow--md")}>
+                <form className={classnames(styles.formContainer, "shadow--md")} ref={form} onSubmit={sendEmail}>
                     <div className="row row--no-gutters ">
                         <div className="col col--1"/>
                         <div className="col col--2">
                             <div className="field">
-                                <label>Email : </label>
+                                <label>Email </label>
+                                <label style={{fontSize: "0.8rem"}}> (*)</label>
+                                <label > : </label>
                             </div>
                         </div>
                         <div className="col col--5">
                             <input type="email" name="email" className="button--block"
-                                   style={{ fontSize: "0.9rem"}}/>
+                                   style={{fontSize: "0.9rem"}} required="true"/>
                         </div>
                     </div>
-                    <div className="row row--no-gutters " style={{ paddingTop: "10px"}}>
+                    <div className="row row--no-gutters " style={{paddingTop: "10px"}}>
                         <div className="col col--1"/>
                         <div className="col col--2">
                             <div className="field">
-                                <label>Questions : </label>
+                                <label>Questions </label>
+                                <label style={{fontSize: "0.8rem"}}> (*)</label>
+                                <label > : </label>
                             </div>
                         </div>
                         <div className="col col--5">
-                                <textarea name="questions" rows="10" className="button--block"
-                                          style={{ rows:"40" ,cols:"50"}}/>
+                                <textarea name="message" rows="10" className="button--block"
+                                          style={{rows: "40", cols: "50"}} required="true"/>
                         </div>
                     </div>
-                    <div className="row row--no-gutters " style={{ paddingTop: "10px"}}>
+                    <div className="row row--no-gutters " style={{paddingTop: "10px"}}>
                         <div className="col col--3"/>
                         <div className="col col--5">
-                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"/>
-                            <label> Je suis intéressé(e) par la formation</label>
+                            <input type="checkbox" id="inscription" name="inscription" value="true"/>
+                            <label> Je souhaite m'inscrire à la formation</label>
                         </div>
                     </div>
-                    <div className="row row--no-gutters " style={{ paddingTop: "10px"}}>
-                        <div className="col col--4">
-                        </div>
+                    <div className="row row--no-gutters " style={{paddingTop: "10px"}}>
                         <div className="col col--3">
-                            <button className="button button--block button--outline button--primary" >Envoyer</button>
                         </div>
+                        {!send && !error && <div className="col col--5">
+                            <button className="button button--block button--outline button--primary">Envoyer</button>
+                        </div>}
+                        {send && !error &&  <div className="col col--5">
+                            <div className="alert alert--success" role="alert">
+                                <button aria-label="Close" className="clean-btn close" type="button">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                Message <strong> envoyé</strong> !
+                            </div>
+                            <br/>
+                            <Link to={"/"}><button className="button button--block  button--outline button--success">Revenir à l'accueil</button></Link>
+                        </div>
+                        }
+                        {error && !send && <div className="col col--5">
+                            <div className="alert alert--danger" role="alert">
+                            <button aria-label="Close" className="clean-btn close" type="button">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <strong>Erreur</strong> le message n'est pas envoyé !
+                            </div>
+                            <br/>
+                            <Link to={"/"}><button className="button button--block  button--outline button--danger">Revenir à l'accueil</button></Link>
+                        </div>
+                        }
                     </div>
                 </form>
             </div>

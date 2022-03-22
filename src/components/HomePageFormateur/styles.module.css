@@ -58,15 +58,3 @@
   text-align: match-parent;
   list-style-type: "-  ";
 }
-
-
-
-.heroSection {
-  padding: 4rem 0;
-  position: relative;
-  overflow: hidden;
-  #background-color: #ffffff;
-  background: linear-gradient(-2deg,#25366b 20%,#ffffff 0%);
-  color: black;
-  /* max-width: 1200px; */
-}

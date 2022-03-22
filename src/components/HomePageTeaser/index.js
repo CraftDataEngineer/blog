@@ -15,15 +15,9 @@ class HomePageTeaser extends React.Component {
     }
 
     componentDidMount() {
-
         this.setState({
-            isMobile:  window.innerWidth <= 800
+            isMobile:  window.innerWidth <= MOBILE_SIZE
         });
-        console.log("heeere");
-        console.log(window.innerWidth);
-        console.log(this.state.isMobile);
-
-
     }
 
     openBeta = () => {

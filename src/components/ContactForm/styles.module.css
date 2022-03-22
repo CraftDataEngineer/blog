@@ -63,15 +63,3 @@
   font-family: Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
   text-align: match-parent;
 }
-
-
-
-.heroSection {
-  padding: 4rem 0;
-  position: relative;
-  overflow: hidden;
-  #background-color: #ffffff;
-  background: linear-gradient(-2deg,#25366b 20%,#ffffff 0%);
-  color: black;
-  /* max-width: 1200px; */
-}
