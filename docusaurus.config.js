@@ -10,6 +10,14 @@ module.exports = {
   organizationName: 'CraftDataEngineer', // Usually your GitHub org/user name.
   projectName: 'blog', // Usually your repo name.
   themeConfig: {
+    announcementBar: {
+      id: 'support_us',
+      content:
+          'Inscription ouverte pour la prochaine session profitez des dernieres places !',
+      backgroundColor: '#fafbfc',
+      textColor: '#091E42',
+      isCloseable: false,
+    },
     colorMode: {
       defaultMode: 'light',
       disableSwitch: true,
@@ -37,6 +45,12 @@ module.exports = {
           activeBasePath: 'docs',
           label: 'BLOG',
           position: 'left',
+        },
+        {
+          to: 'form/',
+          activeBasePath: 'docs',
+          label: 'Nous Contacter',
+          position: 'right',
         }
         ],
     },

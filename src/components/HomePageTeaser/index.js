@@ -44,22 +44,22 @@ class HomePageTeaser extends React.Component {
     render() {
         return (
             <div className={classnames(styles.teaserContainer)}>
-                <div className={classnames("container")}>
+                <div className={classnames("container",styles.displayMobileHeader)}>
                     <h6 className={classnames(styles.teaserTitle)}><span>Craft Data Engineer</span></h6>
-                    <h3 className={classnames(styles.teaserTeaser)}><span>Data engineer, quel est ce nouveau métier ?</span>
+                    <h3 className={classnames(styles.teaserTeaser)}><span>Quel est ce nouveau métier ?</span>
                     </h3>
                     <p className={classnames(styles.teaserDescription)}>
                         <span>Devenez un expert de du traitement et stockage des données ! </span>
                     </p>
                 </div>
                 <div className={classnames("container")}
-                     style={{color: "#ffff", background: "rgba(189, 195, 199, 0.2)", height: "1000%"}}>
+                     style={{color: "#ffff", background: "rgba(236, 236, 236,1)", height: "1000%"}}>
                     <ul className={`tabs ${this.state.isMobile ? "" : "tabs--block"}`}>
                         <li className={`tabs__item ${this.state.showAlpha ? "tabs__item--active" : ""}`}
-                            style={{color: "#ffff"}} onClick={this.openAlpha}>Compétences
+                            style={{color: "black"}} onClick={this.openAlpha}><h3>1 . Compétences</h3>
                         </li>
                         <li className={`tabs__item ${this.state.showBeta ? "tabs__item--active" : ""}`}
-                            style={{color: "#ffff"}} onClick={this.openBeta}>Missions
+                            style={{color: "black"}} onClick={this.openBeta}><h3> 2 . Missions</h3>
                         </li>
                     </ul>
 

@@ -15,6 +15,12 @@
   padding-top: 1%;
 }
 
+@media screen and (max-width: 800px){
+  .formateurContainer {
+    text-align: center;
+  }
+}
+
 
 .gridContainer {
   padding: 5%;
@@ -22,9 +28,8 @@
 
 .formateurTitle {
   font-size: 1.5rem;
-  color:  #25366b;
+  color:  white;
   font-family: Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-  text-align: left;
 }
 
 .formateurTeaser {
@@ -36,7 +41,6 @@
   --tw-text-opacity: 1;
   tab-size: 4;
   color: #ffffff;
-  text-align: left;
   font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
@@ -50,7 +54,7 @@
 }
 
 .formateurDescriptionPoints {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 300;
   color: grey;

@@ -9,7 +9,7 @@ function HomepageHeader() {
     const {siteConfig} = useDocusaurusContext();
     return (
     <header className={classnames('hero hero--primary headTest', stylesModule.heroSection)}>
-            <div className="container" style={{paddingBottom: "180px",paddingTop:"10%"}}>
+            <div className="container" style={{paddingTop:"5%"}}>
                 <div className="row">
                     <div className="col col--6">
                         <h6 className={classnames(stylesModule.headTitle)}> <span >{siteConfig.title}</span></h6>
@@ -27,6 +27,23 @@ function HomepageHeader() {
                         <div className={classnames("text--center")}>
                             <YourSvg className={stylesModule.featureSvg} alt={"test"} />
                         </div>
+                    </div>
+                </div>
+                <div className={classnames("row ",stylesModule.containerAnnoucements)}>
+                    <div className="col "  >
+                        <span>Financement :</span>
+                        <h2> 2000 € </h2>
+                        <span className={classnames(stylesModule.displayMobile)}>Formation éligible au CPF</span>
+                    </div>
+                    <div className={classnames("col ",stylesModule.verticleLine)} >
+                        <span>Prochain cours :</span>
+                        <h3>JUILLET 05, 2022</h3>
+                        <span  className={classnames(stylesModule.displayMobile)}>Durée 5 semaines</span>
+                    </div>
+                    <div className={classnames("col ",stylesModule.verticleLine)}>
+                        <span>Prérequis :</span>
+                        <h3 >Data Geek</h3>
+                        <span className={classnames(stylesModule.displayMobile)}>Connaissances basiques en développement</span>
                     </div>
                 </div>
             </div>

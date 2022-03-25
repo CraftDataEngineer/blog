@@ -34,6 +34,16 @@
   padding-top: 0;
 }
 
+.displayMobileHeader {
+  padding-bottom: 1%;
+}
+
+@media screen and (max-width: 800px){
+  .displayMobileHeader {
+    padding-bottom: 10%;
+  }
+}
+
 .section {
   padding: 20%;
   display: flex;
@@ -53,16 +63,22 @@
 
 }
 
+@media screen and (max-width: 800px){
+  .teaserContainer {
+    text-align: center;
+  }
+}
+
 
 .teaserTitle {
   font-size: 1.5rem;
-  color:  #25366b;
+  color:  white;
   font-family: Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
 .teaserMenuTitle {
   font-size: 1rem;
-  color: #ffffff;
+  color: black;
   font-family: Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
@@ -72,7 +88,7 @@
   font-style: normal;
   font-weight: 300;
   text-align: justify;
-  color: grey;
+  color: black;
   font-family: Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
@@ -96,4 +112,10 @@
   font-family: Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
   text-align: left;
   overflow: hidden;
+}
+
+@media screen and (max-width: 800px){
+  .teaserDescription {
+    display: none;
+  }
 }

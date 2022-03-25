@@ -263,10 +263,10 @@ export default function Navbar() {
               onChange={colorModeToggle.toggle}
             />
           )}
-          {!hasSearchNavbarItem && !mobileSidebar.shouldRender && <SearchBar />}
           <Link to="/form/" >
-            <button className="button   button--primary button--sm"  >Rejoindre la liste d'attente</button>
+            <button className="button  button--outline button--primary "  >Inscrivez-vous</button>
           </Link>
+          {!hasSearchNavbarItem && !mobileSidebar.shouldRender && <SearchBar   />}
         </div>
       </div>
 

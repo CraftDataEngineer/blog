@@ -16,7 +16,7 @@ function HomepageModules() {
                     <span>Devenez un expert de du traitement et stockage des données ! </span>
                 </p>
                 <div className={classnames("text--center")}>
-                    <YourSvg className={classnames(stylesModule.featureSvg,stylesModule.moduleSvg)}  alt={"test"}/>
+                    <YourSvg className={classnames(stylesModule.featureSvg)}  alt={"test"}/>
                 </div>
             </div>
         </div>

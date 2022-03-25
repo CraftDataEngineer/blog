@@ -18,7 +18,7 @@ function HomePageFormateur() {
                         <div className="col ">
                             <img className={classnames(styles.featureProfile,styles.mediaProfile)} src={loca} alt={"loca"}/>
                         </div>
-                        <div className="col col--7">
+                        <div className="col col--6">
                             <p className={classnames(styles.formateurDescription,"text-center")}>
                                 <span >Devenez un expert de du traitement et stockage des données ! </span>
                             </p>
