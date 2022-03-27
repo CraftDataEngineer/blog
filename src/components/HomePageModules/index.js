@@ -9,12 +9,17 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 
 function HomepageModules() {
-    const svg = document.getElementById('firstText');
 
     function f() {
-        document.getElementById('test1').id = 'bolt1';
-        document.getElementById('test2').id = 'bolt2';
-        document.getElementById('test3').id = 'bolt3';
+        if (document.getElementById('test1').id !== undefined) {
+            document.getElementById('test1').id = 'bolt1';
+        }
+        if (document.getElementById('test2').id !== undefined) {
+            document.getElementById('test2').id = 'bolt2';
+        }
+        if (document.getElementById('test3') !== undefined) {
+            document.getElementById('test3').id = 'bolt3';
+        }
     }
 
 
