@@ -54,7 +54,7 @@ export default function ContactUs() {
                         </div>
                         <div className="col col--5">
                             <input type="email" name="email" className="button--block"
-                                   style={{fontSize: "0.9rem"}} required="true"/>
+                                   style={{fontSize: "0.9rem"}} required={true}/>
                         </div>
                     </div>
                     <div className="row row--no-gutters " style={{paddingTop: "10px"}}>
@@ -68,7 +68,7 @@ export default function ContactUs() {
                         </div>
                         <div className="col col--5">
                                 <textarea name="message" rows="10" className="button--block"
-                                          style={{rows: "40", cols: "50"}} required="true"/>
+                                          style={{rows: "40", cols: "50"}} required={true}/>
                         </div>
                     </div>
                     <div className="row row--no-gutters " style={{paddingTop: "10px"}}>
@@ -103,7 +103,7 @@ export default function ContactUs() {
                                 <strong>Erreur</strong> le message n'est pas envoyé !
                             </div>
                             <br/>
-                            <Link to={"/"}><button className="button button--block  button--outline button--primary">Revenir à l'accueil</button></Link>
+                            <Link to={"/#"}><button className="button button--block  button--outline button--primary">Revenir à l'accueil</button></Link>
                         </div>
                         }
                     </div>

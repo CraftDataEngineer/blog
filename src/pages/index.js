@@ -7,6 +7,7 @@ import HomepageModules from "../components/HomePageModules";
 import HomePageFormateur from "../components/HomePageFormateur";
 import HomePageEnroll from "../components/HomePageEnroll";
 import HomePageFaq from "../components/HomePageFaq";
+import "animate.css/animate.min.css";
 
 
 

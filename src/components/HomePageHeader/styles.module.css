@@ -98,7 +98,6 @@
   padding: 4rem 0;
   position: relative;
   overflow: hidden;
-  #background-color: #ffffff;
   background: linear-gradient(-2deg,black 12%,#ffffff 0%);
   color: black;
   /* max-width: 1200px; */

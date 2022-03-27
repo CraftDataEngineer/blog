@@ -3,9 +3,21 @@ import styles from './styles.module.css';
 import YourSvg from '../../../static/img/module/parcours.svg';
 import classnames from "classnames";
 import stylesModule from "./styles.module.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+
+
 
 
 function HomepageModules() {
+    const svg = document.getElementById('firstText');
+
+    function f() {
+        document.getElementById('test1').id = 'bolt1';
+        document.getElementById('test2').id = 'bolt2';
+        document.getElementById('test3').id = 'bolt3';
+    }
+
+
     return (
         <div id="parcours" className={classnames(styles.moduleContainer)}>
             <div className={classnames("container")} style={{paddingBottom: "3%"}}>
@@ -16,7 +28,9 @@ function HomepageModules() {
                     <span>Devenez un expert de du traitement et stockage des données ! </span>
                 </p>
                 <div className={classnames("text--center")}>
-                    <YourSvg className={classnames(stylesModule.featureSvg)}  alt={"test"}/>
+                    <AnimationOnScroll animateIn="animate__fadeIn" afterAnimatedIn={f} delay="100" animatePreScroll="false">
+                        <YourSvg className={classnames(stylesModule.featureSvg)}  alt={"test"}/>
+                    </AnimationOnScroll>
                 </div>
             </div>
         </div>

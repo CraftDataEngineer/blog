@@ -15,7 +15,7 @@ module.exports = {
       content:
           'Inscription ouverte pour la prochaine session profitez des dernieres places !',
       backgroundColor: '#fafbfc',
-      textColor: '#091E42',
+      textColor: 'black',
       isCloseable: false,
     },
     colorMode: {
@@ -84,9 +84,6 @@ module.exports = {
           // Please change this to your repo.
           editUrl:
             'https://github.com/CraftDataEngineer/blog/'
-        },
-        gtag: {
-          trackingID: 'G-XN0PYBT2T9',
         },
         blog: {
           showReadingTime: true,

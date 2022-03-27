@@ -19,9 +19,11 @@
     "@docusaurus/preset-classic": "2.0.0-beta.17",
     "@emailjs/browser": "^3.4.0",
     "@mdx-js/react": "^1.6.21",
+    "animate.css": "^4.1.1",
     "classnames": "^2.3.1",
     "clsx": "^1.1.1",
     "react": "^17.0.1",
+    "react-animation-on-scroll": "^5.0.0",
     "react-dom": "^17.0.1"
   },
   "browserslist": {

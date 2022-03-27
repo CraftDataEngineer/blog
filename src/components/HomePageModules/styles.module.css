@@ -10,6 +10,12 @@
   width: 80%;
 }
 
+.infinteSvg {
+  margin-left: 10%;
+  height: 100%;
+  width: 50%;
+}
+
 @media screen and (max-width: 800px) {
   .featureSvg {
     height: 150%;

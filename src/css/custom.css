@@ -63,11 +63,14 @@
   transform: translateX(0%);
 }
 
+
+/* Header Animation */
+
 #skeletonHeader {
-  animation: fadeInUp 2s;
+  animation: fade 2s;
 }
 
-@keyframes fadeInUp {
+@keyframes fade {
   from {
     opacity: 0;
     transform: translateX(100%);
@@ -80,9 +83,38 @@
   
 }
 
+/* Teaser Animation */
+
+#arrow1 , #arrow2, #arrow3, #arrow4 , #arrow5 , #arrow6, #arrow7 , #arrow8 , #arrow9 , #arrow10, #arrow11 , #arrow12, #arrow13 , #arrow14 {
+  animation: colorChange 9s ease forwards infinite;
+  animation-delay: calc(var(--order) * 600ms);
+}
+
+@keyframes colorChange {
+
+  10% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+/* Modules Animation */
+
+#test1 , #test2 , #test3  {
+  opacity: 0;
+}
+
 #bolt1 , #bolt2  ,#bolt3  {
   opacity: 0;
-  animation: dropIn 12s ease forwards 3;
+  animation: dropIn 8s ease forwards 1;
   animation-delay: calc(var(--order) * 400ms);
 }
 
@@ -92,18 +124,7 @@
     transform: translateX(100%);
   }
 
-  25% {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-
-  50%{
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-
-
-  100% {
+  30%,100% {
     opacity: 1;
     transform: translateX(0%)
   }
