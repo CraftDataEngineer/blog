@@ -17,6 +17,10 @@
   width: 100%;
 }
 
+.moduleSvg {
+  margin-left: 10%;
+}
+
 @media (max-width: 800px) {
   .moduleSvg {
     display: none;
@@ -118,4 +122,23 @@
   .teaserDescription {
     display: none;
   }
+}
+
+.pointsDescription {
+  font-size: 1.1rem;
+  overflow: hidden;
+  font-style: normal;
+  text-align: justify;
+  font-weight: 400;
+  color: black;
+  font-family: Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.rowPadding {
+ padding: 1% 10% 0 10%
 }

@@ -54,8 +54,8 @@ class HomePageTeaser extends React.Component {
                                 <span>Devenez un expert de du traitement et stockage des données ! </span>
                             </p>
                         </div>
-                        <div className="col col--5"  >
-                             <Infinite className={classnames(stylesModule.infinteSvg)}   alt={"test"}/>
+                        <div className="col col--5">
+                            <Infinite className={classnames(stylesModule.infinteSvg)} alt={"test"}/>
                         </div>
 
                     </div>
@@ -78,7 +78,16 @@ class HomePageTeaser extends React.Component {
 
                     {this.state.showAlpha && <div className={classnames("container")}
                                                   style={{color: "#ffff", background: "rgba(236, 236, 236,1)"}}>
-                        <div className="row" style={{padding: "5% 10% 0 10%"}}>
+                        <div className={classnames(styles.pointsDescription)}>
+
+                        <p>
+                            <span>
+                                Notre premier objectif est de vous fournir toutes les competences nécéssaires pour votre prochain rôle de Data Engineer !
+                                Mais avant tout on souhaite vous partagez toutes nos connaissances sur les bonnes pratiques du <b>Software CraftsManship</b> pour vous differenciez des autres profils !
+                            </span>
+                        </p>
+                        </div>
+                        <div className={classnames("row", styles.rowPadding)}>
                             <div className="col">
                                 <div>
                                     <img className={classnames(styles.moduleSvg)} src={Program} alt={"test"}/>
@@ -87,8 +96,8 @@ class HomePageTeaser extends React.Component {
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
                                     <span>
-                                        Il est éssentiel pour le Data Engineer de maitriser les langages de développement (Python , Java , Scala ...)
-                                        et faire du code de qualité.
+                                        Apprenez à faire du code de qualité ! Comment découper mon code pour qu'il soit maintenable et evolutif ?
+                                        Comment tester mon code ? Comment integrer les paratiques agiles dans ma realisation de code ?
                                     </span>
                                 </p>
                             </div>
@@ -100,7 +109,8 @@ class HomePageTeaser extends React.Component {
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Stockage</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
-                                    <span>Devenez un expert de du traitement et stockage des données ! Devenez un expert de du traitement et stockage des données ! </span>
+                                    <span> Maitriser tous les concepts de stockage des données ! Quel est la difference entre le relationnel et le NoSQL ? Quelles sont leurs garanties ? Comment stocker des volumes importants de donnée
+                                        et à quels couts ?</span>
                                 </p></div>
                         </div>
                         <div className="row" style={{padding: "5% 10% 10% 10%"}}>
@@ -112,7 +122,7 @@ class HomePageTeaser extends React.Component {
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Traitement Distribué</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
-                                    <span>Devenez un expert de du traitement et stockage des données ! Devenez un expert de du traitement et stockage des données ! </span>
+                                    <span> Comprendre les techniques d'analyses de données ! Quand faut il utiliser du batch ou du streaming ? Comment je fais un calcul distibué sur plusieurs machines ? </span>
                                 </p>
                             </div>
                             <div className="col col--2"/>
@@ -124,20 +134,28 @@ class HomePageTeaser extends React.Component {
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>DevOps</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
-                                    <span>Devenez un expert de du traitement et stockage des données ! Devenez un expert de du traitement et stockage des données ! </span>
+                                    <span>Devenez un expert en automatisation et d'industrialisation ! Comment créer une infrastucture idempotante avec du Ansible et du Terraform ? Comment créer une chaine CI/CD ? </span>
                                 </p></div>
                         </div>
                     </div>
                     }
                     {this.state.showBeta && <div className={classnames("container")}
                                                  style={{color: "#ffff", background: "rgba(236, 236, 236,1)"}}>
+                        <div className={classnames(styles.pointsDescription)}>
+
+                            <p>
+                            <span>
+                                Notre formation est à 6O% de travaux partiques !
+                            </span>
+                            </p>
+                        </div>
                         <div className="row" style={{padding: "10% 10% 0 10%"}}>
                             <div className="col">
                                 <div>
                                     <img className={classnames(styles.featureFiles, styles.moduleSvg)} src={BookPng}
                                          alt={"test"}/>
                                 </div>
-                                <h3 className={classnames(styles.teaserMenuTitle)}><span>Decouverez le metier du Data Engineer.</span>
+                                <h3 className={classnames(styles.teaserMenuTitle)}><span>Travaux pratiques</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
                                     <span>Devenez un expert de du traitement et stockage des données ! Devenez un expert de du traitement et stockage des données ! </span>
@@ -148,7 +166,7 @@ class HomePageTeaser extends React.Component {
                                     <img className={classnames(styles.featureFiles, styles.moduleSvg)} src={BookPng}
                                          alt={"test"}/>
                                 </div>
-                                <h3 className={classnames(styles.teaserMenuTitle)}><span>Decouverez le metier du Data Engineer.</span>
+                                <h3 className={classnames(styles.teaserMenuTitle)}><span>Etudes de cas</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
                                     <span>Devenez un expert de du traitement et stockage des données ! Devenez un expert de du traitement et stockage des données ! </span>
@@ -160,7 +178,7 @@ class HomePageTeaser extends React.Component {
                                     <img className={classnames(styles.featureFiles, styles.moduleSvg)} src={BookPng}
                                          alt={"test"}/>
                                 </div>
-                                <h3 className={classnames(styles.teaserMenuTitle)}><span>Decouverez le metier du Data Engineer.</span>
+                                <h3 className={classnames(styles.teaserMenuTitle)}><span>Exercices</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
                                     <span>Devenez un expert de du traitement et stockage des données ! Devenez un expert de du traitement et stockage des données ! </span>
@@ -170,7 +188,7 @@ class HomePageTeaser extends React.Component {
                                     <img className={classnames(styles.featureFiles, styles.moduleSvg)} src={BookPng}
                                          alt={"test"}/>
                                 </div>
-                                <h3 className={classnames(styles.teaserMenuTitle)}><span>Decouverez le metier du Data Engineer.</span>
+                                <h3 className={classnames(styles.teaserMenuTitle)}><span>Projet long ?</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
                                     <span>Devenez un expert de du traitement et stockage des données ! Devenez un expert de du traitement et stockage des données ! </span>
