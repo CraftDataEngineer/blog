@@ -51,13 +51,13 @@ class HomePageTeaser extends React.Component {
                             <h3 className={classnames(styles.teaserTeaser)}><span>En quoi consiste la formation ?</span>
                             </h3>
                             <p className={classnames(styles.teaserDescription)}>
-                                <span>Devenez un expert de du traitement et stockage des données ! </span>
+                                <span>Le <b>stockage</b> & <b>traitement</b> de données, l'<b>artisanat du code</b> et le <b>DevOps</b> n'auront
+                                 plus aucun secrets pour vous ! </span>
                             </p>
                         </div>
                         <div className="col col--5">
                             <Infinite className={classnames(stylesModule.infinteSvg)} alt={"test"}/>
                         </div>
-
                     </div>
                 </div>
                 <div className={classnames("container")}
@@ -82,8 +82,10 @@ class HomePageTeaser extends React.Component {
 
                         <p>
                             <span>
-                                Notre premier objectif est de vous fournir toutes les competences nécéssaires pour votre prochain rôle de Data Engineer !
-                                Mais avant tout on souhaite vous partagez toutes nos connaissances sur les bonnes pratiques du <b>Software CraftsManship</b> pour vous differenciez des autres profils !
+                                Notre premier objectif est de vous fournir toutes les compétences nécessaires pour votre
+                                 prochain rôle de Data Engineer ! Mais avant tout on souhaite vous partagez nos
+                                 connaissances et retours d'expériences sur les bonnes pratiques du
+                                 <b> Software CraftsManship</b> pour vous differenciez des autres profils !
                             </span>
                         </p>
                         </div>
@@ -92,12 +94,13 @@ class HomePageTeaser extends React.Component {
                                 <div>
                                     <img className={classnames(styles.moduleSvg)} src={Program} alt={"test"}/>
                                 </div>
-                                <h3 className={classnames(styles.teaserMenuTitle)}><span> Développement</span>
+                                <h3 className={classnames(styles.teaserMenuTitle)}><span> L'Artisanat du code</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
                                     <span>
                                         Apprenez à faire du code de qualité ! Comment découper mon code pour qu'il soit maintenable et evolutif ?
-                                        Comment tester mon code ? Comment integrer les paratiques agiles dans ma realisation de code ?
+                                        Comment tester mon code ? Comment intégrer les pratiques agiles dans ma realisation de code ?
+                                        Comment collaborer et progresser en équipe ?
                                     </span>
                                 </p>
                             </div>
@@ -109,8 +112,10 @@ class HomePageTeaser extends React.Component {
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Stockage</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
-                                    <span> Maitriser tous les concepts de stockage des données ! Quel est la difference entre le relationnel et le NoSQL ? Quelles sont leurs garanties ? Comment stocker des volumes importants de donnée
-                                        et à quels couts ?</span>
+                                    <span> Maitriser les concepts de stockage afin d'acquérir la réfléxion nécessaire
+                                           pour proposer un type de stockage adapté au besoin ! Quelle est la différence
+                                            entre le relationnel et le NoSQL ? Quelles sont leurs garanties ?
+                                            Comment stocker des volumes importants de donnée et à quels coûts ?</span>
                                 </p></div>
                         </div>
                         <div className="row" style={{padding: "5% 10% 10% 10%"}}>
@@ -119,10 +124,13 @@ class HomePageTeaser extends React.Component {
                                     <img className={classnames(styles.featureFiles, styles.moduleSvg)} src={Genius}
                                          alt={"test"}/>
                                 </div>
-                                <h3 className={classnames(styles.teaserMenuTitle)}><span>Traitement Distribué</span>
+                                <h3 className={classnames(styles.teaserMenuTitle)}><span>Traitements & Systèmes distribués</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
-                                    <span> Comprendre les techniques d'analyses de données ! Quand faut il utiliser du batch ou du streaming ? Comment je fais un calcul distibué sur plusieurs machines ? </span>
+                                    <span> Comprendre les différents traitements et les concepts des systèmes distribués !
+                                           Quand faut-il utiliser du batch ou du streaming ?
+                                           Comment je fais un calcul distribués sur plusieurs machines et quelles sont
+                                           les compléxités de ces systèmes ? </span>
                                 </p>
                             </div>
                             <div className="col col--2"/>
@@ -134,7 +142,10 @@ class HomePageTeaser extends React.Component {
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>DevOps</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
-                                    <span>Devenez un expert en automatisation et d'industrialisation ! Comment créer une infrastucture idempotante avec du Ansible et du Terraform ? Comment créer une chaine CI/CD ? </span>
+                                    <span> Connaître les fondamentaux du Cloud et savoir automatiser la création d'infrastructure
+                                           avec Terraform & Ansible. Industrialiser de bout en bout la chaîne de
+                                           développement jusqu'à la mise en production.
+                                    </span>
                                 </p></div>
                         </div>
                     </div>
@@ -158,7 +169,8 @@ class HomePageTeaser extends React.Component {
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Travaux pratiques</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
-                                    <span>Devenez un expert de du traitement et stockage des données ! Devenez un expert de du traitement et stockage des données ! </span>
+                                    <span> Des TPs seront donnés lors des cours afin de dynamiser et d'appliquer les
+                                    concepts théoriques. Ils seront réalisés principalement sur des environnements Cloud</span>
                                 </p>
                             </div>
                             <div className="col">
@@ -166,10 +178,11 @@ class HomePageTeaser extends React.Component {
                                     <img className={classnames(styles.featureFiles, styles.moduleSvg)} src={BookPng}
                                          alt={"test"}/>
                                 </div>
-                                <h3 className={classnames(styles.teaserMenuTitle)}><span>Etudes de cas</span>
+                                <h3 className={classnames(styles.teaserMenuTitle)}><span>Ateliers Architectures</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
-                                    <span>Devenez un expert de du traitement et stockage des données ! Devenez un expert de du traitement et stockage des données ! </span>
+                                    <span> Des ateliers d'architectures sont animés durant les séances live, il faudra
+                                           proposer une architecture cible par rapport à un besoin.</span>
                                 </p></div>
                         </div>
                         <div className="row" style={{padding: "10% 10% 10% 10%"}}>
@@ -178,10 +191,11 @@ class HomePageTeaser extends React.Component {
                                     <img className={classnames(styles.featureFiles, styles.moduleSvg)} src={BookPng}
                                          alt={"test"}/>
                                 </div>
-                                <h3 className={classnames(styles.teaserMenuTitle)}><span>Exercices</span>
+                                <h3 className={classnames(styles.teaserMenuTitle)}><span>Exercices maison</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
-                                    <span>Devenez un expert de du traitement et stockage des données ! Devenez un expert de du traitement et stockage des données ! </span>
+                                    <span>Pratiquait en dehors des séances live avec des excercices maison et une correction
+                                          faite pour chaque apprenant.</span>
                                 </p></div>
                             <div className="col">
                                 <div>
@@ -191,7 +205,9 @@ class HomePageTeaser extends React.Component {
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Projet long ?</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
-                                    <span>Devenez un expert de du traitement et stockage des données ! Devenez un expert de du traitement et stockage des données ! </span>
+                                    <span> Un travail de cadrage suivi d'un poc vous sera demandé sur plusieurs semaines
+                                           pour finaliser cette formation. Vous allez présenter le résultat sous format
+                                           démonstration devant les autres apprenants.</span>
                                 </p></div>
                         </div>
                     </div>
