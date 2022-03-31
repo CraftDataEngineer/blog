@@ -13,7 +13,7 @@ function HomePageEnroll() {
                     <h6 className={classnames(styles.enrollTitle)}> <span >Craft Data Engineer</span></h6>
                     <h3 className={classnames(styles.enrollTeaser)}> <span >Rejoignez la liste d'attente ! </span></h3>
                     <p className={classnames(styles.enrollDescription)}>
-                        <span >Devenez un expert de du traitement et stockage des données ! </span>
+                        <span >Devenez un Craft Data Engineer ! </span>
                     </p>
                 </div>
                  <div className={classnames(styles.gridContainer)}>

@@ -20,19 +20,20 @@ function HomePageFormateur() {
                         </div>
                         <div className="col col--6">
                             <p className={classnames(styles.formateurDescription,"text-center")}>
-                                <span >Devenez un expert de du traitement et stockage des données ! </span>
+                                <span >Nous avons développé un cursus Data Engineer au plus près des attentes du métier. À l’issue de votre parcours, vous saurez :  </span>
                             </p>
                             <div className={classnames(styles.formateurDescriptionPoints)}>
                                 <ul className={classnames(styles.formateurDescriptionPoints)}>
-                                    <li >Devenez un expert de du traitement et stockage des données ! </li>
-                                    <li >Devenez un expert de du traitement et stockage des données ! </li>
-                                    <li >Devenez un expert de du traitement et stockage des données ! </li>
+                                    <li> Comprendre les différentes solutions de stockages (NoSQL, Relationnel) </li>
+                                    <li> Maîtriser les concepts fondamentaux des BDD (Moteur stockage, Moteur de requête)</li>
+                                    <li> Comprendre l'intérêt de l'agilité et savoir l'appliquer dans un contexte data </li>
+                                    <li> Développer du code clean en se posant les bonnes questions </li>
+                                    <li> Savoir collaborer en équipe avec les bonnes pratiques et méthodologies </li>
+                                    <li> Savoir automatiser la création d'infrastructure sur AWS via Terraform </li>
                                 </ul>
                             </div>
                             <p className={classnames(styles.formateurDescription,"text-center")}>
-                                <span >We created this course to help people like you use psychology (ethically!) to build better products, sharpen your skills, delight your customers and help companies scale faster.
-You’ve seen what we do in our case studies... Now it’s time for you to have the exact knowledge to do the same for your product. </span>
-                                <span >Devenez un expert de du traitement et stockage des données ! </span>
+                                <span > </span>
                             </p>
                         </div>
                         <div className="col ">
