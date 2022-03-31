@@ -129,7 +129,7 @@ class HomePageTeaser extends React.Component {
                                 <p className={classnames(styles.teaserMenuDescription)}>
                                     <span> Comprendre les différents traitements et les concepts des systèmes distribués !
                                            Quand faut-il utiliser du batch ou du streaming ?
-                                           Comment je fais un calcul distribués sur plusieurs machines et quelles sont
+                                           Comment je fais un calcul distribué sur plusieurs machines ? Quelles sont
                                            les compléxités de ces systèmes ? </span>
                                 </p>
                             </div>
@@ -169,7 +169,7 @@ class HomePageTeaser extends React.Component {
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Travaux pratiques</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
-                                    <span> Des TPs seront donnés lors des cours afin de dynamiser et d'appliquer les
+                                    <span> Des TPs sont donnés lors des cours afin de dynamiser et d'appliquer les
                                     concepts théoriques. Ils seront réalisés principalement sur des environnements Cloud</span>
                                 </p>
                             </div>
@@ -181,7 +181,7 @@ class HomePageTeaser extends React.Component {
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Ateliers Architectures</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
-                                    <span> Des ateliers d'architectures sont animés durant les séances live, il faudra
+                                    <span> Les ateliers d'architectures sont animés durant les séances live, il faudra
                                            proposer une architecture cible par rapport à un besoin.</span>
                                 </p></div>
                         </div>
@@ -195,14 +195,14 @@ class HomePageTeaser extends React.Component {
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
                                     <span>Pratiquait en dehors des séances live avec des excercices maison et une correction
-                                          faite pour chaque apprenant.</span>
+                                          personnalisée pour chaque apprenant.</span>
                                 </p></div>
                             <div className="col">
                                 <div>
                                     <img className={classnames(styles.featureFiles, styles.moduleSvg)} src={BookPng}
                                          alt={"test"}/>
                                 </div>
-                                <h3 className={classnames(styles.teaserMenuTitle)}><span>Projet long ?</span>
+                                <h3 className={classnames(styles.teaserMenuTitle)}><span>Projet fil rouge</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
                                     <span> Un travail de cadrage suivi d'un poc vous sera demandé sur plusieurs semaines
