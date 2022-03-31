@@ -67,11 +67,11 @@ class HomePageTeaser extends React.Component {
                         <ul className={`tabs ${this.state.isMobile ? "" : "tabs--block"}`}>
                             <li className={`tabs__item ${this.state.showAlpha ? "tabs__item--active" : ""}`}
                                 style={{color: `${this.state.showAlpha ? "#25366b" : "grey"}`}}
-                                onClick={this.openAlpha}><h2><b>1 . Théorie</b></h2>
+                                onClick={this.openAlpha}><h2><b>1. Théorie</b></h2>
                             </li>
                             <li className={`tabs__item ${this.state.showBeta ? "tabs__item--active" : ""}`}
                                 style={{color: `${this.state.showBeta ? "#25366b" : "grey"}`}} onClick={this.openBeta}>
-                                <h2> 2 . Pratique</h2>
+                                <h2> 2. Pratique</h2>
                             </li>
                         </ul>
                     </div>

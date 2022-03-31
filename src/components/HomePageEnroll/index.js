@@ -13,7 +13,7 @@ function HomePageEnroll() {
                     <h6 className={classnames(styles.enrollTitle)}> <span >Craft Data Engineer</span></h6>
                     <h3 className={classnames(styles.enrollTeaser)}> <span >Rejoignez la liste d'attente ! </span></h3>
                     <p className={classnames(styles.enrollDescription)}>
-                        <span >Devenez un Craft Data Engineer ! </span>
+                        <span >Apprenez ... </span>
                     </p>
                 </div>
                  <div className={classnames(styles.gridContainer)}>
@@ -32,12 +32,12 @@ function HomePageEnroll() {
                                     <div className="card__body ">
                                         <ul className={classnames(styles.enrollDescriptionPoints)}>
                                             <li >A faire du code de qualité </li>
-                                            <li >Tous sur le stockage des données  </li>
-                                            <li >Tous sur le traitement des données  </li>
+                                            <li >Tout sur le stockage des données  </li>
+                                            <li >Tout sur le traitement des données  </li>
                                         </ul>
                                     </div>
                                     <div className="card__footer ">
-                                        <Link to="/form/" style={{ textDecoration: 'none' }}> <button className="button button--outline button--primary button--block shadow--lw ">Rejoindre la liste d'attente</button></Link>
+                                        <Link to="/form/" style={{ textDecoration: 'none' }}> <button className="button button--outline button--primary button--block shadow--lw ">Inscrivez-vous</button></Link>
                                     </div>
                                 </div>
                             </div>

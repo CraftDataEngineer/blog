@@ -108,14 +108,14 @@
 
 /* Modules Animation */
 
-#test1 , #test2 , #test3  {
+#text1 , #text2 , #text3 , #text4 , #text5 , #text6  {
   opacity: 0;
 }
 
-#bolt1 , #bolt2  ,#bolt3  {
+#bolt1 , #bolt2  ,#bolt3 , #bolt4 , #bolt5  ,#bolt6  {
   opacity: 0;
   animation: dropIn 8s ease forwards 1;
-  animation-delay: calc(var(--order) * 400ms);
+  animation-delay: calc((var(--order)) * 500ms);
 }
 
 @keyframes dropIn {
