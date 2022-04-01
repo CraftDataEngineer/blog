@@ -57,3 +57,33 @@
   text-align: match-parent;
   list-style-type: "➕ ";
 }
+
+.questionContainer {
+  background-color: black ;
+  padding-top:4%;
+  border-radius: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .questionContainer {
+    text-align: center;
+  }
+}
+
+.contactButton {
+  padding-left: 1%;
+}
+
+.enrollButton {
+  padding-left: 1%;
+  color: white !important;
+  --ifm-font-color-base: white;
+
+}
+
+@media screen and (max-width: 800px) {
+  .enrollButton {
+    display: none;
+  }
+}

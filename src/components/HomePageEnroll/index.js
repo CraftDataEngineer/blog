@@ -51,20 +51,20 @@ function HomePageEnroll() {
                 </div>
                 <div className="row " >
                     <div className="col ">
-                        <div className="hero hero--dark" style={{backgroundColor:"black",paddingTop:"4%",borderRadius:"20px"}}>
+                        <div className={classnames("hero hero--dark",styles.questionContainer)} >
                             <div className="container">
                                 <h1 className="hero__title">On reponds à vos questions !</h1>
-                                <p className="hero__subtitle">Nous sommes convaincus que vous aimerez le programme. Si vous avez des questions, nous serons heureux d'y répondre.</p>
+                                <p className="hero__subtitle" >Nous sommes convaincus que vous aimerez le programme. Si vous avez des questions, nous serons heureux d'y répondre.</p>
                                 <div>
-                                    <Link to="/form/" style={{textDecoration: 'none',paddingLeft:"1%"}}>
+                                    <Link to="/form/" className={classnames(styles.contactButton)} >
                                     <button className="button button--primary  button--lg">
                                         Nous Contacter
                                     </button>
                                     </Link>
 
-                                    <Link to="/inscription/" style={{textDecoration: 'none',paddingLeft:"1%",color:"white"}}>
+                                    <Link to="/inscription/" className={classnames(styles.enrollButton)} >
                                         <button
-                                            className="button button--outline button--primary  button--lg ">Inscrivez-vous
+                                            className="button button--outline button--secondary  button--lg ">Inscrivez-vous
                                         </button>
                                     </Link>
                                 </div>
