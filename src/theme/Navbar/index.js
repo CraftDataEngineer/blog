@@ -219,6 +219,7 @@ export default function Navbar() {
   const items = useNavbarItems();
   const hasSearchNavbarItem = items.some((item) => item.type === 'search');
   const {leftItems, rightItems} = splitNavItemsByPosition(items);
+  const isBlog = (typeof window !== "undefined") ? window.location.href.toString().includes("/doc") : false
   return (
     <nav
       ref={navbarRef}
@@ -253,6 +254,7 @@ export default function Navbar() {
           ))}
         </div>
         <div className="navbar__items navbar__items--right">
+          {!hasSearchNavbarItem && isBlog && !mobileSidebar.shouldRender && <SearchBar   />}
           {rightItems.map((item, i) => (
             <NavbarItem {...item} key={i} />
           ))}
@@ -263,10 +265,9 @@ export default function Navbar() {
               onChange={colorModeToggle.toggle}
             />
           )}
-          <Link to="/form/" >
+          <Link to="/inscription/" >
             <button className="button  button--outline button--primary "  >Inscrivez-vous</button>
           </Link>
-          {!hasSearchNavbarItem && !mobileSidebar.shouldRender && <SearchBar   />}
         </div>
       </div>
 

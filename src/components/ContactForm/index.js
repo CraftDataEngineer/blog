@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import classnames from "classnames";
 import styles from "./styles.module.css"
 import Link from "@docusaurus/core/lib/client/exports/Link";
+import InscriptionSVG from "../../../static/img/form/ask.svg";
 
 
 const SERVICE_ID = 'service_kmjngyo'
@@ -34,12 +35,19 @@ export default function ContactUs() {
     return (
         <div>
             <div className={classnames("container", styles.titleContainer)}>
-                <h6 className={classnames(styles.formTitle)}><span>Craft Data Engineer</span></h6>
-                <h3 className={classnames(styles.formTeaser)}><span>Inscrivez vous à la prochaine session !</span>
-                </h3>
-                <p className={classnames(styles.formDescription)}>
-                    <span>Inscrivez vous à la prochaine session et posez nous toutes vos questions ! </span>
-                </p>
+                <div className="row  ">
+                    <div className="col col--8 ">
+                        <h6 className={classnames(styles.formTitle)}><span>Craft Data Engineer</span></h6>
+                        <h3 className={classnames(styles.formTeaser)}><span>Vous hésitez sur votre choix de formation ?</span>
+                        </h3>
+                        <p className={classnames(styles.formDescription)}>
+                            <span>Posez nous toutes vos questions ! </span>
+                        </p>
+                    </div>
+                    <div className="col ">
+                        <InscriptionSVG alt={"contact"} className={styles.contact} />
+                    </div>
+                </div>
             </div>
             <div className={classnames("container")} style={{paddingBottom: "200px"}}>
                 <form className={classnames(styles.formContainer, "shadow--md")} ref={form} onSubmit={sendEmail}>
@@ -47,8 +55,8 @@ export default function ContactUs() {
                         <div className="col col--1"/>
                         <div className="col col--2">
                             <div className="field">
-                                <label>Email </label>
-                                <label style={{fontSize: "0.8rem"}}> (*)</label>
+                                <label>@ Email </label>
+                                <label style={{fontSize: "0.8rem",color:"red"}}>٭</label>
                                 <label > : </label>
                             </div>
                         </div>
@@ -61,8 +69,8 @@ export default function ContactUs() {
                         <div className="col col--1"/>
                         <div className="col col--2">
                             <div className="field">
-                                <label>Questions </label>
-                                <label style={{fontSize: "0.8rem"}}> (*)</label>
+                                <label>? Questions </label>
+                                <label style={{fontSize: "0.8rem",color:"red"}}>٭</label>
                                 <label > : </label>
                             </div>
                         </div>

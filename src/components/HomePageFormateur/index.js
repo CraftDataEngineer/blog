@@ -14,6 +14,18 @@ function HomePageFormateur() {
                     <h3 className={classnames(styles.formateurTeaser)}> <span >On Partage avec vous Notre Experience ! </span></h3>
                 </div>
                  <div className={classnames(styles.gridContainer)}>
+                     <div className={classnames("row row--no-gutters" ,styles.featureAvatar)}>
+                         <div className="col">
+                             <div className="avatar">
+                                 <img
+                                     className="avatar__photo avatar__photo--xl"
+                                     src={loca} style={{ marginRight : "40%"}} />
+                                 <img
+                                     className="avatar__photo avatar__photo--xl"
+                                     src={sbe} style={{ paddingLeft : "0"}}/>
+                             </div>
+                         </div>
+                     </div>
                     <div className="row row--no-gutters">
                         <div className="col ">
                             <img className={classnames(styles.featureProfile,styles.mediaProfile)} src={loca} alt={"loca"}/>
@@ -38,6 +50,7 @@ function HomePageFormateur() {
                         </div>
                         <div className="col ">
                             <img className={classnames(styles.featureProfile,styles.mediaProfile)} src={sbe} alt={"sbe"}/>
+
                         </div>
                     </div>
                  </div>

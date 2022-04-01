@@ -20,7 +20,6 @@ function HomepageModules() {
         })
     }
 
-
     return (
         <div id="parcours" className={classnames(styles.moduleContainer)}>
             <div className={classnames("container")} style={{paddingBottom: "3%"}}>
