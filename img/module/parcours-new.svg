@@ -34,7 +34,7 @@
         <style>
             @font-face {
             font-family: "Virgil";
-            src: url("https://excalidraw.com/Virgil.woff2");
+            src: local("Virgil"), url("./fonts/Virgil.woff2");
             }
             @font-face {
             font-family: "Cascadia";
