@@ -44,7 +44,7 @@ export default function ContactUs() {
                             <span>Posez nous toutes vos questions ! </span>
                         </p>
                     </div>
-                    <div className="col ">
+                    <div className={classnames("col col--1",styles.contact)}  >
                         <InscriptionSVG alt={"contact"} className={styles.contact} />
                     </div>
                 </div>

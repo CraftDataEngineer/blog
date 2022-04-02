@@ -11,9 +11,9 @@ function HomePageEnroll() {
         <div className={classnames(styles.enrollContainer)}>
             <div className={classnames("container")}>
                 <h6 className={classnames(styles.enrollTitle)}><span>Craft Data Engineer</span></h6>
-                <h3 className={classnames(styles.enrollTeaser)}><span>Vous avez des questions ?</span></h3>
+                <h3 className={classnames(styles.enrollTeaser)}><span>Rejoignez la prochaine session !</span></h3>
                 <p className={classnames(styles.enrollDescription)}>
-                    <span>Apprenez ...</span>
+                    <span>À l’issue de votre parcours, vous saurez : </span>
                 </p>
             </div>
             <div className={classnames(styles.gridContainer)}>
@@ -31,15 +31,15 @@ function HomePageEnroll() {
                                 </div>
                                 <div className="card__body ">
                                     <ul className={classnames(styles.enrollDescriptionPoints)}>
-                                        <li>A faire du code de qualité</li>
-                                        <li>Tout sur le stockage des données</li>
-                                        <li>Tout sur le traitement des données</li>
+                                        <li>Développer du <b>code clean</b> en vous posant les bonnes questions</li>
+                                        <li>Maîtriser les concepts fondamentaux du <b>Big Data</b></li>
+                                        <li><b>Collaborer en équipe</b> avec les bonnes méthodologies</li>
                                     </ul>
                                 </div>
                                 <div className="card__footer ">
-                                    <Link to="/inscription/" style={{textDecoration: 'none'}}>
+                                    <Link to="/inscription/" className={classnames(styles.cardEnrollButton)} >
                                         <button
-                                            className="button button--outline button--primary button--block shadow--lw ">Inscrivez-vous
+                                            className="button button--primary button--block  ">Inscrivez-vous
                                         </button>
                                     </Link>
                                 </div>
@@ -53,8 +53,8 @@ function HomePageEnroll() {
                     <div className="col ">
                         <div className={classnames("hero hero--dark",styles.questionContainer)} >
                             <div className="container">
-                                <h1 className="hero__title">On reponds à vos questions !</h1>
-                                <p className="hero__subtitle" >Nous sommes convaincus que vous aimerez le programme. Si vous avez des questions, nous serons heureux d'y répondre.</p>
+                                <h1  className={classnames("hero__title",styles.contactTeaser)}>Vous avez des questions ?</h1>
+                                <p className="hero__subtitle" >Nous sommes convaincus que vous aimerez la formation. Si vous avez des questions, nous serons heureux d'y répondre.</p>
                                 <div>
                                     <Link to="/form/" className={classnames(styles.contactButton)} >
                                     <button className="button button--primary  button--lg">

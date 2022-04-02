@@ -110,10 +110,10 @@ export default function InscriptionForm() {
                     <div className="row row--no-gutters " style={{paddingTop: "10px"}}>
                         <div className="col col--4">
                         </div>
-                        {!send && !error && !loading && <div className="col col--3">
+                        {!send && !error && !loading && <div className="col col--3"  style={{paddingTop: "1%"}}>
                             <button className="button button--block button--outline button--primary">Envoyer</button>
                         </div>}
-                        {send && !error && !loading && <div className="col col--3">
+                        {send && !error && !loading && <div className="col col--3"  style={{paddingTop: "1%"}}>
                             <div className="alert alert--success" role="alert">
                                 <button aria-label="Close" className="clean-btn close" type="button">
                                     <span aria-hidden="true">&times;</span>
@@ -128,7 +128,7 @@ export default function InscriptionForm() {
                             </Link>
                         </div>
                         }
-                        {error && !send && !loading && <div className="col col--3">
+                        {error && !send && !loading && <div className="col col--3"  style={{paddingTop: "1%"}}>
                             <div className="alert alert--danger" role="alert">
                                 <button aria-label="Close" className="clean-btn close" type="button">
                                     <span aria-hidden="true">&times;</span>
