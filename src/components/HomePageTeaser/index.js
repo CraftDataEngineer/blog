@@ -6,7 +6,10 @@ import Database from '../../../static/img/teaser/server.png';
 import Infinite from '../../../static/img/teaser/infinite.svg';
 import Ops from '../../../static/img/teaser/ops.png';
 import Genius from '../../../static/img/teaser/genius.png';
-import BookPng from '../../../static/img/teaser/book.png';
+import Exercices from '../../../static/img/teaser/exercices.png';
+import Tp from '../../../static/img/teaser/tp.png';
+import Atelier from '../../../static/img/teaser/atelier.png';
+import Project from '../../../static/img/teaser/project.png';
 import stylesModule from "../HomePageModules/styles.module.css";
 
 const MOBILE_SIZE = 800
@@ -15,33 +18,29 @@ class HomePageTeaser extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {showAlpha: true, showBeta: false, isMobile: false};
+        this.state = {showTheorie: true, showPratique: false};
 
     }
 
-    componentDidMount() {
-        this.setState({
-            isMobile: window.innerWidth <= MOBILE_SIZE
-        });
-    }
 
     openBeta = () => {
         this.setState(state => ({
             ...state,
-            showBeta: true,
-            showAlpha: false
+            showPratique: true,
+            showTheorie: false
         }));
     };
 
     openAlpha = () => {
         this.setState(state => ({
             ...state,
-            showBeta: false,
-            showAlpha: true
+            showPratique: false,
+            showTheorie: true
         }));
     };
 
     render() {
+        const mobileWidth = (typeof window !== "undefined") ? window.innerWidth <= MOBILE_SIZE : false
         return (
             <div className={classnames(styles.teaserContainer)}>
                 <div className={classnames("container", styles.displayMobileHeader)}>
@@ -64,19 +63,19 @@ class HomePageTeaser extends React.Component {
                      style={{color: "#ffff", height: "1000%"}}>
                     <div className={classnames("container")}
                          style={{color: "#ffff", background: "rgba(236, 240, 241, 0.8)", height: "1000%"}}>
-                        <ul className={`tabs ${this.state.isMobile ? "" : "tabs--block"}`}>
-                            <li className={`tabs__item ${this.state.showAlpha ? "tabs__item--active" : ""}`}
-                                style={{color: `${this.state.showAlpha ? "#25366b" : "grey"}`}}
+                        <ul className={`tabs ${mobileWidth ? "" : "tabs--block"}`}>
+                            <li className={`tabs__item ${this.state.showTheorie ? "tabs__item--active" : ""}`}
+                                style={{color: `${this.state.showTheorie ? "#25366b" : "grey"}`}}
                                 onClick={this.openAlpha}><h2><b>1. Théorie</b></h2>
                             </li>
-                            <li className={`tabs__item ${this.state.showBeta ? "tabs__item--active" : ""}`}
-                                style={{color: `${this.state.showBeta ? "#25366b" : "grey"}`}} onClick={this.openBeta}>
+                            <li className={`tabs__item ${this.state.showPratique ? "tabs__item--active" : ""}`}
+                                style={{color: `${this.state.showPratique ? "#25366b" : "grey"}`}} onClick={this.openBeta}>
                                 <h2> 2. Pratique</h2>
                             </li>
                         </ul>
                     </div>
 
-                    {this.state.showAlpha && <div className={classnames("container")}
+                    {this.state.showTheorie && <div className={classnames("container")}
                                                   style={{color: "#ffff", background: "rgba(236, 236, 236,1)"}}>
                         <div className={classnames(styles.pointsDescription)}>
 
@@ -150,32 +149,33 @@ class HomePageTeaser extends React.Component {
                         </div>
                     </div>
                     }
-                    {this.state.showBeta && <div className={classnames("container")}
+                    {this.state.showPratique && <div className={classnames("container")}
                                                  style={{color: "#ffff", background: "rgba(236, 236, 236,1)"}}>
                         <div className={classnames(styles.pointsDescription)}>
 
                             <p>
                             <span>
-                                Notre formation est à 6O% de travaux partiques !
+                                Notre formation est à <b>6O% de travaux pratiques !</b> Pour maîtriser les différents concepts théoriques, il est important de pratiquer pour cela, on vous propose différents formats :
                             </span>
                             </p>
                         </div>
                         <div className="row" style={{padding: "10% 10% 0 10%"}}>
                             <div className="col">
                                 <div>
-                                    <img className={classnames(styles.featureFiles, styles.moduleSvg)} src={BookPng}
+                                    <img className={classnames( styles.pratiqueSvg)} src={Tp}
                                          alt={"test"}/>
                                 </div>
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Travaux pratiques</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
                                     <span> Des TPs sont donnés lors des cours afin de dynamiser et d'appliquer les
-                                    concepts théoriques. Ils seront réalisés principalement sur des environnements Cloud</span>
+                                    concepts théoriques. Ils seront réalisés principalement sur des environnements Cloud.</span>
                                 </p>
                             </div>
+                            <div className="col col--2"/>
                             <div className="col">
                                 <div>
-                                    <img className={classnames(styles.featureFiles, styles.moduleSvg)} src={BookPng}
+                                    <img className={classnames( styles.pratiqueSvg)} src={Atelier}
                                          alt={"test"}/>
                                 </div>
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Ateliers Architectures</span>
@@ -185,10 +185,10 @@ class HomePageTeaser extends React.Component {
                                            proposer une architecture cible par rapport à un besoin.</span>
                                 </p></div>
                         </div>
-                        <div className="row" style={{padding: "10% 10% 10% 10%"}}>
+                        <div className="row" style={{padding: "5% 10% 10% 10%"}}>
                             <div className="col">
                                 <div>
-                                    <img className={classnames(styles.featureFiles, styles.moduleSvg)} src={BookPng}
+                                    <img className={classnames( styles.pratiqueSvg)} src={Exercices}
                                          alt={"test"}/>
                                 </div>
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Exercices maison</span>
@@ -197,9 +197,10 @@ class HomePageTeaser extends React.Component {
                                     <span>Pratiquait en dehors des séances live avec des excercices maison et une correction
                                           personnalisée pour chaque apprenant.</span>
                                 </p></div>
+                            <div className="col col--2"/>
                             <div className="col">
                                 <div>
-                                    <img className={classnames(styles.featureFiles, styles.moduleSvg)} src={BookPng}
+                                    <img className={classnames( styles.pratiqueSvg)} src={Project}
                                          alt={"test"}/>
                                 </div>
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Projet fil rouge</span>

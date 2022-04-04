@@ -22,11 +22,9 @@ export default function ContactUs() {
         setLoading(true)
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID)
             .then((result) => {
-                console.log(result.text);
                 setSend(true)
                 setLoading(false)
             }, (error) => {
-                console.log(error.text);
                 setError(true)
                 setLoading(false)
             });
