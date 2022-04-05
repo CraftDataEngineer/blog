@@ -16,9 +16,9 @@ function HomepageHeader() {
                         <h3 className={classnames(stylesModule.headTeaser)}> <span >Decouverez le metier du Data Engineer.</span></h3>
                         <p className={classnames(stylesModule.headDescription)}>
                             <span >
-                                Le <b>Big Data</b> a basculé l’utilisation des données vers une autre dimension.
-                                Des volumétries beaucoup plus importantes à une échelle étendue à l’internationale ! <b>Expert</b> dans la manipulation et la transformation des données, le <b>Data Engineer</b> a vu le jour et constitue aujourd'hui un maillon essentiel
-                                dans chaque entreprise orientée data.
+                                Durant cette formation, nous donnons un accompagnement personnalisé pour chaque apprenant.
+                                Notre objectif est de vous donner les clefs nécessaires pour rejoindre une équipe en tant que <b>Craft</b> Data Engineer.
+                                Et pour cela nous mettons en avant les bonnes pratiques de programmation et l'ops au service de la data.
                             </span>
                         </p>
                     </div>
