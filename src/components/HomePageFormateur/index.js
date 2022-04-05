@@ -30,27 +30,27 @@ function HomePageFormateur() {
                         <div className="col ">
                             <img className={classnames(styles.featureProfile,styles.mediaProfile)} src={loca} alt={"loca"}/>
                         </div>
-                        <div className="col col--6">
+                                                <div className="col col--6">
                             <p className={classnames(styles.formateurDescription,"text-center")}>
-                                <span >Nous avons développé un cursus Data Engineer au plus près des attentes du métier. À l’issue de votre parcours, vous saurez :  </span>
+                                <span >👋 Salut, c'est Loïc et Soufiane... En bref nous :</span>
                             </p>
                             <div className={classnames(styles.formateurDescriptionPoints)}>
                                 <ul className={classnames(styles.formateurDescriptionPoints)}>
-                                    <li> Comprendre les différentes solutions de stockages (NoSQL, Relationnel) </li>
-                                    <li> Maîtriser les concepts fondamentaux des BDD (Moteur stockage, Moteur de requête)</li>
-                                    <li> Comprendre l'intérêt de l'agilité et savoir l'appliquer dans un contexte data </li>
-                                    <li> Développer du code clean en se posant les bonnes questions </li>
-                                    <li> Savoir collaborer en équipe avec les bonnes pratiques et méthodologies </li>
-                                    <li> Savoir automatiser la création d'infrastructure sur AWS via Terraform </li>
+                                    <li > 👨‍💻 sommes artisant de bonnes pratiques de développement </li>
+                                    <li > 🤓 passionnés par les systèmes de gestion de données </li>
+                                    <li > 👴 avons plus de 6 ans d'expériences chacuns ... 14 missions au compteurs !</li>
                                 </ul>
                             </div>
                             <p className={classnames(styles.formateurDescription,"text-center")}>
-                                <span > </span>
+                                <span >Depuis plus de 6 ans dans le conseil, nous avons accompagnés de nombreux grand comptes.
+                                    Pendant ces années nous avons fait monter en compétences les plus juniors.
+                                    En étant encore sur le terrain nous savons ce qui est attendu d'un data engineer.
+                                    A travers cette formation nous allons à l'essentiel pour vous donner les clés nécessaire
+                                    pour arriver en mission opérationnel  </span>
                             </p>
                         </div>
                         <div className="col ">
                             <img className={classnames(styles.featureProfile,styles.mediaProfile)} src={sbe} alt={"sbe"}/>
-
                         </div>
                     </div>
                  </div>
