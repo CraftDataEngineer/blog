@@ -58,7 +58,7 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          label: 'Stack Overflow',
+          label: 'Facebook',
           href: 'https://stackoverflow.com/questions/tagged/docusaurus',
         },
         {

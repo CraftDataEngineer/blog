@@ -37,17 +37,17 @@ function HomepageHeader() {
                 <div className={classnames("row ", stylesModule.containerAnnoucements)}>
                     <div className="col ">
                         <span>Financement :</span>
-                        <h2 style={{marginTop: "2%"}}> 5000 € </h2>
+                        <h2 style={{marginTop: "2%"}}> 5100 € </h2>
                         <span className={classnames(stylesModule.displayMobile)}>Formation éligible au CPF</span>
                     </div>
                     <div className={classnames("col ", stylesModule.verticleLine)}>
                         <span>Prochain cours :</span>
                         <h3 style={{marginTop: "2%"}}> JUILLET 05, 2022</h3>
-                        <span className={classnames(stylesModule.displayMobile)}>Durée 5 semaines</span>
+                        <span className={classnames(stylesModule.displayMobile)}>Durée 3 mois</span>
                     </div>
                     <div className={classnames("col ", stylesModule.verticleLine)}>
                         <span>Prérequis :</span>
-                        <h3 style={{marginTop: "2%"}}>Data Geek</h3>
+                        <h3 style={{marginTop: "2%"}}>DATA GEEK <span style={{fontSize: "0.8rem"}}> (BAC +5)</span></h3>
                         <span
                             className={classnames(stylesModule.displayMobile)}>Connaissances basiques en développement et SQL</span>
                     </div>
