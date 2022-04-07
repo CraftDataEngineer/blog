@@ -13,7 +13,7 @@ module.exports = {
     announcementBar: {
       id: 'support_us',
       content:
-          'Inscription ouverte pour la prochaine session profitez des dernieres places !',
+          'Inscription ouverte pour la prochaine session profité des dernières places !',
       backgroundColor: '#fafbfc',
       textColor: 'black',
       isCloseable: false,

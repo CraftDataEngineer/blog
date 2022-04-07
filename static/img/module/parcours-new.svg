@@ -169,7 +169,7 @@
         <text x="1067" y="472" font-family="Virgil, Segoe UI Emoji" font-size="138.1431280045574px" fill="#000000"
               text-anchor="middle" style="white-space: pre;" direction="ltr">en équipe avec du Git !</text>
     </g>
-    <g id="text1"  style="--order: 0.2"  stroke-opacity="0.6" fill-opacity="0.6" transform="translate(985.1554125478942 10) rotate(0 748 87.5)">
+    <g id="text1"  style="--order: 0.01"  stroke-opacity="0.6" fill-opacity="0.6" transform="translate(985.1554125478942 10) rotate(0 748 87.5)">
         <text x="0" y="123" font-family="Virgil, Segoe UI Emoji" font-size="138.1431280045574px" fill="#000000"
               text-anchor="start" style="white-space: pre;" direction="ltr">À l’issue de votre parcours, vous apprendrez à ...</text>
     </g>

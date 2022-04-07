@@ -115,7 +115,7 @@
 #bolt1 , #bolt2  ,#bolt3 , #bolt4 , #bolt5  ,#bolt6  {
   opacity: 0;
   animation: dropIn 8s ease forwards 1;
-  animation-delay: calc((var(--order)) * 500ms);
+  animation-delay: calc((var(--order)) * 400ms);
 }
 
 @keyframes dropIn {

@@ -30,22 +30,22 @@ function HomePageFormateur() {
                         <div className="col ">
                             <img className={classnames(styles.featureProfile,styles.mediaProfile)} src={loca} alt={"loca"}/>
                         </div>
-                        <div className="col col--6">
+                                                <div className="col col--6">
                             <p className={classnames(styles.formateurDescription,"text-center")}>
-                                <span > Non moins de 8 ans d'expériences dans le métier,
-                                    il a conçu 3 datalakes chez : EDF, BNP et Engie. Il a également participé a des missions d'ops
-                                sur le cloud AWS en automatisant la construction/configurations des ressources.
-                                Soufiane a tout autant de casquettes dont il vous donnera de très intéressants retours d'expériences.
-                                Pour continuer sur les projets des plus impressionnants, Il est maintenant
-                                Senior Data Engineer en freelance sur un Datalake du cac 40.
-                                </span>
-                                <span><br></br></span>
-                                <span > A la fin des ses études Loïc a rejoint Octo Technology, il intègre un boot camp en 2018 pour
-                                    apprendre les bonnes pratiques et méthodologies de développement (craftmanship).
-                                    Il a également conçu 2 datalakes sur AWS, et a été sur des missions d'ops pour les démarches du service public.
-                                    Tout comme Soufiane, il lie à la fois le craft, l'ops et ses connaissances autour de la donnée afin de
-                                    répondre au mieux aux problématiques que rencontre le data engineer.
-                                </span>
+                                <span >👋 &nbsp; Salut, c'est Loïc et Soufiane... En bref :</span>
+                            </p>
+                            <div className={classnames(styles.formateurDescriptionPoints)}>
+                                <ul className={classnames(styles.formateurDescriptionPoints)}>
+                                    <li >👨‍💻 &nbsp; Nous sommes des artisans des bonnes pratiques de développement.</li>
+                                    <li >🏗 &nbsp; Nous sommes des passionnés des systèmes et plateformes de données. </li>
+                                    <li >🥼 &nbsp; Nous avons plus de 6 ans d'expériences chacun ... 18 missions au compteur.</li>
+                                </ul>
+                            </div>
+                            <p className={classnames(styles.formateurDescription,"text-center")}>
+                                <span >Avec plusieurs années d'expériences, on a participé à l'élaboration de plusieurs plateformes de données chez différents grands comptes. Le métier de Data Engineer est avant tout notre quotidien !
+                                    Toujours sur le terrain, nous savons ce qui est attendu de ce profil.
+                                    Notre volonté à travers cette formation est de partager notre expérience et notre passion pour ce domaine
+                                    et de vous donner les clés nécessaires pour arriver à votre prochaine mission opérationnelle. </span>
                             </p>
                         </div>
                         <div className="col ">
