@@ -30,27 +30,26 @@ function HomePageFormateur() {
                         <div className="col ">
                             <img className={classnames(styles.featureProfile,styles.mediaProfile)} src={loca} alt={"loca"}/>
                         </div>
-                        <div className="col col--6">
+                                                <div className="col col--6">
                             <p className={classnames(styles.formateurDescription,"text-center")}>
-                                <span >Nous avons développé un cursus Data Engineer au plus près des attentes du métier. À l’issue de votre parcours, vous saurez :  </span>
+                                <span >👋 &nbsp; Salut, c'est Loïc et Soufiane... En bref :</span>
                             </p>
                             <div className={classnames(styles.formateurDescriptionPoints)}>
                                 <ul className={classnames(styles.formateurDescriptionPoints)}>
-                                    <li> Comprendre les différentes solutions de stockages (NoSQL, Relationnel) </li>
-                                    <li> Maîtriser les concepts fondamentaux des BDD (Moteur stockage, Moteur de requête)</li>
-                                    <li> Comprendre l'intérêt de l'agilité et savoir l'appliquer dans un contexte data </li>
-                                    <li> Développer du code clean en se posant les bonnes questions </li>
-                                    <li> Savoir collaborer en équipe avec les bonnes pratiques et méthodologies </li>
-                                    <li> Savoir automatiser la création d'infrastructure sur AWS via Terraform </li>
+                                    <li >👨‍💻 &nbsp; Nous sommes des artisans des bonnes pratiques de développement.</li>
+                                    <li >🏗 &nbsp; Nous sommes des passionnés des systèmes et plateformes de données. </li>
+                                    <li >🥼 &nbsp; Nous avons plus de 6 ans d'expériences chacun ... 18 missions au compteur.</li>
                                 </ul>
                             </div>
                             <p className={classnames(styles.formateurDescription,"text-center")}>
-                                <span > </span>
+                                <span >Avec plusieurs années d'expériences, on a participé à l'élaboration de plusieurs plateformes de données chez différents grands comptes. Le métier de Data Engineer est avant tout notre quotidien !
+                                    Toujours sur le terrain, nous savons ce qui est attendu de ce profil.
+                                    Notre volonté à travers cette formation est de partager notre expérience et notre passion pour ce domaine
+                                    et de vous donner les clés nécessaires pour arriver à votre prochaine mission opérationnelle. </span>
                             </p>
                         </div>
                         <div className="col ">
                             <img className={classnames(styles.featureProfile,styles.mediaProfile)} src={sbe} alt={"sbe"}/>
-
                         </div>
                     </div>
                  </div>

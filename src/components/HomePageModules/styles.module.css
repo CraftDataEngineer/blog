@@ -24,9 +24,8 @@
 }
 
 .moduleContainer {
-    background: linear-gradient(2deg, black 10%, #ffffff 0%);
-    padding-bottom: 150px;
-    padding-top: 120px;
+    background: linear-gradient(2deg, black 7%, #ffffff 0%);
+    padding-top: 5%;
 }
 
 @media screen and (max-width: 800px) {

@@ -51,7 +51,7 @@ class HomePageTeaser extends React.Component {
                             </h3>
                             <p className={classnames(styles.teaserDescription)}>
                                 <span>Le <b>stockage</b> & <b>traitement</b> de données, l'<b>artisanat du code</b> et le <b>DevOps</b> n'auront
-                                 plus aucun secrets pour vous ! </span>
+                                 plus aucun secret pour vous ! </span>
                             </p>
                         </div>
                         <div className="col col--5">
@@ -82,9 +82,9 @@ class HomePageTeaser extends React.Component {
                         <p>
                             <span>
                                 Notre premier objectif est de vous fournir toutes les compétences nécessaires pour votre
-                                 prochain rôle de Data Engineer ! Mais avant tout on souhaite vous partagez nos
-                                 connaissances et retours d'expériences sur les bonnes pratiques du
-                                 <b> Software CraftsManship</b> pour vous differenciez des autres profils !
+                                 prochain rôle de Data Engineer ! Mais avant tout on souhaite vous partager nos
+                                 connaissances et nos retours d'expériences sur les bonnes pratiques du
+                                 <b> Software CraftsManship</b> pour vous différencier des autres profils !
                             </span>
                         </p>
                         </div>
@@ -97,8 +97,8 @@ class HomePageTeaser extends React.Component {
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
                                     <span>
-                                        Apprenez à faire du code de qualité ! Comment découper mon code pour qu'il soit maintenable et evolutif ?
-                                        Comment tester mon code ? Comment intégrer les pratiques agiles dans ma realisation de code ?
+                                        Apprenez à faire du code de qualité ! Comment découper mon code pour qu'il soit maintenable et évolutif ?
+                                        Comment tester mon code ? Comment intégrer les pratiques agiles dans ma réalisation de code ?
                                         Comment collaborer et progresser en équipe ?
                                     </span>
                                 </p>
@@ -111,7 +111,7 @@ class HomePageTeaser extends React.Component {
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Stockage</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
-                                    <span> Maitriser les concepts de stockage afin d'acquérir la réfléxion nécessaire
+                                    <span> Maitriser les concepts de stockage afin d'acquérir la réflexion nécessaire
                                            pour proposer un type de stockage adapté au besoin ! Quelle est la différence
                                             entre le relationnel et le NoSQL ? Quelles sont leurs garanties ?
                                             Comment stocker des volumes importants de donnée et à quels coûts ?</span>
@@ -129,7 +129,7 @@ class HomePageTeaser extends React.Component {
                                     <span> Comprendre les différents traitements et les concepts des systèmes distribués !
                                            Quand faut-il utiliser du batch ou du streaming ?
                                            Comment je fais un calcul distribué sur plusieurs machines ? Quelles sont
-                                           les compléxités de ces systèmes ? </span>
+                                           les complexités de ces systèmes ? </span>
                                 </p>
                             </div>
                             <div className="col col--2"/>
@@ -194,7 +194,7 @@ class HomePageTeaser extends React.Component {
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Exercices maison</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
-                                    <span>Pratiquait en dehors des séances live avec des excercices maison et une correction
+                                    <span>Pratiquer en dehors des séances live avec des exercices maison et une correction
                                           personnalisée pour chaque apprenant.</span>
                                 </p></div>
                             <div className="col col--2"/>
