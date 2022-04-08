@@ -9,8 +9,6 @@ import HomePageEnroll from "../components/HomePageEnroll";
 import HomePageFaq from "../components/HomePageFaq";
 import "animate.css/animate.min.css";
 
-
-
 export default function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;

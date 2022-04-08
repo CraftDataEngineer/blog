@@ -230,8 +230,9 @@ export default function Navbar() {
         [styles.navBarFont] : true,
         [styles.navbarHideable]: hideOnScroll,
         [styles.navbarHidden]: hideOnScroll && !isNavbarVisible,
+
       })} >
-      <div className="navbar__inner">
+      <div  className={clsx('navbar__inner',"container")}>
         <div className="navbar__items">
           {(items?.length > 0 || activeDocPlugin) && (
             <button

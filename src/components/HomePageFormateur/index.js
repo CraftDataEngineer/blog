@@ -32,18 +32,18 @@ function HomePageFormateur() {
                         </div>
                                                 <div className="col col--6">
                             <p className={classnames(styles.formateurDescription,"text-center")}>
-                                <span >👋 &nbsp; Salut, c'est Loïc et Soufiane... En bref :</span>
+                                <span >👋 &nbsp; Salut, c'est  <strong style={{fontFamily:"CircularStd-Black",color:"rgb(214 211 209/2"}}>Loïc et Soufiane </strong>... En bref :</span>
                             </p>
                             <div className={classnames(styles.formateurDescriptionPoints)}>
                                 <ul className={classnames(styles.formateurDescriptionPoints)}>
                                     <li >👨‍💻 &nbsp; Nous sommes des artisans des bonnes pratiques de développement.</li>
                                     <li >🏗 &nbsp; Nous sommes des passionnés des systèmes et plateformes de données. </li>
-                                    <li >🥼 &nbsp; Nous avons plus de 6 ans d'expériences chacun ... 18 missions au compteur.</li>
+                                    <li >🥼 &nbsp; Nous avons plus de 8 ans d'expériences chacun ... 20 missions au compteur.</li>
                                 </ul>
                             </div>
                             <p className={classnames(styles.formateurDescription,"text-center")}>
                                 <span >Avec plusieurs années d'expériences, on a participé à l'élaboration de plusieurs plateformes de données chez différents grands comptes. Le métier de Data Engineer est avant tout notre quotidien !
-                                    Toujours sur le terrain, nous savons ce qui est attendu de ce profil.
+                                    <strong style={{fontFamily:"CircularStd-Black",color:"rgb(214 211 209/2"}}> Toujours sur le terrain </strong>, nous savons ce qui est attendu de ce profil.
                                     Notre volonté à travers cette formation est de partager notre expérience et notre passion pour ce domaine
                                     et de vous donner les clés nécessaires pour arriver à votre prochaine mission opérationnelle. </span>
                             </p>
