@@ -46,7 +46,6 @@ function FooterLink({to, href, label, prependBaseUrlToHref, ...props}) {
 function FooterLogo({sources, alt, width, height}) {
   return (
     <ThemedImage
-      className="footer__logo"
       alt={alt}
       sources={sources}
       width={width}
@@ -131,7 +130,7 @@ function Footer() {
       className={classnames('footer',
         styles.footerDark,
       )} >
-      <div style={{ backgroundColor : "!important"}} className="container container-fluid">
+      <div  className="container container-fluid">
         {links &&
           links.length > 0 &&
           (isMultiColumnFooterLinks(links) ? (

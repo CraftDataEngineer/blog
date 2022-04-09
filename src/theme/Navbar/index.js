@@ -223,6 +223,7 @@ export default function Navbar() {
   return (
     <nav
       ref={navbarRef}
+
       className={clsx('navbar', 'navbar--fixed-top', {
         'navbar--dark': style === 'dark',
         'navbar--primary': style === 'primary',
@@ -232,7 +233,7 @@ export default function Navbar() {
         [styles.navbarHidden]: hideOnScroll && !isNavbarVisible,
 
       })} >
-      <div  className={clsx('navbar__inner',"container")}>
+      <div  className={clsx('navbar__inner',"container")} >
         <div className="navbar__items">
           {(items?.length > 0 || activeDocPlugin) && (
             <button
@@ -254,7 +255,7 @@ export default function Navbar() {
             <NavbarItem {...item} key={i} />
           ))}
         </div>
-        <div className="navbar__items navbar__items--right">
+        <div className="navbar__items navbar__items--right" >
           {!hasSearchNavbarItem && isBlog && !mobileSidebar.shouldRender && <SearchBar   />}
           {rightItems.map((item, i) => (
             <NavbarItem {...item} key={i} />
@@ -267,7 +268,7 @@ export default function Navbar() {
             />
           )}
           <Link to="/inscription/" >
-            <button className="button  button--outline button--primary "  >Inscrivez-vous</button>
+            <button className="button  button--outline button--primary "   >Inscrivez-vous</button>
           </Link>
         </div>
       </div>

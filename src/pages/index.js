@@ -8,6 +8,7 @@ import HomePageFormateur from "../components/HomePageFormateur";
 import HomePageEnroll from "../components/HomePageEnroll";
 import HomePageFaq from "../components/HomePageFaq";
 import "animate.css/animate.min.css";
+import HomePageAvis from "../components/HomePageAvis";
 
 export default function Home() {
   const context = useDocusaurusContext();
@@ -19,6 +20,7 @@ export default function Home() {
           <HomePageTeaser config={siteConfig}  />
           <HomepageModules/>
           <HomePageFormateur/>
+          <HomePageAvis/>
           <HomePageEnroll/>
           <HomePageFaq/>
       </main>

@@ -37,7 +37,8 @@ module.exports = {
     navbar: {
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg'
+        src: 'img/logo.svg',
+
       },
       items: [
         {
@@ -56,7 +57,13 @@ module.exports = {
     },
     footer: {
       style: 'dark',
-      links: [
+      logo: {
+        alt: 'Qualiopi',
+        src: 'img/footer/qce.png',
+        width: 400,
+        height: 400,
+      },
+      /* links: [
         {
           label: 'Facebook',
           href: 'https://stackoverflow.com/questions/tagged/docusaurus',
@@ -69,7 +76,7 @@ module.exports = {
           label: 'Twitter',
           href: 'https://twitter.com/docusaurus',
         }
-      ],
+      ],*/
       copyright: `Copyright © ${new Date().getFullYear()} Craft Data Engineer, Inc.`,
     },
   },

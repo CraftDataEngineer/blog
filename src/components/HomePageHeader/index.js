@@ -3,6 +3,7 @@ import useDocusaurusContext from "@docusaurus/core/lib/client/exports/useDocusau
 import stylesModule from './styles.module.css';
 import YourSvg from '../../../static/img/header/dashboard.svg';
 import classnames from "classnames";
+import Link from "@docusaurus/core/lib/client/exports/Link";
 
 
 function HomepageHeader() {
@@ -26,12 +27,19 @@ function HomepageHeader() {
 
                             </span>
                         </p>
+
                     </div>
                     <div className="col"/>
                     <div className="col col--5">
                         <div className={classnames("text--center")}>
 
                             <YourSvg className={stylesModule.featureSvg} alt={"test"}/>
+
+                        </div>
+                        <div style={{ marginTop:"5%",marginLeft:"30%"}}  >
+                            <Link to="/inscription/" >
+                                <button className="button  button--primary "  >Télécharger le programme</button>
+                            </Link>
                         </div>
                     </div>
                 </div>

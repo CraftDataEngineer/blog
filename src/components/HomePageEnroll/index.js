@@ -49,29 +49,6 @@ function HomePageEnroll() {
                     </div>
                     <div className="col"/>
                 </div>
-                <div className="row " >
-                    <div className="col ">
-                        <div className={classnames("hero hero--dark",styles.questionContainer)} >
-                            <div className="container">
-                                <h1  className={classnames("hero__title",styles.contactTeaser)}>Vous avez des questions ?</h1>
-                                <p className="hero__subtitle" >Nous sommes convaincus que vous aimerez la formation. Si vous avez des questions, nous serons heureux d'y répondre.</p>
-                                <div>
-                                    <Link to="/form/" className={classnames(styles.contactButton)} >
-                                    <button className="button button--primary  button--lg">
-                                        Nous Contacter
-                                    </button>
-                                    </Link>
-
-                                    <Link to="/inscription/" className={classnames(styles.enrollButton)} >
-                                        <button
-                                            className="button button--outline button--secondary  button--lg ">Inscrivez-vous
-                                        </button>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     );
