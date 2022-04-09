@@ -24,13 +24,15 @@
 }
 
 .moduleContainer {
-    background: linear-gradient(2deg, black 7%, #ffffff 0%);
+    /*background: linear-gradient(0deg, black 3%, #ffffff 0%);*/
+    background: white;
     padding-top: 5%;
+    padding-bottom: 1%
 }
 
 @media screen and (max-width: 800px) {
     .moduleContainer {
-        background: linear-gradient(2deg, black 10%, #ffffff 0%);
+        background: linear-gradient(0deg, black 10%, #ffffff 0%);
         padding-bottom: 150px;
         padding-top: 120px;
         text-align: center;

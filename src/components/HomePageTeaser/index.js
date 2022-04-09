@@ -60,16 +60,16 @@ class HomePageTeaser extends React.Component {
                 </div>
                 <div className={classnames("container")}
                      style={{color: "#ffff", height: "1000%"}}>
-                    <div className={classnames("container")}
+                    <div className={classnames("container","shadow--tl")}
                          style={{color: "#ffff", background: "rgba(236, 240, 241, 0.8)", height: "1000%"}}>
-                        <ul className={`tabs ${mobileWidth ? "" : "tabs--block"}`}>
+                        <ul className={`tabs  ${mobileWidth ? "" : "tabs--block"}`}>
                             <li className={`tabs__item ${this.state.showTheorie ? "tabs__item--active" : ""}`}
-                                style={{color: `${this.state.showTheorie ? "#25366b" : "grey"}`,fontFamily:"CircularStd-Black"}}
-                                onClick={this.openAlpha}><h2><b>1. Théorie</b></h2>
+                                style={{color: `${this.state.showTheorie ? "#25366b" : "grey"}`,fontFamily:"Virgil"}}
+                                onClick={this.openAlpha}><h2 style={{fontFamily:"CircularStd-Black"}}><b>1. Théorie</b></h2>
                             </li>
                             <li className={`tabs__item ${this.state.showPratique ? "tabs__item--active" : ""}`}
-                                style={{color: `${this.state.showPratique ? "#25366b" : "grey"}`,fontFamily:"CircularStd-Black"}} onClick={this.openBeta}>
-                                <h2> 2. Pratique</h2>
+                                style={{color: `${this.state.showPratique ? "#25366b" : "grey"}`}} onClick={this.openBeta}>
+                                <h2 style={{fontFamily:"CircularStd-Black"}}> 2. Pratique</h2>
                             </li>
                         </ul>
                     </div>
@@ -103,7 +103,7 @@ class HomePageTeaser extends React.Component {
                             <div className="col col--2"/>
                             <div className="col">
                                 <div>
-                                    <img className={classnames(styles.moduleSvg)} style={{marginLeft:"20%"}} src={Atelier} alt={"test"}/>
+                                    <img className={classnames(styles.moduleSvg)}  src={Atelier} alt={"test"}/>
                                 </div>
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Études de cas</span>
                                 </h3>
@@ -114,10 +114,10 @@ class HomePageTeaser extends React.Component {
                         <div className="row" style={{padding: "5% 10% 10% 10%"}}>
                             <div className="col">
                                 <div>
-                                    <img className={classnames(styles.featureFiles, styles.moduleSvg)} src={TakeAway}
+                                    <img className={classnames(styles.moduleSvg)} src={TakeAway}
                                          alt={"test"}/>
                                 </div>
-                                <h3 className={classnames(styles.teaserMenuTitle)} style={{marginTop:"8%"}}><span>Take Away</span>
+                                <h3 className={classnames(styles.teaserMenuTitle)} ><span>Take Away</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
                                     <span> À la fin de chaque leçon, on reviendra sur les notions importantes à retenir pour être toujours opérationnel dans votre quotidien de développeur.</span>
@@ -126,7 +126,7 @@ class HomePageTeaser extends React.Component {
                             <div className="col col--2"/>
                             <div className="col">
                                 <div>
-                                    <img className={classnames(styles.moduleSvg)} src={Dojo} style={{marginLeft:"30%"}}
+                                    <img className={classnames(styles.moduleSvg)} src={Dojo}
                                          alt={"test"}/>
                                 </div>
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Dojo</span>

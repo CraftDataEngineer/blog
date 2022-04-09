@@ -19,7 +19,7 @@ function HomePageFormateur() {
                              <div className="avatar">
                                  <img
                                      className="avatar__photo avatar__photo--xl"
-                                     src={loca} style={{ marginRight : "40%"}} />
+                                     src={loca} style={{ marginRight : "50%"}} />
                                  <img
                                      className="avatar__photo avatar__photo--xl"
                                      src={sbe} style={{ paddingLeft : "0"}}/>
@@ -30,7 +30,7 @@ function HomePageFormateur() {
                         <div className="col ">
                             <img className={classnames(styles.featureProfile,styles.mediaProfile)} src={loca} alt={"loca"}/>
                         </div>
-                                                <div className="col col--6">
+                        <div className="col col--6">
                             <p className={classnames(styles.formateurDescription,"text-center")}>
                                 <span >👋 &nbsp; Salut, c'est  <strong style={{fontFamily:"CircularStd-Black",color:"rgb(214 211 209/2"}}>Loïc et Soufiane </strong>... En bref :</span>
                             </p>
