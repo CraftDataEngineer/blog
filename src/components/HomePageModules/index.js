@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import styles from './styles.module.css';
-import YourSvg from '../../../static/img/module/parcours-new.svg';
+import YourSvg from '../../../static/img/module/parcours-align.svg';
 import classnames from "classnames";
 import stylesModule from "./styles.module.css";
 import {AnimationOnScroll} from 'react-animation-on-scroll';
