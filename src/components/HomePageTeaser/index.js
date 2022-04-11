@@ -50,7 +50,8 @@ class HomePageTeaser extends React.Component {
                             <h3 className={classnames(styles.teaserTeaser)}><span>En quoi consiste la formation ?</span>
                             </h3>
                             <p className={classnames(styles.teaserDescription)}>
-                                Une formation qui allie <b>théorie</b> et <b>pratique</b> et un accompagnement personnalisé pour chaque candidat.
+                                Une formation qui allie <b>théorie</b> et <b>pratique</b> et un accompagnement
+                                personnalisé pour chaque candidat.
                             </p>
                         </div>
                         <div className="col col--5">
@@ -58,39 +59,37 @@ class HomePageTeaser extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className={classnames("container")}
-                     style={{color: "#ffff", height: "1000%"}}>
-                    <div className={classnames("container","shadow--tl")}
-                         style={{color: "#ffff", background: "rgba(236, 240, 241, 0.8)", height: "1000%"}}>
-                        <ul className={`tabs  ${mobileWidth ? "" : "tabs--block"}`}>
-                            <li className={`tabs__item ${this.state.showTheorie ? "tabs__item--active" : ""}`}
-                                style={{color: `${this.state.showTheorie ? "#25366b" : "grey"}`,fontFamily:"Virgil"}}
-                                onClick={this.openAlpha}><h2 style={{fontFamily:"CircularStd-Black"}}><b>1. Théorie</b></h2>
+                <div className={classnames("container")}>
+                    <div className={classnames("container", styles.backgroundTitle)}>
+                        <ul className={`tabs shadow--tl ${mobileWidth ? "" : "tabs--block"}`}>
+                            <li className={classnames(`tabs__item ${this.state.showTheorie ? "tabs__item--active" : ""}`)}
+                                style={{color: `${this.state.showTheorie ? "#25366b" : "grey"}`}}
+                                onClick={this.openAlpha}><h2 style={{fontFamily:"CircularStd-Black"}}>1. Théorie</h2>
                             </li>
                             <li className={`tabs__item ${this.state.showPratique ? "tabs__item--active" : ""}`}
-                                style={{color: `${this.state.showPratique ? "#25366b" : "grey"}`}} onClick={this.openBeta}>
+                                style={{color: `${this.state.showPratique ? "#25366b" : "grey"}`}}
+                                onClick={this.openBeta}>
                                 <h2 style={{fontFamily:"CircularStd-Black"}}> 2. Pratique</h2>
                             </li>
                         </ul>
                     </div>
 
-                    {this.state.showTheorie && <div className={classnames("container")}
-                                                  style={{color: "#ffff", background: "rgba(236, 236, 236,1)"}}>
+                    {this.state.showTheorie && <div className={classnames("container", styles.tabContainer)}>
                         <div className={classnames(styles.pointsDescription)}>
-
-                        <p>
+                            <p>
                             <span>
                                 Notre objectif est de vous fournir les compétences nécessaires pour votre
                                  prochain rôle de Data Engineer. On vous partagera nos
                                  connaissances et nos retours d'expériences sur les bonnes pratiques du
                                  <b> Software CraftsManship</b> pour vous différencier des autres profils.
                             </span>
-                        </p>
+                            </p>
                         </div>
                         <div className={classnames("row", styles.rowPadding)}>
                             <div className="col">
                                 <div>
-                                    <img className={classnames(styles.moduleSvg)} style={{marginTop:"20%"}} src={Education} alt={"test"}/>
+                                    <img className={classnames(styles.moduleSvg)} style={{marginTop: "20%"}}
+                                         src={Education} alt={"test"}/>
                                 </div>
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span> Cours</span>
                                 </h3>
@@ -103,7 +102,7 @@ class HomePageTeaser extends React.Component {
                             <div className="col col--2"/>
                             <div className="col">
                                 <div>
-                                    <img className={classnames(styles.moduleSvg)}  src={Atelier} alt={"test"}/>
+                                    <img className={classnames(styles.moduleSvg)} src={Atelier} alt={"test"}/>
                                 </div>
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Études de cas</span>
                                 </h3>
@@ -117,7 +116,7 @@ class HomePageTeaser extends React.Component {
                                     <img className={classnames(styles.moduleSvg)} src={TakeAway}
                                          alt={"test"}/>
                                 </div>
-                                <h3 className={classnames(styles.teaserMenuTitle)} ><span>Take Away</span>
+                                <h3 className={classnames(styles.teaserMenuTitle)}><span>Take Away</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
                                     <span> À la fin de chaque leçon, on reviendra sur les notions importantes à retenir pour être toujours opérationnel dans votre quotidien de développeur.</span>
@@ -138,10 +137,8 @@ class HomePageTeaser extends React.Component {
                         </div>
                     </div>
                     }
-                    {this.state.showPratique && <div className={classnames("container")}
-                                                 style={{color: "#ffff", background: "rgba(236, 236, 236,1)"}}>
+                    {this.state.showPratique && <div className={classnames("container", styles.tabContainer)}>
                         <div className={classnames(styles.pointsDescription)}>
-
                             <p>
                             <span>
                                 Notre formation est à <b>6O% de travaux pratiques. </b>On vous propose differents formats pour pratiquer et maîtriser les concepts théoriques :
@@ -151,10 +148,10 @@ class HomePageTeaser extends React.Component {
                         <div className={classnames("row", styles.rowPadding)}>
                             <div className="col">
                                 <div>
-                                    <img className={classnames( styles.pratiqueSvg)} src={Tp}
+                                    <img className={classnames(styles.pratiqueSvg)} src={Tp}
                                          alt={"test"}/>
                                 </div>
-                                <h3 className={classnames(styles.teaserMenuTitle)} style={{marginTop:"15%"}}><span>Travaux pratiques</span>
+                                <h3 className={classnames(styles.teaserMenuTitle)} style={{marginTop: "15%"}}><span>Travaux pratiques</span>
                                 </h3>
                                 <p className={classnames(styles.teaserMenuDescription)}>
                                     <span> Des TPs sont donnés lors des cours afin de dynamiser et d'appliquer les
@@ -164,7 +161,7 @@ class HomePageTeaser extends React.Component {
                             <div className="col col--2"/>
                             <div className="col">
                                 <div>
-                                    <img className={classnames( styles.pratiqueSvg)} src={Design}
+                                    <img className={classnames(styles.pratiqueSvg)} src={Design}
                                          alt={"test"}/>
                                 </div>
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Ateliers Architectures</span>
@@ -177,7 +174,7 @@ class HomePageTeaser extends React.Component {
                         <div className="row" style={{padding: "5% 10% 10% 10%"}}>
                             <div className="col">
                                 <div>
-                                    <img className={classnames( styles.pratiqueSvg)} src={Exercices}
+                                    <img className={classnames(styles.pratiqueSvg)} src={Exercices}
                                          alt={"test"}/>
                                 </div>
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Exercices maison</span>
@@ -189,7 +186,7 @@ class HomePageTeaser extends React.Component {
                             <div className="col col--2"/>
                             <div className="col">
                                 <div>
-                                    <img className={classnames( styles.pratiqueSvg)} src={Project}
+                                    <img className={classnames(styles.pratiqueSvg)} src={Project}
                                          alt={"test"}/>
                                 </div>
                                 <h3 className={classnames(styles.teaserMenuTitle)}><span>Projet fil rouge</span>

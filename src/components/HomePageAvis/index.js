@@ -39,7 +39,7 @@ function HomePageAvis() {
             <div className={classnames(styles.gridContainer)}>
                 <div className="row " style={{paddingBottom: "4%"}}>
                     <div className="col ">
-                        <Avis name={"test"} photo={"https://avatars2.githubusercontent.com/u/197597?s=460"}
+                        <Avis name={"test"} photo={"https://avatars1.githubusercontent.com/u/810438?s=460"}
                               subtitle={"React Native @facebook"}
                               stars={"⭐️⭐️⭐️⭐️⭐️"}
                               text={"Avec plusieurs années d'expériences, on a participé à l'élaboration de plusieurs plateformes Avec plusieurs années d'expériences, on a participé à l'élaboration de plusieurs plateformes Avec plusieurs années d'expériences, on a participé à l'élaboration de plusieurs plateformes de données chez différents grands comptes. Le métier de Data Engineer est avant tout notre quotidien ! Toujours sur le terrain , nous savons ce qui est attendu de ce profil. Notre volonté à travers cette formation est de partager notre expérience " +
@@ -47,13 +47,13 @@ function HomePageAvis() {
                         />
                     </div>
                     <div className="col ">
-                        <Avis name={"test"} photo={"https://avatars2.githubusercontent.com/u/197597?s=460"}
+                        <Avis name={"test"} photo={"https://avatars3.githubusercontent.com/u/13352?s=400&v=4"}
                               subtitle={"React Native @facebook"}
                               stars={"⭐️⭐️⭐️⭐️⭐️"}
                               text={"À l’issue de votre parcours, vous saurez : À l’issue de votre parcours, vous saurez : À l’issue de votre parcours, vous saurez :  vous saurez : À l’issue de votre parcours, vous saurez :  vous saurez : À l’issue de votre parcours, vous saurez :  " +
                               "vous saurez : À l’issue de votre parcours, vous saurez :  vous saurez : À l’issue de votre parcours, vous saurez : "}/>
                         <br/>
-                        <Avis name={"test"} photo={"https://avatars2.githubusercontent.com/u/197597?s=460"}
+                        <Avis name={"test"} photo={"https://avatars1.githubusercontent.com/u/977348?s=460&v=4"}
                               subtitle={"React Native @facebook"}
                               stars={"⭐️⭐️⭐️⭐️⭐️"}
                               text={"À l’issue de votre parcours, vous saurez : À l’issue de votre parcours, vous saurez : À l’issue de votre parcours, vous saurez : "}/>
@@ -61,7 +61,7 @@ function HomePageAvis() {
 
                     </div>
                     <div className="col">
-                        <Avis name={"test"} photo={"https://avatars2.githubusercontent.com/u/197597?s=460"}
+                        <Avis name={"test"} photo={"https://avatars1.githubusercontent.com/u/165856?s=460&v=4"}
                               subtitle={"React Native @facebook"}
                               stars={"⭐️⭐️⭐️⭐️⭐️"}
                               text={"À l’issue de votre parcours, vous saurez : À l’issue de votre parcours, vous saurez : À l’issue de votre parcours, vous saurez : "}/>
@@ -98,6 +98,7 @@ function HomePageAvis() {
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     );
