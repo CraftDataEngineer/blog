@@ -61,13 +61,13 @@ class HomePageTeaser extends React.Component {
                 </div>
                 <div className={classnames("container")}>
                     <div className={classnames("container", styles.backgroundTitle)}>
-                        <ul className={`tabs shadow--tl ${mobileWidth ? "" : "tabs--block"}`}>
+                        <ul  className={classnames(`tabs shadow--tl ${mobileWidth ? "" : "tabs--block"}`)}>
                             <li className={classnames(`tabs__item ${this.state.showTheorie ? "tabs__item--active" : ""}`)}
-                                style={{color: `${this.state.showTheorie ? "#25366b" : "grey"}`}}
+                                style={{color: `${this.state.showTheorie ? "white" : "grey"}`}}
                                 onClick={this.openAlpha}><h2 style={{fontFamily:"CircularStd-Black"}}>1. Théorie</h2>
                             </li>
                             <li className={`tabs__item ${this.state.showPratique ? "tabs__item--active" : ""}`}
-                                style={{color: `${this.state.showPratique ? "#25366b" : "grey"}`}}
+                                style={{color: `${this.state.showPratique ? "white" : "grey"}`}}
                                 onClick={this.openBeta}>
                                 <h2 style={{fontFamily:"CircularStd-Black"}}> 2. Pratique</h2>
                             </li>

@@ -21,6 +21,7 @@
   --ifm-navbar-shadow: #ffff;
   --ifm-font-weight-semibold:400;
   --ifm-navbar-link-color: grey;
+  --ifm-tabs-color-active: white;
 
 }
 
@@ -135,6 +136,18 @@
     transform: translateX(0%)
   }
 
+}
+@font-face {
+  font-family: "Virgil";
+  src: local("Virgil"), url("../../static/fonts/Virgil.woff2");
+}
+@font-face {
+  font-family: "CircularStd-Black";
+  src: url("../../static/fonts/CircularStd-Black.ttf"), local("CircularStd-Black");
+}
+@font-face {
+  font-family: "CircularStd-Book";
+  src: url("../../static/fonts/CircularStd-Book.ttf"), local("CircularStd-Book");
 }
 
 @keyframes dropLeft {

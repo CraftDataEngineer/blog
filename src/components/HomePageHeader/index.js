@@ -37,7 +37,7 @@ function HomepageHeader() {
 
                         </div>
                         <div style={{ marginTop:"5%",marginLeft:"30%"}}  >
-                            <Link to="/inscription/" >
+                            <Link to="/syllabus/" >
                                 <button className="button  button--primary "  >Télécharger le programme</button>
                             </Link>
                         </div>
