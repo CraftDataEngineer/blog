@@ -56,7 +56,6 @@ export default function InscriptionForm() {
                             <div className="field">
                                 <label>Prénom </label>
                                 <label style={{fontSize: "0.8rem", color: "red"}}>٭</label>
-                                <label> : </label>
                             </div>
                         </div>
                         <div className="col col--3">
@@ -70,7 +69,6 @@ export default function InscriptionForm() {
                             <div className="field">
                                 <label>Nom </label>
                                 <label style={{fontSize: "0.8rem", color: "red"}}>٭</label>
-                                <label> : </label>
                             </div>
                         </div>
                         <div className="col col--3">
@@ -84,7 +82,6 @@ export default function InscriptionForm() {
                             <div className="field">
                                 <label>@ Email </label>
                                 <label style={{fontSize: "0.8rem", color: "red"}}>٭</label>
-                                <label> : </label>
                             </div>
                         </div>
                         <div className="col col--3">
@@ -97,8 +94,7 @@ export default function InscriptionForm() {
                         <div className="col col--2">
                             <div className="field">
                                 <label> 📞 téléphone </label>
-                                <label style={{fontSize: "0.8rem"}}></label>
-                                <label> : </label>
+                                <label style={{fontSize: "0.8rem", color: "red"}}>٭</label>
                             </div>
                         </div>
                         <div className="col col--3">

@@ -3,11 +3,24 @@ import useDocusaurusContext from "@docusaurus/core/lib/client/exports/useDocusau
 import stylesModule from './styles.module.css';
 import YourSvg from '../../../static/img/header/dashboard.svg';
 import classnames from "classnames";
-import Link from "@docusaurus/core/lib/client/exports/Link";
+import SyllabusForm from "../SyllabusFrom";
+
+
+
 
 
 function HomepageHeader() {
+    const [open, setOpen] = React.useState(false);
     const {siteConfig} = useDocusaurusContext();
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
     return (
         <header className={classnames('hero hero--primary headTest', stylesModule.heroSection)}>
             <div className="container" style={{paddingTop: "5%"}}>
@@ -37,10 +50,12 @@ function HomepageHeader() {
 
                         </div>
                         <div style={{ marginTop:"5%",marginLeft:"30%"}}  >
-                            <Link to="/syllabus/" >
-                                <button className="button  button--primary "  >Télécharger le programme</button>
-                            </Link>
+                                <button className="button  button--primary"  onClick={handleClickOpen}  >Télécharger le programme</button>
                         </div>
+                        <SyllabusForm
+                            open={open}
+                            onClose={handleClose}
+                        />
                     </div>
                 </div>
                 <div className={classnames("row ", stylesModule.containerAnnoucements)}>

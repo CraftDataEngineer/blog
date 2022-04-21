@@ -55,7 +55,6 @@ export default function ContactUs() {
                             <div className="field">
                                 <label>@ Email </label>
                                 <label style={{fontSize: "0.8rem",color:"red"}}>٭</label>
-                                <label > : </label>
                             </div>
                         </div>
                         <div className="col col--5">
@@ -69,7 +68,6 @@ export default function ContactUs() {
                             <div className="field">
                                 <label>? Questions </label>
                                 <label style={{fontSize: "0.8rem",color:"red"}}>٭</label>
-                                <label > : </label>
                             </div>
                         </div>
                         <div className="col col--5">
