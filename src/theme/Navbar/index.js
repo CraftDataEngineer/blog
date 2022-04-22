@@ -233,7 +233,7 @@ export default function Navbar() {
         [styles.navbarHidden]: hideOnScroll && !isNavbarVisible,
 
       })} >
-      <div  className={clsx('navbar__inner',"container")} >
+      <div  className={clsx("container",styles.navContainer)} >
         <div className="navbar__items">
           {(items?.length > 0 || activeDocPlugin) && (
             <button
@@ -247,9 +247,7 @@ export default function Navbar() {
             </button>
           )}
           <Logo
-            className="navbar__brand"
-            imageClassName="navbar__logo"
-            titleClassName="navbar__title"
+            className={classnames(styles.logo)}
           />
           {leftItems.map((item, i) => (
             <NavbarItem {...item} key={i} />

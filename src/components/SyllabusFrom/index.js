@@ -39,7 +39,7 @@ export default function SyllabusForm(props) {
             <div className={classnames("container", styles.titleContainer)}>
                 <div className="row row--no-gutters ">
                     <div className="col col--7 ">
-                        <h6 className={classnames(styles.formTitle)}><span>Craft Data Engineer</span></h6>
+                        <h6 className={classnames(styles.formTitle)}><span> Data Guru</span></h6>
                         <h3 className={classnames(styles.formTeaser)}>
                             <span>Télécharger le programme complet de la formation !</span>
                         </h3>
@@ -57,7 +57,7 @@ export default function SyllabusForm(props) {
                     <div className="row row--no-gutters " style={{padding: "3%"}}>
                         <div className="col col--1"/>
                         <div className="col col--10">
-                            <Divider variant={"middle"}></Divider>
+                            <Divider variant={"middle"}/>
                         </div>
                     </div>
                     <div className="row row--no-gutters " style={{paddingTop: "10px"}}>

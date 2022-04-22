@@ -35,7 +35,7 @@ export default function ContactUs() {
             <div className={classnames("container", styles.titleContainer)}>
                 <div className="row  ">
                     <div className="col col--8 ">
-                        <h6 className={classnames(styles.formTitle)}><span>Craft Data Engineer</span></h6>
+                        <h6 className={classnames(styles.formTitle)}><span>Data Guru</span></h6>
                         <h3 className={classnames(styles.formTeaser)}><span>Vous hésitez sur votre choix de formation ?</span>
                         </h3>
                         <p className={classnames(styles.formDescription)}>

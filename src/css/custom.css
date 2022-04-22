@@ -22,7 +22,7 @@
   --ifm-font-weight-semibold:400;
   --ifm-navbar-link-color: grey;
   --ifm-tabs-color-active: white;
-
+  --ifm-navbar-height: 5rem;
 }
 
 .docusaurus-highlight-code-line {

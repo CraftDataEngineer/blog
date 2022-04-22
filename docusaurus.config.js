@@ -1,6 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Craft Data Engineer',
+  title: 'Data Guru',
   tagline: 'En cours de réalisation',
   url: 'https://blog.craft-data-engineer.com/',
   baseUrl: '/',
@@ -37,15 +37,14 @@ module.exports = {
     navbar: {
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
-
+        src: 'img/logo.png'
       },
       items: [
         {
           to: 'docs/',
           activeBasePath: 'docs',
-          label: 'BLOG',
-          position: 'left',
+          label: 'Blog',
+          position: 'right',
         },
         {
           to: 'form/',

@@ -35,7 +35,7 @@ export default function InscriptionForm() {
             <div className={classnames("container", styles.titleContainer)}>
                 <div className="row row--no-gutters ">
                     <div className="col col--7 ">
-                        <h6 className={classnames(styles.formTitle)}><span>Craft Data Engineer</span></h6>
+                        <h6 className={classnames(styles.formTitle)}><span>Data Guru</span></h6>
                         <h3 className={classnames(styles.formTeaser)}>
                             <span>Inscrivez vous à la prochaine session !</span>
                         </h3>

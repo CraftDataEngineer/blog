@@ -23,7 +23,7 @@ function HomepageHeader() {
 
     return (
         <header className={classnames('hero hero--primary headTest', stylesModule.heroSection)}>
-            <div className="container" style={{paddingTop: "5%"}}>
+            <div className="container" style={{paddingTop: "3%"}}>
                 <div className="row">
                     <div className="col col--6">
                         <h6 className={classnames(stylesModule.headTitle)}><span>{siteConfig.title}</span></h6>
@@ -44,12 +44,10 @@ function HomepageHeader() {
                     </div>
                     <div className="col"/>
                     <div className="col col--5">
-                        <div className={classnames("text--center")}>
-
+                        <div className="row">
                             <YourSvg className={stylesModule.featureSvg} alt={"test"}/>
-
                         </div>
-                        <div style={{ marginTop:"5%",marginLeft:"30%"}}  >
+                        <div  className={classnames(stylesModule.buttonDownload)} >
                                 <button className="button  button--primary"  onClick={handleClickOpen}  >Télécharger le programme</button>
                         </div>
                         <SyllabusForm

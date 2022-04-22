@@ -3,6 +3,7 @@ import React from "react";
 import classnames from "classnames";
 import Link from "@docusaurus/core/lib/client/exports/Link";
 import Bulle from "../../../static/img/avis/bulle.svg";
+import useDocusaurusContext from "@docusaurus/core/lib/client/exports/useDocusaurusContext";
 
 
 function Avis({name, subtitle,stars, photo, text}) {
@@ -29,10 +30,12 @@ function Avis({name, subtitle,stars, photo, text}) {
 
 function HomePageAvis() {
 
+    const context = useDocusaurusContext();
+    const {siteConfig = {}} = context;
+
     return (
         <div className={classnames(styles.enrollContainer)}>
             <div className={classnames(styles.allAvisContainer)}>
-                <h6 className={classnames(styles.enrollTitle)}><span>Craft Data Engineer</span></h6>
                 <h3 className={classnames(styles.enrollTeaser)}><span>Voici ce que les gens pensent du programme.</span>
                 </h3>
             </div>
