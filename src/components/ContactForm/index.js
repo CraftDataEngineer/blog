@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import classnames from "classnames";
 import styles from "./styles.module.css"
 import Link from "@docusaurus/core/lib/client/exports/Link";
-import InscriptionSVG from "../../../static/img/form/ask.svg";
+import Question from "../../../static/img/form/think.png";
 
 
 const SERVICE_ID = 'service_kmjngyo'
@@ -34,21 +34,14 @@ export default function ContactUs() {
         <div>
             <div className={classnames("container", styles.titleContainer)}>
                 <div className="row  ">
-                    <div className="col col--8 ">
-                        <h6 className={classnames(styles.formTitle)}><span>Data Guru</span></h6>
-                        <h3 className={classnames(styles.formTeaser)}><span>Vous hésitez sur votre choix de formation ?</span>
+                    <div className="col">
+                        <h3 className={classnames(styles.formTeaser)}><span>Posez nous toutes vos questions !</span>
                         </h3>
-                        <p className={classnames(styles.formDescription)}>
-                            <span>Posez nous toutes vos questions ! </span>
-                        </p>
-                    </div>
-                    <div className={classnames("col col--1",styles.contact)}  >
-                        <InscriptionSVG alt={"contact"} className={styles.contact} />
                     </div>
                 </div>
             </div>
             <div className={classnames("container")} style={{paddingBottom: "200px"}}>
-                <form className={classnames(styles.formContainer, "shadow--md")} ref={form} onSubmit={sendEmail}>
+                <form className={classnames(styles.formContainer, "shadow--lw")} ref={form} onSubmit={sendEmail}>
                     <div className="row row--no-gutters ">
                         <div className="col col--1"/>
                         <div className="col col--2">

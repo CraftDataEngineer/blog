@@ -11,6 +11,7 @@ import TakeAway from '../../../static/img/teaser/takeaway.png';
 import Dojo from '../../../static/img/teaser/judo.png';
 import Education from '../../../static/img/teaser/education.png';
 import stylesModule from "../HomePageModules/styles.module.css";
+import Question from "../../../static/img/form/think.png";
 
 const MOBILE_SIZE = 800
 
@@ -46,8 +47,7 @@ class HomePageTeaser extends React.Component {
                 <div className={classnames("container", styles.displayMobileHeader)}>
                     <div className="row">
                         <div className="col">
-                            <h6 className={classnames(styles.teaserTitle)}><span>Craft Data Engineer</span></h6>
-                            <h3 className={classnames(styles.teaserTeaser)}><span>En quoi consiste la formation ?</span>
+                            <h3 className={classnames(styles.teaserTeaser)}><span>Vous hésitez sur votre choix de formation ?</span>
                             </h3>
                             <p className={classnames(styles.teaserDescription)}>
                                 Une formation qui allie <b>théorie</b> et <b>pratique</b> et un accompagnement
@@ -55,7 +55,7 @@ class HomePageTeaser extends React.Component {
                             </p>
                         </div>
                         <div className="col col--5">
-                            <Infinite className={classnames(stylesModule.infinteSvg)} alt={"test"}/>
+                            <img alt={"inscription"} src={Question} className={classnames(stylesModule.infinteSvg)} />
                         </div>
                     </div>
                 </div>
@@ -63,11 +63,11 @@ class HomePageTeaser extends React.Component {
                     <div className={classnames("container", styles.backgroundTitle)}>
                         <ul  className={classnames(`tabs shadow--tl ${mobileWidth ? "" : "tabs--block"}`)}>
                             <li className={classnames(`tabs__item ${this.state.showTheorie ? "tabs__item--active" : ""}`)}
-                                style={{color: `${this.state.showTheorie ? "white" : "grey"}`}}
+                                style={{color: `${this.state.showTheorie ? "black" : "grey"}`}}
                                 onClick={this.openAlpha}><h2 style={{fontFamily:"CircularStd-Black"}}>1. Théorie</h2>
                             </li>
                             <li className={`tabs__item ${this.state.showPratique ? "tabs__item--active" : ""}`}
-                                style={{color: `${this.state.showPratique ? "white" : "grey"}`}}
+                                style={{color: `${this.state.showPratique ? "black" : "grey"}`}}
                                 onClick={this.openBeta}>
                                 <h2 style={{fontFamily:"CircularStd-Black"}}> 2. Pratique</h2>
                             </li>

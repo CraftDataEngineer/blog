@@ -1,9 +1,9 @@
 
 .featureProfile {
   height: 90%;
-  width: 100%;
+  width: 110%;
   border-radius: 25%;
-
+  margin: 0;
 }
 
 @media screen and (max-width: 800px){
@@ -19,7 +19,7 @@
 }
 
 .formateurContainer {
-  background-color: black;
+  background-color: #fff8e6;
   text-align: center;
   padding-top: 3%;
 }
@@ -39,7 +39,6 @@
 
 .formateurTitle {
   font-size: 1.5rem;
-  color:  white;
   font-family: CircularStd-Black,Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
@@ -51,7 +50,6 @@
   display: block;
   --tw-text-opacity: 1;
   tab-size: 4;
-  color: #ffffff;
   font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
@@ -60,7 +58,6 @@
   font-style: normal;
   font-weight: 500;
   --tw-text-opacity: 0.8;
-  color:rgb(214 211 209/var(--tw-text-opacity));
   font-family: CircularStd-Book,Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
   margin-left: 8%;
   padding-top: 3%;
@@ -73,7 +70,6 @@
   font-style: normal;
   font-weight: 500;
   --tw-text-opacity: 0.8;
-  color:rgb(214 211 209/var(--tw-text-opacity));
   font-family: CircularStd-Book,Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
   list-style-type:"﹆ ";
   text-align: left;
@@ -94,7 +90,6 @@
 .formateurText {
   font-size: 1.2rem;
   font-style: normal;
-  color: grey;
   font-family: CircularStd-Book,Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
   margin-top: 1%;
   text-align: left;

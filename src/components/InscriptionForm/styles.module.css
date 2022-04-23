@@ -23,7 +23,7 @@
 }
 
 .titleContainer {
-  padding-top: 100px;
+  padding-top: 3%;
 }
 
 .formTitle {
@@ -40,6 +40,7 @@
 }
 
 .formTeaser {
+  margin-top: 15%;
   font-weight: 900;
   line-height: 2.5rem;
   font-size: 3rem;

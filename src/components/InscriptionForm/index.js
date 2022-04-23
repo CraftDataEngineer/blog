@@ -3,8 +3,8 @@ import emailjs from '@emailjs/browser';
 import classnames from "classnames";
 import styles from "./styles.module.css"
 import Link from "@docusaurus/core/lib/client/exports/Link";
-import InscriptionSVG from '../../../static/img/form/register.svg'
 import stylesModule from "../HomePageHeader/styles.module.css";
+import Diplom from "../../../static/img/teaser/diplom.png";
 
 const SERVICE_ID = 'service_kmjngyo'
 const TEMPLATE_ID = 'template_v6b7dip'
@@ -35,7 +35,6 @@ export default function InscriptionForm() {
             <div className={classnames("container", styles.titleContainer)}>
                 <div className="row row--no-gutters ">
                     <div className="col col--7 ">
-                        <h6 className={classnames(styles.formTitle)}><span>Data Guru</span></h6>
                         <h3 className={classnames(styles.formTeaser)}>
                             <span>Inscrivez vous à la prochaine session !</span>
                         </h3>
@@ -43,13 +42,13 @@ export default function InscriptionForm() {
                             <span>Inscrivez-vous à la prochaine session et profitez des dernières places ! </span>
                         </p>
                     </div>
-                    <div className="col ">
-                         <InscriptionSVG alt={"inscription"} className={styles.inscription} />
+                    <div className="col col--5">
+                        <img alt={"inscription"} src={Diplom} className={classnames(stylesModule.diplomImg)} />
                     </div>
                 </div>
             </div>
             <div className={classnames("container")} style={{paddingBottom: "200px"}}>
-                <form className={classnames(styles.formContainer, "shadow--md")} ref={form} onSubmit={sendEmail}>
+                <form className={classnames(styles.formContainer, "shadow--lw")} ref={form} onSubmit={sendEmail}>
                     <div className="row row--no-gutters " style={{paddingTop: "10px"}}>
                         <div className="col col--2"/>
                         <div className="col col--2">

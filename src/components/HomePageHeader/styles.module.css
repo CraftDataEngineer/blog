@@ -53,6 +53,14 @@
   }
 }
 
+.diplomImg {
+  margin-left: 15%;
+  padding-top: 0;
+  padding-bottom: 10%;
+  height: 100%;
+  width: 70%;
+}
+
 .buttonDownload {
   margin-top: 5%;
   margin-left: 30%;

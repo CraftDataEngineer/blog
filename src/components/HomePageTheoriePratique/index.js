@@ -31,7 +31,7 @@ export default function HomePageTheoriePratique() {
                             </p>
                         </div>
                         <div className="col col--5">
-                            <Infinite className={classnames(stylesModule.infinteSvg)} alt={"test"}/>
+                            <Infinite className={classnames(styles.infinteSvg)} alt={"test"}/>
                         </div>
                     </div>
                 </div>
