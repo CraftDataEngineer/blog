@@ -25,16 +25,13 @@
 }
 
 .moduleContainer {
-    /*background: linear-gradient(0deg, black 3%, #ffffff 0%);*/
-    background: white;
     padding-top: 5%;
-    padding-bottom: 3%
+    padding-bottom: 8%
 }
 
 @media screen and (max-width: 800px) {
     .moduleContainer {
-        background: linear-gradient(0deg, black 10%, #ffffff 0%);
-        padding-bottom: 150px;
+        padding-bottom: 5%;
         padding-top: 120px;
         text-align: center;
     }

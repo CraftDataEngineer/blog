@@ -40,8 +40,8 @@ function HomePageAvis() {
                 </h3>
             </div>
             <div className={classnames(styles.gridContainer)}>
-                <div className="row " style={{paddingBottom: "4%"}}>
-                    <div className="col ">
+                <div className="row ">
+                    <div  className={classnames("col",styles.colContainer)}>
                         <Avis name={"test"} photo={"https://avatars1.githubusercontent.com/u/810438?s=460"}
                               subtitle={"React Native @facebook"}
                               stars={"⭐️⭐️⭐️⭐️⭐️"}
@@ -49,7 +49,7 @@ function HomePageAvis() {
                               "et notre passion pour ce domaine et de vous donner les clés nécessaires pour arriver à votre prochaine mission opérationnelle."}
                         />
                     </div>
-                    <div className="col ">
+                    <div  className={classnames("col",styles.colContainer)}>
                         <Avis name={"test"} photo={"https://avatars3.githubusercontent.com/u/13352?s=400&v=4"}
                               subtitle={"React Native @facebook"}
                               stars={"⭐️⭐️⭐️⭐️⭐️"}
@@ -63,7 +63,7 @@ function HomePageAvis() {
 
 
                     </div>
-                    <div className="col">
+                    <div  className={classnames("col",styles.colContainer)}>
                         <Avis name={"test"} photo={"https://avatars1.githubusercontent.com/u/165856?s=460&v=4"}
                               subtitle={"React Native @facebook"}
                               stars={"⭐️⭐️⭐️⭐️⭐️"}

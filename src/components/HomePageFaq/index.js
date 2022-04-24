@@ -8,7 +8,7 @@ class HomePageFaq extends React.Component  {
 
     constructor(props) {
         super(props);
-        this.state = {show_q_1:true ,show_q_2: true,show_q_3: true};
+        this.state = {show_q_1:false ,show_q_2: false,show_q_3: false};
     }
 
     openQ1 = () => {

@@ -1,32 +1,8 @@
 import styles from "./styles.module.css";
 import React from "react";
 import classnames from "classnames";
-import sam from '../../../static/img/enroll/course.jpg';
-import Link from "@docusaurus/core/lib/client/exports/Link";
 import useDocusaurusContext from "@docusaurus/core/lib/client/exports/useDocusaurusContext";
 
-
-function DesignCard() {
-    return (
-        <div className={styles.leftPart}>
-            <h3> some title </h3>
-            <ul>
-                <li>
-                    <h6>🖥 subtitle 1 </h6>
-                    <p>Développer du <b>code clean</b> en vous posant les bonnes questions </p>
-                </li>
-                <li>
-                    <h6> subtitle 2</h6>
-                    <p>Maîtriser les concepts fondamentaux du Big Data </p>
-                </li>
-                <li>
-                    <h6> subtitle 2</h6>
-                    <p>Collaborer en équipe avec les bonnes méthodologies </p>
-                </li>
-            </ul>
-        </div>
-    )
-}
 
 function HomePageEnroll() {
 
@@ -59,7 +35,7 @@ function HomePageEnroll() {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col col">
+                        <div  className={classnames("col", styles.colContainer)}>
                             <div className={styles.leftPart}>
                                 <h3> À l’issue de votre parcours, vous saurez
                                 </h3>

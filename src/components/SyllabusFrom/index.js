@@ -115,8 +115,8 @@ export default function SyllabusForm(props) {
                     <div className="row row--no-gutters " style={{paddingTop: "10px"}}>
                         <div className="col col--5">
                         </div>
-                        <div className="col col--3" style={{paddingTop: "1%"}}>
-                            <button className="button button--block  button--primary">Télécharger le programme</button>
+                        <div className={classnames("col col--3")}>
+                            <button className={classnames("button button--block  button--primary",styles.buttonContainer)}>Télécharger le programme</button>
                         </div>
                     </div>
                 </form>

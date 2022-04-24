@@ -26,7 +26,6 @@ function HomepageHeader() {
             <div className="container" style={{paddingTop: "3%"}}>
                 <div className="row">
                     <div className="col col--6">
-                        <h6 className={classnames(stylesModule.headTitle)}><span>{siteConfig.title}</span></h6>
                         <h3 className={classnames(stylesModule.headTeaser)}>
                             <span>Découverez le métier du Data Engineer.</span></h3>
                         <p className={classnames(stylesModule.headDescription)}>

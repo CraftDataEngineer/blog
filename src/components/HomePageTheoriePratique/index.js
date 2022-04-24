@@ -4,19 +4,14 @@ import classnames from "classnames";
 import Infinite from '../../../static/img/teaser/infinite.svg';
 
 import ScienceIcon from '@mui/icons-material/Science';
-import stylesModule from "../HomePageModules/styles.module.css";
-import useDocusaurusContext from "@docusaurus/core/lib/client/exports/useDocusaurusContext";
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import SportsKabaddiIcon from '@mui/icons-material/SportsKabaddi';
 import ArchitectureIcon from '@mui/icons-material/Architecture';
-import DomainIcon from '@mui/icons-material/Domain';
 import EngineeringIcon from '@mui/icons-material/Engineering';
 
 export default function HomePageTheoriePratique() {
 
-    const context = useDocusaurusContext();
-    const {siteConfig = {}} = context;
 
         return (
             <div className={classnames(styles.backGroundContainer)}>
@@ -36,8 +31,8 @@ export default function HomePageTheoriePratique() {
                     </div>
                 </div>
                 <div className={classnames("container",styles.gridContainer)}>
-                    <div className="row " style={{paddingBottom: "4%"}}>
-                        <div className="col col">
+                    <div className="row " >
+                        <div  className={classnames("col")}>
                             <div className={styles.leftPart}>
                                 <h3 style={{fontFamily:"CircularStd-Black"}} > Théorie </h3>
                                 <ul>
@@ -56,7 +51,7 @@ export default function HomePageTheoriePratique() {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className={classnames("col",styles.colContainer)}>
                             <div className={styles.leftPart}>
                                 <h3 style={{fontFamily:"CircularStd-Black"}} > Pratique </h3>
                                 <ul>

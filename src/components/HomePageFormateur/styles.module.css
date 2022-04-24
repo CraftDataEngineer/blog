@@ -11,6 +11,11 @@
     display: none;
   }
 }
+
+.featureAvatar {
+  margin-bottom: 5%;
+}
+
 @media screen and (min-width: 800px) {
 
   .featureAvatar {
@@ -76,6 +81,15 @@
   margin-left: 6%;
   margin-right: 2%;
 
+}
+
+@media screen and (max-width: 800px){
+  .formateurDescriptionPoints {
+    font-size: 0.7rem;
+  }
+  .formateurDescription {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (min-width: 2500px){

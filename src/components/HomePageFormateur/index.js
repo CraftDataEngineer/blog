@@ -4,7 +4,7 @@ import classnames from "classnames";
 import sbe  from '../../../static/img/formateur/sbe.png';
 import loca  from '../../../static/img/formateur/loca.png';
 import bloca  from '../../../static/img/formateur/bloca.png';
-import bsbe from '../../../static/img/formateur/bbsbe.png';
+import bsbe from '../../../static/img/formateur/bsbe.png';
 
 function HomePageFormateur() {
 

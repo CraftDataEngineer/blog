@@ -43,7 +43,7 @@ module.exports = {
         {
           to: 'docs/',
           activeBasePath: 'docs',
-          label: 'Blog',
+          label: "Blog",
           position: 'right',
         },
         {
@@ -76,7 +76,7 @@ module.exports = {
           href: 'https://twitter.com/docusaurus',
         }
       ],*/
-      copyright: `Copyright © ${new Date().getFullYear()} Craft Data Engineer, Inc.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Data Guru, Inc.`,
     },
   },
   customFields: {
