@@ -28,7 +28,8 @@ function HomepageModules() {
         <div id="parcours" className={classnames(styles.moduleContainer)}>
             <div className={classnames("container")} >
                 <h6 className={classnames(styles.modulesTitle)}><span>{siteConfig.title}</span></h6>
-                <h3 className={classnames(styles.modulesTeaser)}><span>Devenez un expert de la donnée !</span>
+                <h3 className={classnames(styles.modulesTeaser)}><span>Devenez un expert de la donnée</span>
+                    <span style={{color:"#f1bb00"}}>.</span>
                 </h3>
                 <p className={classnames(styles.modulesDescription)}>
                     <span>Un parcours complet pour gagner en expertise ! </span>

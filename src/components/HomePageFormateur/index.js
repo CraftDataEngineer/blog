@@ -12,7 +12,7 @@ function HomePageFormateur() {
             <div className={classnames(styles.formateurContainer)}>
                 <div className={classnames("container")} >
                     <h6 className={classnames(styles.formateurTitle)}> <span >Formateurs</span></h6>
-                    <h3 className={classnames(styles.formateurTeaser)}> <span >On Partage avec vous Notre Experience ! </span></h3>
+                    <h3 className={classnames(styles.formateurTeaser)}> <span >On Partage avec vous Notre Experience<span style={{color:"#f1bb00"}}>.</span></span></h3>
                 </div>
                  <div className={classnames(styles.gridContainer)}>
                      <div className={classnames("row row--no-gutters" ,styles.featureAvatar)}>

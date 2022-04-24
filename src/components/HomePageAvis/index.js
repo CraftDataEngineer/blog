@@ -36,7 +36,7 @@ function HomePageAvis() {
     return (
         <div className={classnames(styles.enrollContainer)}>
             <div className={classnames(styles.allAvisContainer)}>
-                <h3 className={classnames(styles.enrollTeaser)}><span>Voici ce que les gens pensent du programme.</span>
+                <h3 className={classnames(styles.enrollTeaser)}><span>Voici ce que les gens pensent du programme<span style={{color:"#f1bb00"}}>.</span></span>
                 </h3>
             </div>
             <div className={classnames(styles.gridContainer)}>

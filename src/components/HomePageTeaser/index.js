@@ -47,7 +47,7 @@ class HomePageTeaser extends React.Component {
                 <div className={classnames("container", styles.displayMobileHeader)}>
                     <div className="row">
                         <div className="col">
-                            <h3 className={classnames(styles.teaserTeaser)}><span>Vous hésitez sur votre choix de formation ?</span>
+                            <h3 className={classnames(styles.teaserTeaser)}><span>Vous hésitez sur votre choix de formation <span style={{color:"#f1bb00"}}>?</span></span>
                             </h3>
                             <p className={classnames(styles.teaserDescription)}>
                                 Une formation qui allie <b>théorie</b> et <b>pratique</b> et un accompagnement

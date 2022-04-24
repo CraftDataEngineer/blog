@@ -15,7 +15,7 @@ function HomePageEnroll() {
                 <div className={classnames("container")}>
                     <h6 className={classnames(styles.enrollTitle, styles.textPosition)}><span>{siteConfig.title}</span>
                     </h6>
-                    <h3 className={classnames(styles.enrollTeaser, styles.textPosition)}><span>Rejoignez la prochaine session !</span>
+                    <h3 className={classnames(styles.enrollTeaser, styles.textPosition)}><span>Rejoignez la prochaine session<span style={{color:"#f1bb00"}}>.</span></span>
                     </h3>
                     <p className={classnames(styles.enrollDescription, styles.textPosition)}>
                         <span>À l’issue de votre parcours, vous saurez</span>

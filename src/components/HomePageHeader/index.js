@@ -27,7 +27,9 @@ function HomepageHeader() {
                 <div className="row">
                     <div className="col col--6">
                         <h3 className={classnames(stylesModule.headTeaser)}>
-                            <span>Découverez le métier du Data Engineer.</span></h3>
+                            <span>Découverez le métier du Data Engineer</span>
+                            <span style={{color:"#f1bb00"}}>.</span>
+                        </h3>
                         <p className={classnames(stylesModule.headDescription)}>
                             <span>
 

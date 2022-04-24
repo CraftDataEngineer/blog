@@ -41,7 +41,7 @@ export default function SyllabusForm(props) {
                     <div className="col col--7 ">
                         <h6 className={classnames(styles.formTitle)}><span> Data Guru</span></h6>
                         <h3 className={classnames(styles.formTeaser)}>
-                            <span>Télécharger le programme complet de la formation !</span>
+                            <span>Télécharger le programme complet de la formation<span style={{color:"#f1bb00"}}>.</span></span>
                         </h3>
                         <p className={classnames(styles.formDescription)}>
                             <span>Découvrez en detail le contenu de la formation. </span>

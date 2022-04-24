@@ -36,7 +36,7 @@ export default function InscriptionForm() {
                 <div className="row row--no-gutters ">
                     <div className="col col--7 ">
                         <h3 className={classnames(styles.formTeaser)}>
-                            <span>Inscrivez vous à la prochaine session !</span>
+                            <span>Inscrivez vous à la prochaine session<span style={{color:"#f1bb00"}}>.</span></span>
                         </h3>
                         <p className={classnames(styles.formDescription)}>
                             <span>Inscrivez-vous à la prochaine session et profitez des dernières places ! </span>
