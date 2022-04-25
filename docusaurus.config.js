@@ -1,6 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Craft Data Engineer',
+  title: 'Data Guru',
   tagline: 'En cours de réalisation',
   url: 'https://blog.craft-data-engineer.com/',
   baseUrl: '/',
@@ -37,14 +37,14 @@ module.exports = {
     navbar: {
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg'
+        src: 'img/logo.png'
       },
       items: [
         {
           to: 'docs/',
           activeBasePath: 'docs',
-          label: 'BLOG',
-          position: 'left',
+          label: "Blog",
+          position: 'right',
         },
         {
           to: 'form/',
@@ -56,7 +56,13 @@ module.exports = {
     },
     footer: {
       style: 'dark',
-      links: [
+      logo: {
+        alt: 'Qualiopi',
+        src: 'img/footer/qce.png',
+        width: 400,
+        height: 400,
+      },
+      /* links: [
         {
           label: 'Facebook',
           href: 'https://stackoverflow.com/questions/tagged/docusaurus',
@@ -69,8 +75,8 @@ module.exports = {
           label: 'Twitter',
           href: 'https://twitter.com/docusaurus',
         }
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Craft Data Engineer, Inc.`,
+      ],*/
+      copyright: `Copyright © ${new Date().getFullYear()} Data Guru, Inc.`,
     },
   },
   customFields: {

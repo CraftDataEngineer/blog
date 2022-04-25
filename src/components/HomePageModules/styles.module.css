@@ -11,12 +11,13 @@
 }
 
 .infinteSvg {
-    margin-left: 10%;
+    margin-left: 15%;
+    padding-top: 0;
     height: 100%;
-    width: 50%;
+    width: 60%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width:  996px) {
     .featureSvg {
         height: 150%;
         width: 105%;
@@ -24,23 +25,20 @@
 }
 
 .moduleContainer {
-    /*background: linear-gradient(0deg, black 3%, #ffffff 0%);*/
-    background: white;
     padding-top: 5%;
-    padding-bottom: 1%
+    padding-bottom: 8%
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width:  996px) {
     .moduleContainer {
-        background: linear-gradient(0deg, black 10%, #ffffff 0%);
-        padding-bottom: 150px;
+        padding-bottom: 5%;
         padding-top: 120px;
         text-align: center;
     }
 }
 
 .modulesTitle {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #25366b;
     font-family: CircularStd-Black,Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }

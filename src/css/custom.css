@@ -21,7 +21,8 @@
   --ifm-navbar-shadow: #ffff;
   --ifm-font-weight-semibold:400;
   --ifm-navbar-link-color: grey;
-
+  --ifm-tabs-color-active: black;
+  --ifm-navbar-height: 5rem;
 }
 
 .docusaurus-highlight-code-line {
@@ -112,13 +113,44 @@
   opacity: 0;
 }
 
-#bolt1 , #bolt2  ,#bolt3 , #bolt4 , #bolt5  ,#bolt6  {
+ #bolt2  , #bolt4 , #bolt6  {
   opacity: 0;
-  animation: dropIn 8s ease forwards 1;
+  animation: dropRight 8s ease forwards 1;
   animation-delay: calc((var(--order)) * 400ms);
 }
 
-@keyframes dropIn {
+#bolt1 ,#bolt3 , #bolt5   {
+  opacity: 0;
+  animation: dropLeft 8s ease forwards 1;
+  animation-delay: calc((var(--order)) * 400ms);
+}
+
+@keyframes dropRight {
+  10% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  30%,100% {
+    opacity: 1;
+    transform: translateX(0%)
+  }
+
+}
+@font-face {
+  font-family: "Virgil";
+  src: local("Virgil"), url("../../static/fonts/Virgil.woff2");
+}
+@font-face {
+  font-family: "CircularStd-Black";
+  src: url("../../static/fonts/CircularStd-Black.ttf"), local("CircularStd-Black");
+}
+@font-face {
+  font-family: "CircularStd-Book";
+  src: url("../../static/fonts/CircularStd-Book.ttf"), local("CircularStd-Book");
+}
+
+@keyframes dropLeft {
   10% {
     opacity: 0;
     transform: translateX(100%);

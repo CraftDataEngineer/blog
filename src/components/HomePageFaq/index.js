@@ -37,9 +37,9 @@ class HomePageFaq extends React.Component  {
             <div className={classnames(styles.faqContainer)}>
                 <div className={classnames("container")} style={{paddingBottom:"50px"}}>
                     <h6 className={classnames(styles.faqTitle)}><span>FAQ</span></h6>
-                    <h3 className={classnames(styles.faqTeaser)}><span>Questions les plus fréquentes </span></h3>
+                    <h3 className={classnames(styles.faqTeaser)}><span>Questions les plus fréquentes<span style={{color:"#f1bb00"}}>.</span></span></h3>
                 </div>
-                <div className={classnames(styles.gridContainer,"container","shadow--md")}>
+                <div className={classnames(styles.gridContainer,"container")}>
                     <div className="row " style={{paddingTop:"5%",paddingBottom:"5%"}}>
                         <div className="col col--1"/>
                         <div className="col col--2">

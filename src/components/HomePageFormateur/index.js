@@ -3,7 +3,8 @@ import React from "react";
 import classnames from "classnames";
 import sbe  from '../../../static/img/formateur/sbe.png';
 import loca  from '../../../static/img/formateur/loca.png';
-
+import bloca  from '../../../static/img/formateur/bloca.png';
+import bsbe from '../../../static/img/formateur/bsbe.png';
 
 function HomePageFormateur() {
 
@@ -11,7 +12,7 @@ function HomePageFormateur() {
             <div className={classnames(styles.formateurContainer)}>
                 <div className={classnames("container")} >
                     <h6 className={classnames(styles.formateurTitle)}> <span >Formateurs</span></h6>
-                    <h3 className={classnames(styles.formateurTeaser)}> <span >On Partage avec vous Notre Experience ! </span></h3>
+                    <h3 className={classnames(styles.formateurTeaser)}> <span >On Partage avec vous Notre Experience<span style={{color:"#f1bb00"}}>.</span></span></h3>
                 </div>
                  <div className={classnames(styles.gridContainer)}>
                      <div className={classnames("row row--no-gutters" ,styles.featureAvatar)}>
@@ -27,12 +28,12 @@ function HomePageFormateur() {
                          </div>
                      </div>
                     <div className="row row--no-gutters">
-                        <div className="col ">
-                            <img className={classnames(styles.featureProfile,styles.mediaProfile)} src={loca} alt={"loca"}/>
+                        <div className="col  col--3">
+                            <img className={classnames(styles.featureProfile,styles.mediaProfile)} src={bloca} alt={"loca"}/>
                         </div>
                         <div className="col col--6">
                             <p className={classnames(styles.formateurDescription,"text-center")}>
-                                <span >👋 &nbsp; Salut, c'est  <strong style={{fontFamily:"CircularStd-Black",color:"rgb(214 211 209/2"}}>Loïc et Soufiane </strong>... En bref :</span>
+                                <span >👋 &nbsp; Salut, c'est  <strong style={{fontFamily:"CircularStd-Black"}}>Loïc et Soufiane </strong>... En bref :</span>
                             </p>
                             <div className={classnames(styles.formateurDescriptionPoints)}>
                                 <ul className={classnames(styles.formateurDescriptionPoints)}>
@@ -43,13 +44,13 @@ function HomePageFormateur() {
                             </div>
                             <p className={classnames(styles.formateurDescription,"text-center")}>
                                 <span >Avec plusieurs années d'expériences, on a participé à l'élaboration de plusieurs plateformes de données chez différents grands comptes. Le métier de Data Engineer est avant tout notre quotidien !
-                                    <strong style={{fontFamily:"CircularStd-Black",color:"rgb(214 211 209/2"}}> Toujours sur le terrain </strong>, nous savons ce qui est attendu de ce profil.
+                                    <strong style={{fontFamily:"CircularStd-Black"}}> Toujours sur le terrain </strong>, nous savons ce qui est attendu de ce profil.
                                     Notre volonté à travers cette formation est de partager notre expérience et notre passion pour ce domaine
                                     et de vous donner les clés nécessaires pour arriver à votre prochaine mission opérationnelle. </span>
                             </p>
                         </div>
-                        <div className="col ">
-                            <img className={classnames(styles.featureProfile,styles.mediaProfile)} src={sbe} alt={"sbe"}/>
+                        <div className="col col--3">
+                            <img className={classnames(styles.featureProfile,styles.mediaProfile)} src={bsbe} alt={"sbe"}/>
                         </div>
                     </div>
                  </div>

@@ -3,8 +3,8 @@ import emailjs from '@emailjs/browser';
 import classnames from "classnames";
 import styles from "./styles.module.css"
 import Link from "@docusaurus/core/lib/client/exports/Link";
-import InscriptionSVG from '../../../static/img/form/register.svg'
 import stylesModule from "../HomePageHeader/styles.module.css";
+import Diplom from "../../../static/img/teaser/diplom.png";
 
 const SERVICE_ID = 'service_kmjngyo'
 const TEMPLATE_ID = 'template_v6b7dip'
@@ -35,28 +35,26 @@ export default function InscriptionForm() {
             <div className={classnames("container", styles.titleContainer)}>
                 <div className="row row--no-gutters ">
                     <div className="col col--7 ">
-                        <h6 className={classnames(styles.formTitle)}><span>Craft Data Engineer</span></h6>
                         <h3 className={classnames(styles.formTeaser)}>
-                            <span>Inscrivez vous à la prochaine session !</span>
+                            <span>Inscrivez vous à la prochaine session<span style={{color:"#f1bb00"}}>.</span></span>
                         </h3>
                         <p className={classnames(styles.formDescription)}>
                             <span>Inscrivez-vous à la prochaine session et profitez des dernières places ! </span>
                         </p>
                     </div>
-                    <div className="col ">
-                         <InscriptionSVG alt={"inscription"} className={styles.inscription} />
+                    <div className="col col--5">
+                        <img alt={"inscription"} src={Diplom} className={classnames(stylesModule.diplomImg)} />
                     </div>
                 </div>
             </div>
             <div className={classnames("container")} style={{paddingBottom: "200px"}}>
-                <form className={classnames(styles.formContainer, "shadow--md")} ref={form} onSubmit={sendEmail}>
+                <form className={classnames(styles.formContainer, "shadow--lw")} ref={form} onSubmit={sendEmail}>
                     <div className="row row--no-gutters " style={{paddingTop: "10px"}}>
                         <div className="col col--2"/>
                         <div className="col col--2">
                             <div className="field">
                                 <label>Prénom </label>
                                 <label style={{fontSize: "0.8rem", color: "red"}}>٭</label>
-                                <label> : </label>
                             </div>
                         </div>
                         <div className="col col--3">
@@ -70,7 +68,6 @@ export default function InscriptionForm() {
                             <div className="field">
                                 <label>Nom </label>
                                 <label style={{fontSize: "0.8rem", color: "red"}}>٭</label>
-                                <label> : </label>
                             </div>
                         </div>
                         <div className="col col--3">
@@ -84,7 +81,6 @@ export default function InscriptionForm() {
                             <div className="field">
                                 <label>@ Email </label>
                                 <label style={{fontSize: "0.8rem", color: "red"}}>٭</label>
-                                <label> : </label>
                             </div>
                         </div>
                         <div className="col col--3">
@@ -97,8 +93,7 @@ export default function InscriptionForm() {
                         <div className="col col--2">
                             <div className="field">
                                 <label> 📞 téléphone </label>
-                                <label style={{fontSize: "0.8rem"}}></label>
-                                <label> : </label>
+                                <label style={{fontSize: "0.8rem", color: "red"}}>٭</label>
                             </div>
                         </div>
                         <div className="col col--3">

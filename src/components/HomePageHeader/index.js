@@ -3,18 +3,33 @@ import useDocusaurusContext from "@docusaurus/core/lib/client/exports/useDocusau
 import stylesModule from './styles.module.css';
 import YourSvg from '../../../static/img/header/dashboard.svg';
 import classnames from "classnames";
+import SyllabusForm from "../SyllabusFrom";
+
+
+
 
 
 function HomepageHeader() {
+    const [open, setOpen] = React.useState(false);
     const {siteConfig} = useDocusaurusContext();
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
     return (
         <header className={classnames('hero hero--primary headTest', stylesModule.heroSection)}>
-            <div className="container" style={{paddingTop: "5%"}}>
+            <div className="container" style={{paddingTop: "3%"}}>
                 <div className="row">
                     <div className="col col--6">
-                        <h6 className={classnames(stylesModule.headTitle)}><span>{siteConfig.title}</span></h6>
                         <h3 className={classnames(stylesModule.headTeaser)}>
-                            <span>Découverez le métier du Data Engineer.</span></h3>
+                            <span>Découverez le métier du Data Engineer</span>
+                            <span style={{color:"#f1bb00"}}>.</span>
+                        </h3>
                         <p className={classnames(stylesModule.headDescription)}>
                             <span>
 
@@ -26,13 +41,20 @@ function HomepageHeader() {
 
                             </span>
                         </p>
+
                     </div>
                     <div className="col"/>
                     <div className="col col--5">
-                        <div className={classnames("text--center")}>
-
+                        <div className="row">
                             <YourSvg className={stylesModule.featureSvg} alt={"test"}/>
                         </div>
+                        <div  className={classnames(stylesModule.buttonDownload)} >
+                                <button className="button  button--primary"  onClick={handleClickOpen}  >Télécharger le programme</button>
+                        </div>
+                        <SyllabusForm
+                            open={open}
+                            onClose={handleClose}
+                        />
                     </div>
                 </div>
                 <div className={classnames("row ", stylesModule.containerAnnoucements)}>

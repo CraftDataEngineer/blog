@@ -3,54 +3,41 @@
 }
 
 .enrollContainer {
-  padding-top: 2%;
+  padding-top: 100px;
 }
 
-
-
-
-.backGroundContainer {
-  background-image: url("../../../static/img/enroll/keyboard.jpg"), linear-gradient(to right, rgba(239,239,241,255), rgba(239,239,241,255)),linear-gradient(to bottom, rgba(239,239,241,255), white);
-  background-clip: border-box;
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  background-size: cover;
+.allAvisContainer {
+  padding-left: 5%;
 }
-
 
 .gridContainer {
-  background-color: transparent;
+  padding: 5%;
+  /*background: linear-gradient(-5deg,rgba(239,239,241,255) 8%,#ffffff 5%);*/
+  background: linear-gradient(#ffffff 50%,rgba(242,243,247,255) );
+
   font-family: CircularStd-Book,Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
+
+@media screen and (max-width:  996px) {
+  .colContainer {
+    margin-top: 5%;
+  }
+}
+
+
 
 .enrollTitle {
   font-size: 2rem;
   color: #25366b;
+  text-align: center;
   font-family: CircularStd-Black,Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
 .enrollSubTitle {
   font-size: 1.5rem;
   color: #25366b;
-  padding-left: 5%;
   font-family: Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
-
-.textPosition{
-  text-align: right;
-}
-
-@media screen and (max-width:  996px){
-  .textPosition {
-    text-align: center;
-  }
-  .gridContainer {
-    margin: 5%;
-  }
-}
-
-
-
 
 .enrollTeaser {
   font-weight: 900;
@@ -60,6 +47,7 @@
   display: block;
   --tw-text-opacity: 1;
   tab-size: 4;
+  text-align: center;
   color: black;
   font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
@@ -70,6 +58,7 @@
   font-weight: 300;
   color: grey;
   font-family: CircularStd-Book,Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  text-align: center;
 }
 
 .enrollDescriptionPoints {
@@ -87,12 +76,26 @@
   background-color: black ;
   padding-top:4%;
   border-radius: 20px;
+
 }
 
+.avisContainer {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 244/var(--tw-bg-opacity));
+  margin-top: 0;
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  padding: 1.5rem;
+
+}
 
 @media screen and (max-width:  996px) {
   .questionContainer {
     text-align: center;
+  }
+  .avisContainer {
+    font-size: 0.5rem;
   }
 }
 
@@ -129,75 +132,8 @@
   font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
-.leftPart{
-  max-width: 400px;
-  background: #fff;
-  border-radius: 7px;
-  overflow: hidden;
-  padding: 50px 40px 3px 45px;
-}
-
-.leftPart h3 {
-  font-size: 30px;
-  color: #223036;
-  line-height: 34px;
-  letter-spacing: -.025rem;
-  margin: 29px 0 20px;
-  max-width: 310px;
-}
-
-.leftPart h3:after {
-  width: 87px;
-  height: 4px;
-  background: #25366b;
-  content: "";
-  display: block;
-  margin: 20px 0 52px;
-}
-
-
-.leftPart ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-
-.leftPart ul li {
-  display: block;
-  margin: 0 0 43px;
-}
-
-.leftPart ul li h6 {
-  font-size: 16px;
-  color: #223036;
-  font-family: circularstd-black,sans-serif;
-  display: block;
-  margin: 0 0 15px;
-  text-transform: uppercase;
-  position: relative;
-}
-
-
-.leftPart ul li p {
-  line-height: 24px;
-  margin: 0;
-}
-
-@media screen and (max-width:  996px){
-
-  .leftPart h3 {
-    font-size: 1rem;
-  }
-
-
-  .leftPart ul li p  {
-    font-size: 0.7rem;
-  }
-  .leftPart ul li h6 {
-    font-size: 1rem;
-  }
-  .colContainer {
-    margin-top: 5%;
+@media screen and (max-width:  996px) {
+  .contactTeaser {
+    font-size: 2rem;
   }
 }
