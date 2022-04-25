@@ -17,7 +17,7 @@
     width: 60%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width:  996px) {
     .featureSvg {
         height: 150%;
         width: 105%;
@@ -29,7 +29,7 @@
     padding-bottom: 8%
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width:  996px) {
     .moduleContainer {
         padding-bottom: 5%;
         padding-top: 120px;

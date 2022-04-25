@@ -17,14 +17,14 @@
   color: #223036;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width:  996px){
   .verticleLine {
     border-left: None;
     height: 5%;
   }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width:  996px){
   .displayMobile {
     display: None;
   }
@@ -42,7 +42,7 @@
   font-size: 17px;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width:  996px){
   .containerAnnoucements {
     margin: 20px 20px 20px 20px;
     text-align: center;
@@ -66,7 +66,7 @@
   margin-left: 30%;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width:  996px){
   .buttonDownload {
     margin-top: 5%;
     margin-left: 5%;
@@ -103,7 +103,7 @@
   text-align: justify;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width:  996px){
   .headDescription {
     padding-top: 5%;
     font-size: 1rem;
@@ -126,7 +126,7 @@
   background: linear-gradient(#ffffff 40%,rgba(242,243,247,255) );
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width:  996px){
   .heroSection {
     text-align: center;
     background: white;

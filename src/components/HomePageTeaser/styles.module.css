@@ -26,7 +26,7 @@
   margin-bottom: 2%;
 }
 
-@media (max-width: 800px) {
+@media (max-width:  996px) {
   .moduleSvg {
     margin-left: 1%;
   }
@@ -51,7 +51,7 @@
   padding-bottom: 1%;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width:  996px){
   .displayMobileHeader {
     padding-bottom: 10%;
   }
@@ -78,7 +78,7 @@
 
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width:  996px){
   .teaserContainer {
     text-align: center;
   }
@@ -150,7 +150,7 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width:  996px){
   .teaserDescription {
     display: none;
   }

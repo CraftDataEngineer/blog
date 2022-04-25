@@ -1,12 +1,19 @@
 
 .featureProfile {
-  height: 90%;
-  width: 110%;
+  height: 70%;
+  width: 200%;
   border-radius: 25%;
-  margin: 0;
+  margi-top: 20%;
+  margin-bottom: 0;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (min-width:  2000px){
+  .featureProfile {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width:  996px){
   .mediaProfile {
     display: none;
   }
@@ -16,7 +23,7 @@
   margin-bottom: 5%;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width:  996px) {
 
   .featureAvatar {
     display: none;
@@ -29,7 +36,7 @@
   padding-top: 3%;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width:  996px){
   .formateurContainer {
     text-align: center;
   }
@@ -83,7 +90,7 @@
 
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width:  996px){
   .formateurDescriptionPoints {
     font-size: 0.7rem;
   }
