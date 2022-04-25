@@ -1,0 +1,11 @@
+<svg width="40" height="16" viewBox="0 0 40 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16.842 11.834C22.704 14.3 30.424 15.689 40 16H0V.42A.4.4 0 01.191.09a.566.566 0 01.702.07c5.095 5.453 10.411 9.344 15.95 11.674z"
+          fill="url(#testimonial-bubble-tip--light_svg__paint0_linear_1406:14214)"></path>
+    <defs>
+        <linearGradient id="testimonial-bubble-tip--light_svg__paint0_linear_1406:14214" x1="0.5" y1="0" x2="0.5"
+                        y2="16" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E7E5E4"></stop>
+            <stop offset="1" stop-color="#F5F5F4"></stop>
+        </linearGradient>
+    </defs>
+</svg>

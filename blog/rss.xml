@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>Craft Data Engineer Blog</title>
+        <title>Data Guru Blog</title>
         <link>https://blog.craft-data-engineer.com/blog</link>
-        <description>Craft Data Engineer Blog</description>
+        <description>Data Guru Blog</description>
         <lastBuildDate>Tue, 23 Mar 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
