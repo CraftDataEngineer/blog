@@ -250,11 +250,11 @@ export default function Navbar() {
             className={classnames(styles.logo)}
           />
           {leftItems.map((item, i) => (
-            <NavbarItem {...item} key={i} />
+            <NavbarItem className={classnames(styles.navbarItem)} {...item} key={i} />
           ))}
         </div>
         <div className="navbar__items navbar__items--right" >
-          {!hasSearchNavbarItem && isBlog && !mobileSidebar.shouldRender && <SearchBar   />}
+          {!hasSearchNavbarItem && isBlog && !mobileSidebar.shouldRender && <SearchBar  />}
           {rightItems.map((item, i) => (
             <NavbarItem {...item} key={i} />
           ))}
@@ -266,7 +266,7 @@ export default function Navbar() {
             />
           )}
           <Link to="/inscription/" >
-            <button className="button  button--outline button--primary "   >Inscrivez-vous</button>
+            <button className={classnames("button  button--outline button--primary" ,styles.navbarItem)}  >Inscrivez-vous</button>
           </Link>
         </div>
       </div>

@@ -32,6 +32,27 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
+.custom-shape-divider-top-1651058624 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1651058624 svg {
+  position: relative;
+  display: block;
+  width: calc(151% + 1.3px);
+  height: 116px;
+}
+
+.custom-shape-divider-top-1651058624 .shape-fill {
+  fill: #F2F3F7;
+}
+
 
 /* Parcours Animation. */
 #firstText, #secondText, #thirdText {
