@@ -15,22 +15,7 @@
   padding: 50px 40px 3px 45px;
 }
 
-@media screen and (max-width:  996px){
-  .leftPart  {
-    max-width: 300px;
-    padding-bottom: 0;
-    padding-top: 1%;
-  }
-  .leftPart h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .leftPart h3:after {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
 
-}
 
 
 .leftPart h3 {
