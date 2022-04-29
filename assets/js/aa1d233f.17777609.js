@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdive_into=self.webpackChunkdive_into||[]).push([[928],{3514:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/example","name":"example","count":1,"permalink":"/blog/tags/example"}')}}]);
