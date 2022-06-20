@@ -56,26 +56,26 @@ module.exports = {
         },
         footer: {
             style: 'dark',
-            logo: {
-                alt: 'Qualiopi',
-                src: 'img/footer/qce.png',
-                width: 400,
-                height: 400,
-            },
-            /* links: [
-              {
-                label: 'Facebook',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Linkedin',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              }
-            ],*/
+            /* logo: {
+                 alt: 'Qualiopi',
+                 src: 'img/footer/qce.png',
+                 width: 400,
+                 height: 400,
+             },
+              links: [
+               {
+                 label: 'Facebook',
+                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+               },
+               {
+                 label: 'Linkedin',
+                 href: 'https://discordapp.com/invite/docusaurus',
+               },
+               {
+                 label: 'Twitter',
+                 href: 'https://twitter.com/docusaurus',
+               }
+             ],*/
             copyright: `Copyright © ${new Date().getFullYear()} Data Guru, Inc.`,
         },
     },
