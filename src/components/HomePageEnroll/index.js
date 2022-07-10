@@ -33,11 +33,11 @@ function HomePageEnroll() {
                         <div className="col col--4"/>
                         <div className="col">
                             <div className={styles.leftPart}>
-                                <h3> Un organisme de formation certifié et référencé.</h3>
+                                <h3> Un organisme de formation de qualité.</h3>
                                 <ul>
                                     <li>
-                                        <h6>🎓  &nbsp; Certification </h6>
-                                        <p>A l'issue de votre formation vous serez certifié !</p>
+                                        <h6>🎓  &nbsp; Qualification </h6>
+                                        <p>A l'issue de votre formation vous aurez toutes les competences nécessaires pour décrocher votre premier job de Data Engineer !</p>
                                     </li>
                                 </ul>
                             </div>
