@@ -21,6 +21,14 @@ function HomepageHeader() {
         setOpen(false);
     };
 
+
+    const saveFile = () => {
+        saveAs(
+            "/files/programme.pdf",
+            "programme.pdf"
+        );
+    };
+
     return (
         <header className={classnames('hero hero--primary headTest', stylesModule.heroSection)}>
             <div className="container" style={{paddingTop: "3%"}}>
@@ -49,7 +57,7 @@ function HomepageHeader() {
                             <YourSvg className={stylesModule.featureSvg} alt={"test"}/>
                         </div>
                         <div  className={classnames(stylesModule.buttonDownload)} >
-                                <button className="button  button--primary"  onClick={handleClickOpen}  >Télécharger le programme</button>
+                                <button className="button  button--primary"  onClick={saveFile}  >Télécharger le programme</button>
                         </div>
                         <SyllabusForm
                             open={open}
@@ -60,19 +68,19 @@ function HomepageHeader() {
                 <div className={classnames("row ", stylesModule.containerAnnoucements)}>
                     <div className="col ">
                         <span>Financement :</span>
-                        <h2 style={{marginTop: "2%",fontFamily:"CircularStd-Black"}}> 5100 € </h2>
-                        <span className={classnames(stylesModule.displayMobile)}>Formation éligible au CPF</span>
+                        <h2 style={{marginTop: "2%",fontFamily:"CircularStd-Black"}}> 3200 € </h2>
+                        <span className={classnames(stylesModule.displayMobile)}>Formation innovante</span>
                     </div>
                     <div className={classnames("col ", stylesModule.verticleLine)}>
                         <span>Prochain cours :</span>
-                        <h3 style={{marginTop: "2%",fontFamily:"CircularStd-Black"}}> JUILLET 05, 2022</h3>
-                        <span className={classnames(stylesModule.displayMobile)}>Durée 3 mois</span>
+                        <h3 style={{marginTop: "2%",fontFamily:"CircularStd-Black"}}> OCTOBRE 01, 2022</h3>
+                        <span className={classnames(stylesModule.displayMobile)}>Durée 2 mois</span>
                     </div>
                     <div className={classnames("col ", stylesModule.verticleLine)}>
                         <span>Prérequis :</span>
-                        <h3 style={{marginTop: "2%",fontFamily:"CircularStd-Black",fontWeight:"400"}}>BAC + 5</h3>
+                        <h3 style={{marginTop: "2%",fontFamily:"CircularStd-Black",fontWeight:"400"}}>BAC + 3 / BAC + 5</h3>
                         <span
-                            className={classnames(stylesModule.displayMobile)}>Connaissances basiques en développement et SQL</span>
+                            className={classnames(stylesModule.displayMobile)}>Connaissances en développement et Linux</span>
                     </div>
                 </div>
             </div>
