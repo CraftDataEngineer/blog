@@ -13,7 +13,7 @@ module.exports = {
         announcementBar: {
             id: 'support_us',
             content:
-                'Inscription ouverte pour la prochaine session profité des dernières places !',
+                'Inscription ouverte pour la prochaine session profiter des dernières places !',
             backgroundColor: '#fafbfc',
             textColor: 'black',
             isCloseable: false,
@@ -37,10 +37,12 @@ module.exports = {
         navbar: {
             logo: {
                 alt: 'My Site Logo',
-                src: 'img/logo.png'
+                src: 'img/logo.png',
+                width: 80,
+                height: 80,
             },
             items: [
-                {
+  /*              {
                     to: 'docs/',
                     activeBasePath: 'docs',
                     label: "Blog",
@@ -51,7 +53,7 @@ module.exports = {
                     activeBasePath: 'docs',
                     label: 'Nous Contacter',
                     position: 'right',
-                }
+                }*/
             ],
         },
         footer: {

@@ -266,7 +266,7 @@ export default function Navbar() {
             />
           )}
           <Link to="/inscription/" >
-            <button className={classnames("button  button--outline button--primary" ,styles.navbarItem)}  >Inscrivez-vous</button>
+            <button className={classnames("button   button--primary" ,styles.navbarItem)}  >Prendre rendez-vous</button>
           </Link>
         </div>
       </div>

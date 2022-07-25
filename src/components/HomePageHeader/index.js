@@ -1,9 +1,11 @@
 import React from "react";
 import useDocusaurusContext from "@docusaurus/core/lib/client/exports/useDocusaurusContext";
 import stylesModule from './styles.module.css';
-import YourSvg from '../../../static/img/header/dashboard.svg';
+import YourSvg from '../../../static/img/header/geek.png';
 import classnames from "classnames";
 import SyllabusForm from "../SyllabusFrom";
+import {Button, Chip} from "@mui/material";
+import DownloadIcon from '@mui/icons-material/Download';
 
 
 
@@ -35,52 +37,45 @@ function HomepageHeader() {
                 <div className="row">
                     <div className="col col--6">
                         <h3 className={classnames(stylesModule.headTeaser)}>
-                            <span>Découverez le métier du Data Engineer</span>
+                            <span>Devenez Data Engineer</span>
                             <span style={{color:"#f1bb00"}}>.</span>
                         </h3>
                         <p className={classnames(stylesModule.headDescription)}>
                             <span>
-
-                                <b> Expert</b> dans la manipulation et la transformation des données, le <b>Data Engineer </b>
-                                 a vu le jour avec l'émergence du <b>Big Data</b>  et figure parmi les profils les plus recherchés par les entreprises !
-                                 Grâce à un <b> accompagnement personnalisé </b> pour chaque apprenant, notre <b>formation</b> vous donnera les
-                                <b> clefs nécessaires</b> pour rejoindre une équipe en tant que <b>Craft</b> Data Engineer !
-                                <b> Bonnes pratiques de programmation</b>, <b> DevOps </b> et <b> Big Data </b> n’auront plus de secret pour vous !
-
+                                 Grâce à un <b> accompagnement personnalisé</b> , notre formation vous donnera les
+                                clefs nécessaires pour devenir un <span> expert dans la manipulation et la transformation des données ! </span>
+                                <b>Bonnes pratiques de programmation</b> , <b>DevOps</b> et <b>Big Data</b> n’auront plus de secret pour vous !
                             </span>
+                            <div  className={classnames(stylesModule.buttonDownload)} >
+                                <Button variant="contained" startIcon={<DownloadIcon />} size="large" onClick={saveFile} style={{backgroundColor:"#a6a2f7" , borderColor:"transparent"}} >
+                                    Télécharger le programme
+                                </Button>
+                                <SyllabusForm
+                                    open={open}
+                                    onClose={handleClose}
+                                />
+                            </div>
                         </p>
-
                     </div>
                     <div className="col"/>
                     <div className="col col--5">
                         <div className="row">
-                            <YourSvg className={stylesModule.featureSvg} alt={"test"}/>
+                            <img src={YourSvg} className={stylesModule.featureSvg} alt={"test"}/>
                         </div>
-                        <div  className={classnames(stylesModule.buttonDownload)} >
-                                <button className="button  button--primary"  onClick={saveFile}  >Télécharger le programme</button>
-                        </div>
-                        <SyllabusForm
-                            open={open}
-                            onClose={handleClose}
-                        />
                     </div>
                 </div>
                 <div className={classnames("row ", stylesModule.containerAnnoucements)}>
-                    <div className="col ">
-                        <span>Financement :</span>
-                        <h2 style={{marginTop: "2%",fontFamily:"CircularStd-Black"}}> 3200 € </h2>
-                        <span className={classnames(stylesModule.displayMobile)}>Formation innovante</span>
+                    <div className={classnames("col ", stylesModule.firstverticleLine)}>
+                        <Chip  style={{marginTop: "2%",fontFamily:"CircularStd-Black"}} label="Formation" />
+                        <h2 style={{marginTop: "2%",fontFamily:"CircularStd-Black"}}> 100% en ligne</h2>
                     </div>
                     <div className={classnames("col ", stylesModule.verticleLine)}>
-                        <span>Prochain cours :</span>
+                        <Chip  style={{marginTop: "2%",fontFamily:"CircularStd-Black" }} label="Prochaine formation " />
                         <h3 style={{marginTop: "2%",fontFamily:"CircularStd-Black"}}> OCTOBRE 01, 2022</h3>
-                        <span className={classnames(stylesModule.displayMobile)}>Durée 2 mois</span>
                     </div>
                     <div className={classnames("col ", stylesModule.verticleLine)}>
-                        <span>Prérequis :</span>
-                        <h3 style={{marginTop: "2%",fontFamily:"CircularStd-Black",fontWeight:"400"}}>BAC + 3 / BAC + 5</h3>
-                        <span
-                            className={classnames(stylesModule.displayMobile)}>Connaissances en développement et Linux</span>
+                        <Chip  style={{marginTop: "2%",fontFamily:"CircularStd-Black"}} label="Format" />
+                        <h3 style={{marginTop: "2%",fontFamily:"CircularStd-Black",fontWeight:"400"}}>Bootcamp 2 mois</h3>
                     </div>
                 </div>
             </div>

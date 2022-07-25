@@ -9,6 +9,7 @@ import HomePageFaq from "../components/HomePageFaq";
 import "animate.css/animate.min.css";
 import HomePageAvis from "../components/HomePageAvis";
 import HomePageTheoriePratique from "../components/HomePageTheoriePratique";
+import ContenuFormation from "../components/ContenuFormation";
 
 export default function Home() {
   const context = useDocusaurusContext();
@@ -18,9 +19,11 @@ export default function Home() {
       <main>
           <HomepageHeader/>
           <HomePageTheoriePratique />
-          <HomepageModules/>
+          <ContenuFormation/>
           <HomePageFormateur/>
+          <HomePageAvis/>
           <HomePageEnroll/>
+          <HomePageFaq/>
       </main>
 
     </Layout>

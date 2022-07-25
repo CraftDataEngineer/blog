@@ -21,6 +21,8 @@ Hide toggle in small viewports
 
 .navbarItem {
   margin-bottom: 5%;
+  background-color: #f1bb00;
+  border-color: transparent;
 }
 
 @media (max-width: 800px) {
