@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import classnames from "classnames";
 import styles from "./styles.module.css"
 import Link from "@docusaurus/core/lib/client/exports/Link";
-import stylesModule from "../HomePageHeader/styles.module.css";
+import stylesModule from "../Hero/styles.module.css";
 import Diplom from "../../../static/img/teaser/diplom.png";
 
 const SERVICE_ID = 'service_kmjngyo'

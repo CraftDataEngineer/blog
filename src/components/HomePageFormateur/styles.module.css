@@ -61,7 +61,6 @@
 .gridContainer {
   margin-top: 3%;
   padding-bottom: 3%;
-
 }
 
 .formateurTitle {
@@ -95,11 +94,15 @@
   --tw-text-opacity: 0.8;
   font-family: CircularStd-Book,Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
   list-style-type:"";
+  margin-top: 2%;
 }
 
-@media screen and (max-width:  996px){
+
+
+@media screen and (max-width:  768px){
   .formateurDescriptionPoints {
     font-size: 0.7rem;
+    margin: auto;
   }
   .formateurDescription {
     font-size: 0.7rem;

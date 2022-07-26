@@ -28,7 +28,7 @@ export default function HomePageTheoriePratique() {
                             <h3 className={classnames(styles.teaserTeaser)}><span>En quoi consiste la formation ?</span>
                             </h3>
                             <p className={classnames(styles.teaserDescription)}>
-                                Une formation qui allie <b>théorie</b> et <b>pratique</b> et un accompagnement
+                                Une formation qui allie <b style={{color:"#ffff"}}>théorie</b> et <b style={{color:"#ffff"}}>pratique</b> et un accompagnement
                                 personnalisé pour chaque candidat.
                             </p>
                         </div>

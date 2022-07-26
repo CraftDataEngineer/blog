@@ -4,6 +4,10 @@ import classnames from "classnames";
 import Link from "@docusaurus/core/lib/client/exports/Link";
 import Bulle from "../../../static/img/avis/bulle.svg";
 import useDocusaurusContext from "@docusaurus/core/lib/client/exports/useDocusaurusContext";
+import stylesModule from "../PrixFormation/styles.module.css";
+import {Button} from "@mui/material";
+import HowToRegIcon from '@mui/icons-material/HowToReg';
+import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 
 
 function Avis({name, subtitle,stars, photo, text}) {
@@ -80,21 +84,25 @@ function HomePageAvis() {
                     <div className="col ">
                         <div className={classnames("hero hero--dark shadow--md", styles.questionContainer)}>
                             <div className="container">
-                                <h1 className={classnames("hero__title", styles.contactTeaser)}>Vous avez des questions
-                                    ?</h1>
+                                <h1 className={classnames("hero__title", styles.contactTeaser)}>Vous avez des questions <span style={{color:"#f1bb00"}}>?</span></h1>
                                 <p className="hero__subtitle">Nous sommes convaincus que vous aimerez la formation. Si
                                     vous avez des questions, nous serons heureux d'y répondre.</p>
                                 <div>
                                     <Link to="/form/" className={classnames(styles.contactButton)}>
-                                        <button className="button button--primary  button--lg">
+                                        <Button variant="contained" startIcon={<PhoneInTalkIcon/>} size="large"
+                                                style={{backgroundColor: "#a6a2f7", borderColor: "transparent"}}>
                                             Nous Contacter
-                                        </button>
+                                        </Button>
+
+
                                     </Link>
 
                                     <Link to="/inscription/" className={classnames(styles.enrollButton)}>
-                                        <button
-                                            className="button button--outline button--secondary  button--lg ">Inscrivez-vous
-                                        </button>
+                                        <Button variant="contained" startIcon={<HowToRegIcon/>} size="large"
+                                                style={{backgroundColor: "#f1bb00", borderColor: "transparent"}}>
+                                            Inscrivez-vous
+                                        </Button>
+
                                     </Link>
                                 </div>
                             </div>

@@ -13,7 +13,7 @@ module.exports = {
         announcementBar: {
             id: 'support_us',
             content:
-                'Inscription ouverte pour la prochaine session profiter des dernières places !',
+                'Inscription ouverte pour la prochaine session profitez des dernières places !',
             backgroundColor: '#fafbfc',
             textColor: 'black',
             isCloseable: false,
@@ -58,7 +58,7 @@ module.exports = {
         },
         footer: {
             style: 'dark',
-            /* logo: {
+             logo: {
                  alt: 'Qualiopi',
                  src: 'img/footer/qce.png',
                  width: 400,
@@ -72,12 +72,8 @@ module.exports = {
                {
                  label: 'Linkedin',
                  href: 'https://discordapp.com/invite/docusaurus',
-               },
-               {
-                 label: 'Twitter',
-                 href: 'https://twitter.com/docusaurus',
                }
-             ],*/
+             ],
             copyright: `Copyright © ${new Date().getFullYear()} Data Guru, Inc.`,
         },
     },

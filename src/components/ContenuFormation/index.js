@@ -63,7 +63,7 @@ export default function ContenuFormation() {
                                             <img alt="" src={Elastic} className={styles.icon}/>
                                         </h2>
                                     </div>
-                                    <p> Enregistrer et requêter de la donnée pour toutes les volumétries !</p>
+                                    <p> Enregistrer et récupérer de la donnée pour toutes les volumétries !</p>
                                 </li>
                             </ul>
                         </div>
@@ -99,7 +99,7 @@ export default function ContenuFormation() {
                                             <img alt="" src={Kafka} className={styles.largeIcon}/>
                                         </h2>
                                     </div>
-                                    <p> Analyser des données en temps réel grâce au streaming ! </p>
+                                    <p> Traiter et Analyser des données en temps réel grâce au streaming ! </p>
                                 </li>
                             </ul>
                         </div>
@@ -137,7 +137,7 @@ export default function ContenuFormation() {
                                             <img alt="" src={Jira} className={styles.icon}/>
                                         </h2>
                                     </div>
-                                    <p> Apprenez à collaborer en équipe et travailler avec les méthodes agiles !</p>
+                                    <p> Collaborer en équipe et travailler avec les méthodes agiles !</p>
                                 </li>
                             </ul>
                         </div>
