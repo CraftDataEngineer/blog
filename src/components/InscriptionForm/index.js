@@ -10,6 +10,9 @@ const SERVICE_ID = 'service_kmjngyo'
 const TEMPLATE_ID = 'template_v6b7dip'
 const USER_ID = 'XelOog_ZvkGiZ60Ty'
 
+import { InlineWidget } from "react-calendly";
+
+
 export default function InscriptionForm() {
     const [loading, setLoading] = useState(false)
     const [send, setSend] = useState(false);
@@ -48,6 +51,8 @@ export default function InscriptionForm() {
                 </div>
             </div>
             <div className={classnames("container")} style={{paddingBottom: "200px"}}>
+                <InlineWidget url="https://calendly.com/dataguru-advisory/30min" />
+
                 <form className={classnames(styles.formContainer, "shadow--lw")} ref={form} onSubmit={sendEmail}>
                     <div className="row row--no-gutters " style={{paddingTop: "10px"}}>
                         <div className="col col--2"/>
