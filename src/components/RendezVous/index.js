@@ -6,12 +6,12 @@ import {InlineWidget} from "react-calendly";
 
 
 export default function RendezVousForm() {
-    
+
     return (
         <div>
             <div className={classnames("container", styles.titleContainer)}>
                 <div className="row row--no-gutters ">
-                    <div className="col col--6 ">
+                    <div className="col ">
                         <h3 className={classnames(styles.formTeaser)}>
                             <span>Vous avez des questions <span style={{color: "#f1bb00"}}>?</span></span>
                         </h3>

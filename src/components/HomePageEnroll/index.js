@@ -1,17 +1,13 @@
 import styles from "./styles.module.css";
 import React from "react";
 import classnames from "classnames";
-import useDocusaurusContext from "@docusaurus/core/lib/client/exports/useDocusaurusContext";
 import Qualiopi from '../../../static/img/enroll/qualiopi.png';
-import YourSvg from "../../../static/img/header/geek_2.png";
-import stylesModule from "../PrixFormation/styles.module.css";
 import {Button} from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
 import Link from "@docusaurus/core/lib/client/exports/Link";
 
 function HomePageEnroll() {
 
-    const context = useDocusaurusContext();
     return (
         <div className={classnames(styles.backGroundContainer)}>
             <div className={classnames(styles.waveDivider)}>

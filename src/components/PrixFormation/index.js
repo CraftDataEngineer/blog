@@ -31,7 +31,7 @@ function PrixFormation() {
                         </h2>
                         <p>
                             Si vous êtes en recherche d’emploi, la formation peut être prise en charge à 100% par Pôle
-                            Emploi ou bénéficier d’un abondement à hauteur de 2500€ sur votre CPF.
+                            Emploi.
                         </p>
                         <p>
                             Si vous êtes salarié, vous pouvez demander à votre entreprise de vous financer la formation.

@@ -48,11 +48,11 @@ function HomePageFormateur() {
                         </p>
                         <div className={classnames(styles.formateurDescriptionPoints)}>
                             <ul className={classnames(styles.formateurDescriptionPoints)}>
-                                <li>👨‍💻 &nbsp; Nous sommes des artisans des bonnes pratiques de développement.</li>
-                                <li>🏗 &nbsp; Nous sommes des passionnés des systèmes et plateformes de données.</li>
                                 <li>🥼 &nbsp; Nous avons plus de 8 ans d'expériences chacun ... 20 missions au
                                     compteur.
                                 </li>
+                                <li>🏗 &nbsp; Nous sommes des passionnés des systèmes et plateformes de données.</li>
+                                <li>👨‍💻 &nbsp; Nous sommes des artisans des bonnes pratiques de développement.</li>
                                 <li>👨‍🔧 &nbsp; Nous intervenons en tant que tech lead chez nos clients.</li>
                                 <li>☁️ &nbsp; Nous sommes tous les 2 certifiés Amazon.</li>
                             </ul>

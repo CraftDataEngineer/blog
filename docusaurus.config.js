@@ -67,11 +67,11 @@ module.exports = {
               links: [
                {
                  label: 'Facebook',
-                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                 href: 'https://www.facebook.com/DataGuru-108335435294231',
                },
                {
                  label: 'Linkedin',
-                 href: 'https://discordapp.com/invite/docusaurus',
+                 href: 'https://www.linkedin.com/company/dataguru',
                }
              ],
             copyright: `Copyright © ${new Date().getFullYear()} Data Guru, Inc.`,

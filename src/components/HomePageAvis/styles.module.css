@@ -102,6 +102,12 @@
 }
 
 
+.contactButton{
+
+  padding-left: 1%;
+  color: #a6a2f7 !important;
+  --ifm-font-color-base: #a6a2f7;
+}
 
 .enrollButton {
   padding-left: 1%;

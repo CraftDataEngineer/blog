@@ -4,7 +4,6 @@ import classnames from "classnames";
 import Link from "@docusaurus/core/lib/client/exports/Link";
 import Bulle from "../../../static/img/avis/bulle.svg";
 import useDocusaurusContext from "@docusaurus/core/lib/client/exports/useDocusaurusContext";
-import stylesModule from "../PrixFormation/styles.module.css";
 import {Button} from "@mui/material";
 import HowToRegIcon from '@mui/icons-material/HowToReg';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
@@ -84,9 +83,8 @@ function HomePageAvis() {
                     <div className="col ">
                         <div className={classnames("hero hero--dark shadow--md", styles.questionContainer)}>
                             <div className="container">
-                                <h1 className={classnames("hero__title", styles.contactTeaser)}>Vous avez des questions <span style={{color:"#f1bb00"}}>?</span></h1>
-                                <p className="hero__subtitle">Nous sommes convaincus que vous aimerez la formation. Si
-                                    vous avez des questions, nous serons heureux d'y répondre.</p>
+                                <h1 className={classnames("hero__title", styles.contactTeaser)}>Vous avez besoin d'éclaircir un point  <span style={{color:"#f1bb00"}}>?</span></h1>
+                                <p className="hero__subtitle">N'hésitez pas à nous contacter, nous serons heureux d'y répondre.</p>
                                 <div>
                                     <Link to="/form/" className={classnames(styles.contactButton)}>
                                         <Button variant="contained" startIcon={<PhoneInTalkIcon/>} size="large"
