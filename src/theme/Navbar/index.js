@@ -26,7 +26,8 @@ import IconMenu from '@theme/IconMenu';
 import IconClose from '@theme/IconClose';
 import styles from './styles.module.css';
 import Link from "@docusaurus/core/lib/client/exports/Link";
-import classnames from "classnames"; // retrocompatible with v1
+import classnames from "classnames";
+import RendezVous from "../../pages/rendezVous"; // retrocompatible with v1
 
 const DefaultNavItemPosition = 'right';
 
@@ -265,11 +266,12 @@ export default function Navbar() {
               onChange={colorModeToggle.toggle}
             />
           )}
-          <Link to="/inscription/" >
-            <button className={classnames("button  button--outline button--primary" ,styles.navbarItem)}  >Inscrivez-vous</button>
+          <Link to="/RendezVous/" >
+            <button className={classnames("button   button--primary" ,styles.navbarItem)}  >Prendre rendez-vous</button>
           </Link>
         </div>
       </div>
+
 
       <div
         role="presentation"

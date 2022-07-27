@@ -10,6 +10,8 @@
   padding-left: 5%;
 }
 
+
+
 .gridContainer {
   padding: 5%;
   /*background: linear-gradient(-5deg,rgba(239,239,241,255) 8%,#ffffff 5%);*/
@@ -99,14 +101,18 @@
   }
 }
 
-.contactButton {
+
+.contactButton{
+
   padding-left: 1%;
+  color: #a6a2f7 !important;
+  --ifm-font-color-base: #a6a2f7;
 }
 
 .enrollButton {
   padding-left: 1%;
-  color: white !important;
-  --ifm-font-color-base: white;
+  color: #f1bb00 !important;
+  --ifm-font-color-base: #f1bb00;
 
 }
 

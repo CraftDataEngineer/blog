@@ -32,14 +32,6 @@ export default function ContactUs() {
 
     return (
         <div>
-            <div className={classnames("container", styles.titleContainer)}>
-                <div className="row  ">
-                    <div className="col">
-                        <h3 className={classnames(styles.formTeaser)}><span>Posez nous toutes vos questions !</span>
-                        </h3>
-                    </div>
-                </div>
-            </div>
             <div className={classnames("container")} style={{paddingBottom: "200px"}}>
                 <form className={classnames(styles.formContainer, "shadow--lw")} ref={form} onSubmit={sendEmail}>
                     <div className="row row--no-gutters ">

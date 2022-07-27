@@ -1,13 +1,12 @@
 import styles from "./styles.module.css";
 import React from "react";
 import classnames from "classnames";
-import useDocusaurusContext from "@docusaurus/core/lib/client/exports/useDocusaurusContext";
-
+import Qualiopi from '../../../static/img/enroll/qualiopi.png';
+import {Button} from "@mui/material";
+import DownloadIcon from "@mui/icons-material/Download";
+import Link from "@docusaurus/core/lib/client/exports/Link";
 
 function HomePageEnroll() {
-
-    const context = useDocusaurusContext();
-    const {siteConfig = {}} = context;
 
     return (
         <div className={classnames(styles.backGroundContainer)}>
@@ -20,28 +19,12 @@ function HomePageEnroll() {
             </div>
             <div className={classnames("container",styles.enrollContainer)}>
                 <div >
-                    <h6 className={classnames(styles.enrollTitle, styles.textPosition)}><span>{siteConfig.title}</span>
-                    </h6>
-                    <h3 className={classnames(styles.enrollTeaser, styles.textPosition)}><span>Rejoignez la prochaine session<span style={{color:"#f1bb00"}}>.</span></span>
+                    <h3 className={classnames(styles.enrollTeaser,styles.textPosition)}><span>Vous hésitez sur votre choix de formation <span style={{color:"#f1bb00"}}>?</span></span>
                     </h3>
-                    <p className={classnames(styles.enrollDescription, styles.textPosition)}>
-                        <span>À l’issue de votre parcours, vous saurez</span>
-                    </p>
                 </div>
                 <div className={classnames(styles.gridContainer)}>
                     <div className="row " >
                         <div className="col col--4"/>
-                        <div className="col">
-                            <div className={styles.leftPart}>
-                                <h3> Un organisme de formation de qualité.</h3>
-                                <ul>
-                                    <li>
-                                        <h6>🎓  &nbsp; Qualification </h6>
-                                        <p>A l'issue de votre formation vous aurez toutes les competences nécessaires pour décrocher votre premier job de Data Engineer !</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                         <div  className={classnames("col", styles.colContainer)}>
                             <div className={styles.leftPart}>
                                 <h3> À l’issue de votre parcours, vous saurez
@@ -60,6 +43,27 @@ function HomePageEnroll() {
                                         <p>Collaborer en équipe avec les bonnes méthodologies </p>
                                     </li>
                                 </ul>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className={styles.leftPart}>
+                                <h3> Un organisme de formation de qualité.</h3>
+                                <ul>
+                                    <li>
+                                        <h6>🎓  &nbsp; Qualiopi </h6>
+                                        <p>Toutes nos formations sont certifiées Qualiopi au titre des actions de formation.</p>
+                                        <img src={Qualiopi} className={styles.featureImg}  alt={"test"}/>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className={classnames(styles.buttonDownload)}>
+                                <Link to="/inscription/" className={classnames(styles.enrollButton)}>
+                                    <Button variant="contained" startIcon={<DownloadIcon/>} size="large"
+                                            style={{backgroundColor: "#a6a2f7", borderColor: "transparent"}}>
+                                        Télécharger le Syllabus
+                                    </Button>
+                                </Link>
+
                             </div>
                         </div>
                     </div>

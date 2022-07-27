@@ -13,7 +13,7 @@ module.exports = {
         announcementBar: {
             id: 'support_us',
             content:
-                'Inscription ouverte pour la prochaine session profité des dernières places !',
+                'Inscription ouverte pour la prochaine session profitez des dernières places !',
             backgroundColor: '#fafbfc',
             textColor: 'black',
             isCloseable: false,
@@ -37,10 +37,12 @@ module.exports = {
         navbar: {
             logo: {
                 alt: 'My Site Logo',
-                src: 'img/logo.png'
+                src: 'img/logo.png',
+                width: 80,
+                height: 80,
             },
             items: [
-                {
+  /*              {
                     to: 'docs/',
                     activeBasePath: 'docs',
                     label: "Blog",
@@ -51,12 +53,12 @@ module.exports = {
                     activeBasePath: 'docs',
                     label: 'Nous Contacter',
                     position: 'right',
-                }
+                }*/
             ],
         },
         footer: {
             style: 'dark',
-            /* logo: {
+             logo: {
                  alt: 'Qualiopi',
                  src: 'img/footer/qce.png',
                  width: 400,
@@ -65,17 +67,13 @@ module.exports = {
               links: [
                {
                  label: 'Facebook',
-                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                 href: 'https://www.facebook.com/DataGuru-108335435294231',
                },
                {
                  label: 'Linkedin',
-                 href: 'https://discordapp.com/invite/docusaurus',
-               },
-               {
-                 label: 'Twitter',
-                 href: 'https://twitter.com/docusaurus',
+                 href: 'https://www.linkedin.com/company/dataguru',
                }
-             ],*/
+             ],
             copyright: `Copyright © ${new Date().getFullYear()} Data Guru, Inc.`,
         },
     },
