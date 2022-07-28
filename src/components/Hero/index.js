@@ -41,9 +41,9 @@ function HomepageHeader() {
                         </h3>
                         <p className={classnames(stylesModule.headDescription)}>
                             <p>
-                                 Devenez un <b>Data Engineer opérationnel</b> , grâce à notre Boot Camp vous allez être
-                                 mis en situation comme si vous étiez en mission ! Un <b>Accompagnement personnalisé</b> et <b>immersif  </b>
-                                 vous premettrons d'acquérir les clefs nécessaires pour entreprendre votre futur métier
+                                 Devenez un <b>Data Engineer opérationnel</b>, grâce à notre Boot Camp vous allez être
+                                 mis en situation d'une mission ! Un <b>Accompagnement personnalisé</b> et <b>immersif  </b>
+                                 vous premettra d'acquérir les clefs nécessaires pour entreprendre votre futur métier
                                  dans de bonnes conditions.
                             </p>
 
