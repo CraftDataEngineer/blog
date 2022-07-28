@@ -53,24 +53,30 @@ function HomePageAvis() {
                         />
                     </div>
                     <div  className={classnames("col",styles.colContainer)}>
-                        <Avis name={"test"} photo={"https://avatars3.githubusercontent.com/u/13352?s=400&v=4"}
-                              subtitle={"React Native @facebook"}
+                        <Avis name={"Thibaut E."} photo={"https://media-exp1.licdn.com/dms/image/C5603AQFDecrTqRN-Yg/profile-displayphoto-shrink_400_400/0/1578345640755?e=1664409600&v=beta&t=gFA1X81w8w1dq-ms53lvsFEd1G-lRnDHd7HFx2C2TrE"}
+                              subtitle={"Développeur @Sportihome"}
                               stars={"⭐️⭐️⭐️⭐️⭐️"}
-                              text={"À l’issue de votre parcours, vous saurez : À l’issue de votre parcours, vous saurez : À l’issue de votre parcours, vous saurez :  vous saurez : À l’issue de votre parcours, vous saurez :  vous saurez : À l’issue de votre parcours, vous saurez :  " +
-                              "vous saurez : À l’issue de votre parcours, vous saurez :  vous saurez : À l’issue de votre parcours, vous saurez : "}/>
+                              text={"\n" +
+                                  "J’ai été agréablement surpris du format de formation proposé par DataGuru. " +
+                                  "Ayant été étudiant quelques années auparavant dans une université d’informatique avec des " +
+                                  "méthodes pédagogique plus conventionnelle, j'aurai aimé" +
+                                  "un format comme le propose ce BootCamp, c'est à dire plus immersif qui a pour objectif de vous rendre opérationnel."}/>
                         <br/>
-                        <Avis name={"test"} photo={"https://avatars1.githubusercontent.com/u/977348?s=460&v=4"}
-                              subtitle={"React Native @facebook"}
+                        <Avis name={"Léo T."} photo={"https://media-exp1.licdn.com/dms/image/C5603AQGVk0X64KsYmw/profile-displayphoto-shrink_400_400/0/1517042126091?e=1664409600&v=beta&t=UL6DgZ7m-s8JrzBg6OZPlX0--HNx8dfLaYLHS-xqS4w"}
+                              subtitle={"Géo-Data Engineer @Mesuris"}
                               stars={"⭐️⭐️⭐️⭐️⭐️"}
-                              text={"À l’issue de votre parcours, vous saurez : À l’issue de votre parcours, vous saurez : À l’issue de votre parcours, vous saurez : "}/>
-
+                              text={
+                                  "Le cursus est très pédagogique et aborde toutes les notions nécessaires au poste de data engineer : " +
+                                  "de l'apprentissage de python à l'acquisition de données jusqu'aux compétences les plus poussées en SGBD, Cloud et DevOps."}/>
 
                     </div>
                     <div  className={classnames("col",styles.colContainer)}>
-                        <Avis name={"test"} photo={"https://avatars1.githubusercontent.com/u/165856?s=460&v=4"}
-                              subtitle={"React Native @facebook"}
+                        <Avis name={"Kévin D."} photo={"https://media-exp1.licdn.com/dms/image/C4D03AQGBiYTgSMCI3g/profile-displayphoto-shrink_400_400/0/1550944336592?e=1664409600&v=beta&t=2qr4dFbEMBkjhamfl9ZPdqeCRo6vWu2KP6q_2NYZHKY"}
+                              subtitle={"Fondateur @Keltio"}
                               stars={"⭐️⭐️⭐️⭐️⭐️"}
-                              text={"À l’issue de votre parcours, vous saurez : À l’issue de votre parcours, vous saurez : À l’issue de votre parcours, vous saurez : "}/>
+                              text={"\n" +
+                                  "Le support de formation est de qualité, l’équipe pédagogique est investie, réactive et soucieuse de la réussite de ses apprenants. " +
+                                  "Les projets, basés sur des cas réels, permettent d'expérimenter et d'approfondir les connaissances techniques."}/>
 
                         <br/>
                         <Avis name={"test"} photo={"https://avatars2.githubusercontent.com/u/197597?s=460"}
