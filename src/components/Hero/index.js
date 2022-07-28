@@ -1,7 +1,7 @@
 import React from "react";
 import useDocusaurusContext from "@docusaurus/core/lib/client/exports/useDocusaurusContext";
 import stylesModule from './styles.module.css';
-import YourSvg from '../../../static/img/header/geek.png';
+import YourSvg from '../../../static/img/header/dev.png';
 import classnames from "classnames";
 import SyllabusForm from "../SyllabusFrom";
 import {Button, Chip} from "@mui/material";

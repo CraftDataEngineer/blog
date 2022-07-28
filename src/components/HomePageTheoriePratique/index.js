@@ -42,8 +42,8 @@ export default function HomePageTheoriePratique() {
                         <div  className={classnames("col")}>
                             <div className={styles.leftPart}>
                                 <h3 style={{fontFamily:"CircularStd-Black"}} > Théorie </h3>
-                                <ul>
-                                    <li>
+                                <ul className={classnames(styles.ulContainer)}>
+                                <li>
                                         <h6><MenuBookIcon viewBox="0 -4 24 24" /> Cours </h6>
                                         <p>Nos cours utilisent un format pédagogique qui vous permettra de maîtriser rapidement l’ensemble des concepts clés nécessaires à votre prochain rôle ! </p>
                                     </li>
@@ -61,7 +61,7 @@ export default function HomePageTheoriePratique() {
                         <div className={classnames("col",styles.colContainer)}>
                             <div className={styles.leftPart}>
                                 <h3 style={{fontFamily:"CircularStd-Black"}} > Pratique </h3>
-                                <ul>
+                                <ul className={classnames(styles.ulContainer)}>
                                     <li>
                                         <h6><ScienceIcon viewBox="0 -4 24 24" /> Travaux pratiques </h6>
                                         <p>Des TPs sont donnés lors des cours afin de dynamiser et d'appliquer les concepts théoriques.</p>

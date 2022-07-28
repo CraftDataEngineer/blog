@@ -42,6 +42,18 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+
+    .titleContiner {
+        text-align: center;
+    }
+    .enrollButton {
+        display: none;
+    }
+}
+
+
+
 .colContainer {
     margin: 1%;
 

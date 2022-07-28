@@ -52,26 +52,21 @@ class HomePageFaq extends React.Component  {
                         </div>
                         <div className="col col--7" style={{paddingTop:"4%"}}>
                             <div className={`menu__list-item-collapsible ${this.state.show_q_1 ? "" : "menu__list-item--collapsed"}`}  onClick={this.openQ1} >
-                                <a  className={classnames(styles.faqQuestion, "menu__link menu__link--sublist")} >Comment financer ma formation ? CPF, AIF,
-                                    Abondements ?</a>
+                                <a  className={classnames(styles.faqQuestion, "menu__link menu__link--sublist")} >Comment financer ma formation ?</a>
                             </div>
                             { this.state.show_q_1 && <p className={classnames(styles.faqDescription, "menu__link")}>
-                                <span>Toutes nos formations sont éligibles au CPF (Compte Personnel de Formation).
-                                    Si vous êtes demandeur d’emploi ou en accompagnement CSP, vous pouvez faire une demande d’AIF (Aide Individuelle à la Formation)
-                                    ou d’abondement de CPF (Sachez que la formation permet de valider le bloc 2 des compétences du titre RNCP de niveau 6).
+                                <span>Si vous êtes demandeur d’emploi ou en accompagnement CSP, vous pouvez faire une demande d’AIF (Aide Individuelle à la Formation).
                                     Ces dispositifs vous permettent d’être financé par Pôle Emploi jusqu’à hauteur de 2000€. Un financement
                                     d’entreprise est également possible en passant par l’OPCO. Pour le reste à charge,
-                                    il est possible de le financer jusqu’à 10 fois </span>
+                                    il est possible de le financer jusqu’à 3 fois </span>
                             </p>
                             }
                             <div className={`menu__list-item-collapsible ${this.state.show_q_2 ? "" : "menu__list-item--collapsed"}`}  onClick={this.openQ2}>
                                 <a className={classnames(styles.faqQuestion, "menu__link menu__link--sublist")}>Comment s’organise la formation ?</a>
                             </div>
                             {this.state.show_q_2 && <p className={classnames(styles.faqDescription, "menu__link")}>
-                                <span>La formation est composée d’une partie d’e-learning coaché sur notre plateforme
-                                    et de séances de masterclass et de coaching animées par nos formateurs data scientists.
-                                    Tout au long du parcours, un support live chat vous permet de guider votre apprentissage
-                                    et répond à vos questions.  </span>
+                                <span>La formation est dispensé à distance avec nos formateurs. Elle sera composé
+                                    de séances de masterclass et de coaching individuels.  </span>
                             </p>
                             }
                             <div className={`menu__list-item-collapsible ${this.state.show_q_3 ? "" : "menu__list-item--collapsed"}`}  onClick={this.openQ3}>
@@ -83,7 +78,7 @@ class HomePageFaq extends React.Component  {
                                         Bac +3 en mathématiques (niveau 6) ou bac +5 en sciences (niveau 7)
                                     </li>
                                     <li>
-                                        Compréhension du langage SQL et des systèmes Linux
+                                        Connaissances en programmation et des systèmes Linux
                                     </li>
                                 </ul>
                             </div>

@@ -39,14 +39,14 @@ function HomePageAvis() {
     return (
         <div className={classnames(styles.enrollContainer)}>
             <div className={classnames(styles.allAvisContainer)}>
-                <h3 className={classnames(styles.enrollTeaser)}><span>Ce que les gens pensent du programme<span style={{color:"#f1bb00"}}>.</span></span>
+                <h3 className={classnames(styles.enrollTeaser)}><span>Voici ce que les gens pensent du programme<span style={{color:"#f1bb00"}}>.</span></span>
                 </h3>
             </div>
             <div className={classnames(styles.gridContainer)}>
                 <div className="row ">
                     <div  className={classnames("col",styles.colContainer)}>
-                        <Avis name={"???"} photo={"https://avatars1.githubusercontent.com/u/810438?s=460"}
-                              subtitle={"Developpeur"}
+                        <Avis name={"test"} photo={"https://avatars1.githubusercontent.com/u/810438?s=460"}
+                              subtitle={"React Native @facebook"}
                               stars={"⭐️⭐️⭐️⭐️⭐️"}
                               text={"Le parcours proposé dans le bootcamp offre une immersion réelle dans le quotidien d’un développeur. " +
                               "La collaboration en agile et les attentes du client lors d’un " +
@@ -54,27 +54,24 @@ function HomePageAvis() {
                         />
                     </div>
                     <div  className={classnames("col",styles.colContainer)}>
-                        <Avis name={"Thibaut E."} photo={"https://media-exp1.licdn.com/dms/image/C5603AQFDecrTqRN-Yg/profile-displayphoto-shrink_400_400/0/1578345640755?e=1664409600&v=beta&t=gFA1X81w8w1dq-ms53lvsFEd1G-lRnDHd7HFx2C2TrE"}
-                              subtitle={"Développeur @Sportihome"}
-                              text={"\n" +
-                                  "J’ai été agréablement surpris du format de formation proposé par DataGuru. " +
-                                  "Ayant été étudiant quelques années auparavant dans une université d’informatique avec des " +
-                                  "méthodes pédagogique plus conventionnelles, j'aurai aimé " +
-                                  "un format comme le propose ce BootCamp, c'est à dire plus immersif et qui a pour objectif de vous rendre opérationnel."}/>
+                        <Avis name={"test"} photo={"https://avatars3.githubusercontent.com/u/13352?s=400&v=4"}
+                              subtitle={"React Native @facebook"}
+                              stars={"⭐️⭐️⭐️⭐️⭐️"}
+                              text={"À l’issue de votre parcours, vous saurez : À l’issue de votre parcours, vous saurez : À l’issue de votre parcours, vous saurez :  vous saurez : À l’issue de votre parcours, vous saurez :  vous saurez : À l’issue de votre parcours, vous saurez :  " +
+                              "vous saurez : À l’issue de votre parcours, vous saurez :  vous saurez : À l’issue de votre parcours, vous saurez : "}/>
                         <br/>
-                        <Avis name={"Léo T."} photo={"https://avatars2.githubusercontent.com/u/197597?s=460"}
-                              subtitle={"Géo-Data Engineer @Mesuris"}
-                              text={
-                                  "Le cursus est très pédagogique et aborde toutes les notions nécessaires au poste de data engineer : " +
-                                  "de l'apprentissage de python à l'acquisition de données jusqu'aux compétences les plus poussées en SGBD, Cloud et DevOps."}/>
+                        <Avis name={"test"} photo={"https://avatars1.githubusercontent.com/u/977348?s=460&v=4"}
+                              subtitle={"React Native @facebook"}
+                              stars={"⭐️⭐️⭐️⭐️⭐️"}
+                              text={"À l’issue de votre parcours, vous saurez : À l’issue de votre parcours, vous saurez : À l’issue de votre parcours, vous saurez : "}/>
+
 
                     </div>
                     <div  className={classnames("col",styles.colContainer)}>
-                        <Avis name={"Kévin D."} photo={"https://avatars2.githubusercontent.com/u/197597?s=460"}
-                              subtitle={"Fondateur @Keltio"}
-                              text={"\n" +
-                                  "Le support de formation est de qualité, l’équipe pédagogique est investie, réactive et soucieuse de la réussite de ses apprenants. " +
-                                  "Les projets, basés sur des cas réels, permettent d'expérimenter et d'approfondir les connaissances techniques."}/>
+                        <Avis name={"test"} photo={"https://avatars1.githubusercontent.com/u/165856?s=460&v=4"}
+                              subtitle={"React Native @facebook"}
+                              stars={"⭐️⭐️⭐️⭐️⭐️"}
+                              text={"À l’issue de votre parcours, vous saurez : À l’issue de votre parcours, vous saurez : À l’issue de votre parcours, vous saurez : "}/>
 
                         <br/>
                         <Avis name={"test"} photo={"https://avatars2.githubusercontent.com/u/197597?s=460"}

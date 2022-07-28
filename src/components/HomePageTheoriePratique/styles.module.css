@@ -11,6 +11,12 @@
 
 }
 
+@media screen and (max-width:  996px){
+  .backGroundContainer {
+    display: none;
+  }
+}
+
 .leftPart{
   max-width: 400px;
   background: white;
@@ -86,6 +92,10 @@
   .colContainer {
     margin-top: 5%;
   }
+}
+
+.ulContainer {
+  min-height: 35rem;
 }
 
 @media screen and (max-width:  996px){
