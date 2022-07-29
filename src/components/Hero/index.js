@@ -36,15 +36,15 @@ function HomepageHeader() {
                 <div className="row">
                     <div className="col col--6">
                         <h3 className={classnames(stylesModule.headTeaser)}>
-                            <span>Boot Camp Data Engineer</span>
+                            <span>BootCamp Data Engineer</span>
                             <span style={{color:"#f1bb00"}}>.</span>
                         </h3>
                         <p className={classnames(stylesModule.headDescription)}>
                             <p>
-                                 Devenez un <b>Data Engineer opérationnel</b>, grâce à notre Boot Camp vous allez être
-                                 mis en situation d'une mission ! Un <b>Accompagnement personnalisé</b> et <b>immersif  </b>
+                                 Devenez un <b>Data Engineer opérationnel</b>, grâce à notre BootCamp vous allez être
+                                 mis en situation d'un projet informatique en entreprise ! Un <b>Accompagnement personnalisé</b> et <b>immersif  </b>
                                  vous premettra d'acquérir les clefs nécessaires pour entreprendre votre futur métier
-                                 dans de bonnes conditions.
+                                 dans les meilleurs conditions.
                             </p>
 
                             <div  className={classnames(stylesModule.buttonDownload)} >
