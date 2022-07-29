@@ -49,7 +49,7 @@ export default function HomePageTheoriePratique() {
                                     </li>
                                     <li>
                                         <h6> <ArchitectureIcon viewBox="0 -4 24 24" />Études de cas</h6>
-                                        <p>On travaillera sur plusieurs études de cas inspirés de la vie réelle qui vous permettront de vous projeter facilement dans vos futures missions ! </p>
+                                        <p>On travaillera sur plusieurs études de cas inspirées de la vie réelle qui vous permettront de vous projeter facilement dans vos futures missions ! </p>
                                     </li>
                                     <li>
                                         <h6> <SportsKabaddiIcon viewBox="0 -4 24 24" /> Dojo</h6>
