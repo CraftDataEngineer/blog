@@ -4,9 +4,7 @@ import YourSvg from '../../../static/img/header/geek_2.png';
 import classnames from "classnames";
 import SyllabusForm from "../SyllabusFrom";
 import {Button, Chip} from "@mui/material";
-import DownloadIcon from '@mui/icons-material/Download';
 import EuroIcon from '@mui/icons-material/Euro';
-import styles from "../HomePageAvis/styles.module.css";
 import Link from "@docusaurus/core/lib/client/exports/Link";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 
@@ -14,7 +12,7 @@ function PrixFormation() {
 
 
     return (
-        <div className="container" style={{paddingTop: "3%"}}>
+        <div className={classnames("container",stylesModule.backgroundPrix)} >
             <div className="row">
                 <div className="col col--6">
                     <h3 className={classnames(stylesModule.headTeaser)}>

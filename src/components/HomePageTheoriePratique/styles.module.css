@@ -11,6 +11,12 @@
 
 }
 
+@media screen and (max-width:  996px){
+  .backGroundContainer {
+    display: none;
+  }
+}
+
 .leftPart{
   max-width: 400px;
   background: white;
@@ -88,6 +94,10 @@
   }
 }
 
+.ulContainer {
+  min-height: 35rem;
+}
+
 @media screen and (max-width:  996px){
   .teaserContainer {
     text-align: center;
@@ -112,7 +122,7 @@
 }
 
 .waveDivider .shapeFill {
-  fill: #F2F3F7;
+  fill: #ffffff;
 }
 
 

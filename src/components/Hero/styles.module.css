@@ -11,6 +11,61 @@
   margin-left: 5%;
 }
 
+@media screen and (max-width:  768px){
+  .featureSvg {
+    height: 70%;
+    width: 50%;
+    margin-left: 20%;
+  }
+}
+
+.surligne strong {
+  position: relative;
+  font-weight: inherit;
+  background-color: #ffffe0;
+}
+
+.surligne strong::before {
+  content: "";
+  background-image: url("../../../static/img/header/surligner-left.svg");
+  position: absolute;
+  left: -6px;
+  top: 0;
+  width: 7px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+.surligne strong::after {
+  content: "";
+  background-image: url("../../../static/img/header/surligner-right.svg");
+  position: absolute;
+  right: -12px;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 13px;
+  height: 102%;
+  z-index: 0;
+  transform: rotate(360deg);
+}
+
+
+
+@media screen and (max-width:  768px){
+  .surligne strong::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width:  320px){
+  .surligne strong::after {
+    display: none;
+  }
+}
+
 .verticleLine {
   border-left: 1px solid #cbcbcb;
   height: 100px;
@@ -88,10 +143,10 @@
 }
 
 .headTeaser {
-  margin-top: 5%;
+  margin-top: 10%;
   font-weight: 900;
   line-height: 2.5rem;
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   text-transform: capitalize;
   letter-spacing: -.025em;
   display: block;
@@ -126,11 +181,16 @@
 
 
 .heroSection {
+  padding-top: 5%;
   padding-bottom: 0;
   position: relative;
   overflow: hidden;
   color: black;
-  background: linear-gradient(#ffffff 80%,rgba(242,243,247,255) );
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../../static/img/header/background.png");
+  background-color: #ffffff;
+  background-position: center;
 }
 
 @media screen and (max-width:  996px){
@@ -139,6 +199,5 @@
     background: white;
     padding-bottom: 0;
 
-    /* background: linear-gradient(0deg,black 10%,#ffffff 0%); */
   }
 }
