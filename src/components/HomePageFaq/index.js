@@ -65,7 +65,7 @@ class HomePageFaq extends React.Component  {
                                 <a className={classnames(styles.faqQuestion, "menu__link menu__link--sublist")}>Comment s’organise la formation ?</a>
                             </div>
                             {this.state.show_q_2 && <p className={classnames(styles.faqDescription, "menu__link")}>
-                                <span>La formation est dispensé à distance avec nos formateurs. Elle sera composé
+                                <span>La formation est dispensée à distance avec nos formateurs. Elle sera composée
                                     de séances de masterclass et de coaching individuels.  </span>
                             </p>
                             }
@@ -74,9 +74,6 @@ class HomePageFaq extends React.Component  {
                             </div>
                             {this.state.show_q_3 && <div className={classnames(styles.faqDescription, "menu__link")}>
                                 <ul style={{ listStyleType: "circle" }}>
-                                    <li>
-                                        Bac +3 en mathématiques (niveau 6) ou bac +5 en sciences (niveau 7)
-                                    </li>
                                     <li>
                                         Connaissances en programmation et des systèmes Linux
                                     </li>

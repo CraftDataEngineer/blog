@@ -6,6 +6,7 @@
   padding-top: 100px;
 }
 
+
 .allAvisContainer {
   padding-left: 5%;
 }
@@ -23,6 +24,10 @@
 @media screen and (max-width:  996px) {
   .colContainer {
     margin-top: 5%;
+  }
+
+  .enrollContainer {
+    display: none;
   }
 }
 

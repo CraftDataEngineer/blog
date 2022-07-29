@@ -1,7 +1,7 @@
 import React from "react";
 import useDocusaurusContext from "@docusaurus/core/lib/client/exports/useDocusaurusContext";
 import stylesModule from './styles.module.css';
-import YourSvg from '../../../static/img/header/dev.png';
+import YourSvg from '../../../static/img/header/geek.png';
 import classnames from "classnames";
 import SyllabusForm from "../SyllabusFrom";
 import {Button, Chip} from "@mui/material";
@@ -41,10 +41,13 @@ function HomepageHeader() {
                         </h3>
                         <p className={classnames(stylesModule.headDescription)}>
                             <p>
-                                 Devenez un <b>Data Engineer opérationnel</b>, grâce à notre BootCamp vous allez être
+                                <div className={stylesModule.surligne} >
+
+                                Devenez un <strong>Data Engineer opérationnel</strong>, grâce à notre BootCamp vous allez être
                                  mis en situation d'un projet informatique en entreprise ! Un <b>Accompagnement personnalisé</b> et <b>immersif  </b>
                                  vous premettra d'acquérir les clefs nécessaires pour entreprendre votre futur métier
                                  dans les meilleurs conditions.
+                                </div>
                             </p>
 
                             <div  className={classnames(stylesModule.buttonDownload)} >
@@ -61,7 +64,7 @@ function HomepageHeader() {
                     <div className="col"/>
                     <div className="col col--5">
                         <div className="row">
-                            <img src={YourSvg} className={stylesModule.featureSvg} alt={"test"}/>
+                            <img src={YourSvg} className={stylesModule.featureSvg} alt={""}/>
                         </div>
                     </div>
                 </div>

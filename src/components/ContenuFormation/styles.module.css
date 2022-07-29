@@ -11,6 +11,16 @@
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
+.backGroundContainer {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../../static/img/contenu/background.png");
+    background-color: #ffffff;
+}
+
+
 .modulesDescription {
     font-size: 1.5rem;
     font-style: normal;
@@ -19,9 +29,6 @@
     font-family: CircularStd-Book,Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
-.backGroundContainer {
-    background: #ffffff;
-}
 
 .gridContainer {
     padding-bottom: 5%;

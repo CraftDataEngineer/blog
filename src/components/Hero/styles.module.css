@@ -11,6 +11,61 @@
   margin-left: 5%;
 }
 
+@media screen and (max-width:  768px){
+  .featureSvg {
+    height: 70%;
+    width: 50%;
+    margin-left: 20%;
+  }
+}
+
+.surligne strong {
+  position: relative;
+  font-weight: inherit;
+  background-color: #f1bb00;
+}
+
+.surligne strong::before {
+  content: "";
+  background-image: url("../../../static/img/header/surligner-left.svg");
+  position: absolute;
+  left: -6px;
+  top: 0;
+  width: 7px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+.surligne strong::after {
+  content: "";
+  background-image: url("../../../static/img/header/surligner-right.svg");
+  position: absolute;
+  right: -12px;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 13px;
+  height: 102%;
+  z-index: 0;
+  transform: rotate(360deg);
+}
+
+
+
+@media screen and (max-width:  768px){
+  .surligne strong::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width:  320px){
+  .surligne strong::after {
+    display: none;
+  }
+}
+
 .verticleLine {
   border-left: 1px solid #cbcbcb;
   height: 100px;
@@ -130,7 +185,11 @@
   position: relative;
   overflow: hidden;
   color: black;
-  background: linear-gradient(#ffffff 80%,rgba(242,243,247,255) );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left ;
+  background-image: url("../../../static/img/header/background.png");
+  background-color: #ffffff;
 }
 
 @media screen and (max-width:  996px){
@@ -139,6 +198,5 @@
     background: white;
     padding-bottom: 0;
 
-    /* background: linear-gradient(0deg,black 10%,#ffffff 0%); */
   }
 }
