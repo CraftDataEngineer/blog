@@ -32,21 +32,19 @@ function HomepageHeader() {
 
     return (
         <header className={classnames('hero hero--primary headTest', stylesModule.heroSection)}>
-            <div className="container" style={{paddingTop: "3%"}}>
+            <div className="container" >
                 <div className="row">
                     <div className="col col--6">
                         <h3 className={classnames(stylesModule.headTeaser)}>
-                            <span>BootCamp Data Engineer</span>
+                            <span>Bootcamp Data Engineer</span>
                             <span style={{color:"#f1bb00"}}>.</span>
                         </h3>
                         <p className={classnames(stylesModule.headDescription)}>
                             <p>
                                 <div className={stylesModule.surligne} >
 
-                                Devenez un <strong>Data Engineer opérationnel</strong>, grâce à notre BootCamp vous allez être
-                                 mis en situation d'un projet informatique en entreprise ! Un <b>Accompagnement personnalisé</b> et <b>immersif  </b>
-                                 vous premettra d'acquérir les clefs nécessaires pour entreprendre votre futur métier
-                                 dans les meilleurs conditions.
+                                    Devenez un <strong>Data Engineer</strong> opérationnel  , grâce à  un  accompagnement <b>personnalisé et immersif</b>.
+                                    Notre Bootcamp vous permettra d'acquérir les connaissances nécessaires pour entreprendre votre futur rôle dans les meilleurs conditions : <b>Bonnes pratiques de programmation</b> , <b>DevOps</b> et <b>Big Data</b> !
                                 </div>
                             </p>
 

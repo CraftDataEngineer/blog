@@ -3,7 +3,7 @@
 }
 
 .enrollContainer {
-
+  padding-top: 2%;
 }
 
 
@@ -70,7 +70,7 @@
 
 
 .enrollTeaser {
-  margin-top: 3%;
+  margin-top: 10%;
   margin-bottom: 4%;
   font-weight: 900;
   line-height: 2.5rem;

@@ -45,23 +45,15 @@ function HomePageAvis() {
             <div className={classnames(styles.gridContainer)}>
                 <div className="row ">
                     <div  className={classnames("col",styles.colContainer)}>
-                        <Avis name={"???"} photo={"https://avatars1.githubusercontent.com/u/810438?s=460"}
-                              subtitle={"Developpeur"}
-                              stars={"⭐️⭐️⭐️⭐️⭐️"}
-                              text={"Le parcours proposé dans le bootcamp offre une immersion réelle dans le quotidien d’un développeur. " +
-                              "La collaboration en agile et les attentes du client lors d’un " +
-                              "projet informatique font partie intégrante de l’apprentissage. Cela aide à préparer sérieusement le stagiaire à son futur rôle."}
-                        />
-                    </div>
-                    <div  className={classnames("col",styles.colContainer)}>
                         <Avis name={"Thibaut E."} photo={"https://media-exp1.licdn.com/dms/image/C5603AQFDecrTqRN-Yg/profile-displayphoto-shrink_400_400/0/1578345640755?e=1664409600&v=beta&t=gFA1X81w8w1dq-ms53lvsFEd1G-lRnDHd7HFx2C2TrE"}
                               subtitle={"Développeur @Sportihome"}
                               text={"\n" +
-                                  "J’ai été agréablement surpris du format de formation proposé par DataGuru. " +
-                                  "Ayant été étudiant quelques années auparavant dans une université d’informatique avec des " +
-                                  "méthodes pédagogique plus conventionnelles, j'aurai aimé " +
-                                  "un format comme le propose ce BootCamp, c'est à dire plus immersif et qui a pour objectif de vous rendre opérationnel."}/>
-                        <br/>
+                              "J’ai été agréablement surpris du format de formation proposé par DataGuru. " +
+                              "Ayant été étudiant quelques années auparavant dans une université d’informatique avec des " +
+                              "méthodes pédagogique plus conventionnelles, j'aurai aimé " +
+                              "un format comme le propose ce BootCamp, c'est à dire plus immersif et qui a pour objectif de vous rendre opérationnel."}/>
+                    </div>
+                    <div  className={classnames("col",styles.colContainer)}>
                         <Avis name={"Léo T."} photo={"https://avatars2.githubusercontent.com/u/197597?s=460"}
                               subtitle={"Géo-Data Engineer @Mesuris"}
                               text={
@@ -75,12 +67,6 @@ function HomePageAvis() {
                               text={"\n" +
                                   "Le support de formation est de qualité, l’équipe pédagogique est investie, réactive et soucieuse de la réussite de ses apprenants. " +
                                   "Les projets, basés sur des cas réels, permettent d'expérimenter et d'approfondir les connaissances techniques."}/>
-
-                        <br/>
-                        <Avis name={"test"} photo={"https://avatars2.githubusercontent.com/u/197597?s=460"}
-                              subtitle={"React Native @facebook"}
-                              stars={"⭐️⭐️⭐️⭐️⭐️"}
-                              text={"À l’issue de votre parcours, vous saurez : À l’issue de votre parcours, vous saurez : À l’issue de votre parcours, vous saurez : "}/>
                     </div>
                 </div>
                 <div className="row " style={{paddingBottom: "4%",paddingTop: "4%"}}>

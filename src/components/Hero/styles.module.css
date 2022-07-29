@@ -7,7 +7,7 @@
 
 .featureSvg {
   height: 70%;
-  width: 100%;
+  width: 80%;
   margin-left: 5%;
 }
 
@@ -22,7 +22,7 @@
 .surligne strong {
   position: relative;
   font-weight: inherit;
-  background-color: #f1bb00;
+  background-color: #ffffe0;
 }
 
 .surligne strong::before {
@@ -143,10 +143,10 @@
 }
 
 .headTeaser {
-  margin-top: 5%;
+  margin-top: 10%;
   font-weight: 900;
   line-height: 2.5rem;
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   text-transform: capitalize;
   letter-spacing: -.025em;
   display: block;
@@ -181,15 +181,16 @@
 
 
 .heroSection {
+  padding-top: 5%;
   padding-bottom: 0;
   position: relative;
   overflow: hidden;
   color: black;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left ;
+  background-size: contain;
   background-image: url("../../../static/img/header/background.png");
   background-color: #ffffff;
+  background-position: center;
 }
 
 @media screen and (max-width:  996px){
