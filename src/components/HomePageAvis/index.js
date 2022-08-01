@@ -54,15 +54,15 @@ function HomePageAvis() {
                               "un format comme le propose ce BootCamp, c'est à dire plus immersif et qui a pour objectif de vous rendre opérationnel."}/>
                     </div>
                     <div  className={classnames("col",styles.colContainer)}>
-                        <Avis name={"Léo T."} photo={"https://avatars2.githubusercontent.com/u/197597?s=460"}
-                              subtitle={"Géo-Data Engineer @Mesuris"}
+                        <Avis name={"Léo T."} photo={"https://media-exp1.licdn.com/dms/image/C5603AQGVk0X64KsYmw/profile-displayphoto-shrink_400_400/0/1517042126091?e=1665014400&v=beta&t=pbnTQ8DIEIMTGK3nKVAex6jMUGk-rGTz9tiTdMchy4g"}
+                              subtitle={"Géo-Data Engineer"}
                               text={
                                   "Le cursus est très pédagogique et aborde toutes les notions nécessaires au poste de data engineer : " +
                                   "de l'apprentissage de python à l'acquisition de données jusqu'aux compétences les plus poussées en SGBD, Cloud et DevOps."}/>
 
                     </div>
                     <div  className={classnames("col",styles.colContainer)}>
-                        <Avis name={"Kévin D."} photo={"https://avatars2.githubusercontent.com/u/197597?s=460"}
+                        <Avis name={"Kévin D."} photo={"https://media-exp1.licdn.com/dms/image/C4D03AQGBiYTgSMCI3g/profile-displayphoto-shrink_400_400/0/1550944336592?e=1665014400&v=beta&t=j8h0f1BUUQbcMx9F8YyX6SM8FSM-oBjgBr1kDPtbCEg"}
                               subtitle={"Fondateur @Keltio"}
                               text={"\n" +
                                   "Le support de formation est de qualité, l’équipe pédagogique est investie, réactive et soucieuse de la réussite de ses apprenants. " +
