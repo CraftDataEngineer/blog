@@ -4,9 +4,20 @@ import classnames from "classnames";
 import Qualiopi from '../../../static/img/enroll/qualiopi.png';
 import {Button} from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
-import Link from "@docusaurus/core/lib/client/exports/Link";
+import SyllabusForm from "../SyllabusFrom";
 
 function HomePageEnroll() {
+    const [open, setOpen] = React.useState(false);
+
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
 
     return (
         <div className={classnames(styles.backGroundContainer)}>
@@ -50,12 +61,14 @@ function HomePageEnroll() {
                                 </ul>
                             </div>
                             <div className={classnames(styles.buttonDownload)}>
-                                <Link to="/inscription/" className={classnames(styles.enrollButton)}>
-                                    <Button variant="contained" startIcon={<DownloadIcon/>} size="large"
+                                    <Button variant="contained" startIcon={<DownloadIcon/>} size="large" onClick={handleClickOpen}
                                             style={{backgroundColor: "#a6a2f7", borderColor: "transparent"}}>
                                         Télécharger le Syllabus
                                     </Button>
-                                </Link>
+                                <SyllabusForm
+                                    open={open}
+                                    onClose={handleClose}
+                                />
 
                             </div>
                         </div>

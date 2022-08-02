@@ -127,6 +127,11 @@
   }
 }
 
+.enrollButton {
+  color: #a6a2f7 !important;
+  --ifm-font-color-base: #a6a2f7;
+}
+
 .backgroundPrix {
   padding-top : 3%;
   position: relative;

@@ -17,12 +17,22 @@ import Postgres from "../../../static/img/contenu/postgres.png";
 import Spark from "../../../static/img/contenu/spark.png";
 import Terraform from "../../../static/img/contenu/terraform.png";
 import Jira from "../../../static/img/contenu/jira.png";
-import Link from "@docusaurus/core/lib/client/exports/Link";
 import {Button} from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
+import SyllabusForm from "../SyllabusFrom";
 
 
 export default function ContenuFormation() {
+    const [open, setOpen] = React.useState(false);
+
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
 
 
     return (
@@ -39,12 +49,14 @@ export default function ContenuFormation() {
                         </p>
                     </div>
                     <div className="col">
-                            <Link to="/inscription/" className={classnames(styles.enrollButton)}>
-                                <Button variant="contained" startIcon={<DownloadIcon/>} size="large"
+                                <Button variant="contained" startIcon={<DownloadIcon/>} size="large" onClick={handleClickOpen}
                                         style={{backgroundColor: "#a6a2f7", borderColor: "transparent",marginTop:"5%"}}>
                                     Télécharger le Syllabus
                                 </Button>
-                            </Link>
+                        <SyllabusForm
+                            open={open}
+                            onClose={handleClose}
+                        />
                     </div>
                 </div>
             </div>

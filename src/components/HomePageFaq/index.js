@@ -8,7 +8,7 @@ class HomePageFaq extends React.Component  {
 
     constructor(props) {
         super(props);
-        this.state = {show_q_1:false ,show_q_2: false,show_q_3: false};
+        this.state = {show_q_1:true ,show_q_2: true,show_q_3: true};
     }
 
     openQ1 = () => {
@@ -58,7 +58,7 @@ class HomePageFaq extends React.Component  {
                                 <span>Si vous êtes demandeur d’emploi ou en accompagnement CSP, vous pouvez faire une demande d’AIF (Aide Individuelle à la Formation).
                                     Ces dispositifs vous permettent d’être financé par Pôle Emploi jusqu’à hauteur de 2000€. Un financement
                                     d’entreprise est également possible en passant par l’OPCO. Pour le reste à charge,
-                                    il est possible de le financer jusqu’à 3 fois </span>
+                                    il est possible de le financer jusqu’à 3 fois. </span>
                             </p>
                             }
                             <div className={`menu__list-item-collapsible ${this.state.show_q_2 ? "" : "menu__list-item--collapsed"}`}  onClick={this.openQ2}>
@@ -73,11 +73,9 @@ class HomePageFaq extends React.Component  {
                                 <a className={classnames(styles.faqQuestion, "menu__link menu__link--sublist")}>Un programme fait pour moi ?</a>
                             </div>
                             {this.state.show_q_3 && <div className={classnames(styles.faqDescription, "menu__link")}>
-                                <ul style={{ listStyleType: "circle" }}>
-                                    <li>
-                                        Connaissances en programmation et des systèmes Linux
-                                    </li>
-                                </ul>
+                                <span>
+                                        Connaissances en programmation et des systèmes Linux.
+                                </span>
                             </div>
                             }
                         </div>

@@ -38,19 +38,7 @@
   z-index: 0;
 }
 
-.surligne strong::after {
-  content: "";
-  background-image: url("../../../static/img/header/surligner-right.svg");
-  position: absolute;
-  right: -12px;
-  top: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 13px;
-  height: 102%;
-  z-index: 0;
-  transform: rotate(360deg);
-}
+
 
 
 
