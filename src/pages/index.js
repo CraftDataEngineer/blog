@@ -2,7 +2,6 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import HomepageHeader from "../components/Hero";
-import HomepageModules from "../components/HomePageModules";
 import HomePageFormateur from "../components/HomePageFormateur";
 import HomePageEnroll from "../components/HomePageEnroll";
 import HomePageFaq from "../components/HomePageFaq";

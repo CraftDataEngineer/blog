@@ -2,15 +2,12 @@ import React from "react";
 import stylesModule from './styles.module.css';
 import YourSvg from '../../../static/img/header/geek_2.png';
 import classnames from "classnames";
-import SyllabusForm from "../SyllabusFrom";
 import {Button, Chip} from "@mui/material";
 import EuroIcon from '@mui/icons-material/Euro';
 import Link from "@docusaurus/core/lib/client/exports/Link";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 
 function PrixFormation() {
-
-
     return (
         <div className={classnames("container",stylesModule.backgroundPrix)} >
             <div className="row">
@@ -21,10 +18,9 @@ function PrixFormation() {
                     </h3>
                     <p className={classnames(stylesModule.headDescription)}>
                         <h2>
-                            Frais de formation : <Chip onClick={{}}
-                                                       onDelete={{}}
+                            Frais de formation : <Chip
                                                        style={{fontFamily: "CircularStd-Black", fontSize: "24px"}}
-                                                       deleteIcon={<EuroIcon/>} label="4000"/>
+                                                       label="4 000 €"/>
 
                         </h2>
                         <p>
@@ -35,7 +31,7 @@ function PrixFormation() {
                             Si vous êtes salarié, vous pouvez demander à votre entreprise de vous financer la formation.
                             Le reste à charge peut être échelonné jusqu’à 3 fois.
                         </p>
-                        <Link to="/form/" >
+                        <Link to="/form/" className={classnames(stylesModule.enrollButton)} >
                             <Button variant="contained" startIcon={<PhoneInTalkIcon/>} size="large"
                                     style={{backgroundColor: "#a6a2f7", borderColor: "transparent"}}>
                                 Nous Contacter

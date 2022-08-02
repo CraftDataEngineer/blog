@@ -28,8 +28,8 @@ export default function SyllabusForm(props) {
 
     const saveFile = () => {
         saveAs(
-            "/files/programme.pdf",
-            "programme.pdf"
+            "/files/syllabus.pdf",
+            "syllabus.pdf"
         );
     };
 

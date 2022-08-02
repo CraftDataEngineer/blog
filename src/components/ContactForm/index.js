@@ -51,7 +51,7 @@ export default function ContactUs() {
                         <div className="col col--1"/>
                         <div className="col col--2">
                             <div className="field">
-                                <label>? Questions </label>
+                                <label>Questions </label>
                                 <label style={{fontSize: "0.8rem",color:"red"}}>٭</label>
                             </div>
                         </div>
