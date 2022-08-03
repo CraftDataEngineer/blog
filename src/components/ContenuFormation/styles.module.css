@@ -45,32 +45,14 @@
 
 
 
-@media screen and (min-width: 768px) {
-    .rowContainer {
-        padding-left: 10%;
-    }
-}
-
 .enrollButton{
     color: #a6a2f7 !important;
     --ifm-font-color-base: #a6a2f7;
 }
 
-@media screen and (max-width: 768px) {
-
-    .titleContiner {
-        text-align: center;
-    }
-    .enrollButton {
-        display: none;
-    }
-}
-
-
 
 .colContainer {
     margin: 1%;
-    padding-left: 10%;
 }
 
 .icon {
@@ -99,13 +81,6 @@
     border-color: #7a7a7a;
 }
 
-@media (min-width: 426px)  and (max-width: 768px) {
-
-    .leftPart {
-        margin-left: 20%;
-    }
-
-}
 
 
 .leftPart ul {
@@ -179,6 +154,61 @@
 }
 
 
+@media screen and (max-width: 996px) {
+    .leftPart ul li p {
+        font-size: 0.7rem;
+    }
+
+    .leftPart ul li h6 {
+        font-size: 1rem;
+    }
+
+    .colContainer {
+        margin-top: 5%;
+    }
+}
+
+
+@media (min-width: 820px)  and (max-width: 995px) {
+    .leftPart {
+        margin-left: 18%;
+    }
+}
+
+
+@media (min-width: 715px)  and (max-width: 819px) {
+    .leftPart {
+        margin-left: 15%;
+    }
+}
+
+@media (min-width: 606px)  and (max-width: 714px) {
+    .leftPart {
+        margin-left: 10%;
+    }
+}
 
 
 
+@media (min-width: 532px)  and (max-width: 605px) {
+    .leftPart {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 995px) {
+
+    .titleContiner {
+        text-align: center;
+    }
+    .enrollButton {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 425px) {
+    .rowContainer {
+        padding-left: 10%;
+    }
+}
