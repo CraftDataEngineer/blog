@@ -55,10 +55,7 @@ class HomePageFaq extends React.Component  {
                                 <a  className={classnames(styles.faqQuestion, "menu__link menu__link--sublist")} >Comment financer ma formation ?</a>
                             </div>
                             { this.state.show_q_1 && <p className={classnames(styles.faqDescription, "menu__link")}>
-                                <span>Si vous êtes demandeur d’emploi ou en accompagnement CSP, vous pouvez faire une demande d’AIF (Aide Individuelle à la Formation).
-                                    Ces dispositifs vous permettent d’être financé par Pôle Emploi jusqu’à hauteur de 2000€. Un financement
-                                    d’entreprise est également possible en passant par l’OPCO. Pour le reste à charge,
-                                    il est possible de le financer jusqu’à 3 fois. </span>
+                                <span>Il est possible de le financer jusqu’à 3 fois. </span>
                             </p>
                             }
                             <div className={`menu__list-item-collapsible ${this.state.show_q_2 ? "" : "menu__list-item--collapsed"}`}  onClick={this.openQ2}>

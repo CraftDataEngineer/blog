@@ -31,7 +31,7 @@ function HomepageHeader() {
                                 <div className={stylesModule.surligne} >
 
                                     Devenez un <strong>Data Engineer</strong>  opérationnel, grâce à  un  accompagnement <b>personnalisé et immersif</b>.
-                                    Notre Bootcamp vous permettra d'acquérir les connaissances nécessaires pour entreprendre votre futur rôle dans les meilleurs conditions : <b>Bonnes pratiques de programmation</b>, <b>DevOps</b> et <b>Big Data</b> !
+                                    Notre Bootcamp vous permettra d'acquérir les connaissances nécessaires pour entreprendre votre futur rôle dans les meilleures conditions : <b>Bonnes pratiques de programmation</b>, <b>DevOps</b> et <b>Big Data</b> !
                                 </div>
                             </p>
 
@@ -56,7 +56,7 @@ function HomepageHeader() {
                     </div>
                     <div className={classnames("col ", stylesModule.verticleLine)}>
                         <Chip  icon={<CalendarMonthIcon />}  style={{marginTop: "2%",fontFamily:"CircularStd-Black",fontSize: "18px" }} label="Prochaine rentrée " />
-                        <h3 style={{marginTop: "2%",fontFamily:"CircularStd-Black"}}> Octobre 01, 2022</h3>
+                        <h3 style={{marginTop: "2%",fontFamily:"CircularStd-Black"}}> Octobre 10, 2022</h3>
                     </div>
                     <div className={classnames("col ", stylesModule.verticleLine)}>
                         <Chip icon={<ViewModuleIcon />}  style={{marginTop: "2%",fontFamily:"CircularStd-Black",fontSize: "18px" }} label="Format" />
