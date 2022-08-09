@@ -3,7 +3,6 @@ import emailjs from '@emailjs/browser';
 import classnames from "classnames";
 import styles from "./styles.module.css"
 import Link from "@docusaurus/core/lib/client/exports/Link";
-import Question from "../../../static/img/form/think.png";
 
 
 const SERVICE_ID = 'service_kmjngyo'

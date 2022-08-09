@@ -1,8 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 import styles from './styles.module.css';
-import YourSvg from '../../../static/img/module/parcours-align.svg';
+import stylesModule from './styles.module.css';
+import YourSvg from '../../../old/_static/img/module/parcours-align.svg';
 import classnames from "classnames";
-import stylesModule from "./styles.module.css";
 import {AnimationOnScroll} from 'react-animation-on-scroll';
 import useDocusaurusContext from "@docusaurus/core/lib/client/exports/useDocusaurusContext";
 

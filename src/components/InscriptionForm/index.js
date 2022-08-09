@@ -4,7 +4,7 @@ import classnames from "classnames";
 import styles from "./styles.module.css"
 import Link from "@docusaurus/core/lib/client/exports/Link";
 import stylesModule from "../Hero/styles.module.css";
-import Diplom from "../../../static/img/teaser/diplom.png";
+import Diplom from "../../../old/_static/img/teaser/diplom.png";
 
 const SERVICE_ID = 'service_kmjngyo'
 const TEMPLATE_ID = 'template_v6b7dip'

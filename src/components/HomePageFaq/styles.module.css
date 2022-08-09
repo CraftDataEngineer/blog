@@ -15,10 +15,10 @@
   padding-top: 5%;
   padding-bottom: 14%;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   color: black;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center ;
   background-image: url("../../../static/img/faq/background.png");
   background-color: #ffffff;

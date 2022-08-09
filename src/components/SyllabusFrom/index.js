@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, {useRef} from 'react';
 import classnames from "classnames";
 import styles from "./styles.module.css"
 import HeaderSVG from '../../../static/img/form/header.svg'
@@ -9,8 +9,13 @@ import AddIcCallIcon from '@mui/icons-material/AddIcCall';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import PersonIcon from '@mui/icons-material/Person';
-import {Divider} from "@mui/material";
+import {Button, Divider} from "@mui/material";
+import emailjs from "@emailjs/browser";
+import DownloadIcon from "@mui/icons-material/Download";
 
+const SERVICE_ID = 'service_kmjngyo'
+const TEMPLATE_ID = 'template_v6b7dip'
+const USER_ID = 'XelOog_ZvkGiZ60Ty'
 
 SyllabusForm.propTypes = {
     onClose: PropTypes.func.isRequired,
@@ -33,6 +38,17 @@ export default function SyllabusForm(props) {
         );
     };
 
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID)
+            .then((result) => {
+                saveFile()
+            }, (error) => {
+                console.log("ERROR SENDING EMAIL : ", error)
+            });
+    };
+
+
     return (
         <Dialog onClose={handleClose} open={open} fullWidth={true} maxWidth={"lg"}
                 className={classnames("container", styles.dialogContainer)}>
@@ -53,7 +69,7 @@ export default function SyllabusForm(props) {
                 </div>
             </div>
             <div className={classnames("container")}>
-                <form className={classnames(styles.formContainer)} ref={form} onSubmit={saveFile}>
+                <form className={classnames(styles.formContainer)} ref={form} onSubmit={sendEmail}>
                     <div className="row row--no-gutters " style={{padding: "3%"}}>
                         <div className="col col--1"/>
                         <div className="col col--10">
@@ -115,8 +131,11 @@ export default function SyllabusForm(props) {
                     <div className="row row--no-gutters " style={{paddingTop: "10px"}}>
                         <div className="col col--5">
                         </div>
-                        <div className={classnames("col col--3")}>
-                            <button className={classnames("button button--block  button--primary",styles.buttonContainer)}>Télécharger le programme</button>
+                        <div className={classnames("col col--4")}>
+                            <Button variant="contained" startIcon={<DownloadIcon/>} size="large"
+                                    style={{backgroundColor: "#a6a2f7", borderColor: "transparent",marginTop:"5%"}}>
+                                Télécharger le Syllabus
+                            </Button>
                         </div>
                     </div>
                 </form>

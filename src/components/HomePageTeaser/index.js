@@ -1,15 +1,6 @@
 import styles from "./styles.module.css";
 import React from "react";
 import classnames from "classnames";
-import Infinite from '../../../static/img/teaser/infinite.svg';
-import Exercices from '../../../static/img/teaser/exercices.png';
-import Tp from '../../../static/img/teaser/lab.png';
-import Atelier from '../../../static/img/teaser/atelier.png';
-import Project from '../../../static/img/teaser/build.png';
-import Design from '../../../static/img/teaser/design.png';
-import TakeAway from '../../../static/img/teaser/takeaway.png';
-import Dojo from '../../../static/img/teaser/judo.png';
-import Education from '../../../static/img/teaser/education.png';
 import stylesModule from "../HomePageModules/styles.module.css";
 import Question from "../../../static/img/form/think.png";
 

@@ -3,8 +3,6 @@ import React from "react";
 import classnames from "classnames";
 import sbe from '../../../static/img/formateur/bsbe.png';
 import loca from '../../../static/img/formateur/bloca.png';
-import CloudQueueIcon from '@mui/icons-material/CloudQueue';
-import GroupsIcon from '@mui/icons-material/Groups';
 
 function HomePageFormateur() {
 

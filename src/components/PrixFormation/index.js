@@ -3,7 +3,6 @@ import stylesModule from './styles.module.css';
 import YourSvg from '../../../static/img/header/geek_2.png';
 import classnames from "classnames";
 import {Button, Chip} from "@mui/material";
-import EuroIcon from '@mui/icons-material/Euro';
 import Link from "@docusaurus/core/lib/client/exports/Link";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 
