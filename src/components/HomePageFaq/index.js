@@ -50,7 +50,7 @@ class HomePageFaq extends React.Component  {
                                 title="Faq"
                             />
                         </div>
-                        <div className="col col--7" style={{paddingTop:"4%"}}>
+                        <div className="col col--7">
                             <div className={`menu__list-item-collapsible ${this.state.show_q_1 ? "" : "menu__list-item--collapsed"}`}  onClick={this.openQ1} >
                                 <a  className={classnames(styles.faqQuestion, "menu__link menu__link--sublist")} >Comment financer ma formation ?</a>
                             </div>

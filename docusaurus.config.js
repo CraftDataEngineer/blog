@@ -96,11 +96,7 @@ module.exports = {
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
-                },
-                googleAnalytics: {
-                    trackingID: '313303835',
-                    anonymizeIP: true,
-                },
+                }
             },
         ],
     ],
