@@ -39,8 +39,8 @@ class HomePageFaq extends React.Component  {
                     <h6 className={classnames(styles.faqTitle)}><span>FAQ</span></h6>
                     <h3 className={classnames(styles.faqTeaser)}><span>Questions les plus fréquentes<span style={{color:"#f1bb00"}}>.</span></span></h3>
                 </div>
-                <div className={classnames(styles.gridContainer,"container")}>
-                    <div className="row " style={{marginTop:"5%",paddingBottom:"5%"}}>
+                <div className={classnames(styles.gridContainer,"container")} >
+                    <div className="row " style={{marginTop:"5%"}}>
                         <div className="col col--1"/>
                         <div className="col col--2">
                             <img
@@ -50,15 +50,15 @@ class HomePageFaq extends React.Component  {
                                 title="Faq"
                             />
                         </div>
-                        <div className="col col--7">
-                            <div className={`menu__list-item-collapsible ${this.state.show_q_1 ? "" : "menu__list-item--collapsed"}`}  onClick={this.openQ1} >
+                        <div className="col col--7"  >
+                            <div className={`menu__list-item-collapsible ${this.state.show_q_1 ? "" : "menu__list-item--collapsed"}`} style={{marginTop:"5%"}} onClick={this.openQ1} >
                                 <a  className={classnames(styles.faqQuestion, "menu__link menu__link--sublist")} >Comment financer ma formation ?</a>
                             </div>
                             { this.state.show_q_1 && <p className={classnames(styles.faqDescription, "menu__link")}>
                                 <span>Il est possible de le financer jusqu’à 3 fois. </span>
                             </p>
                             }
-                            <div className={`menu__list-item-collapsible ${this.state.show_q_2 ? "" : "menu__list-item--collapsed"}`}  onClick={this.openQ2}>
+                            <div className={`menu__list-item-collapsible ${this.state.show_q_2 ? "" : "menu__list-item--collapsed"}`} style={{marginTop:"3%"}} onClick={this.openQ2}>
                                 <a className={classnames(styles.faqQuestion, "menu__link menu__link--sublist")}>Comment s’organise la formation ?</a>
                             </div>
                             {this.state.show_q_2 && <p className={classnames(styles.faqDescription, "menu__link")}>
@@ -66,7 +66,7 @@ class HomePageFaq extends React.Component  {
                                     de séances de masterclass et de coaching individuels.  </span>
                             </p>
                             }
-                            <div className={`menu__list-item-collapsible ${this.state.show_q_3 ? "" : "menu__list-item--collapsed"}`}  onClick={this.openQ3}>
+                            <div className={`menu__list-item-collapsible ${this.state.show_q_3 ? "" : "menu__list-item--collapsed"}`} style={{marginTop:"3%"}} onClick={this.openQ3}>
                                 <a className={classnames(styles.faqQuestion, "menu__link menu__link--sublist")}>Un programme fait pour moi ?</a>
                             </div>
                             {this.state.show_q_3 && <div className={classnames(styles.faqDescription, "menu__link")}>

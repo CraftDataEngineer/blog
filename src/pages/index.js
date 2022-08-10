@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import HomepageHeader from "../components/Hero";
@@ -10,13 +10,21 @@ import HomePageAvis from "../components/HomePageAvis";
 import HomePageTheoriePratique from "../components/HomePageTheoriePratique";
 import ContenuFormation from "../components/ContenuFormation";
 import PrixFormation from "../components/PrixFormation";
+import CookieSetter from "../components/Cookie";
 
 export default function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
+
+
+
+
+
     return (
+
     <Layout title={`${siteConfig.title}`} description="Description will go into a meta tag in <head />">
       <main>
+          <CookieSetter/>
           <HomepageHeader/>
           <HomePageTheoriePratique />
           <ContenuFormation/>

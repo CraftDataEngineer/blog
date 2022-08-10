@@ -10,6 +10,7 @@ import ViewModuleIcon from '@mui/icons-material/ViewModule';
 
 function HomepageHeader() {
 
+
     const saveFile = () => {
         saveAs(
             "/files/programme.pdf",
@@ -26,21 +27,21 @@ function HomepageHeader() {
                             <span>Bootcamp Data Engineer</span>
                             <span style={{color:"#f1bb00"}}>.</span>
                         </h3>
-                        <p className={classnames(stylesModule.headDescription)}>
-                            <p>
+                        <div className={classnames(stylesModule.headDescription)}>
+                            <div>
                                 <div className={stylesModule.surligne} >
 
                                     Devenez un <strong>Data Engineer</strong>  opérationnel, grâce à  un  accompagnement <b>personnalisé et immersif</b>.
                                     Notre Bootcamp vous permettra d'acquérir les connaissances nécessaires pour entreprendre votre futur rôle dans les meilleures conditions : <b>Bonnes pratiques de programmation</b>, <b>DevOps</b> et <b>Big Data</b> !
                                 </div>
-                            </p>
+                            </div>
 
                             <div  className={classnames(stylesModule.buttonDownload)} >
                                 <Button variant="contained" startIcon={<DownloadIcon />} size="large" onClick={saveFile} style={{backgroundColor:"#a6a2f7" , borderColor:"transparent"}} >
                                     Télécharger le programme
                                 </Button>
                             </div>
-                        </p>
+                        </div>
                     </div>
                     <div className="col"/>
                     <div className="col col--5">

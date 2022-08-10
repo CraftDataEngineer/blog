@@ -1,13 +1,13 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
     title: 'Data Guru',
-    tagline: 'En cours de réalisation',
-    url: 'https://blog.craft-data-engineer.com/',
+    tagline: 'Data Engineer',
+    url: 'https://dataguru.fr/',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
-    organizationName: 'CraftDataEngineer', // Usually your GitHub org/user name.
+    organizationName: 'Data Engineer', // Usually your GitHub org/user name.
     projectName: 'blog', // Usually your repo name.
     themeConfig: {
         announcementBar: {

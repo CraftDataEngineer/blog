@@ -15,7 +15,7 @@ function PrixFormation() {
                         <span>Comment financer la formation </span>
                         <span style={{color: "#f1bb00"}}>?</span>
                     </h3>
-                    <p className={classnames(stylesModule.headDescription)}>
+                    <div className={classnames(stylesModule.headDescription)}>
                         <h2>
                             Frais de formation : <Chip
                                                        style={{fontFamily: "CircularStd-Black", fontSize: "24px"}}
@@ -36,7 +36,7 @@ function PrixFormation() {
                                 Nous Contacter
                             </Button>
                         </Link>
-                    </p>
+                    </div>
                 </div>
                 <div className="col"/>
                 <div className="col col--5">

@@ -24,8 +24,8 @@ export default function RendezVousForm() {
                     </div>
                 </div>
                 <div className="row row--no-gutters ">
-                    <div className="col">
-                        <InlineWidget url="https://calendly.com/dataguru-advisory/30min"/>
+                    <div className="col" >
+                        <InlineWidget styles={{height: "800px"}}  url="https://calendly.com/dataguru-advisory/30min"/>
                     </div>
                     <div className="col col--1 "/>
                 </div>
