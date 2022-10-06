@@ -7,6 +7,10 @@ import useDocusaurusContext from "@docusaurus/core/lib/client/exports/useDocusau
 import {Button} from "@mui/material";
 import HowToRegIcon from '@mui/icons-material/HowToReg';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
+import MehImage from "../../../static/img/avis/meh.jpeg";
+import KevinImage from "../../../static/img/avis/kevin.png";
+import LeoImage from "../../../static/img/avis/leo.jpg";
+import ThibaultImage from "../../../static/img/avis/thibaut.jpg";
 
 
 function Avis({name, subtitle, stars, photo, text}) {
@@ -47,7 +51,7 @@ function HomePageAvis() {
                 <div className="row ">
                     <div className={classnames("col", styles.colContainer)}>
                         <Avis name={"Mehdi O."}
-                              photo={"https://media-exp1.licdn.com/dms/image/C5103AQHKaGelYV31qw/profile-displayphoto-shrink_100_100/0/1517453131131?e=1665014400&v=beta&t=2-Vav_RNPWzePAPwGNjsmspHtoONEOc1T75fEE6Kb-0"}
+                              photo={MehImage}
                               subtitle={"Senior Data Engineer"}
                               text={"\n" +
                               "Un contenu pédagogique dense et complet ! Avec la formation dispensée par DataGuru, " +
@@ -60,14 +64,14 @@ function HomePageAvis() {
                     </div>
                     <div className={classnames("col", styles.colContainer)}>
                         <Avis name={"Kévin D."}
-                              photo={"https://media-exp1.licdn.com/dms/image/C4D03AQGBiYTgSMCI3g/profile-displayphoto-shrink_400_400/0/1550944336592?e=1665014400&v=beta&t=j8h0f1BUUQbcMx9F8YyX6SM8FSM-oBjgBr1kDPtbCEg"}
+                              photo={KevinImage}
                               subtitle={"Fondateur @Keltio"}
                               text={"\n" +
                               "Le support de formation est de qualité, l’équipe pédagogique est investie, réactive et soucieuse de la réussite de ses apprenants. " +
                               "Les projets, basés sur des cas réels, permettent d'expérimenter et d'approfondir les connaissances techniques."}/>
                         <br/>
                         <Avis name={"Léo T."}
-                              photo={"https://media-exp1.licdn.com/dms/image/C5603AQGVk0X64KsYmw/profile-displayphoto-shrink_400_400/0/1517042126091?e=1665014400&v=beta&t=pbnTQ8DIEIMTGK3nKVAex6jMUGk-rGTz9tiTdMchy4g"}
+                              photo={LeoImage}
                               subtitle={"Géo-Data Engineer"}
                               text={
                                   "Le cursus est très pédagogique et aborde toutes les notions nécessaires au poste de data engineer : " +
@@ -76,7 +80,7 @@ function HomePageAvis() {
                     </div>
                     <div className={classnames("col", styles.colContainer)}>
                         <Avis name={"Thibaut E."}
-                              photo={"https://media-exp1.licdn.com/dms/image/C5603AQFDecrTqRN-Yg/profile-displayphoto-shrink_400_400/0/1578345640755?e=1664409600&v=beta&t=gFA1X81w8w1dq-ms53lvsFEd1G-lRnDHd7HFx2C2TrE"}
+                              photo={ThibaultImage}
                               subtitle={"Développeur @Sportihome"}
                               text={"\n" +
                               "J’ai été agréablement surpris du format de formation proposé par DataGuru. " +

@@ -1,6 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-    title: 'Data Guru',
+    title: 'Data Guru | Data Engineer',
     tagline: 'Data Engineer',
     url: 'https://dataguru.fr/',
     baseUrl: '/',
@@ -34,6 +34,7 @@ module.exports = {
 
             //... other Algolia params
         },
+        metadata: [{name: 'keywords', content: 'data, engineer'},{name: 'keywords', content: 'data, engineer'}],
         navbar: {
             logo: {
                 alt: 'My Site Logo',
