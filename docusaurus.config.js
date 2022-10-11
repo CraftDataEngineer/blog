@@ -1,6 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-    title: 'Devenez Data Engineer | Data Guru',
+    title: 'Data Guru | Data Engineer',
     tagline: 'Data Engineer',
     url: 'https://dataguru.fr/',
     baseUrl: '/',

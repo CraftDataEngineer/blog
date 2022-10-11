@@ -57,7 +57,7 @@ function HomepageHeader() {
                     </div>
                     <div className={classnames("col ", stylesModule.verticleLine)}>
                         <Chip  icon={<CalendarMonthIcon />}  style={{marginTop: "2%",fontFamily:"CircularStd-Black",fontSize: "18px" }} label="Prochaine rentrée " />
-                        <h3 style={{marginTop: "2%",fontFamily:"CircularStd-Black"}}> Octobre 10, 2022</h3>
+                        <h3 style={{marginTop: "2%",fontFamily:"CircularStd-Black"}}> Janvier 09, 2023</h3>
                     </div>
                     <div className={classnames("col ", stylesModule.verticleLine)}>
                         <Chip icon={<ViewModuleIcon />}  style={{marginTop: "2%",fontFamily:"CircularStd-Black",fontSize: "18px" }} label="Format" />
