@@ -3,8 +3,7 @@ import emailjs from '@emailjs/browser';
 import classnames from "classnames";
 import styles from "./styles.module.css"
 import Link from "@docusaurus/core/lib/client/exports/Link";
-import stylesModule from "../../../../../old/Hero/styles.module.css";
-import Diplom from "../../../../../old/_static/img/teaser/diplom.png";
+import Diplom from "../../../../../static/img/inscription/diplom.png";
 
 const SERVICE_ID = 'service_kmjngyo'
 const TEMPLATE_ID = 'template_v6b7dip'
@@ -43,7 +42,7 @@ export default function InscriptionForm() {
                         </p>
                     </div>
                     <div className="col col--5">
-                        <img alt={"inscription"} src={Diplom} className={classnames(stylesModule.diplomImg)} />
+                        <img alt={"inscription"} src={Diplom}  />
                     </div>
                 </div>
             </div>
