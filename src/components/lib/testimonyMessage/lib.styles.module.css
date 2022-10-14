@@ -1,0 +1,23 @@
+
+
+.avisContainer {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 244/var(--tw-bg-opacity));
+  margin-top: 0;
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  padding: 1.5rem;
+  text-align: justify;
+  font-size: 18px;
+
+}
+
+@media screen and (max-width:  996px) {
+  .questionContainer {
+    text-align: center;
+  }
+  .avisContainer {
+    font-size: 0.5rem;
+  }
+}

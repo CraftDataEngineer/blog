@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import RendezVousForm from "../components/RendezVous";
+import RendezVousForm from "../components/sections/rendezVous/01_prendre_rendez_vous";
 
 
 
