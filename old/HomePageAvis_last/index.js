@@ -2,15 +2,15 @@ import styles from "./styles.module.css";
 import React from "react";
 import classnames from "classnames";
 import Link from "@docusaurus/core/lib/client/exports/Link";
-import Bulle from "../../../static/img/avis/bulle.svg";
+import Bulle from "../../static/img/avis/bulle.svg";
 import useDocusaurusContext from "@docusaurus/core/lib/client/exports/useDocusaurusContext";
 import {Button} from "@mui/material";
 import HowToRegIcon from '@mui/icons-material/HowToReg';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
-import MehImage from "../../../static/img/avis/meh.jpeg";
-import KevinImage from "../../../static/img/avis/kevin.png";
-import LeoImage from "../../../static/img/avis/leo.jpg";
-import ThibaultImage from "../../../static/img/avis/thibaut.jpg";
+import MehImage from "../../static/img/avis/meh.jpeg";
+import KevinImage from "../../static/img/avis/kevin.png";
+import LeoImage from "../../static/img/avis/leo.jpg";
+import ThibaultImage from "../../static/img/avis/thibaut.jpg";
 
 
 function Avis({name, subtitle, stars, photo, text}) {

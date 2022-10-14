@@ -19,7 +19,7 @@ import Terraform from "../../../../../static/img/contenu/terraform.png";
 import Jira from "../../../../../static/img/contenu/jira.png";
 import {Button} from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
-import SyllabusForm from "../forms/SyllabusFrom";
+import SyllabusForm from "../form_syllabus/SyllabusFrom";
 import ComplexMessageWithMultipleIcons from "../../../lib/complexMessageWithMultipleIcons";
 
 

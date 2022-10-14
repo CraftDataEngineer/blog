@@ -22,14 +22,16 @@ export default function BootCampPrix() {
 
                                         </h2>
                                         <p>
-                                            Si vous êtes en recherche d’emploi, la formation peut être prise en charge à 100% par Pôle
+                                            Si vous êtes en recherche d’emploi, la formation peut être prise en charge à
+                                            100% par Pôle
                                             Emploi.
                                         </p>
                                         <p>
-                                            Si vous êtes salarié, vous pouvez demander à votre entreprise de vous financer la formation.
+                                            Si vous êtes salarié, vous pouvez demander à votre entreprise de vous
+                                            financer la formation.
                                             Le reste à charge peut être échelonné jusqu’à 3 fois.
                                         </p>
-                                        <Link to="/form/" className={classnames(stylesModule.enrollButton)} >
+                                        <Link to="/form/" className={classnames(stylesModule.enrollButton)}>
                                             <Button variant="contained" startIcon={<PhoneInTalkIcon/>} size="large"
                                                     style={{backgroundColor: "#a6a2f7", borderColor: "transparent"}}>
                                                 Nous Contacter

@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Inscription from "../components/sections/inscription/01_hero_and_code";
+import Inscription from "../components/pages/inscription/01_hero_and_code";
 
 
 

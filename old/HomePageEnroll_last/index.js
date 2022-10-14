@@ -1,10 +1,10 @@
 import styles from "./styles.module.css";
 import React from "react";
 import classnames from "classnames";
-import Qualiopi from '../../../static/img/enroll/qualiopi.png';
+import Qualiopi from '../../static/img/enroll/qualiopi.png';
 import {Button} from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
-import SyllabusForm from "../SyllabusFrom";
+import SyllabusForm from "../../src/components/SyllabusFrom";
 
 function HomePageEnroll() {
     const [open, setOpen] = React.useState(false);

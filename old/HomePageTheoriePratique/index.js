@@ -1,7 +1,7 @@
 import styles from "./styles.module.css";
 import React from "react";
 import classnames from "classnames";
-import Infinite from '../../../static/img/theorie_pratique/infinite.svg';
+import Infinite from '../../static/img/theorie_pratique/infinite.svg';
 
 import ScienceIcon from '@mui/icons-material/Science';
 import DashboardIcon from '@mui/icons-material/Dashboard';

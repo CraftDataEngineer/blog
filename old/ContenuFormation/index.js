@@ -9,17 +9,17 @@ import SpeedIcon from '@mui/icons-material/Speed';
 import MemoryIcon from '@mui/icons-material/Memory';
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
 import GroupsIcon from '@mui/icons-material/Groups';
-import Octocat from "../../../static/img/contenu/Octocat.png";
-import Python from "../../../static/img/contenu/python.png";
-import Elastic from "../../../static/img/contenu/elastic.png";
-import Kafka from "../../../static/img/contenu/kafka.png";
-import Postgres from "../../../static/img/contenu/postgres.png";
-import Spark from "../../../static/img/contenu/spark.png";
-import Terraform from "../../../static/img/contenu/terraform.png";
-import Jira from "../../../static/img/contenu/jira.png";
+import Octocat from "../../static/img/contenu/Octocat.png";
+import Python from "../../static/img/contenu/python.png";
+import Elastic from "../../static/img/contenu/elastic.png";
+import Kafka from "../../static/img/contenu/kafka.png";
+import Postgres from "../../static/img/contenu/postgres.png";
+import Spark from "../../static/img/contenu/spark.png";
+import Terraform from "../../static/img/contenu/terraform.png";
+import Jira from "../../static/img/contenu/jira.png";
 import {Button} from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
-import SyllabusForm from "../SyllabusFrom";
+import SyllabusForm from "../../src/components/SyllabusFrom";
 
 
 export default function ContenuFormation() {

@@ -4,7 +4,7 @@ import classnames from "classnames";
 import Qualiopi from '../../../../../static/img/enroll/qualiopi.png';
 import {Button} from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
-import SyllabusForm from "../forms/SyllabusFrom";
+import SyllabusForm from "../form_syllabus/SyllabusFrom";
 import MutltilineMessageWithTitle from "../../../lib/mutltilineMessageWithTitle";
 import ComputerIcon from '@mui/icons-material/Computer';
 import StorageIcon from '@mui/icons-material/Storage';

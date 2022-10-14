@@ -140,7 +140,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left ;
-  background-image: url("../../../static/img/prix/background.png");
+  /*background-image: url("static/img/prix/background.png");*/
   background-color: #ffffff;
 }
 
