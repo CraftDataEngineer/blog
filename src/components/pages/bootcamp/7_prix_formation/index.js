@@ -31,7 +31,7 @@ export default function BootCampPrix() {
                                             financer la formation.
                                             Le reste à charge peut être échelonné jusqu’à 3 fois.
                                         </p>
-                                        <Link to="/form/" className={classnames(stylesModule.enrollButton)}>
+                                        <Link to="/contact/" className={classnames(stylesModule.enrollButton)}>
                                             <Button variant="contained" startIcon={<PhoneInTalkIcon/>} size="large"
                                                     style={{backgroundColor: "#a6a2f7", borderColor: "transparent"}}>
                                                 Nous Contacter
