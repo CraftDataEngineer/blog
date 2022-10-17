@@ -2,7 +2,7 @@ module.exports = {
   docs: [
     {
       type: 'category',
-      label: 'stockage',
+      label: 'Stockage',
       items: [
 	    'stockage/2021-03-10-dolt-db',
         'stockage/2021-03-12-apache-parquet',
@@ -11,7 +11,7 @@ module.exports = {
     },
       {
       type: 'category',
-      label: 'tools',
+      label: 'Tools',
       items: [
 	    'tools/2021-03-16-comparaison-outils-documentation',
       ],

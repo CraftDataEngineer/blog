@@ -14,16 +14,29 @@ Hide toggle in small viewports
   }
 }
 
-.logo {
+.navBarLogo {
   width: 120px;
   height: 100px;
+  margin-top: 3%;
+  margin-bottom: 2%;
 }
 
 .navbarItem {
   margin-bottom: 5%;
-  background-color: #f1bb00;
-  border-color: transparent;
+  margin-top: 0;
+  margin-left: 3%;
 }
+
+@media (max-width: 996px) {
+  .navbarItem {
+    display:  none;
+  }
+
+  .navBarLogo {
+    display:  none !important;
+  }
+}
+
 
 @media (max-width: 800px) {
   .logo {
@@ -35,14 +48,49 @@ Hide toggle in small viewports
   }
 }
 
+.leftNavBarLogo {
+  width: 120px;
+  height: 100px;
+  margin-left: 2%;
+  margin-top: 12%;
+}
+
+.leftNavbarItem {
+  margin-top: 20%;
+  margin-left: 10%;
+}
+
+@media (min-width: 518px) and (max-width: 996px) {
+  .leftNavBarLogo {
+    margin-left: 1%;
+    margin-top: 5%;
+  }
+
+  .leftNavbarItem {
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+}
+
+.buttonMenu title {
+  top : 0;
+}
+
+.buttonTitle {
+  font-size: 8px;
+}
+
 .navContainer {
-  margin-top:3%;
+  margin-top:2.5%;
   padding-bottom:2%;
+  border-bottom: black;
+  border-bottom-width: thick;
 }
 
 @media (min-width: 2500px) {
   .navContainer {
-    margin-top:2%;
+    margin-top:1.5%;
+    padding-bottom:2%;
   }
 }
 
@@ -59,5 +107,5 @@ Hide toggle in small viewports
 }
 
 .navBarFont {
-  font-family: Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  font-family: CircularStd-Book,Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji !important;
 }

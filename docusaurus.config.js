@@ -43,18 +43,24 @@ module.exports = {
                 height: 80,
             },
             items: [
-  /*              {
+                {
                     to: 'docs/',
                     activeBasePath: 'docs',
-                    label: "Blog",
+                    label: "BOOTCAMP",
                     position: 'right',
                 },
                 {
-                    to: 'form/',
+                    to: 'Catalogue/',
                     activeBasePath: 'docs',
-                    label: 'Nous Contacter',
+                    label: 'CATALOGUE',
                     position: 'right',
-                }*/
+                },
+                {
+                    to: 'docs/',
+                    activeBasePath: 'docs',
+                    label: "LE BLOG",
+                    position: 'right',
+                }
             ],
         },
         footer: {

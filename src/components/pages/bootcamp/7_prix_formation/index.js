@@ -9,7 +9,7 @@ import TextLeftImageRight from "../../../lib/textLeftImageRight";
 
 export default function BootCampPrix() {
     return (
-        <div>
+        <div className="container">
             <TextLeftImageRight containerStyle={classnames(stylesModule.backgroundPrix)}
                                 title={"Comment financer la formation"}
                                 ponctuation="?"

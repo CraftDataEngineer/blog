@@ -56,6 +56,7 @@ function DocPageContent({
         <BackToTopButton />
 
         {sidebar && (
+            <div className={clsx(styles.sideBar)}>
           <aside
             className={clsx(
               ThemeClassNames.docs.docSidebarContainer,
@@ -75,9 +76,9 @@ function DocPageContent({
                 setHiddenSidebar(true);
               }
             }}>
-            <DocSidebar
-                style={{paddingLeft:"200px"}}
+            <div style={{marginTop:"5%"}} >
 
+            <DocSidebar
                 key={
                 // Reset sidebar state on sidebar changes
                 // See https://github.com/facebook/docusaurus/issues/3414
@@ -88,6 +89,7 @@ function DocPageContent({
               onCollapse={toggleSidebar}
               isHidden={hiddenSidebar}
             />
+            </div>
 
             {hiddenSidebar && (
               <div
@@ -112,21 +114,24 @@ function DocPageContent({
               </div>
             )}
           </aside>
+            </div>
         )}
         <main
           className={clsx(styles.docMainContainer, {
             [styles.docMainContainerEnhanced]:
               hiddenSidebarContainer || !sidebar,
           })}>
-          <div
-            className={clsx(
-              'container padding-top--md padding-bottom--lg',
-              styles.docItemWrapper,
-              {
-                [styles.docItemWrapperEnhanced]: hiddenSidebarContainer,
-              },
-            )}>
-            <MDXProvider components={MDXComponents}>{children}</MDXProvider>
+          <div className={clsx(styles.docItemWrapper)}>
+            <div
+                className={clsx(
+                    'container padding-top--md padding-bottom--lg',
+                    styles.contentWrapper,
+                    {
+                      [styles.docItemWrapperEnhanced]: hiddenSidebarContainer,
+                    },
+                )}>
+              <MDXProvider components={MDXComponents} >{children}</MDXProvider>
+            </div>
           </div>
         </main>
       </div>
@@ -168,6 +173,7 @@ export default function DocPage(props) {
               versionMetadata,
             })}
           </DocPageContent>
+
         </DocsSidebarProvider>
       </DocsVersionProvider>
     </>
