@@ -1,38 +1,33 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import HomepageHeader from "../components/Hero";
-import HomePageFormateur from "../components/HomePageFormateur";
-import HomePageEnroll from "../components/HomePageEnroll";
-import HomePageFaq from "../components/HomePageFaq";
+import BootCampFaq from "../components/pages/bootcamp/8_faq";
 import "animate.css/animate.min.css";
-import HomePageAvis from "../components/HomePageAvis";
-import HomePageTheoriePratique from "../components/HomePageTheoriePratique";
-import ContenuFormation from "../components/ContenuFormation";
-import PrixFormation from "../components/PrixFormation";
-import CookieSetter from "../components/Cookie";
+import CookieSetter from "../components/global/Cookie";
+import BootCampHero from "../components/pages/bootcamp/1_hero";
+import BootCampTheoriePratique from "../components/pages/bootcamp/2_theorie_pratique";
+import BootCampContenuFormation from "../components/pages/bootcamp/3_contenu_formation";
+import BootCampAvis from "../components/pages/bootcamp/5_avis_et_inscription_et_contact";
+import BootCampHesitationFormation from "../components/pages/bootcamp/6_hesitation_formation";
+import BootCampFormateur from "../components/pages/bootcamp/4_formateur";
+import BootCampPrix from "../components/pages/bootcamp/7_prix_formation";
 
 export default function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
 
-
-
-
-
     return (
-
-    <Layout  description="Description will go into a meta tag in <head />">
+    <Layout  description="Data Engineer | DataGuru <head />">
       <main>
           <CookieSetter/>
-          <HomepageHeader/>
-          <HomePageTheoriePratique />
-          <ContenuFormation/>
-          <HomePageFormateur/>
-          <HomePageAvis/>
-          <HomePageEnroll/>
-          <PrixFormation/>
-          <HomePageFaq/>
+          <BootCampHero/>
+          <BootCampTheoriePratique />
+          <BootCampContenuFormation/>
+          <BootCampFormateur/>
+          <BootCampAvis/>
+          <BootCampHesitationFormation/>
+          <BootCampPrix/>
+          <BootCampFaq/>
       </main>
 
     </Layout>
