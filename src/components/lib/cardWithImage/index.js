@@ -1,34 +1,26 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import {Divider} from "@mui/material";
+import React from "react";
+import styles from "./lib.styles.module.css";
 
-export default function ImgMediaCard({ imgSrc , imageHeight = 140, title,text,cardUrl}) {
+
+export default function cardWithImage({titleIcon ,titleText, title, images,text,cardUrl}) {
+
+
+
     return (
-        <Card sx={{ maxWidth: 345  }}>
-            <CardMedia
-                component="img"
-                alt="image"
-                height={imageHeight}
-                image={imgSrc}
-            />
-            <Divider />
-            <CardContent>
-                <Typography gutterBottom variant="h6" component="div">
-                    {title}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                    {text}
-                </Typography>
-            </CardContent>
-            <CardActions>
-                <a className="button button--warning" href={cardUrl}>DÉCOUVRIR </a>
-            </CardActions>
-        </Card>
+        <div className={styles.leftPart}>
+            <ul>
+                <li>
+                    <div>
+                        <div>{titleIcon}</div>
+                        <h6>{titleText}</h6>
+                        <h2>{images.map(image => <img key="2" alt="" src={image.src} className={image.large ? styles.largeIcon : styles.smallIcon}/>)} </h2>
+                    </div>
+                    <h3> {title}</h3>
+                    <p> {text}</p>
+                    <a className="button button--warning button--outline" href={cardUrl}>DÉCOUVRIR </a>
+                </li>
+            </ul>
+        </div>
     );
 }
+

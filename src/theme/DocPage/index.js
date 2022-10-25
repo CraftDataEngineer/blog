@@ -117,11 +117,10 @@ function DocPageContent({
             </div>
         )}
         <main
-          className={clsx(styles.docMainContainer, {
+          className={clsx(styles.docMainContainer,styles.docItemWrapper, {
             [styles.docMainContainerEnhanced]:
               hiddenSidebarContainer || !sidebar,
           })}>
-          <div className={clsx(styles.docItemWrapper)}>
             <div
                 className={clsx(
                     'container padding-top--md padding-bottom--lg',
@@ -131,7 +130,6 @@ function DocPageContent({
                     },
                 )}>
               <MDXProvider components={MDXComponents} >{children}</MDXProvider>
-            </div>
           </div>
         </main>
       </div>

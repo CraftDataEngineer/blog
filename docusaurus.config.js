@@ -43,13 +43,13 @@ module.exports = {
                 height: 80,
             },
             items: [
-                {
+    /*            {
                     to: 'docs/',
                     activeBasePath: 'docs',
                     label: "BOOTCAMP",
                     position: 'right',
                 },
-                {
+   */             {
                     to: 'Catalogue/',
                     activeBasePath: 'docs',
                     label: 'CATALOGUE',
@@ -96,6 +96,7 @@ module.exports = {
                         'https://github.com/CraftDataEngineer/blog/'
                 },
                 blog: {
+                    blogSidebarTitle: 'Formation',
                     showReadingTime: true,
                     // Please change this to your repo.
                     editUrl:

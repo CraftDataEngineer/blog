@@ -21,9 +21,8 @@
 }
 
 .sideBar {
-  background-color:#F9F9F8;
+  background: linear-gradient(#F9F9F8, #ffffff);
   min-height:1000px ;
-  border-bottom: 1px solid var(--ifm-toc-border-color);
 }
 
 @media screen and (min-width: 2000px) {
@@ -36,7 +35,6 @@
 
   .sideBar{
     background-color: #fff;
-
   }
 }
 
@@ -80,7 +78,6 @@
     align-items: center;
     justify-content: center;
     transition: background-color var(--ifm-transition-fast) ease;
-
   }
 
   .collapsedDocSidebar:hover,
@@ -111,10 +108,15 @@
 
 .docItemWrapper {
   border-left: 1px solid var(--ifm-toc-border-color);
-
 }
 
-.contentWrapper {
-  margin-top: 3%;
-  margin-left: 3%;
+
+
+@media (min-width: 997px) {
+
+  .contentWrapper {
+    margin-top: 3%;
+    margin-left: 3%;
+  }
+
 }

@@ -17,7 +17,7 @@ export default function Home() {
   const {siteConfig = {}} = context;
 
     return (
-    <Layout  description="Data Engineer | DataGuru <head />">
+    <Layout  description="Data Engineer | DataGuru">
       <main>
           <CookieSetter/>
           <BootCampHero/>

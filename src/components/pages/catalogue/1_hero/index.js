@@ -8,12 +8,15 @@ export default function CatalogueHero() {
         <header className={classnames('hero headTest', stylesModule.heroSection)}>
             <div className="container">
                 <h3 className={classnames(stylesModule.title)}>
-                    <span>Toutes nos formations</span>
+                    <span>Nos formations</span>
                     <span className={classnames(stylesModule.point)}>.</span>
                 </h3>
                 <div className={classnames(stylesModule.description)}>
-                    Devenez un <strong>Data Engineer</strong> opérationnel, grâce à un
-                    accompagnement <b>personnalisé et immersif</b>.
+                    Découvrez toutes nos formations <b>fait maison</b>.
+                </div>
+                <div className={classnames(stylesModule.description)}>
+                Des cours bien pensés pour vous aider à tirer
+                    le meilleur parti de DataGuru.
                 </div>
             </div>
         </header>
