@@ -18,17 +18,27 @@
 .docMainContainer {
   display: flex;
   width: 100%;
-  margin-top: 3%;
+}
+
+.sideBar {
+  background: linear-gradient(#F9F9F8, #ffffff);
+  min-height:1000px ;
 }
 
 @media screen and (min-width: 2000px) {
   .docPage {
     display: flex;
     width: 100%;
-    margin-top: 3%;
     margin-left: 16%;
+    background-color: #fff;
+  }
+
+  .sideBar{
+    background-color: #fff;
   }
 }
+
+
 
 .docSidebarContainer {
   display: none;
@@ -48,10 +58,10 @@
     display: block;
     width: var(--doc-sidebar-width);
     margin-top: calc(-1 * var(--ifm-navbar-height));
-    border-right: 1px solid var(--ifm-toc-border-color);
     will-change: width;
     transition: width var(--ifm-transition-fast) ease;
     clip-path: inset(0);
+
   }
 
   .docSidebarContainerHidden {
@@ -93,4 +103,20 @@
       var(--ifm-container-width) + var(--doc-sidebar-width)
     ) !important;
   }
+}
+
+
+.docItemWrapper {
+  border-left: 1px solid var(--ifm-toc-border-color);
+}
+
+
+
+@media (min-width: 997px) {
+
+  .contentWrapper {
+    margin-top: 3%;
+    margin-left: 3%;
+  }
+
 }

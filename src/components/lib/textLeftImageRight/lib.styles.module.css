@@ -40,7 +40,10 @@
     color: grey;
     font-family: Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
     text-align: center;
+  }
 
+  .title {
+    text-align: center;
   }
 }
 

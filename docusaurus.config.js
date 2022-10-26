@@ -43,18 +43,24 @@ module.exports = {
                 height: 80,
             },
             items: [
-  /*              {
+    /*            {
                     to: 'docs/',
                     activeBasePath: 'docs',
-                    label: "Blog",
+                    label: "BOOTCAMP",
+                    position: 'right',
+                },
+   */             {
+                    to: 'Catalogue/',
+                    activeBasePath: 'docs',
+                    label: 'CATALOGUE',
                     position: 'right',
                 },
                 {
-                    to: 'form/',
+                    to: 'docs/',
                     activeBasePath: 'docs',
-                    label: 'Nous Contacter',
+                    label: "LE BLOG",
                     position: 'right',
-                }*/
+                }
             ],
         },
         footer: {
@@ -90,6 +96,7 @@ module.exports = {
                         'https://github.com/CraftDataEngineer/blog/'
                 },
                 blog: {
+                    blogSidebarTitle: 'Formation',
                     showReadingTime: true,
                     // Please change this to your repo.
                     editUrl:

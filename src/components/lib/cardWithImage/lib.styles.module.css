@@ -1,0 +1,155 @@
+
+.leftPart {
+  max-width: 400px;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px 20px 3px 45px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #A6A2F7;
+  border-top: 6px solid #f1bb00;
+  box-shadow: 10px 5px 5px grey;
+}
+
+.leftPart:hover {
+  border-bottom: 3px solid #f1bb00;
+  border-left: 3px solid #f1bb00;
+  border-right: 3px solid #f1bb00;
+}
+
+.leftPart ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.leftPart ul li {
+  display: block;
+  margin: 0 0 43px;
+}
+
+.leftPart ul li div {
+  position: relative;
+}
+
+.leftPart ul li div div {
+  position: absolute;
+  left: 0;
+}
+
+.leftPart ul li div h6 {
+  font-size: 16px;
+  color: #223036;
+  font-family: circularstd-black, sans-serif;
+  display: block;
+  text-transform: uppercase;
+  position: absolute;
+  margin: 5px 0 0;
+  left: 30px;
+}
+
+.leftPart ul li div h6:after {
+  width: 50px;
+  height: 2px;
+  background: #f1bb00;
+  content: "";
+  display: block;
+}
+
+.leftPart ul li div h2 {
+  font-size: 16px;
+  color: #223036;
+  font-family: circularstd-black, sans-serif;
+  display: block;
+  text-transform: uppercase;
+  right: 30px;
+  top: 0;
+  position: absolute;
+}
+
+.leftPart ul li p {
+  line-height: 24px;
+  margin: 0;
+  padding-top: 10px;
+  text-align: left;
+}
+
+.leftPart ul li h3 {
+  margin: 0;
+  padding-top: 50px;
+  text-align: left;
+}
+
+.leftPart ul li a {
+  margin-top: 20px;
+  text-align: left;
+}
+
+@media screen and (max-width: 996px) {
+  .leftPart ul li p {
+    font-size: 0.7rem;
+  }
+
+  .leftPart ul li h6 {
+    font-size: 1rem;
+  }
+
+  .colContainer {
+    margin-top: 5%;
+  }
+}
+
+
+@media screen and (max-width: 996px) {
+  .leftPart ul li p {
+    font-size: 0.7rem;
+  }
+
+  .leftPart ul li h6 {
+    font-size: 1rem;
+  }
+
+  .colContainer {
+    margin-top: 5%;
+  }
+}
+
+
+@media (min-width: 820px)  and (max-width: 995px) {
+  .leftPart {
+    margin-left: 25%;
+  }
+}
+
+
+@media (min-width: 715px)  and (max-width: 819px) {
+  .leftPart {
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 606px)  and (max-width: 714px) {
+  .leftPart {
+    margin-left: 10%;
+  }
+}
+
+
+
+@media (min-width: 532px)  and (max-width: 605px) {
+  .leftPart {
+    margin-left: 5%;
+  }
+}
+
+
+.smallIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.largeIcon {
+  width: 70px;
+  height: 30px;
+}

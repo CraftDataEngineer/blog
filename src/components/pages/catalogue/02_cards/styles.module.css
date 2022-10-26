@@ -1,0 +1,24 @@
+.backGroundContainer {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #ffffff;
+    background-position: center;
+}
+
+.gridContainer {
+    text-align: center;
+    padding-bottom: 5%;
+    background-color: transparent;
+    font-family: CircularStd-Book, Graphik Web, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.rowContainer {
+    padding-top: 2%;
+}
+
+.colContainer {
+    margin-bottom: 5%;
+}
+
