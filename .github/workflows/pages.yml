@@ -4,8 +4,8 @@ name: Build and Deploy
 # Controls when the workflows will run
 on:
   # Triggers the workflows on push or pull request events but only for the master branch
-  push:
-    branches: [ main ]
+  release:
+    types: [published]
 
 jobs:
   build-and-deploy:
