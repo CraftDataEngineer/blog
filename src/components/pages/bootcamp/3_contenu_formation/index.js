@@ -50,10 +50,10 @@ export default function BootCampContenuFormation() {
                         </p>
                     </div>
                     <div className="col">
-                                <Button variant="contained" startIcon={<DownloadIcon/>} size="large" onClick={handleClickOpen}
-                                        style={{backgroundColor: "#a6a2f7", borderColor: "transparent",marginTop:"5%"}}>
-                                    Télécharger le Syllabus
-                                </Button>
+                        <Button variant="contained" startIcon={<DownloadIcon/>} size="large" onClick={handleClickOpen}
+                                style={{backgroundColor: "#a6a2f7", borderColor: "transparent", marginTop: "5%"}}>
+                            Télécharger le Syllabus
+                        </Button>
                         <SyllabusForm
                             open={open}
                             onClose={handleClose}
@@ -61,69 +61,69 @@ export default function BootCampContenuFormation() {
                     </div>
                 </div>
             </div>
-                <div className={classnames("container", styles.gridContainer)}>
-                    <div className={classnames("row", styles.rowContainer)}>
-                        <div className={classnames("col", styles.colContainer)}>
-                            <ComplexMessageWithMultipleIcons
-                                title="Code"
-                                titleIcon={<TerminalIcon viewBox="0 -5 25 25"/>}
-                                images={[{src:Octocat,large:false},{src:Python,large:false}]}
-                                text="Développer du code Python de qualité et travailler en équipe avec du Git !"
-                            />
-                        </div>
-                        <div className="col col--1"/>
-                        <div className={classnames("col", styles.colContainer)}>
-                            <ComplexMessageWithMultipleIcons
-                                title="Stockage"
-                                titleIcon={<StorageIcon viewBox="0 -4 25 25"/>}
-                                images={[{src:Postgres,large:false},{src:Elastic,large:false}]}
-                                text="Enregistrer et récupérer de la donnée pour toutes les volumétries !"
-                            />
-                        </div>
-                        <div className="col col--2"/>
+            <div className={classnames("container", styles.gridContainer)}>
+                <div className={classnames("row", styles.rowContainer)}>
+                    <div className={classnames("col", styles.colContainer)}>
+                        <ComplexMessageWithMultipleIcons
+                            title="Code"
+                            titleIcon={<TerminalIcon viewBox="0 -5 25 25"/>}
+                            images={[{src: Octocat, large: false}, {src: Python, large: false}]}
+                            text="Développer du code Python de qualité et travailler en équipe avec du Git !"
+                        />
                     </div>
-                    <div className={classnames("row", styles.rowContainer)}>
-                        <div className={classnames("col", styles.colContainer)}>
-                            <ComplexMessageWithMultipleIcons
-                                title="Batch"
-                                titleIcon={<MemoryIcon viewBox="0 -5 25 25"/>}
-                                images={[{src:Spark,large:true}]}
-                                text="Manipuler d'importantes volumétries grâce aux traitements distribués !"
-                            />
-                        </div>
-                        <div className="col col--1"/>
-                        <div className={classnames("col", styles.colContainer)}>
-                            <ComplexMessageWithMultipleIcons
-                                title="Streaming"
-                                titleIcon={<SpeedIcon viewBox="0 -5 25 25"/>}
-                                images={[{src:Kafka,large:true}]}
-                                text=" Traiter et Analyser des données en temps réel grâce au streaming ! "
-                            />
-                        </div>
-                        <div className="col col--2"/>
+                    <div className="col col--1"/>
+                    <div className={classnames("col", styles.colContainer)}>
+                        <ComplexMessageWithMultipleIcons
+                            title="Stockage"
+                            titleIcon={<StorageIcon viewBox="0 -4 25 25"/>}
+                            images={[{src: Postgres, large: false}, {src: Elastic, large: false}]}
+                            text="Enregistrer et récupérer de la donnée pour toutes les volumétries !"
+                        />
                     </div>
-                    <div className={classnames("row", styles.rowContainer)}>
-                        <div className={classnames("col", styles.colContainer)}>
-                            <ComplexMessageWithMultipleIcons
-                                title="DevOps"
-                                titleIcon={<PrecisionManufacturingIcon viewBox="0 -5 25 25"/>}
-                                images={[{src:Terraform,large:true}]}
-                                text="Automatiser la construction de l'infrastructure et le déploiement du code en production !"
-                            />
-                        </div>
-                        <div className="col col--1"/>
-                        <div className={classnames("col", styles.colContainer)}>
-                            <ComplexMessageWithMultipleIcons
-                                title="Agile"
-                                titleIcon={<GroupsIcon viewBox="0 -5 25 25"/>}
-                                images={[{src:Jira,large:false}]}
-                                text="Collaborer en équipe et travailler avec les méthodes agiles !"
-                            />
-                        </div>
-                        <div className="col col--2"/>
+                    <div className="col col--2"/>
+                </div>
+                <div className={classnames("row", styles.rowContainer)}>
+                    <div className={classnames("col", styles.colContainer)}>
+                        <ComplexMessageWithMultipleIcons
+                            title="Batch"
+                            titleIcon={<MemoryIcon viewBox="0 -5 25 25"/>}
+                            images={[{src: Spark, large: true}]}
+                            text="Manipuler d'importantes volumétries grâce aux traitements distribués !"
+                        />
                     </div>
+                    <div className="col col--1"/>
+                    <div className={classnames("col", styles.colContainer)}>
+                        <ComplexMessageWithMultipleIcons
+                            title="Streaming"
+                            titleIcon={<SpeedIcon viewBox="0 -5 25 25"/>}
+                            images={[{src: Kafka, large: true}]}
+                            text=" Traiter et Analyser des données en temps réel grâce au streaming ! "
+                        />
+                    </div>
+                    <div className="col col--2"/>
+                </div>
+                <div className={classnames("row", styles.rowContainer)}>
+                    <div className={classnames("col", styles.colContainer)}>
+                        <ComplexMessageWithMultipleIcons
+                            title="DevOps"
+                            titleIcon={<PrecisionManufacturingIcon viewBox="0 -5 25 25"/>}
+                            images={[{src: Terraform, large: true}]}
+                            text="Automatiser la construction de l'infrastructure et le déploiement du code en production !"
+                        />
+                    </div>
+                    <div className="col col--1"/>
+                    <div className={classnames("col", styles.colContainer)}>
+                        <ComplexMessageWithMultipleIcons
+                            title="Agile"
+                            titleIcon={<GroupsIcon viewBox="0 -5 25 25"/>}
+                            images={[{src: Jira, large: false}]}
+                            text="Collaborer en équipe et travailler avec les méthodes agiles !"
+                        />
+                    </div>
+                    <div className="col col--2"/>
                 </div>
             </div>
-            );
-            }
+        </div>
+    );
+}
 

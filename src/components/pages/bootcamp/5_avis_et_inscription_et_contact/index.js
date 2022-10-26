@@ -80,16 +80,6 @@ export default  function BootCampAvis() {
                                                 style={{backgroundColor: "#a6a2f7", borderColor: "transparent"}}>
                                             Nous Contacter
                                         </Button>
-
-
-                                    </Link>
-
-                                    <Link to="/inscription/" className={classnames(styles.enrollButton)}>
-                                        <Button variant="contained" startIcon={<HowToRegIcon/>} size="large"
-                                                style={{backgroundColor: "#f1bb00", borderColor: "transparent"}}>
-                                            Inscrivez-vous
-                                        </Button>
-
                                     </Link>
                                 </div>
                             </div>

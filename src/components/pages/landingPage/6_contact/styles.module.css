@@ -1,0 +1,69 @@
+
+.container {
+    padding: 10%;
+}
+
+.titleStyle {
+    margin-top: 10%;
+    font-weight: 900;
+    line-height: 3.5rem;
+    line-break: auto;
+    font-size: 3rem;
+    text-transform: capitalize;
+    letter-spacing: -.025em;
+    display: block;
+    --tw-text-opacity: 1;
+    tab-size: 4;
+    text-align: center;
+
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.image {
+    height: 70%;
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.point {
+    color: #f1bb00
+}
+
+.contactButton {
+    margin-top: 30%;
+    margin-left: 35%;
+    margin-bottom: 10%;
+    color: #a6a2f7 !important;
+    --ifm-font-color-base: #a6a2f7;
+}
+
+@media (max-width: 900px) {
+    .contactButton {
+        margin-top: 5%;
+        margin-left: 35%;
+        margin-bottom: 10%;
+    }
+    .titleStyle {
+        text-align: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .contactButton {
+        margin-left: 20%;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .contactButton {
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 320px) {
+    .contactButton {
+        margin-left: 10%;
+    }
+}

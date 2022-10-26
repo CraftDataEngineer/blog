@@ -1,6 +1,7 @@
 import React from "react";
 import stylesModule from './styles.module.css';
 import YourSvg from '../../../../../static/img/header/geek_2.png';
+import Diplom from "../../../../../static/img/inscription/training_course.png";
 import classnames from "classnames";
 import {Button, Chip} from "@mui/material";
 import Link from "@docusaurus/core/lib/client/exports/Link";
@@ -39,7 +40,7 @@ export default function BootCampPrix() {
                                         </Link>
                                     </div>
                                 }
-                                imageSrc={YourSvg}
+                                imageSrc={Diplom}
                                 imageStyle={stylesModule.featureSvg}
             />
 

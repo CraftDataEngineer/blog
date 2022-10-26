@@ -1,7 +1,7 @@
 import styles from "./styles.module.css";
 import React from "react";
 import classnames from "classnames";
-import Question from "../../../../../static/img/form/think.png";
+import Question from "../../../../../static/img/landingPage/contact/personalized_learning.png";
 
 const MOBILE_SIZE = 800
 
@@ -44,7 +44,7 @@ class HomePageTeaser extends React.Component {
                             </p>
                         </div>
                         <div className="col col--5">
-                            <img alt={"inscription"} src={Question} className={classnames(styles.infinteSvg)} />
+                            <img alt={"inscription"} src={Question} className={classnames(styles.image)} />
                         </div>
                     </div>
                 </div>

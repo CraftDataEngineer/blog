@@ -8,6 +8,7 @@
   border-style: solid;
   border-width: 0.5px;
   border-color: #7a7a7a;
+  font-size: 1.1em;
 }
 
 
@@ -70,7 +71,7 @@
 
 @media screen and (max-width: 996px) {
   .leftPart ul li p {
-    font-size: 0.7rem;
+    font-size: 0.8em;
   }
 
   .leftPart ul li h6 {
@@ -82,20 +83,6 @@
   }
 }
 
-
-@media screen and (max-width: 996px) {
-  .leftPart ul li p {
-    font-size: 0.7rem;
-  }
-
-  .leftPart ul li h6 {
-    font-size: 1rem;
-  }
-
-  .colContainer {
-    margin-top: 5%;
-  }
-}
 
 
 @media (min-width: 820px)  and (max-width: 995px) {

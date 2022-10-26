@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from "classnames";
 import styles from "./styles.module.css"
-import RendezVous from "../../../../../static/img/rendez-vous/rendezVous.png";
+import RendezVous from "../../../../../static/img/rendez-vous/professional_development.png";
 import {InlineWidget} from "react-calendly";
 
 
@@ -20,12 +20,12 @@ export default function RendezVousForm() {
                         </p>
                     </div>
                     <div className="col col--5">
-                        <img alt={"inscription"} src={RendezVous} className={classnames(styles.diplomImg)}/>
+                        <img alt={"inscription"} src={RendezVous} className={classnames(styles.image)}/>
                     </div>
                 </div>
                 <div className="row row--no-gutters ">
                     <div className="col" >
-                        <InlineWidget styles={{height: "800px"}}  url="https://calendly.com/dataguru-advisory/30min"/>
+                        <InlineWidget styles={{height: "800px",paddingTop:"5%"}}  url="https://calendly.com/dataguru-advisory/30min"/>
                     </div>
                     <div className="col col--1 "/>
                 </div>

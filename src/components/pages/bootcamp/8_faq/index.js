@@ -41,16 +41,8 @@ class BootCampFaq extends React.Component  {
                 </div>
                 <div className={classnames(styles.gridContainer,"container")} >
                     <div className="row " style={{marginTop:"5%"}}>
-                        <div className="col col--1"/>
-                        <div className="col col--2">
-                            <img
-                                className={classnames(styles.mediaProfile)}
-                                src={questions}
-                                alt="Image alt text"
-                                title="Faq"
-                            />
-                        </div>
-                        <div className="col col--7"  >
+                        <div className="col col--2"/>
+                        <div className="col col--8"  >
                             <div className={`menu__list-item-collapsible ${this.state.show_q_1 ? "" : "menu__list-item--collapsed"}`} style={{marginTop:"5%"}} onClick={this.openQ1} >
                                 <a  className={classnames(styles.faqQuestion, "menu__link menu__link--sublist")} >Comment financer ma formation ?</a>
                             </div>
@@ -76,7 +68,6 @@ class BootCampFaq extends React.Component  {
                             </div>
                             }
                         </div>
-                        <div className="col col--2"/>
                     </div>
                 </div>
             </div>

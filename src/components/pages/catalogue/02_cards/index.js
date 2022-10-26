@@ -35,6 +35,20 @@ export default function CatalogueCards() {
                             images={[{src: GitlabCI, large: false}]}
                             text="Savoir mettre en oeuvre l'intégration, le déploiement et la livraison continue"
                             cardUrl="/catalogue/content/gitlabci"
+                            badge={"CPF"}
+                        />
+                    </div>
+                    <div className={classnames("col", styles.colContainer)}>
+                        <ImgMediaCard
+                            title="Formation Kubernetes"
+                            titleText="DevOps"
+                            titleIcon={<Devops viewBox="0 -5 25 25"/>}
+                            images={[{src: GitlabCI, large: false}]}
+                            text="Savoir mettre en oeuvre l'intégration, le déploiement et la livraison continue"
+                            cardUrl="/catalogue/content/gitlabci"
+                            active={false}
+                            badge={"toto"}
+                            badgeColor={"blue"}
                         />
                     </div>
                 </div>

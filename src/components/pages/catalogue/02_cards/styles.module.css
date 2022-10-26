@@ -18,6 +18,12 @@
     padding-top: 2%;
 }
 
+@media (min-width: 996px)  and (max-width: 1400px){
+    .rowContainer {
+        margin: 3%;
+    }
+}
+
 .colContainer {
     margin-bottom: 5%;
 }
