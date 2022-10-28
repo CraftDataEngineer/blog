@@ -2,8 +2,8 @@ import styles from "./styles.module.css";
 import React from "react";
 import classnames from "classnames";
 
-
-import Kafka from "../../../../../static/img/contenu/kafka.png";
+import Terraform from "../../../../../static/img/contenu/terraform.png";
+import GitlabCI from "../../../../../static/img/contenu/gitlabci.png";
 import ImgMediaCard from "../../../lib/cardWithImage";
 import Cloud from '@mui/icons-material/FilterDrama';
 import BigData from '@mui/icons-material/Storage';
@@ -19,53 +19,23 @@ export default function CatalogueCards() {
                 <div className={classnames("row", styles.rowContainer)}>
                     <div className={classnames("col", styles.colContainer)}>
                         <ImgMediaCard
-                            title="Ingesting data from Apache Kafka"
+                            title="Formation Terraform"
                             titleText="DevOps"
                             titleIcon={<Devops viewBox="0 -5 25 25"/>}
-                            images={[{src: Kafka, large: true}]}
-                            text="Développer du code Python de qualité et travailler en équipe avec du Git !"
-                            cardUrl="/catalogue/content/example"
+                            images={[{src: Terraform, large: true}]}
+                            text="Apprendre l'utilisation de Terraform pour la conception et la mise en place d'une infrastructure pour le cloud computing."
+                            cardUrl="/catalogue/content/terraform"
                         />
                     </div>
                     <div className={classnames("col", styles.colContainer)}>
                         <ImgMediaCard
-                            title="Ingesting data from Apache Kafka"
-                            titleText="Cloud"
-                            titleIcon={<Cloud viewBox="0 -5 25 25"/>}
-                            images={[{src: Kafka, large: true}]}
-                            text="Développer du code Python de qualité et travailler en équipe avec du Git !"
+                            title="Formation Gitlab CI ⚡ CD"
+                            titleText="DevOps"
+                            titleIcon={<Devops viewBox="0 -5 25 25"/>}
+                            images={[{src: GitlabCI, large: false}]}
+                            text="Savoir mettre en oeuvre l'intégration, le déploiement et la livraison continue"
+                            cardUrl="/catalogue/content/gitlabci"
                         />
-                    </div>
-                    <div className={classnames("col", styles.colContainer)}>
-                        <ImgMediaCard
-                            title="Ingesting data from Apache Kafka"
-                            titleText="Code"
-                            titleIcon={<Code viewBox="0 -5 25 25"/>}
-                            images={[{src: Kafka, large: true}]}
-                            text="Développer du code Python de qualité et travailler en équipe avec du Git !"
-                        />
-                    </div>
-                </div>
-                <div className={classnames("row", styles.rowContainer)}>
-                    <div className={classnames("col", styles.colContainer)}>
-                        <ImgMediaCard
-                            title="Ingesting data from Apache Kafka"
-                            titleText="BigData"
-                            titleIcon={<BigData viewBox="0 -5 25 25"/>}
-                            images={[{src: Kafka, large: true}]}
-                            text="Développer du code Python de qualité et travailler en équipe avec du Git !"
-                        />
-                    </div>
-                    <div className={classnames("col", styles.colContainer)}>
-                        <ImgMediaCard
-                            title="Ingesting data from Apache Kafka"
-                            titleText="BigData"
-                            titleIcon={<BigData viewBox="0 -5 25 25"/>}
-                            images={[{src: Kafka, large: true}]}
-                            text="Développer du code Python de qualité et travailler en équipe avec du Git !"
-                        />
-                    </div>
-                    <div className={classnames("col", styles.colContainer)}>
                     </div>
                 </div>
             </div>

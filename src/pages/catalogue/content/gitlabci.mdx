@@ -1,0 +1,135 @@
+---
+title: Formation Gitlab CI ⚡CD
+slug: /
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import EuroIcon from '@mui/icons-material/Euro';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+
+![gitlabci](/img/contenu/gitlabci.png)
+
+------------
+
+# Formation Gitlab CI ⚡CD
+
+:::note  Date et prix
+<Tabs>
+  <TabItem value="inter" label="INTER" default>
+      <b> Prochaines sessions :</b><br/>
+      <b> <CalendarMonthIcon viewBox="0 -14 36 36"/> Le 17/01/2023</b><br/>
+      <b> <EuroIcon viewBox="0 -14 36 36"/> 1390,00 € HT </b><br/>
+      <b> <AccessTimeIcon viewBox="0 -14 36 36"/> 2 jours</b> ( 14 heures ) <br/><br/>
+      <a className="button button--sm button--primary button--outline" href={"/RendezVous"}>Nous contacter</a>
+  </TabItem>
+  <TabItem value="sur-mesure" label="SUR-MESURE">
+    <b>FORMATION À LA DEMANDE</b> <br/><br/>
+      Cette thématique vous intéresse ?<br/>
+      Nos experts conçoivent votre formation sur-mesure<br/><br/>
+      <a className="button button--sm button--primary button--outline" href={"/RendezVous"}>Nous contacter</a>
+  </TabItem>
+</Tabs>
+:::
+
+------------
+
+
+## Description
+
+
+> La `CI/CD` s’inscrit dans une **démarche devops** et réponds aux problématiques suivantes :
+> + Comment **automatiser** des tests pour éviter une régression ?
+> + Comment **livrer plus vite** en production ?
+>
+>_Dans cette formation, nous allons utiliser `Gitlab` qui est une plate-forme permettant de gérer complètement le cycle de
+> vie d'un projet logiciel, notamment la gestion du code source, l'intégration et la livraison continue (CI/CD) et la gestion de projet._
+
+
+
+--------------
+
+## Objectifs
+
++ Apprendre à utiliser GitLab pour gérer un cycle de vie d'un projet logiciel avec une approche DevOps
++ Découvrir les principes fondateurs de l'intégration et du déploiement continus
++ Intégration outils de test : Unitaire/intégration, Fonctionnels, Sécurité, Qualité
++ Savoir mettre en oeuvre l'intégration, le déploiement et la livraison continue
+
+--------------
+
+## Public Cible
+
++ `Développeur`
++ `Administrateur`
++ `Architecte`
++ `Chef de projet Reviewer`
+
+--------------
+
+## Prérequis
+
++ Posséder des compétences Linux de base (shell, ligne de commande, etc.)
++ Connaissance de GIT
++ Compréhension sur le développement d'applications web et architectures Web / Cloud
+
+--------------
+
+## Le programme
+
+#### Module 1: Rappels sur git
++ Concepts et principes
++ Mise en pratiques
+
+#### Module 2: Overview gitlab & workflow
++ qu'est-ce que gitlab ?
++ Les différents produits (Open Source, SaaS), caractéristiques, pricing
++ Workflows Git avec Gitlab, incluant les merge requests & Exemples
++ qu'est-ce qu’une CI/CD
++ Pourquoi utiliser une CI/CD
++ Le workflow gitlab d’une CI/CD
++ Démo: tour d'horizon des fonctionnalités de Gitlab et de son architecture
++ Lab : Définition d’un workflow CI/CD sous GitLab en pseudo-code
+
+#### Module 3: L’architecture d’une pipeline CI/CD et runners
++ Architecture des runners
++ Les exécuteurs des runners
++ Démo: Inscription d’un gitlab runner et déclenchement d’une pipeline
+
+#### Module 4: L’anatomie d’une pipeline Gitlab
++ Les variables
++ Les keywords basiques : Définitions & Exemples
++ .gitlab-ci.yml : 101
++ Les concepts
++ Les bases de la syntaxe
++ Demo/Lab: Créer une simple pipeline CI/CD
++ Les Directed Acyclic Graph de GitlabCi
++ Les pipelines enfant & parent
++ Les graphes des pipelines sur Gitlab
++ Lab: Créer une pipeline simple
+
+#### Module 5: Concepts avancés
++ Cache & artefacts
++ Les services Docker
++ Les keywords avancés
++ Templates gitlabci (DRY) + Ancres
++ Les conditions (rules)
++ Lab: Refacto de la pipeline pour y introduire des bonnes pratiques
+
+#### Module 6: Les tests dans la pipeline
++ Exploitation des formats JUnit
++ Tests d’accessibilité, performance du navigateur
++ Qualité de code
++ Tests de charge
++ Tableau de bord de métriques
++ Lab: Ajouter des tests d’intégration
+
+#### Module 7: déploiement continus
++ Environnement et déploiements
++ Lab: déploiement d’une MR dans un environnement éphémère (review-app)
+
+----------
+
+#### Besoin d'aide pour trouver votre formation ?
+<a className="button button--warning button--outline" href={"/contact"}>Contactez-nous </a>
