@@ -1,6 +1,6 @@
 import React from "react";
 import stylesModule from './styles.module.css';
-import YourSvg from '../../../../../static/img/header/header.png';
+import YourSvg from '../../../../../static/img/header/img.png';
 import classnames from "classnames";
 import {Button, Chip} from "@mui/material";
 import DownloadIcon from '@mui/icons-material/Download';

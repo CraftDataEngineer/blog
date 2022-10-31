@@ -5,7 +5,7 @@ import classnames from "classnames";
 export default function CatalogueHero() {
 
     return (
-        <header className={classnames('hero headTest', stylesModule.heroSection)}>
+        <header className={classnames('hero headTest')}>
             <div className="container">
                 <h3 className={classnames(stylesModule.title)}>
                     <span>Nos formations</span>

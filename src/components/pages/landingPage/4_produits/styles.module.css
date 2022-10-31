@@ -1,0 +1,11 @@
+.container {
+  padding-top: 5%;
+}
+
+
+@media (min-width:  900px) and (max-width:  1500px){
+  .container {
+    margin-left: 10% ;
+  }
+}
+

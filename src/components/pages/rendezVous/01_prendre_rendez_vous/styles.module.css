@@ -1,7 +1,3 @@
-.featureProfile {
-  padding-top: 10px;
-}
-
 .formContainer {
   padding: 5%;
   background: rgba(228, 233, 237, 0.4);
@@ -11,19 +7,12 @@
   margin-bottom: 1%;
 }
 
-.inscription {
+
+.image {
+  margin: 10% 10% 0;
   height: 80%;
-  width: 70%;
-  margin-left: 10%;
+  width: 60%;
 }
-
-.diplomImg {
-  padding-top: 0;
-  height: 100%;
-  width: 100%;
-}
-
-
 
 .gridContainer {
   padding: 20%;
@@ -33,21 +22,6 @@
   padding-top: 3%;
   padding-bottom: 10%;
 }
-
-
-.formTitle {
-  font-size: 1.5rem;
-  color: #25366b;
-  text-align: left;
-  font-family: Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-}
-
-.formSubTitle {
-  font-size: 1.5rem;
-  color: #25366b;
-  font-family: Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-}
-
 
 .formTeaser {
   margin-top: 15%;
@@ -79,24 +53,11 @@
   .formDescription {
     text-align: center;
   }
-}
 
-.enrollDescriptionPoints {
-  font-size: 0.8rem;
-  font-style: normal;
-  font-weight: 300;
-  color: grey;
-  font-family: Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-  text-align: match-parent;
-}
-
-.paddingButton {
-  margin-top: 1%;
-}
-
-@media screen and (max-width:  996px){
-
-  .paddingButton {
-    margin-top: 5%;
+  .image {
+    margin: 10% 20% 10%;
+    height: 80%;
+    width: 60%;
   }
 }
+

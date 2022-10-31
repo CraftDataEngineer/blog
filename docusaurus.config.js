@@ -7,7 +7,7 @@ module.exports = {
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
-    organizationName: 'Data Engineer', // Usually your GitHub org/user name.
+    organizationName: 'Data Guru', // Usually your GitHub org/user name.
     projectName: 'blog', // Usually your repo name.
     themeConfig: {
         announcementBar: {
@@ -34,7 +34,7 @@ module.exports = {
 
             //... other Algolia params
         },
-        metadata: [{name: 'keywords', content: 'data, engineer'},{name: 'keywords', content: 'data, engineer'}],
+        metadata: [{name: 'keywords', content: 'data, engineer'},{name: 'keywords', content: 'dataguru, data guru'}],
         navbar: {
             logo: {
                 alt: 'My Site Logo',
@@ -43,16 +43,22 @@ module.exports = {
                 height: 80,
             },
             items: [
-    /*            {
-                    to: 'docs/',
+                {
+                    to: '/',
+                    activeBasePath: 'accueil',
+                    label: "ACCUEIL",
+                    position: 'right',
+                },
+               {
+                    to: 'bootcamp/',
                     activeBasePath: 'docs',
                     label: "BOOTCAMP",
                     position: 'right',
                 },
-   */             {
-                    to: 'Catalogue/',
+                {
+                    to: 'catalogue/',
                     activeBasePath: 'docs',
-                    label: 'CATALOGUE',
+                    label: 'LES FORMATIONS',
                     position: 'right',
                 },
                 {
@@ -95,13 +101,7 @@ module.exports = {
                     editUrl:
                         'https://github.com/CraftDataEngineer/blog/'
                 },
-                blog: {
-                    blogSidebarTitle: 'Formation',
-                    showReadingTime: true,
-                    // Please change this to your repo.
-                    editUrl:
-                        'https://github.com/CraftDataEngineer/blog/',
-                },
+                blog: false,
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
                 }

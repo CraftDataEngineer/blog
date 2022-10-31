@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import classnames from "classnames";
 import styles from "./styles.module.css"
 import Link from "@docusaurus/core/lib/client/exports/Link";
-import Diplom from "../../../../../static/img/inscription/diplom.png";
+import Diplom from "../../../../../static/img/inscription/training_course.png";
 
 const SERVICE_ID = 'service_kmjngyo'
 const TEMPLATE_ID = 'template_v6b7dip'
@@ -42,11 +42,11 @@ export default function InscriptionForm() {
                         </p>
                     </div>
                     <div className="col col--5">
-                        <img alt={"inscription"} src={Diplom}  />
+                        <img alt={"inscription"} src={Diplom} style={{width:"80%"}}  />
                     </div>
                 </div>
             </div>
-            <div className={classnames("container")} style={{paddingBottom: "200px"}}>
+            <div className={classnames("container")} style={{paddingBottom: "200px",paddingTop:"1%"}}>
                 <form className={classnames(styles.formContainer, "shadow--lw")} ref={form} onSubmit={sendEmail}>
                     <div className="row row--no-gutters " style={{paddingTop: "10px"}}>
                         <div className="col col--2"/>

@@ -1,3 +1,22 @@
+.textContainer{
+  min-height: 90px;
+  font-size: 1em !important;
+  font-family: CircularStd-Book,Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  text-align: center;
+}
+
+@media screen and (max-width: 996px) {
+  .textContainer {
+    text-align: justify !important;
+  }
+}
+
+@media (min-width: 997px)  and (max-width: 1440px) {
+  .leftPart {
+    width: 500px;
+  }
+}
+
 
 .leftPart {
   max-width: 400px;
@@ -8,15 +27,23 @@
   border-style: solid;
   border-width: 0.5px;
   border-color: #A6A2F7;
-  border-top: 6px solid #f1bb00;
   box-shadow: 10px 5px 5px grey;
 }
 
-.leftPart:hover {
+.styleLeftPartActive {
+  border-top: 6px solid #f1bb00;
+}
+
+.styleLeftPartActive:hover {
   border-bottom: 3px solid #f1bb00;
   border-left: 3px solid #f1bb00;
   border-right: 3px solid #f1bb00;
 }
+
+.styleLeftPartNotActive {
+  border-top: 6px solid grey;
+}
+
 
 .leftPart ul {
   margin: 0;
@@ -86,6 +113,25 @@
   text-align: left;
 }
 
+.leftPart  div  {
+  position: relative;
+}
+
+.leftPart div h4 {
+  right: 0;
+  bottom: 3px;
+  position: absolute;
+  display: block;
+
+}
+
+.leftPart div h1 {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+
 @media screen and (max-width: 996px) {
   .leftPart ul li p {
     font-size: 0.7rem;
@@ -150,6 +196,6 @@
 }
 
 .largeIcon {
-  width: 70px;
+  width: 90px;
   height: 30px;
 }
