@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdive_into=self.webpackChunkdive_into||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Les posts","items":[{"title":"Bienvenue sur le blog de Dataguru !","permalink":"/blog/bienvenue"}]}')}}]);

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Data Guru | Data Engineer Blog</title>
+        <link>https://dataguru.fr/blog</link>
+        <description>Data Guru | Data Engineer Blog</description>
+        <lastBuildDate>Mon, 31 Oct 2022 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Bienvenue sur le blog de Dataguru !]]></title>
+            <link>https://dataguru.fr/blog/bienvenue</link>
+            <guid>/bienvenue</guid>
+            <pubDate>Mon, 31 Oct 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[dolt logo]]></description>
+            <content:encoded><![CDATA[<p><img loading="lazy" alt="dolt logo" src="/assets/images/video_lesson-1ffc4ef23df2f2223d67fdbd7bfb7869.png" width="3568" height="2680"></p><p>Prochainement, de nouveaux posts sortiront, restez connectés avec nous et suivez nos actualités !</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
