@@ -34,7 +34,7 @@ module.exports = {
 
             //... other Algolia params
         },
-        metadata: [{name: 'keywords', content: 'data, engineer'},{name: 'keywords', content: 'dataguru, data guru'}],
+        metadata: [{name: 'keywords', content: 'data, engineer'}, {name: 'keywords', content: 'dataguru, data guru'}],
         navbar: {
             logo: {
                 alt: 'My Site Logo',
@@ -49,7 +49,7 @@ module.exports = {
                     label: "ACCUEIL",
                     position: 'right',
                 },
-               {
+                {
                     to: 'bootcamp/',
                     activeBasePath: 'docs',
                     label: "BOOTCAMP",
@@ -62,8 +62,8 @@ module.exports = {
                     position: 'right',
                 },
                 {
-                    to: 'docs/',
-                    activeBasePath: 'docs',
+                    to: 'blog/',
+                    activeBasePath: 'blog',
                     label: "LE BLOG",
                     position: 'right',
                 }
@@ -71,22 +71,22 @@ module.exports = {
         },
         footer: {
             style: 'dark',
-             logo: {
-                 alt: 'Qualiopi',
-                 src: 'img/footer/qce.png',
-                 width: 400,
-                 height: 400,
-             },
-              links: [
-               {
-                 label: 'Facebook',
-                 href: 'https://www.facebook.com/DataGuru-108335435294231',
-               },
-               {
-                 label: 'Linkedin',
-                 href: 'https://www.linkedin.com/company/dataguru',
-               }
-             ],
+            logo: {
+                alt: 'Qualiopi',
+                src: 'img/footer/qce.png',
+                width: 400,
+                height: 400,
+            },
+            links: [
+                {
+                    label: 'Facebook',
+                    href: 'https://www.facebook.com/DataGuru-108335435294231',
+                },
+                {
+                    label: 'Linkedin',
+                    href: 'https://www.linkedin.com/company/dataguru',
+                }
+            ],
             copyright: `Copyright © ${new Date().getFullYear()} Data Guru, Inc.`,
         },
     },
@@ -95,13 +95,14 @@ module.exports = {
         [
             '@docusaurus/preset-classic',
             {
-                docs: {
-                    sidebarPath: require.resolve('./sidebars.js'),
-                    // Please change this to your repo.
-                    editUrl:
-                        'https://github.com/CraftDataEngineer/blog/'
+                docs: false,
+                blog: {
+                    blogTitle: 'DataGuru Blog',
+                    showReadingTime: true,
+                    blogSidebarTitle: 'Les posts',
+                    blogSidebarCount: 'ALL',
+                    postsPerPage: 'ALL',
                 },
-                blog: false,
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
                 }
