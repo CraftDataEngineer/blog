@@ -225,7 +225,7 @@ export default function Navbar() {
     const items = useNavbarItems();
     const hasSearchNavbarItem = items.some((item) => item.type === 'search');
     const {leftItems, rightItems} = splitNavItemsByPosition(items);
-    const isBlog = (typeof window !== "undefined") ? window.location.href.toString().includes("/doc") : false
+    const isBlog = (typeof window !== "undefined") ? window.location.href.toString().includes("/blog") : false
     return (
         <nav
             ref={navbarRef}
