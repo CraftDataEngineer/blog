@@ -7,6 +7,7 @@ import GitlabCI from "../../../../../static/img/contenu/gitlabci.png";
 import DevOps from "../../../../../static/img/contenu/devops.png";
 import Kubernetes from "../../../../../static/img/contenu/kubernetes.png";
 import Spark from "../../../../../static/img/contenu/spark.png";
+import Python from "../../../../../static/img/contenu/python.png";
 import CleanCode from "../../../../../static/img/contenu/clean_code.png";
 import ImgMediaCard from "../../../lib/cardWithImage";
 import Cloud from '@mui/icons-material/FilterDrama';
@@ -28,6 +29,7 @@ export default function CatalogueCards() {
                             images={[{src: Terraform, large: true,width:"90px"}]}
                             text="Apprendre l'utilisation de Terraform pour la conception et la mise en place d'une infrastructure pour le cloud computing."
                             cardUrl="/catalogue/content/terraform"
+                            badge="- 30% "
                         />
                     </div>
                     <div className={classnames("col", styles.colContainer)}>
@@ -48,8 +50,8 @@ export default function CatalogueCards() {
                             images={[{src: DevOps, large: true,height:"35px",width:"70px"}]}
                             text="Connaître les concepts et les bénéfices de la démarche DevOps"
                             cardUrl="/catalogue/content/devops_basics"
-                            badge={"Meilleure vente"}
-                            badgeColor={"#77cc11"}
+                            tag={"Meilleure vente"}
+                            tagColor={"#77cc11"}
                         />
                     </div>
                 </div>
@@ -80,10 +82,26 @@ export default function CatalogueCards() {
                             titleText="CODE"
                             titleIcon={<Code viewBox="0 -5 25 25"/>}
                             images={[{src: CleanCode, large: false ,height:"30px",width:"30px"}]}
-                            text="Définir le lien entre la qualité du code et la facilité d'évolution des applications"
+                            text="Définir le lien entre la qualité du code et la facilité d'évolution des applications."
                             active={false}
                         />
                     </div>
+                </div>
+                <div className={classnames("row", styles.rowContainer)}>
+                    <div className={classnames("col", styles.colContainer)}>
+
+                        <ImgMediaCard
+                            title="Les bases du data engineering"
+                            titleText="BIGDATA"
+                            titleIcon={<BigData viewBox="0 -5 25 25"/>}
+                            images={[{src: Python, large: true,height:"30px",width:"auto"}]}
+                            text="Apprenez à manipuler de la donnée avec du code python et SQL."
+                            active={false}
+                            tag={"bootcamp"}
+                        />
+                    </div>
+                    <div className={classnames("col", styles.colContainer)}/>
+                    <div className={classnames("col", styles.colContainer)}/>
                 </div>
             </div>
         </div>

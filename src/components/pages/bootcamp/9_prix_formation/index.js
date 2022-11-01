@@ -7,6 +7,7 @@ import {Button, Chip} from "@mui/material";
 import Link from "@docusaurus/core/lib/client/exports/Link";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import TextLeftImageRight from "../../../lib/textLeftImageRight";
+import Badge from '@mui/material/Badge';
 
 export default function BootCampPrix() {
     return (
@@ -17,15 +18,26 @@ export default function BootCampPrix() {
                                 description={
                                     <div className={classnames(stylesModule.headDescription)}>
                                         <h2>
-                                            Frais de formation : <Chip
-                                            style={{fontFamily: "CircularStd-Black", fontSize: "24px"}}
-                                            label="4 000 €"/>
+                                             Frais de formation :
+                                             <div className={classnames(stylesModule.text)}/>
+                                                <Badge
+                                                    badgeContent={"solde"}
+                                                    color="success"
+                                                    anchorOrigin={{
+                                                        vertical: 'top',
+                                                        horizontal: 'right',
+                                                    }}
+                                                ><Chip
+                                                    style={{fontFamily: "CircularStd-Black", fontSize: "24px"}}
+                                                    label="3 495 € "/>
+                                                </Badge>
+
 
                                         </h2>
+
                                         <p>
-                                            Si vous êtes salarié, vous pouvez demander à votre entreprise de vous
-                                            financer la formation.
-                                            Le reste à charge peut être échelonné jusqu’à 3 fois.
+                                            Vous avez une question sur le financement de la formation :
+                                            Prenez contact avec un de nos conseillers pour une étude de votre dossier.
                                         </p>
                                         <Link to="/contact/" className={classnames(stylesModule.enrollButton)}>
                                             <Button variant="contained" startIcon={<PhoneInTalkIcon/>} size="large"

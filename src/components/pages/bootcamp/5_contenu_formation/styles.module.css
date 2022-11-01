@@ -53,6 +53,7 @@
 
 .colContainer {
     margin: 1%;
+    max-height: 400px;
 }
 
 .icon {
