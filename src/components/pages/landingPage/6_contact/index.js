@@ -15,7 +15,7 @@ export default function LandingPageContact() {
                 <div className="col col--1"/>
                 <div className="col col--12">
                     <h3 className={classnames(styles.titleStyle)}>
-                        <span>Vous avez besoin d'éclaircir un point</span>
+                        <span>Avez-vous besoin d'éclaircir un point</span>
                         <span className={classnames(styles.point)}> ?</span>
                     </h3>
                     <Link to="/contact/" className={classnames(styles.contactButton)}>

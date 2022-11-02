@@ -17,12 +17,25 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 # Terraform - Automatiser les déploiements de vos infrastructures
 
 
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+
 :::note  Date et prix
 <Tabs>
   <TabItem value="standard" label="STANDARD" default>
       <b> Prochaines sessions :</b><br/>
       <b> <CalendarMonthIcon viewBox="0 -14 36 36"/> Le 17/01/2023</b><br/>
-      <b> <EuroIcon viewBox="0 -14 36 36"/> 1390,00 € HT </b><br/>
+      <b> <EuroIcon viewBox="0 -14 36 36"/> <strike> 1 495 </strike><Highlight color="#25c2a0"> 1 046 € HT </Highlight></b><br/>
       <b> <AccessTimeIcon viewBox="0 -14 36 36"/> 2 jours</b> ( 14 heures ) <br/><br/>
       <a className="button button--sm button--primary button--outline" style={{ textDecoration: "none" }} href={"/RendezVous"}>Nous contacter</a>
   </TabItem>
@@ -113,7 +126,7 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 + Isoler son fichier d’état
 + Via workspace
 + Via file layout
-+ Mettre en place un état distant 
++ Mettre en place un état distant
 + Ajouter une gestion de verrouillage
 
 #### Module 5: Créer une infrastructure réutilisable en utilisant les modules terraform
@@ -147,7 +160,7 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 + Adopter l’IAC dans votre équipe
 + Workflow pour déployer le code applicatif
 + Workflow pour déployer le code d’infrastructure
-+ Workflow global 
++ Workflow global
 
 ------------
 

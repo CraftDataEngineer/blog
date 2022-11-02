@@ -26,8 +26,8 @@ export default function CatalogueCards() {
                             title="Formation Terraform"
                             titleText="DevOps"
                             titleIcon={<Devops viewBox="0 -5 25 25"/>}
-                            images={[{src: Terraform, large: true,width:"90px"}]}
-                            text="Apprendre l'utilisation de Terraform pour la conception et la mise en place d'une infrastructure pour le cloud computing."
+                            images={[{src: Terraform, large: true, width: "90px"}]}
+                            text="Apprendre l'utilisation de Terraform pour la conception et la mise en place d'une infrastructure pour le cloud computing"
                             cardUrl="/catalogue/content/terraform"
                             badge="- 30% "
                         />
@@ -38,8 +38,10 @@ export default function CatalogueCards() {
                             titleText="DEVOPS"
                             titleIcon={<Devops viewBox="0 -5 25 25"/>}
                             images={[{src: GitlabCI, large: false}]}
-                            text="Savoir mettre en oeuvre l'intégration, le déploiement et la livraison continue"
+                            text="Savoir mettre en œuvre l'intégration, le déploiement et la livraison continue"
                             cardUrl="/catalogue/content/gitlabci"
+                            badge="- 30% "
+
                         />
                     </div>
                     <div className={classnames("col", styles.colContainer)}>
@@ -47,11 +49,46 @@ export default function CatalogueCards() {
                             title="Formation Devops Basics"
                             titleText="DEVOPS"
                             titleIcon={<Devops viewBox="0 -5 25 25"/>}
-                            images={[{src: DevOps, large: true,height:"35px",width:"70px"}]}
+                            images={[{src: DevOps, large: true, height: "35px", width: "70px"}]}
                             text="Connaître les concepts et les bénéfices de la démarche DevOps"
                             cardUrl="/catalogue/content/devops_basics"
                             tag={"Meilleure vente"}
                             tagColor={"#77cc11"}
+                            badge="- 30% "
+                        />
+                    </div>
+                </div>
+                <div className={classnames("row", styles.rowContainer)}>
+                    <div className={classnames("col", styles.colContainer)}>
+                        <ImgMediaCard
+                            title="Les bases du data engineering"
+                            titleText="BIGDATA"
+                            titleIcon={<BigData viewBox="0 -5 25 25"/>}
+                            images={[{src: Python, large: true,height:"30px",width:"auto"}]}
+                            text="Apprenez à manipuler de la donnée avec du code python et SQL"
+                            cardUrl="/catalogue/content/dataengineer_basics"
+                            active={true}
+                            tag={"bootcamp"}
+                        />
+                    </div>
+                    <div className={classnames("col", styles.colContainer)}>
+                        <ImgMediaCard
+                            title="Formation complète Kubernetes"
+                            titleText="DEVOPS"
+                            titleIcon={<Devops viewBox="0 -5 25 25"/>}
+                            images={[{src: Kubernetes, large: true, height: "20px", width: "80px"}]}
+                            text="Automatisez le déploiement d’applications conteneurisées grâce à notre formation Kubernetes"
+                            active={false}
+                        />
+                    </div>
+                    <div className={classnames("col", styles.colContainer)}>
+                        <ImgMediaCard
+                            title="Clean Code"
+                            titleText="CODE"
+                            titleIcon={<Code viewBox="0 -5 25 25"/>}
+                            images={[{src: CleanCode, large: false, height: "30px", width: "30px"}]}
+                            text="Définir le lien entre la qualité du code et la facilité d'évolution des applications"
+                            active={false}
                         />
                     </div>
                 </div>
@@ -61,43 +98,9 @@ export default function CatalogueCards() {
                             title="Développer avec Apache Spark"
                             titleText="BIGDATA"
                             titleIcon={<BigData viewBox="0 -5 25 25"/>}
-                            images={[{src: Spark, large: true,height:"30px",width:"auto"}]}
-                            text="Implémenter, configurer et déployer des applications Apache Spark."
+                            images={[{src: Spark, large: true, height: "30px", width: "auto"}]}
+                            text="Implémenter, configurer et déployer des applications Apache Spark"
                             active={false}
-                        />
-                    </div>
-                    <div className={classnames("col", styles.colContainer)}>
-                        <ImgMediaCard
-                            title="Formation complète Kubernetes"
-                            titleText="DEVOPS"
-                            titleIcon={<Devops viewBox="0 -5 25 25"/>}
-                            images={[{src: Kubernetes, large: true,height:"20px",width:"70px"}]}
-                            text="Automatisez le déploiement d’applications conteneurisées grâce à notre formation Kubernetes."
-                            active={false}
-                        />
-                    </div>
-                    <div className={classnames("col", styles.colContainer)}>
-                        <ImgMediaCard
-                            title="Clean Code"
-                            titleText="CODE"
-                            titleIcon={<Code viewBox="0 -5 25 25"/>}
-                            images={[{src: CleanCode, large: false ,height:"30px",width:"30px"}]}
-                            text="Définir le lien entre la qualité du code et la facilité d'évolution des applications."
-                            active={false}
-                        />
-                    </div>
-                </div>
-                <div className={classnames("row", styles.rowContainer)}>
-                    <div className={classnames("col", styles.colContainer)}>
-
-                        <ImgMediaCard
-                            title="Les bases du data engineering"
-                            titleText="BIGDATA"
-                            titleIcon={<BigData viewBox="0 -5 25 25"/>}
-                            images={[{src: Python, large: true,height:"30px",width:"auto"}]}
-                            text="Apprenez à manipuler de la donnée avec du code python et SQL."
-                            active={false}
-                            tag={"bootcamp"}
                         />
                     </div>
                     <div className={classnames("col", styles.colContainer)}/>

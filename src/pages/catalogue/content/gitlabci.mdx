@@ -18,12 +18,24 @@ import Image from '/img/contenu/gitlabci.png'
 
 # Formation Gitlab CI ⚡CD
 
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
 :::note  Date et prix
 <Tabs>
   <TabItem value="standard" label="STANDARD" default>
       <b> Prochaines sessions :</b><br/>
       <b> <CalendarMonthIcon viewBox="0 -14 36 36"/> Le 17/01/2023</b><br/>
-      <b> <EuroIcon viewBox="0 -14 36 36"/> 1390,00 € HT </b><br/>
+      <b> <EuroIcon viewBox="0 -14 36 36"/> <strike> 1 495 </strike><Highlight color="#25c2a0"> 1 046 € HT </Highlight></b><br/>
       <b> <AccessTimeIcon viewBox="0 -14 36 36"/> 2 jours</b> ( 14 heures ) <br/><br/>
       <a className="button button--sm button--primary button--outline" style={{ textDecoration: "none" }} href={"/RendezVous"}>Nous contacter</a>
   </TabItem>
@@ -58,7 +70,7 @@ import Image from '/img/contenu/gitlabci.png'
 + Apprendre à utiliser GitLab pour gérer un cycle de vie d'un projet logiciel avec une approche DevOps
 + Découvrir les principes fondateurs de l'intégration et du déploiement continus
 + Intégration outils de test : Unitaire/intégration, Fonctionnels, Sécurité, Qualité
-+ Savoir mettre en oeuvre l'intégration, le déploiement et la livraison continue
++ Savoir mettre en œuvre l'intégration, le déploiement et la livraison continue
 
 --------------
 
@@ -86,10 +98,10 @@ import Image from '/img/contenu/gitlabci.png'
 + Mise en pratiques
 
 #### Module 2: Overview gitlab & workflow
-+ qu'est-ce que gitlab ?
++ Qu'est-ce que gitlab ?
 + Les différents produits (Open Source, SaaS), caractéristiques, pricing
 + Workflows Git avec Gitlab, incluant les merge requests & Exemples
-+ qu'est-ce qu’une CI/CD
++ Qu'est-ce qu’une CI/CD
 + Pourquoi utiliser une CI/CD
 + Le workflow gitlab d’une CI/CD
 + Démo: tour d'horizon des fonctionnalités de Gitlab et de son architecture

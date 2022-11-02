@@ -18,16 +18,16 @@ const steps = [
     {
         label: 'Quels connaissances faut il avoir ?',
         description: `On demande à nos futurs élèves des connaissances basiques en programmation et en système Linux. 
-        Pour que le bootcamp vous soit bénéfique, il est plus pertinent que vous avez déjà fait quelques lignes de code avant.`,
+        Vous devez savoir interagir avec du code pour le bon déroulé du bootcamp.`,
         icon : PlaylistAddCheckIcon
     },
     {
         label: 'Vous n’avez jamais fait de code avant ?',
         description:
-            'Pas grave, on a créé une formation en 5 jours pour vous aider et gagner en confiance sur du code python, linux et sql.',
+            'Pas grave, on a créé une formation en 5 jours pour vous aider à gagner en confiance sur du code python, linux et sql.',
         icon : EmojiObjectsIcon,
         button : "Découvrir",
-        buttonUrl : "/catalogue/",
+        buttonUrl : "/catalogue/content/dataengineer_basics",
         buttonColor : "#f1bb00",
         buttonIcon : StartIcon,
     },

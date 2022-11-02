@@ -37,7 +37,7 @@ export default function BootCampPrix() {
 
                                         <p>
                                             Vous avez une question sur le financement de la formation :
-                                            Prenez contact avec un de nos conseillers pour une étude de votre dossier.
+                                            prenez contact avec un de nos conseillers pour une étude de votre dossier.
                                         </p>
                                         <Link to="/contact/" className={classnames(stylesModule.enrollButton)}>
                                             <Button variant="contained" startIcon={<PhoneInTalkIcon/>} size="large"

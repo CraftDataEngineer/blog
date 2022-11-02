@@ -48,7 +48,7 @@ function BootCampHero() {
                     firstItem={<MessageWithIcon icon={<DevicesIcon/>} label={"En ligne"} headline={"Avec des professeurs"}/>}
 
                     secondItem={<MessageWithIcon icon={<CalendarMonthIcon/>} label={"Rentrée"}
-                                                 headline={"Janvier 09, 2023"}/>}
+                                                 headline={"Janvier 16, 2023"}/>}
 
                     thirdItem={<MessageWithIcon icon={<ViewModuleIcon/>} label={"Durée"}
                                                 headline={"5 semaines"}/>}

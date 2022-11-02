@@ -9,7 +9,7 @@ export default function BootCampCitation() {
     return (
             <div className={classnames("container" ,stylesModule.container)} >
                 <div className={stylesModule.explain}>
-                    Pour vous distinguer il ne suffit pas de savoir développer ...
+                    Pour vous distinguer, il ne suffit pas de savoir développer ...
                 </div>
                 <div className={stylesModule.citation}>
                     N'importe quel fou peut écrire du code qu'un ordinateur peut comprendre. Les bons programmeurs écrivent du code que les humains peuvent comprendre.

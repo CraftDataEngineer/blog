@@ -50,7 +50,7 @@ export default function cardWithImage({
                 </ul>
                 <div style={{paddingTop: "10%"}}>
                     <h1>
-                        {active && <a className="button button--warning button--outline" href={cardUrl}>DÉCOUVRIR</a>}
+                        {active && <a className="button button--warning button--outline button--sm" href={cardUrl}>DÉCOUVRIR</a>}
                         {!active &&
                         <Button variant="contained" size="small" color="error" startIcon={<BuildIcon/>} disabled>
                             COMING SOON
@@ -61,7 +61,6 @@ export default function cardWithImage({
                         <span className="badge " style={{backgroundColor: tagColor}}>{tag}</span>
                         }
                     </h4>
-
                 </div>
             </div>
         </Badge>
