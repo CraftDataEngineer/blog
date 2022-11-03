@@ -108,7 +108,7 @@ export default function BootCampContenuFormation() {
                             title="DevOps"
                             titleIcon={<PrecisionManufacturingIcon viewBox="0 -5 25 25"/>}
                             images={[{src: Terraform, large: true}]}
-                            text="Automatiser la construction de l'infrastructure et le déploiement du code en production !"
+                            text="Automatiser la création de l'infrastructure et le déploiement du code en production !"
                         />
                     </div>
                     <div className="col col--1"/>

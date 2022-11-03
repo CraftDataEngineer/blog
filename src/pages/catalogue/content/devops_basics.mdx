@@ -18,12 +18,24 @@ import Image from '/img/contenu/devops.png'
 
 # DevOps Basics
 
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
 :::note  Date et prix
 <Tabs>
   <TabItem value="standard" label="STANDARD" default>
       <b> Prochaines sessions :</b><br/>
       <b> <CalendarMonthIcon viewBox="0 -14 36 36"/> Le 16/11/2022 </b><br/>
-      <b> <EuroIcon viewBox="0 -14 36 36"/> 750 € HT </b><br/>
+      <b> <EuroIcon viewBox="0 -14 36 36"/> <strike> 795 </strike><Highlight color="#25c2a0"> 556 € HT </Highlight></b><br/>
       <b> <AccessTimeIcon viewBox="0 -14 36 36"/> 1 jour</b> ( 7 heures ) <br/><br/>
       <a className="button button--sm button--primary button--outline" href={"/RendezVous"}>Nous contacter</a>
   </TabItem>
@@ -53,7 +65,7 @@ Au cours de cette formation, nous allons vous présenter les bénéfices du DevO
 
 ## Objectifs
 
-+ Connaître les **concepts** et les **bénéfice** de la démarche DevOps
++ Connaître les **concepts** et les **bénéfices** de la démarche DevOps
 + Découvrir les **patterns** de conception DevOps
 + Identifier les **enjeux de l'industrialisation** des **déploiements** applicatifs
 + Savoir **fiabiliser des chaînes de production**
@@ -79,7 +91,7 @@ Au cours de cette formation, nous allons vous présenter les bénéfices du DevO
 
 ## Le programme
 
-#### Module 1 : Origines de DevOps et accelerate
+#### Module 1 : Origines de DevOps et Accelerate
 
 + Les nouvelles exigences du marché
 + Définition de DevOps

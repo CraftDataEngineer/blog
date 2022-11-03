@@ -7,7 +7,7 @@ import LandingPageHero from "../components/pages/landingPage/1_hero";
 import LandingPageCitation from "../components/pages/landingPage/2_citation";
 import LandingPageMethodo from "../components/pages/landingPage/3_methodo";
 import LandingPageProduits from "../components/pages/landingPage/4_produits";
-import LandingPageAvis from "../components/pages/landingPage/5_avis_et_inscription_et_contact";
+import LandingPageAvis from "../components/pages/landingPage/5_avis";
 import LandingPageContact from "../components/pages/landingPage/6_contact";
 
 

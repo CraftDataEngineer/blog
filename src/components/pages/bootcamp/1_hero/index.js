@@ -30,11 +30,7 @@ function BootCampHero() {
                             <div>
                                 <div className={stylesModule.surligne}>
 
-                                    Devenez un <strong>Data Engineer</strong> opérationnel, grâce à un
-                                    accompagnement <b>personnalisé et immersif</b>.
-                                    Notre Bootcamp vous permettra d'acquérir les connaissances nécessaires pour
-                                    entreprendre votre futur rôle dans les meilleures conditions : <b>Bonnes pratiques
-                                    de programmation</b>, <b>DevOps</b> et <b>Big Data</b> !
+                                    Rejoignez notre Bootcamp pour apprendre à développer correctement et être reconnu par vos pairs ! Notre objectif est de vous former à la vie réelle, se concentrer sur l’essentiel et apprendre en pratiquant.
                                 </div>
                             </div>
                             <div className={classnames(stylesModule.buttonDownload)}>
@@ -47,14 +43,15 @@ function BootCampHero() {
                     }
                     imageSrc={YourSvg}
                 />
+                <div className={stylesModule.seperator}/>
                 <ThreeItemsInLine
-                    firstItem={<MessageWithIcon icon={<DevicesIcon/>} label={"Formation"} headline={"100% en ligne"}/>}
+                    firstItem={<MessageWithIcon icon={<DevicesIcon/>} label={"En ligne"} headline={"Avec des professeurs"}/>}
 
-                    secondItem={<MessageWithIcon icon={<CalendarMonthIcon/>} label={"Prochaine rentrée"}
-                                                 headline={"Janvier 09, 2023"}/>}
+                    secondItem={<MessageWithIcon icon={<CalendarMonthIcon/>} label={"Rentrée"}
+                                                 headline={"Janvier 16, 2023"}/>}
 
-                    thirdItem={<MessageWithIcon icon={<ViewModuleIcon/>} label={"Format"}
-                                                headline={"Bootcamp 2 mois"}/>}
+                    thirdItem={<MessageWithIcon icon={<ViewModuleIcon/>} label={"Durée"}
+                                                headline={"5 semaines"}/>}
                 />
             </div>
         </header>

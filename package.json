@@ -32,6 +32,8 @@
     "react-animation-on-scroll": "^5.0.0",
     "react-calendly": "^4.0.1",
     "react-dom": "^17.0.1",
+    "react-swipeable-views": "^0.14.0",
+    "react-swipeable-views-utils": "^0.14.0",
     "svg-url-loader": "^8.0.0"
   },
   "browserslist": {

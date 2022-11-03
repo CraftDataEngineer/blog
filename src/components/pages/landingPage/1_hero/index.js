@@ -38,7 +38,7 @@ export default function LandingPageHero() {
                     firstItem={<ImageWithMessageBelow icon={<CastForEducationIcon/>} label={"Formation Hybride"} headline={"Session en présentiel ou distanciel"}/>}
 
                     secondItem={<ImageWithMessageBelow icon={<PeopleOutlineIcon/>} label={"Formateurs"}
-                                                 headline={"Des experts qui opère sur le terrain"}/>}
+                                                 headline={"Des experts qui opèrent sur le terrain"}/>}
 
                     thirdItem={<ImageWithMessageBelow icon={<PsychologyIcon/>} label={"Qualité"}
                                                 headline={"Des parcours pédagogiques bien pensés"}/>}

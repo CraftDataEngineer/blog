@@ -10,13 +10,23 @@
   background-position: center;
 }
 
+.seperator {
+  height: 5rem;
+}
+
 @media screen and (max-width:  996px){
   .heroSection {
     text-align: center;
     background: white;
     padding-bottom: 0;
   }
+
+  .seperator {
+    display: none;
+  }
 }
+
+
 
 .surligne strong {
   position: relative;
@@ -65,7 +75,5 @@
     margin-left: 5%;
   }
 }
-
-
 
 

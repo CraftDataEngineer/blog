@@ -12,7 +12,7 @@ export default function CatalogueHero() {
                     <span className={classnames(stylesModule.point)}>.</span>
                 </h3>
                 <div className={classnames(stylesModule.description)}>
-                    Découvrez toutes nos formations <b>fait maison</b>.
+                    Découvrez toutes nos formations <b>faites maison</b>.
                 </div>
                 <div className={classnames(stylesModule.description)}>
                 Des cours bien pensés pour vous aider à tirer

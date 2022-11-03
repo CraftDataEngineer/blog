@@ -16,6 +16,18 @@ import EuroIcon from '@mui/icons-material/Euro';
 
 # ⚠️Le nom de la formation⚠️
 
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
 :::note  Date et prix
 <Tabs>
   <TabItem value="standard" label="STANDARD" default>
