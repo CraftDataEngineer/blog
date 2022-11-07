@@ -16,7 +16,7 @@ import StartIcon from '@mui/icons-material/Start';
 
 const steps = [
     {
-        label: 'Quels connaissances faut il avoir ?',
+        label: 'Quelles connaissances faut il avoir ?',
         description: `On demande à nos futurs élèves des connaissances basiques en programmation et en système Linux. 
         Vous devez savoir interagir avec du code pour le bon déroulé du bootcamp.`,
         icon : PlaylistAddCheckIcon

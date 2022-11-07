@@ -19,7 +19,8 @@ export default function LandingPageMethodo() {
                             <div>
                                 <div>
                                     Nous avons la conviction que pour apprendre, il faut pratiquer !
-                                    Notre accompagnement personnalisé et immersif est un équilibre entre théorie, pratique et études de cas inspirées de l'expérience de nos professeurs.
+                                    C'est pourquoi, nous vous proposons une formation <b>équilibrée</b> entre <b>théorie</b>
+                                    , <b>pratique</b> et <b>études de cas</b> pour le meilleur accompagnement <b>personnalisé</b> et <b>immersif</b>.
                                 </div>
                             </div>
                         </div>

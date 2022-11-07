@@ -18,13 +18,20 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
     {
-        name: "Mehdi O." ,
-        photo: MehImage ,
-        subtitle: "Senior Data Engineer" ,
-        text:  " Un contenu pédagogique dense et complet ! Avec la formation dispensée par DataGuru, " +
+        name: "Mehdi O.",
+        photo: MehImage,
+        subtitle: "Senior Data Engineer",
+        text: " Un contenu pédagogique dense et complet ! Avec la formation dispensée par DataGuru, " +
             "vous allez découvrir les principaux outils utilisés et les défis que rencontre un Data Engineer au " +
             "quotidien. Mais au delà de l’usage de ces outils, c’est une des rares formations qui insiste sur la " +
-            "qualité du code et la culture des tests au sein d’un projet."
+            "qualité du code et la culture des tests au sein d’un projet.",
+        web_text: "Un contenu pédagogique dense et complet ! Avec la formation dispensée par DataGuru, " +
+            "vous allez découvrir les principaux outils utilisés et les défis que rencontre un Data Engineer au " +
+            "quotidien. Mais au delà de l’usage de ces outils, c’est une des rares formations qui insiste sur la " +
+            "qualité du code et la culture des tests au sein d’un projet. L’alternance entre théorie et pratique est " +
+            "parfaitement équilibré et permettra aux étudiants de rapidement mettre en place des flux de données et de" +
+            " manipuler du code afin de devenir opérationnel. Ce bootcamp est un vrai accélérateur dans la transition vers " +
+            "le métier de Data Engineer."
     },
     {
         name: "Thibaut E.",
@@ -32,7 +39,7 @@ const images = [
         subtitle: "Développeur @Sportihome",
         text: "J’ai été agréablement surpris du format de formation proposé par DataGuru. " +
             "Ayant été étudiant quelques années auparavant dans une université d’informatique avec des " +
-            "méthodes pédagogique plus conventionnelles, j'aurai aimé " +
+            "méthodes pédagogiques plus conventionnelles, j'aurais aimé " +
             "un format comme le propose ce BootCamp, c'est à dire plus immersif et qui a pour objectif de vous rendre opérationnel."
     },
     {
@@ -43,9 +50,9 @@ const images = [
             "Les projets, basés sur des cas réels, permettent d'expérimenter et d'approfondir les connaissances techniques."
     },
     {
-        name:"Léo T.",
+        name: "Léo T.",
         photo: LeoImage,
-        subtitle:"Géo-Data Engineer",
+        subtitle: "Géo-Data Engineer",
         text: "Le cursus est très pédagogique et aborde toutes les notions nécessaires au poste de data engineer : " +
             "de l'apprentissage de python à l'acquisition de données jusqu'aux compétences les plus poussées en SGBD, Cloud et DevOps."
     },
@@ -72,7 +79,7 @@ export default function BootCampAvis() {
     };
 
     return (
-        <div className={classnames("container",styles.enrollContainer)}>
+        <div className={classnames("container", styles.enrollContainer)}>
             <div>
                 <h3 className={classnames(styles.enrollTeaser)}><span>Ce que les gens pensent du programme<span
                     style={{color: "#f1bb00"}}>.</span></span>
@@ -81,48 +88,33 @@ export default function BootCampAvis() {
             <div className={classnames(styles.gridContainer)}>
                 <div className="row ">
                     <div className={classnames("col", styles.colContainer)}>
-                        <Avis name={"Mehdi O."}
-                              photo={MehImage}
-                              subtitle={"Senior Data Engineer"}
-                              text={"\n" +
-                              "Un contenu pédagogique dense et complet ! Avec la formation dispensée par DataGuru, " +
-                              "vous allez découvrir les principaux outils utilisés et les défis que rencontre un Data Engineer au " +
-                              "quotidien. Mais au delà de l’usage de ces outils, c’est une des rares formations qui insiste sur la " +
-                              "qualité du code et la culture des tests au sein d’un projet. L’alternance entre théorie et pratique est " +
-                              "parfaitement équilibré et permettra aux étudiants de rapidement mettre en place des flux de données et de" +
-                              " manipuler du code afin de devenir opérationnel. Ce bootcamp est un vrai accélérateur dans la transition vers " +
-                              "le métier de Data Engineer."}/>
+                        <Avis name={images[0].name}
+                              photo={images[0].photo}
+                              subtitle={images[0].subtitle}
+                              text={images[0].web_text}/>
                     </div>
                     <div className={classnames("col", styles.colContainer)}>
-                        <Avis name={"Kévin D."}
-                              photo={KevinImage}
-                              subtitle={"Fondateur @Keltio"}
-                              text={"\n" +
-                              "Le support de formation est de qualité, l’équipe pédagogique est investie, réactive et soucieuse de la réussite de ses apprenants. " +
-                              "Les projets, basés sur des cas réels, permettent d'expérimenter et d'approfondir les connaissances techniques."}/>
+                        <Avis name={images[2].name}
+                              photo={images[2].photo}
+                              subtitle={images[2].subtitle}
+                              text={images[2].text}/>
                         <br/>
-                        <Avis name={"Léo T."}
-                              photo={LeoImage}
-                              subtitle={"Géo-Data Engineer"}
-                              text={
-                                  "Le cursus est très pédagogique et aborde toutes les notions nécessaires au poste de data engineer : " +
-                                  "de l'apprentissage de python à l'acquisition de données jusqu'aux compétences les plus poussées en SGBD, Cloud et DevOps."}/>
 
+                        <Avis name={images[3].name}
+                              photo={images[3].photo}
+                              subtitle={images[3].subtitle}
+                              text={images[3].text}/>
                     </div>
                     <div className={classnames("col", styles.colContainer)}>
-                        <Avis name={"Thibaut E."}
-                              photo={ThibaultImage}
-                              subtitle={"Développeur @Sportihome"}
-                              text={"\n" +
-                              "J’ai été agréablement surpris du format de formation proposé par DataGuru. " +
-                              "Ayant été étudiant quelques années auparavant dans une université d’informatique avec des " +
-                              "méthodes pédagogique plus conventionnelles, j'aurai aimé " +
-                              "un format comme le propose ce BootCamp, c'est à dire plus immersif et qui a pour objectif de vous rendre opérationnel."}/>
+                        <Avis name={images[1].name}
+                              photo={images[1].photo}
+                              subtitle={images[1].subtitle}
+                              text={images[1].text}/>
                     </div>
                 </div>
             </div>
             <div className={classnames(styles.mobileContainer)}>
-                <Box sx={{maxWidth: 400, flexGrow: 1 , minHeight:400}}>
+                <Box sx={{maxWidth: 400, flexGrow: 1, minHeight: 400}}>
                     <AutoPlaySwipeableViews
                         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
                         index={activeStep}

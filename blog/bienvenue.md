@@ -1,5 +1,5 @@
 ---
-title: Bienvenue sur le blog de Dataguru !
+title: Bienvenue sur le blog de Data Guru !
 date: 2022-10-31
 ---
 

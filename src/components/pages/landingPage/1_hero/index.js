@@ -24,8 +24,9 @@ export default function LandingPageHero() {
                             <div>
                                 <div className={stylesModule.surligne}>
 
-                                    Améliorez vos compétences grâce à nos formations animées par des consultants-formateurs expérimentés.
-                                    Chez Data Guru, notre objectif est de vous délivrer des formations de "qualité artisanale" avec des professeurs experts dans chaque domaine !
+                                    Améliorez vos compétences grâce à nos formations dispensées par des consultants-formateurs expérimentés.
+                                    Chez Data Guru, nous mettons tout en oeuvre pour être au plus près de vos besoins en vous offrant
+                                    des formations de "qualité artisanale" avec des professeurs experts dans chaque domaine !
                                 </div>
                             </div>
                         </div>

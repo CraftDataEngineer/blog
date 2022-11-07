@@ -23,7 +23,7 @@ II - Code
               },
               {
                   icon: <DashboardIcon viewBox="0 -4 24 24"/>,
-                  title: "ÉAteliers Architectures",
+                  title: "Ateliers Architectures",
                   text: "Les ateliers d'architectures sont animés durant les séances live, il faudra\n" +
                    "proposer une architecture cible par rapport à un besoin."
               },
