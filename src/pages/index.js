@@ -16,7 +16,7 @@ export default function Home() {
   const {siteConfig = {}} = context;
 
     return (
-    <Layout  description="Data Engineer | DataGuru">
+    <Layout  title="Data Guru" description={`${siteConfig.tagline}`}>
       <main>
           <CookieSetter/>
           <LandingPageHero/>

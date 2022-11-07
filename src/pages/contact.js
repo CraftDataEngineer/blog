@@ -8,7 +8,7 @@ export default function Contact() {
     const context = useDocusaurusContext();
     const {siteConfig = {}} = context;
     return (
-        <Layout title={`${siteConfig.title}`} description="Description will go into a meta tag in <head />">
+        <Layout title="Data Guru Contact" description="Posez nous toutes vos questions !">
             <main>
                 <HomePageTeaser/>
                 <ContactUs/>

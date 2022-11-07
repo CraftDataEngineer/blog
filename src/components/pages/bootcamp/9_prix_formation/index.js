@@ -20,19 +20,9 @@ export default function BootCampPrix() {
                                         <h2>
                                              Frais de formation :
                                              <div className={classnames(stylesModule.text)}/>
-                                                <Badge
-                                                    badgeContent={"solde"}
-                                                    color="success"
-                                                    anchorOrigin={{
-                                                        vertical: 'top',
-                                                        horizontal: 'right',
-                                                    }}
-                                                ><Chip
+                                                <Chip
                                                     style={{fontFamily: "CircularStd-Black", fontSize: "24px"}}
                                                     label="3 495 € "/>
-                                                </Badge>
-
-
                                         </h2>
 
                                         <p>

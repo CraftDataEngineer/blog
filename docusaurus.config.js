@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-    title: 'Data Guru | Data Engineer',
-    tagline: 'Data Engineer',
+    title: 'Data Guru',
+    tagline: 'Améliorez vos compétences grâce à nos formations animées par des consultants-formateurs expérimentés. Chez Data Guru, notre objectif est de vous délivrer des formations de "qualité artisanale" avec des professeurs experts dans chaque domaine',
     url: 'https://dataguru.fr/',
     baseUrl: '/',
     onBrokenLinks: 'throw',
@@ -34,7 +34,7 @@ module.exports = {
 
             //... other Algolia params
         },
-        metadata: [{name: 'keywords', content: 'data, engineer'}, {name: 'keywords', content: 'dataguru, data guru'}],
+        metadata: [{name: 'keywords', content: 'data, engineer'}, {name: 'keywords', content: 'dataguru, data guru , Data guru'}],
         navbar: {
             logo: {
                 alt: 'My Site Logo',

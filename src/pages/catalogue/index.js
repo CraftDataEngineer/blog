@@ -10,7 +10,7 @@ export default function Index() {
     const context = useDocusaurusContext();
     const {siteConfig = {}} = context;
     return (
-        <Layout title={`${siteConfig.title}`} description="DataGuru | devops | cloud | bigdata">
+        <Layout title="Data Guru Catalogue" description="Découvrez toutes nos formations faites maison">
             <main>
                 <CatalogueHero/>
                 <CatalogueCards/>
