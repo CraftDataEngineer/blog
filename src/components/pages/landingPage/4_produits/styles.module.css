@@ -1,11 +1,4 @@
-.container {
+.localcontainer {
   padding-top: 5%;
+  padding-left: 10% ;
 }
-
-
-@media (min-width:  900px) and (max-width:  1500px){
-  .container {
-    margin-left: 10% ;
-  }
-}
-

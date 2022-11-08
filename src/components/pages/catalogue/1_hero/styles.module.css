@@ -2,16 +2,18 @@
   margin-top: 5%;
   font-weight: 900;
   line-height: 4rem;
-  font-size: 4rem;
-  line-break: auto;
-  text-transform: capitalize;
+  font-size: 5rem;
+  line-break: loose;
   letter-spacing: -.025em;
   display: block;
   --tw-text-opacity: 1;
   tab-size: 4;
   text-align: center;
+  text-transform: capitalize;
+  color: black;
   font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
+
 
 .point {
   color :  #f1bb00

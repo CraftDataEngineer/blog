@@ -81,7 +81,7 @@ export default function LandingPageAvis() {
     return (
         <div className={classnames("container", styles.enrollContainer)}>
             <div>
-                <h3 className={classnames(styles.enrollTeaser)}><span>CE QUE LES GENS PENSENT DE DATAGURU<span
+                <h3 className={classnames(styles.enrollTeaser)}><span>Ce que les gens pensent de Data Guru<span
                     style={{color: "#f1bb00"}}>.</span></span>
                 </h3>
             </div>

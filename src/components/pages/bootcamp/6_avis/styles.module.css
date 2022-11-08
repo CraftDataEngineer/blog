@@ -33,10 +33,10 @@
 }
 
 .enrollTeaser {
-  text-transform: capitalize;
+  text-transform: none;
   font-weight: 900;
   line-height: 3rem;
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: -.025em;
   display: block;
   --tw-text-opacity: 1;

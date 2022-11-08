@@ -3,6 +3,8 @@ import emailjs from '@emailjs/browser';
 import classnames from "classnames";
 import styles from "./styles.module.css"
 import Link from "@docusaurus/core/lib/client/exports/Link";
+import {Chip, InputAdornment, LinearProgress, TextField} from "@mui/material";
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 
 
 const SERVICE_ID = 'service_kmjngyo'
@@ -34,29 +36,32 @@ export default function ContactUs() {
             <div className={classnames("container")} style={{paddingBottom: "200px"}}>
                 <form className={classnames(styles.formContainer, "shadow--lw")} ref={form} onSubmit={sendEmail}>
                     <div className="row row--no-gutters ">
-                        <div className="col col--1"/>
-                        <div className="col col--2">
-                            <div className="field">
-                                <label>@ Email </label>
-                                <label style={{fontSize: "0.8rem",color:"red"}}>٭</label>
-                            </div>
-                        </div>
+                        <div className="col col--3"/>
                         <div className="col col--5">
-                            <input type="email" name="email" className="button--block"
-                                   style={{fontSize: "0.9rem"}} required={true}/>
+                            <TextField id="standard-basic"
+                                       InputProps={{
+                                           startAdornment: (
+                                               <InputAdornment position="start">
+                                                   <AlternateEmailIcon/>
+                                               </InputAdornment>
+                                           ),
+                                       }}
+                                       name="email"
+                                       fullWidth label="Email" variant="standard" type="email" required={true}/>
                         </div>
                     </div>
                     <div className="row row--no-gutters " style={{paddingTop: "10px"}}>
-                        <div className="col col--1"/>
-                        <div className="col col--2">
-                            <div className="field">
-                                <label>Questions </label>
-                                <label style={{fontSize: "0.8rem",color:"red"}}>٭</label>
-                            </div>
-                        </div>
+                        <div className="col col--3"/>
                         <div className="col col--5">
-                                <textarea name="message" rows="10" className="button--block"
-                                          style={{rows: "40", cols: "50"}} required={true}/>
+                            <TextField
+                                id="outlined-multiline-static"
+                                label="Questions"
+                                name="message"
+                                multiline
+                                fullWidth
+                                rows={10}
+                                required={true}
+                            />
                         </div>
                     </div>
                     <div className="row row--no-gutters " style={{paddingTop: "10px"}}>
@@ -72,7 +77,7 @@ export default function ContactUs() {
                         {!send && !error && !loading && <div className="col col--5">
                             <button className="button button--block button--outline button--primary">Envoyer</button>
                         </div>}
-                        {send && !error && !loading  &&  <div className="col col--5">
+                        {send && !error && !loading && <div className="col col--5">
                             <div className="alert alert--success" role="alert">
                                 <button aria-label="Close" className="clean-btn close" type="button">
                                     <span aria-hidden="true">&times;</span>
@@ -80,19 +85,32 @@ export default function ContactUs() {
                                 Message <strong> envoyé</strong> !
                             </div>
                             <br/>
-                            <Link to={"/"}><button className="button button--block  button--outline button--primary">Revenir à l'accueil</button></Link>
+                            <Link to={"/"}>
+                                <button className="button button--block  button--outline button--primary">Revenir à
+                                    l'accueil
+                                </button>
+                            </Link>
                         </div>
                         }
                         {error && !send && !loading && <div className="col col--5">
                             <div className="alert alert--danger" role="alert">
-                            <button aria-label="Close" className="clean-btn close" type="button">
+                                <button aria-label="Close" className="clean-btn close" type="button">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                                 <strong>Erreur</strong> le message n'est pas envoyé !
                             </div>
                             <br/>
-                            <Link to={"/#"}><button className="button button--block  button--outline button--primary">Revenir à l'accueil</button></Link>
+                            <Link to={"/#"}>
+                                <button className="button button--block  button--outline button--primary">Revenir à
+                                    l'accueil
+                                </button>
+                            </Link>
                         </div>
+                        }
+                        {!send && !error && loading &&
+                            <div className="col col--5">
+                                <LinearProgress/>
+                            </div>
                         }
                     </div>
                 </form>

@@ -13,7 +13,7 @@ export default function BootCampPrix() {
     return (
         <div className="container">
             <TextLeftImageRight containerStyle={classnames(stylesModule.backgroundPrix)}
-                                title={"Comment financer la formation"}
+                                title={"Comment financer la formation "}
                                 ponctuation="?"
                                 description={
                                     <div className={classnames(stylesModule.headDescription)}>

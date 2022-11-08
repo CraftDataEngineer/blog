@@ -79,13 +79,21 @@ module.exports = {
             },
             links: [
                 {
-                    label: 'Facebook',
-                    href: 'https://www.facebook.com/DataGuru-108335435294231',
+                    html: ` <a href="https://www.facebook.com/DataGuru-108335435294231" target="_blank" rel="noreferrer noopener" aria-label="DataGuru Facebook">
+                      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/640px-Facebook_f_logo_%282021%29.svg.png" alt="facebook" width="25px" height="2px" />
+                    </a> `,
                 },
                 {
-                    label: 'Linkedin',
-                    href: 'https://www.linkedin.com/company/dataguru',
-                }
+                    html: `
+                    <a href="https://www.linkedin.com/company/dataguru" target="_blank" rel="noreferrer noopener" aria-label="DataGuru Linkedin">
+                      <img src="https://media-exp1.licdn.com/dms/image/C560BAQHaVYd13rRz3A/company-logo_200_200/0/1638831589865?e=2147483647&v=beta&t=Zq1zixRFUNMSm2Ldgu_hcJAYTL1gWG3VHKXO4kf9lDQ" alt="linkedin" width="25px" height="2px" />
+                    </a>
+                  `,
+                },
+                {
+                    label: 'Qui sommes-nous ?',
+                    href: '/quisommesnous',
+                },
             ],
             copyright: `Copyright © ${new Date().getFullYear()} Data Guru, Inc.`,
         },

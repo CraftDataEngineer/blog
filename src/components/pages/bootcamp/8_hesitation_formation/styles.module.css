@@ -50,11 +50,18 @@
   margin-top: 3%;
   margin-bottom: 4%;
   font-weight: 900;
-  line-height: 2.5rem;
+  line-height: 3rem;
   font-size: 3rem;
-  text-transform: capitalize;
   letter-spacing: -.025em;
   --tw-text-opacity: 1;
   tab-size: 4;
   font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+@media screen and (max-width:  996px) {
+
+
+  .enrollTeaser {
+    font-size: 2.5rem;
+  }
 }

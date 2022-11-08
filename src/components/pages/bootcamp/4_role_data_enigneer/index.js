@@ -11,7 +11,7 @@ export default function BootCampDataEngineer() {
     return (
         <div className={classnames("container" ,stylesModule.container)}>
             <TextRightImageLeft
-                title={"Pourquoi Devenir Data Engineer "}
+                title={"Pourquoi devenir Data Engineer "}
                 ponctuation={ "?"}
                 titleStyle={stylesModule.titleStyle}
                 descriptionStyle={stylesModule.descriptionStyle}

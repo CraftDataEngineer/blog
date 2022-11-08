@@ -3,6 +3,11 @@ import React from "react";
 import classnames from "classnames";
 import sbe from '../../../../../static/img/formateur/bsbe.png';
 import loca from '../../../../../static/img/formateur/bloca.png';
+import {IconButton} from "@mui/material";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
+const sbeLinkedinUrl= "https://www.linkedin.com/in/soufiane-benzaouia-a0052788/"
+const locaLinkedinUrl= "https://www.linkedin.com/in/lo%C3%AFc-caminale-24817112a/"
 
 export default function BootCampFormateur() {
 
@@ -24,19 +29,24 @@ export default function BootCampFormateur() {
             </div>
             <div className={classnames("container")}>
                 <h6 className={classnames(styles.formateurTitle)}><span>Formateurs</span></h6>
-                <h3 className={classnames(styles.formateurTeaser)}><span>On Partage avec vous Notre Experience<span
+                <h3 className={classnames(styles.formateurTeaser)}><span>On partage avec vous notre experience <span
                     style={{color: "#f1bb00"}}>.</span></span></h3>
             </div>
             <div className={classnames(styles.gridContainer)}>
                 <div className={classnames(styles.featureAvatar)}>
                     <div className="avatar" style={{paddingLeft: "auto", paddingRight: "auto", display: "block"}}>
-
+                        <IconButton  color="primary" href={sbeLinkedinUrl}  >
+                            <LinkedInIcon />
+                        </IconButton>
                         <img
                             className={classnames(styles.photo)}
                             src={sbe}/>
                         <img
                             className={classnames(styles.photo)}
                             src={loca}/>
+                        <IconButton  color="primary" href={locaLinkedinUrl} >
+                            <LinkedInIcon  />
+                        </IconButton>
                     </div>
                 </div>
                 <div className={classnames("row")}>
