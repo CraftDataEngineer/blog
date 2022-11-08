@@ -2,6 +2,8 @@ import styles from "./styles.module.css";
 import React from "react";
 import classnames from "classnames";
 import Question from "../../../../../static/img/landingPage/contact/personalized_learning.png";
+import {Chip} from "@mui/material";
+import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 
 const MOBILE_SIZE = 800
 

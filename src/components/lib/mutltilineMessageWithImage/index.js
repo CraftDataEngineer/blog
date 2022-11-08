@@ -17,7 +17,7 @@ export default function MutltilineMessageWithImage({image,imageStyle, title, hea
                 <img src={image} className={imageStyle} alt={""}/>
                 <h3 className={classnames(stylesModule.title)}>{title}</h3>
                 <p className={classnames(stylesModule.headline)} >{headline}</p>
-                { action }
+                <p >{ action }</p>
             </Stack>
         </div>
     );

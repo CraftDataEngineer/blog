@@ -29,7 +29,7 @@ export default function CatalogueCards() {
                             images={[{src: Terraform, large: true, width: "90px"}]}
                             text="Apprendre l'utilisation de Terraform pour la conception et la mise en place d'une infrastructure pour le cloud computing"
                             cardUrl="/catalogue/content/terraform"
-                            badge="- 30% "
+                            badge={null}
                         />
                     </div>
                     <div className={classnames("col", styles.colContainer)}>
@@ -40,7 +40,7 @@ export default function CatalogueCards() {
                             images={[{src: GitlabCI, large: false}]}
                             text="Savoir mettre en œuvre l'intégration, le déploiement et la livraison continue"
                             cardUrl="/catalogue/content/gitlabci"
-                            badge="- 30% "
+                            badge={null}
 
                         />
                     </div>
@@ -54,7 +54,7 @@ export default function CatalogueCards() {
                             cardUrl="/catalogue/content/devops_basics"
                             tag={"Meilleure vente"}
                             tagColor={"#77cc11"}
-                            badge="- 30% "
+                            badge={null}
                         />
                     </div>
                 </div>

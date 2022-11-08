@@ -46,7 +46,7 @@ export default function BootCampContenuFormation() {
                             <span style={{color: "#f1bb00"}}>.</span>
                         </h3>
                         <p className={classnames(styles.modulesDescription)}>
-                            <span>Un parcours complet pour apprendre à : </span>
+                            <span>Détails du parcours d'apprentissage</span>
                         </p>
                     </div>
                     <div className="col">

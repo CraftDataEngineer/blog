@@ -16,7 +16,7 @@ function BootCampHero() {
     const saveFile = () => {
         saveAs(
             "/files/programme.pdf",
-            "programme.pdf"
+            "dataguru_programme.pdf"
         );
     };
 
@@ -34,7 +34,7 @@ function BootCampHero() {
                                 </div>
                             </div>
                             <div className={classnames(stylesModule.buttonDownload)}>
-                                <Button variant="contained" startIcon={<DownloadIcon/>} size="large" onClick={saveFile}
+                                <Button variant="contained" startIcon={<DownloadIcon/>}  onClick={saveFile}
                                         style={{backgroundColor: "#a6a2f7", borderColor: "transparent"}}>
                                     Télécharger le programme
                                 </Button>

@@ -1,0 +1,27 @@
+
+.container{
+  padding-bottom: 10%;
+}
+
+
+.citation {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+  color: grey;
+  font-family: CircularStd-Book,Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+.cite {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  color: grey;
+  font-family: CircularStd-Black,Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  text-align: center;
+  right:0;
+}

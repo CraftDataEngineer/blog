@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-    title: 'Data Guru | Data Engineer',
-    tagline: 'Data Engineer',
+    title: 'Data Guru',
+    tagline: 'Améliorez vos compétences grâce à nos formations animées par des consultants-formateurs expérimentés. Chez Data Guru, notre objectif est de vous délivrer des formations de "qualité artisanale" avec des professeurs experts dans chaque domaine',
     url: 'https://dataguru.fr/',
     baseUrl: '/',
     onBrokenLinks: 'throw',
@@ -34,7 +34,7 @@ module.exports = {
 
             //... other Algolia params
         },
-        metadata: [{name: 'keywords', content: 'data, engineer'}, {name: 'keywords', content: 'dataguru, data guru'}],
+        metadata: [{name: 'keywords', content: 'data, engineer'}, {name: 'keywords', content: 'dataguru, data guru , Data guru'}],
         navbar: {
             logo: {
                 alt: 'My Site Logo',
@@ -79,13 +79,21 @@ module.exports = {
             },
             links: [
                 {
-                    label: 'Facebook',
-                    href: 'https://www.facebook.com/DataGuru-108335435294231',
+                    html: ` <a href="https://www.facebook.com/DataGuru-108335435294231" target="_blank" rel="noreferrer noopener" aria-label="DataGuru Facebook">
+                      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/640px-Facebook_f_logo_%282021%29.svg.png" alt="facebook" width="25px" height="2px" />
+                    </a> `,
                 },
                 {
-                    label: 'Linkedin',
-                    href: 'https://www.linkedin.com/company/dataguru',
-                }
+                    html: `
+                    <a href="https://www.linkedin.com/company/dataguru" target="_blank" rel="noreferrer noopener" aria-label="DataGuru Linkedin">
+                      <img src="https://media-exp1.licdn.com/dms/image/C560BAQHaVYd13rRz3A/company-logo_200_200/0/1638831589865?e=2147483647&v=beta&t=Zq1zixRFUNMSm2Ldgu_hcJAYTL1gWG3VHKXO4kf9lDQ" alt="linkedin" width="25px" height="2px" />
+                    </a>
+                  `,
+                },
+                {
+                    label: 'Qui sommes-nous ?',
+                    href: '/quisommesnous',
+                },
             ],
             copyright: `Copyright © ${new Date().getFullYear()} Data Guru, Inc.`,
         },

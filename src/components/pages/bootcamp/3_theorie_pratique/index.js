@@ -54,7 +54,7 @@ export default function BootCampTheoriePratique() {
                                 {
                                     icon: <ArchitectureIcon viewBox="0 -4 24 24"/>,
                                     title: "Études de cas",
-                                    text: "On travaillera sur plusieurs études de cas inspirées de la vie réelle qui vous\n" +
+                                    text: "On travaillera sur plusieurs situations proches du monde du travail qui\n" +
                                         "                                        permettront de vous projeter facilement dans vos futures missions ! "
                                 },
                                 {

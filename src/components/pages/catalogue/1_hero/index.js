@@ -12,11 +12,10 @@ export default function CatalogueHero() {
                     <span className={classnames(stylesModule.point)}>.</span>
                 </h3>
                 <div className={classnames(stylesModule.description)}>
-                    Découvrez toutes nos formations <b>faites maison</b>.
+                   Découvrez le catalogue complet de nos formations.
                 </div>
                 <div className={classnames(stylesModule.description)}>
-                Des cours bien pensés pour vous aider à tirer
-                    le meilleur parti de DataGuru.
+                    Des cours adaptés pour <b>optimiser</b> et <b>accélérer</b> vos projets !
                 </div>
             </div>
         </header>

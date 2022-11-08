@@ -2,7 +2,7 @@
     font-weight: 900;
     line-height: 3rem;
     font-size: 3rem;
-    text-transform: capitalize;
+    text-transform: none;
     letter-spacing: -.025em;
     display: block;
     --tw-text-opacity: 1;

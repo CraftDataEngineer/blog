@@ -36,9 +36,8 @@
 .teaserTeaser {
   margin-top: 15%;
   font-weight: 900;
-  line-height: 2.5rem;
+  line-height: 3rem;
   font-size: 3rem;
-  text-transform: capitalize;
   letter-spacing: -.025em;
   --tw-text-opacity: 1;
   tab-size: 4;
