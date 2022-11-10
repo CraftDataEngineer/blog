@@ -17,7 +17,7 @@ date: 2022-11-11
 
 ## Rappels : 101 Terraform
 
-Terraform est un **projet open source** crée en **2014** par [Hashicorp](https://www.hashicorp.com/).
+Terraform est un **projet open source** créé en **2014** par [Hashicorp](https://www.hashicorp.com/).
 
 A l'écriture de ce blog, terraform a :
 + `35K` ⭐️
@@ -29,9 +29,9 @@ A l'écriture de ce blog, terraform a :
 _https://github.com/hashicorp/terraform_
 
 **Ce qu'on peut faire avec Terraform :**
-+ Gérer des ressources d'infrastructure sur des **fournisseurs de cloud**
++ Gérer des ressources d'infrastructure de plusieurs **fournisseurs cloud**
   + Créer une infrastructure réseau sur AWS
-  + Déployer un Kubernetes sur GCP
+  + Déployer un cluster Kubernetes sur GCP
 + Intéragir avec des **produits d'infrastructure**
   + Insérer des secrets dans un Vault 
   + Déployer une application sur Heroku
@@ -45,8 +45,9 @@ _https://github.com/hashicorp/terraform_
 
 ## Les concepts : Terraform Core & Terraform Plugin
 
+Terraform a la capacité de se **brancher** avec de **nombreux providers** : _AWS, GCP, AZURE, ELASTIC..._ _Mais le fonctionnement interne de terraform ne change pas entre 2 providers._
 
-**Terraform est composé de 2 parties :** 
+Pour cela, Terraform est composé de **2 parties** : _(séparées par un contrat d'interfaçage)_
 + **Terraform Core :** Il s'agit du binaire Terraform qui communique avec les plugins pour gérer les ressources de l'infrastructure.
 Il fournit une interface commune qui vous permet de tirer parti de nombreux fournisseurs
 de Clouds, bases de données, services et solutions internes.
@@ -72,53 +73,64 @@ On peut également développer nos propres providers, terraform propose un tutor
 1. Terraform crée un **plan d'exécution** : arbre de dépendances 
 1. Terraform communique avec les APIs du provider pour **appliquer les changements**
 
-![img.png](../static/terraform/cinématique_terraform.png)
+![img.png](static/terraform/cinématique_terraform.png)
 
 
 ## Les workflows terraform
 
+Dans cette section nous allons voir les différents workflow Terraform : 
++ `Workflow standard`
++ `Workflow lors d'une création d'infrastructure`
++ `Workflow lors d'une mise à jour d'infrastructure`
+
 ### Workflow standard
 ----------------------
 
-1. Pour mettre en place notre **working directory** il faut lancer la commande suivante :
+>Pour mettre en place notre **working directory** il faut lancer la commande suivante :
    + `terraform init` 
+>
+> ⚠️ A chaque ajout de nouveau [module](https://developer.hashicorp.com/terraform/language/modules/syntax) ou de provider il faudra, re-lancer cette commande.
 
-⚠️ A chaque ajout de nouveau [module](https://developer.hashicorp.com/terraform/language/modules/syntax) ou de provider il faudra lancer cette commande
+Une fois l'initialisation faite, le worklow standard pour développer du terraform peut se résumer en **3 étapes** :
 
-2. Une fois qu'on a développer notre code terraform, on peut le **vérifier** avec la commande : 
-   + `terraform validate`
+1. `terraform plan` : **affiche** les changements requis par la configuration actuelle _(plan d'exécution)_
+1. `terraform apply` : permet d'**appliquer** le plan d'exécution sur l'infrastructure réelle.
+1. `terraform destroy` : permet de **supprimer** toute l'infrastructure crée avec Terraform 
 
-3. Pour connaitre le plan d'exécution, cad afficher les changements requis par la configuration actuelle :
-   + `terraform plan`
-4. Appliquer le plan d'exécution sur l'infrastructure réelle avec : 
-   + `terraform apply`
-
+> 💡 Une fois qu'on a développé notre code terraform, on peut le **vérifier** avec la commande : 
+`terraform validate`
 
 ![img.png](static/terraform/standard_workflow.png)
 
-:::danger Suppression de l'infrastructure
-Si on veut supprimer toute l'infrastructure crée avec terraform, il faut lancer : `terraform destroy` 
-:::
+Pour aller plus loin : [The Core Terraform Workflow](https://developer.hashicorp.com/terraform/intro/core-workflow)
 
 ### Workflow lors d'une création d'infrastructure
 --------------------------------------------------
 
+Pour la première exécution de la commande `terraform apply` : 
++ Terraform crée **l'infrastructure** définie dans votre configuration (code terraform).
++ Terraform crée le **fichier d'état** : `tfstate`.  
+
 ![img.png](static/terraform/workflow_creation.png)
 
-Pour la première exécution de la commande `terraform apply`, terraform crée : 
-+ l'infrastructure définie dans votre configuration (code terraform)
-+ Le fichier d'état : `tfstate`  
 
 
-Ce fichier d'état est utilisé par Terraform pour faire **correspondre** les **ressources du monde réel** à votre **configuration** et conserver la trace des métadonnées.
+
+Le fichier d'état est utilisé par Terraform pour faire **correspondre** les **ressources du monde réel** à votre **configuration** et conserver la trace des métadonnées.
 
 ### Workflow lors d'une mise à jour d'infrastructure
 ----------------------------------------------------
 
-1. `Récupération du tfstate` : dernier état mis à jour par terraform
-2. `Récupération des états réels` : récupérer les éventuels changements d'infrastructure, externe à terraform (modification à la main)
-3. `Application des différences` : Création du plan d'exécution et application des changements sur l'infrastructure 
-4. `Mise à jour du tfstate`
+1. `Récupération du tfstate` :  récupérer le dernier état mis à jour par terraform.
+2. `Récupération des états réels` : récupérer les éventuels changements d'infrastructure, externe à terraform (modification à la main).
+3. `Application des différences` : créer un plan d'exécution et appliquer ces changements sur l'infrastructure réelle.
+4. `Mise à jour du tfstate` :  mettre à jour le tfstate avec l'infrastructure actuelle.
 
 ![img.png](static/terraform/workflow_mise_a_jour.png)
 
+
+## Conclusion
+
+Terraform a plusieurs **couches d'abstraction** et dans ce blog nous avons couvert : 
++ L'intéraction entre Terraform et les APIs des fournisseurs : `Terraform Core` **&** `Terraform Plugin`
++ Les différents workflows derrière la commande `terraform apply`.
