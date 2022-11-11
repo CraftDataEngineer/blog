@@ -13,10 +13,10 @@ module.exports = {
         announcementBar: {
             id: 'support_us',
             content:
-                'Inscriptions ouvertes pour la prochaine session profitez des dernières places !',
+                'Participez à nos prochains webinaires pour vous formez gratuitement ! <a target="_blank" rel="noopener noreferrer" href="https://www.meetup.com/fr-FR/data-guru-meetup-group/">Meetup</a>',
             backgroundColor: '#fafbfc',
-            textColor: 'black',
-            isCloseable: false,
+            textColor: '#091E42',
+            isCloseable: true,
         },
         colorMode: {
             defaultMode: 'light',

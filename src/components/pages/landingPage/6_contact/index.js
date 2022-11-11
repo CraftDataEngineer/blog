@@ -12,18 +12,29 @@ export default function LandingPageContact() {
     return (
         <div className={classnames("container", styles.container)}>
             <div className="row row--no-gutters">
-                <div className="col col--1"/>
-                <div className="col col--12">
-                    <h3 className={classnames(styles.titleStyle)}>
-                        <span>Vous avez des questions</span>
-                        <span className={classnames(styles.point)}> ?</span>
-                    </h3>
-                    <Link to="/contact/" className={classnames(styles.contactButton)}>
-                        <Button variant="contained" startIcon={<PhoneInTalkIcon/>} size="large"
-                                style={{backgroundColor: "#a6a2f7", borderColor: "transparent"}}>
-                            Nous Contacter
-                        </Button>
-                    </Link>
+                <div className="col col--1 "/>
+                <div className="col ">
+                    <Stack
+                        direction="column"
+                        spacing={5}
+                        justifyContent="center"
+                        alignItems="center"
+                    >
+                        <div>
+                            <h3 className={classnames(styles.titleStyle)}>
+                                <span>Vous avez des questions</span>
+                                <span className={classnames(styles.point)}> ?</span>
+                            </h3>
+                        </div>
+                        <div>
+                            <Link to="/contact/" className={classnames(styles.contactButton)}>
+                                <Button variant="contained" startIcon={<PhoneInTalkIcon/>} size="large"
+                                        style={{backgroundColor: "#a6a2f7", borderColor: "transparent"}}>
+                                    Nous Contacter
+                                </Button>
+                            </Link>
+                        </div>
+                    </Stack>
                 </div>
                 <div className="col col--1"/>
             </div>
