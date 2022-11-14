@@ -18,7 +18,7 @@ export default function BootCampCitation() {
                     <cite >Martin Fowler</cite>
                 </div>
                     <div className={stylesModule.explain}>
-                        Qualité et  bonnes pratiques voilà ce qui va vous différencier !
+                        Qualité et  bonnes pratiques, voilà ce qui va vous différencier !
                     </div>
             </div>
     );

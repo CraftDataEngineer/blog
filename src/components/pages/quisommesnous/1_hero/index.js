@@ -14,7 +14,7 @@ export default function QuiSommesNousHero() {
                         <span className={classnames(stylesModule.point)}>.</span>
                     </h3>
                     <div className={classnames(stylesModule.description)}>
-                        Data Guru est le fruit de l'association de deux passionnés.  Soucieux des bonnes pratiques de développements, ils ont accompagné plusieurs grands comptes sur la conception de plateformes de données et sur l'utilisation des méthodes de collaboration en agile.
+                        Data Guru est le fruit de l'association de deux passionnés.  Soucieux des bonnes pratiques de développement, nous avons accompagné plusieurs grands comptes sur la conception de plateformes de données et sur l'utilisation des méthodes de collaboration en agile.
                     </div>
                 </div>
                 <div className={stylesModule.seperator}/>
