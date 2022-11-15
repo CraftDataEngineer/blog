@@ -56,7 +56,7 @@ export default function BootCampFormateur() {
                         </p>
                         <div className={classnames(styles.formateurDescriptionPoints)}>
                             <ul className={classnames(styles.formateurDescriptionPoints)}>
-                                <li>🥼 &nbsp; Nous avons plus de 8 ans d'expériences chacun ... 20 missions au
+                                <li>🥼 &nbsp; Nous avons plus de 8 ans d'expérience chacun ... 20 missions au
                                     compteur.
                                 </li>
                                 <li>🏗 &nbsp; Nous sommes des passionnés des systèmes et plateformes de données.</li>

@@ -24,7 +24,7 @@ const steps = [
     {
         label: 'Vous n’avez jamais fait de code avant ?',
         description:
-            'Pas grave, on a créé une formation en 5 jours pour vous aider à gagner en confiance sur du code python, linux et sql.',
+            'Pas de souci, on a créé une formation en 5 jours pour vous aider à gagner en confiance sur du code python, linux et sql.',
         icon : EmojiObjectsIcon,
         button : "Découvrir",
         buttonUrl : "/catalogue/content/dataengineer_basics",
@@ -33,7 +33,7 @@ const steps = [
     },
     {
         label: 'Vous avez un doute ?',
-        description: `Contacter nous on pourra faire une évaluation ensemble et voir ce qui vous correspond le mieux.`,
+        description: `Contactez-nous, nous pourrons faire une évaluation ensemble et voir ce qui vous correspond le mieux.`,
         icon : PermPhoneMsgIcon,
         button : "Nous Contacter",
         buttonUrl : "/contact/",

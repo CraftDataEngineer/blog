@@ -65,7 +65,7 @@ export default function CatalogueCards() {
                             titleText="BIGDATA"
                             titleIcon={<BigData viewBox="0 -5 25 25"/>}
                             images={[{src: Python, large: true,height:"30px",width:"auto"}]}
-                            text="Apprenez à manipuler de la donnée avec du code python et SQL"
+                            text="Apprendre à manipuler de la donnée avec du code python et SQL"
                             cardUrl="/catalogue/content/dataengineer_basics"
                             active={true}
                             tag={"bootcamp"}
@@ -77,7 +77,7 @@ export default function CatalogueCards() {
                             titleText="DEVOPS"
                             titleIcon={<Devops viewBox="0 -5 25 25"/>}
                             images={[{src: Kubernetes, large: true, height: "20px", width: "80px"}]}
-                            text="Automatisez le déploiement d’applications conteneurisées grâce à notre formation Kubernetes"
+                            text="Automatiser le déploiement d’applications conteneurisées grâce à notre formation Kubernetes"
                             active={false}
                         />
                     </div>
