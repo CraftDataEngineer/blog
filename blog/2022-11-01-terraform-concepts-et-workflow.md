@@ -47,7 +47,7 @@ _https://github.com/hashicorp/terraform_
 
 Terraform a la capacité de se **brancher** avec de **nombreux providers** : _AWS, GCP, AZURE, ELASTIC..._ _Mais le fonctionnement interne de terraform ne change pas entre 2 providers._
 
-Pour cela, Terraform est composé de **2 parties** : _(séparées par un contrat d'interfaçage)_
+Pour cela, Terraform est composé de **2 parties** _(séparées par un contrat d'interfaçage)_ :
 + **Terraform Core :** Il s'agit du binaire Terraform qui communique avec les plugins pour gérer les ressources de l'infrastructure.
 Il fournit une interface commune qui vous permet de tirer parti de nombreux fournisseurs
 de Clouds, bases de données, services et solutions internes.
