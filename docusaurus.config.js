@@ -1,5 +1,9 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
+    i18n: {
+        defaultLocale: 'fr',
+        locales: ['fr'],
+    },
     title: 'Data Guru',
     tagline: 'Améliorez vos compétences grâce à nos formations animées par des consultants-formateurs expérimentés. Chez Data Guru, notre objectif est de vous délivrer des formations de "qualité artisanale" avec des professeurs experts dans chaque domaine',
     url: 'https://dataguru.fr/',
