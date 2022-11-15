@@ -30,39 +30,6 @@
 }
 
 .contactButton {
-    margin-top: 30%;
-    margin-left: 40%;
-    margin-bottom: 10%;
     color: #a6a2f7 !important;
     --ifm-font-color-base: #a6a2f7;
-}
-
-@media (max-width: 900px) {
-    .contactButton {
-        margin-top: 5%;
-        margin-left: 35%;
-        margin-bottom: 10%;
-    }
-    .titleStyle {
-        text-align: center;
-    }
-}
-
-@media (max-width: 425px) {
-    .contactButton {
-        margin-left: 20%;
-    }
-}
-
-
-@media (max-width: 375px) {
-    .contactButton {
-        margin-left: 15%;
-    }
-}
-
-@media (max-width: 320px) {
-    .contactButton {
-        margin-left: 10%;
-    }
 }
