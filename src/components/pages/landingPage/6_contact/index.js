@@ -3,8 +3,7 @@ import styles from "./styles.module.css"
 import classnames from "classnames";
 import Link from "@docusaurus/core/lib/client/exports/Link";
 import {Button, Stack} from "@mui/material";
-import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
-
+import PhoneIcon from '@mui/icons-material/Phone';
 
 export default function LandingPageContact() {
 
@@ -28,7 +27,7 @@ export default function LandingPageContact() {
                         </div>
                         <div>
                             <Link to="/contact/" className={classnames(styles.contactButton)}>
-                                <Button variant="contained" startIcon={<PhoneInTalkIcon/>} size="large"
+                                <Button variant="contained" startIcon={<PhoneIcon/>} size="large"
                                         style={{backgroundColor: "#a6a2f7", borderColor: "transparent"}}>
                                     Nous Contacter
                                 </Button>

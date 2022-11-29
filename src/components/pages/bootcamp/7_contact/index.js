@@ -10,7 +10,7 @@ import StepLabel from '@mui/material/StepLabel';
 import StepContent from '@mui/material/StepContent';
 import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
 import PlaylistAddCheckIcon from '@mui/icons-material/PlaylistAddCheck';
-import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
+import PhoneIcon from '@mui/icons-material/Phone';
 import PermPhoneMsgIcon from '@mui/icons-material/PermPhoneMsg';
 import StartIcon from '@mui/icons-material/Start';
 
@@ -38,7 +38,7 @@ const steps = [
         button : "Nous Contacter",
         buttonUrl : "/contact/",
         buttonColor : "#a6a2f7",
-        buttonIcon : PhoneInTalkIcon,
+        buttonIcon : PhoneIcon,
     },
 ];
 

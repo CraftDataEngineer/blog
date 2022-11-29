@@ -1,13 +1,11 @@
 import React from "react";
 import stylesModule from './styles.module.css';
-import YourSvg from '../../../../../static/img/header/geek_2.png';
 import Diplom from "../../../../../static/img/inscription/training_course.png";
 import classnames from "classnames";
 import {Button, Chip} from "@mui/material";
 import Link from "@docusaurus/core/lib/client/exports/Link";
-import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
+import PhoneIcon from '@mui/icons-material/Phone';
 import TextLeftImageRight from "../../../lib/textLeftImageRight";
-import Badge from '@mui/material/Badge';
 
 export default function BootCampPrix() {
     return (
@@ -30,7 +28,7 @@ export default function BootCampPrix() {
                                             prenez contact avec un de nos conseillers pour une étude de votre dossier.
                                         </p>
                                         <Link to="/contact/" className={classnames(stylesModule.enrollButton)}>
-                                            <Button variant="contained" startIcon={<PhoneInTalkIcon/>} size="large"
+                                            <Button variant="contained" startIcon={< PhoneIcon />} size="large"
                                                     style={{backgroundColor: "#a6a2f7", borderColor: "transparent"}}>
                                                 Nous Contacter
                                             </Button>
