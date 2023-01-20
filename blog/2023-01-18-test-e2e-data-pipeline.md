@@ -81,28 +81,41 @@ les contraintes et le temps de fonctionnement doivent être gérés._
    de la fréquence d'ingestion, du format et de la taille des données ingérées.
 
 3. **Ingestion :** Après avoir compris la source de données, les caractéristiques du système source que vous utilisez et 
-   la manière dont les données sont stockées, vous devez rassembler les données. L'étape suivante du cycle de vie 
+   la manière dont les données sont stockées, `vous devez rassembler les données`. L'étape suivante du cycle de vie 
    du Data Engineering est l'ingestion des données à partir des systèmes sources.   
    > 💡 Pour cette étape il y 2 grands concepts à connaitre que nous n'addresserons pas dans cet article: 
-   * Batch VS Streaming 
-   * Push VS Pull 
+   * `Batch` VS `Streaming` 
+   * `Push` VS `Pull` 
    
-4. **Transformation :** Signifie que les données doivent être changées de leur forme originale en quelque chose d'utile pour
+4. **Transformation :** Signifie que les données doivent être changées de leur forme originale en quelque chose d'`utile` pour
    les cas d'utilisation en aval.  
    Sans transformations appropriées, les données resteront inertes, et ne seront pas sous une forme utile pour les 
    rapports, l'analyse ou le ML. Typiquement, l'étape de transformation est celle où les données commencent à créer 
-   de la valeur pour la consommation des utilisateurs en aval.
+   de la `valeur` pour la consommation des utilisateurs en aval.
 
 5. **Données de consommation :** Maintenant que les données ont été ingérées, stockées et transformées en structures 
-   cohérentes et utiles, il est temps de les valoriser.  
+   cohérentes et utiles, il est temps de les `valoriser`.  
    Les valoriser à travers le utilisations les plus courantes comme :
-   * L'analytique 
-   * Le ML 
-   * Le reverse ETL.
+   * L'`analytique` 
+   * Le `ML` 
+   * Le `reverse ETL`
 
-### Deux Workflows clés : La Pipeline de Valeur & la Pipeline d'Innovation
+Dans l'analyse de données, il y a deux façons courantes d'être embarrassé professionnellement :
+*  Laisser des `données de mauvaise qualité` atteindre les utilisateurs.
+*  Déployer des `changements qui cassent les systèmes de production`
 
-Avant d'expliquer ces 2 workflows, regardons la différence entre une pipeline dans un contexte DevOps VS DataOps :
+Et pour éviter ces problèmes nous allons introduire deux workflows clés.
+
+### Deux Workflows clés : Le Pipeline de Valeur & Le Pipeline d'Innovation
+> Ces 2 workflows clés sont définis dans le livre DataOps : https://dkproduction.wpenginepowered.com/wp-content/uploads/2020/11/DK_dataops_book_2nd_edition.pdf
+
+L'analyse des données vise à extraire de la valeur des données. C'est ce que nous appelons le pipeline de valeur. 
+Le diagramme ci-dessous montre le pipeline de valeur progressant horizontalement de gauche à droite. 
+Les données entrent dans le pipeline et passent en traitement de production. La production représente la pipeline de donnée. 
+
+Lorsque les données sortent du pipeline, sous la sous forme d'analyses utiles, de la `valeur est créée pour l'organisation`.
+
+Avant d'expliquer ces 2 workflows, regardons la différence entre une pipeline `CI/CD` dans un contexte `DevOps` ⚡️ `DataOps` :
 
 ![img.png](static/data-testing/dataops-vs-devops.png)
 
@@ -144,4 +157,6 @@ on passe en production, et à ce moment le code est fixé ("releasé") tandis qu
 qu'il est important de monitorer et tester la qualité de sa donnée.
 
 ![img.png](img.png)
+
+
 
