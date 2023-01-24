@@ -25,14 +25,11 @@ date: 2023-01-18
 
 Les tests des pipelines de données sont différents des tests d'autres applications, comme le backend d'un site web.
 
-Il y a une dualité de tests dans un contexte data, les tests sur la donnée et sur le code :
+Il y a une dualité de tests dans un contexte data; les tests sur la `donnée` ⚡️ sur le `code` :
 + Les tests de qualité de données ont pour rôle de : 
   + Détecter des anomalies 
   + Signaler des valeurs de données aberrantes.
 + Les tests sur le code assurent la qualité logicielle minimale, ces différents types de tests sont représentés ci-desous
- 
-![img.png](static/data-testing/pyramide-test.png)
-https://jaayap.github.io/Unity_Best_Practices/Fr/Unit_Test_And_TDD.html
 
 ## Table des matières
 
@@ -107,56 +104,54 @@ Dans l'analyse de données, il y a deux façons courantes d'être embarrassé pr
 Et pour éviter ces problèmes nous allons introduire deux workflows clés.
 
 ### Deux Workflows clés : Le Pipeline de Valeur & Le Pipeline d'Innovation
+
 > Ces 2 workflows clés sont définis dans le livre DataOps : https://dkproduction.wpenginepowered.com/wp-content/uploads/2020/11/DK_dataops_book_2nd_edition.pdf
 
-L'analyse des données vise à extraire de la valeur des données. C'est ce que nous appelons le pipeline de valeur. 
-Le diagramme ci-dessous montre le pipeline de valeur progressant horizontalement de gauche à droite. 
-Les données entrent dans le pipeline et passent en traitement de production. La production représente la pipeline de donnée. 
+La différence entre les deux workflows :
 
-Lorsque les données sortent du pipeline, sous la sous forme d'analyses utiles, de la `valeur est créée pour l'organisation`.
+_la pipeline de valeur se situe sur l'environnement de `production` tandis que la
+pipeline d'innovation est sur une `sandboxe` (Dev)._
 
-Avant d'expliquer ces 2 workflows, regardons la différence entre une pipeline `CI/CD` dans un contexte `DevOps` ⚡️ `DataOps` :
+Pour le `pipeline de valeur`, lorsque les données en sortent sous la sous forme d'analyses utiles, de la `valeur est créée pour l'organisation`.
 
-![img.png](static/data-testing/dataops-vs-devops.png)
+Pour le `pipeline d'innovation`, il cherche à améliorer l'analyse des données en mettant en œuvre de nouvelles idées qui produisent des _"insigths"_ analytiques.
 
-Il est important de noter que l'orchestration** apparaît deux fois dans le processus DataOps illustré dans la figure ci-dessus.
+**Pourquoi introduire ces 2 concepts ?** 
 
-La première orchestration représente la **pipeline d'innovation**.
-Cetter dernière cherche à améliorer l'analyse des données en mettant en œuvre de nouvelles idées qui produisent des 
-_"insigths"_ analytiques. 
+Car on pourrait résumer la qualité de nos résultats à : 
 
-> _Exemple :_  
-> _Actuellement nous mettons à disposition les données aggrégées à la journée, et on aimerait également mettre à 
-disposition les données aggrégées par mois et par pays._
+`qualité de notre service = f(data, code)`
 
-Pendant le développement de cette pipeline, les données restent statiques mais le code changent afin de pouvoir tester 
-l'algorithm sans avoir d'effets de bords provenant de la donnée.
+![img_1.png](static/data-testing/data-quality-fonction.png)
 
-Sur le schéma ci-dessus, la deuxième orchestration représente la **pipeline de valeur**.  
-Elle est une copie de la pipeline d'innovation dans l'environnement de production.  
-Cette pipeline de donnée traite les données de production qui sont mises à jours à differentes fréquences, mais
-le code reste constant.
+Le pipeline de valeur ( pipeline en production ) traite les données de production qui sont mises à jours à differentes fréquences, mais le code reste constant ( fixé / releasé ).   
+➡️ Code constant mais donnée variable 
 
-> ⚠️ Le pire scénario dans cette pipeline de valeur est de recevoir des données de mauvaise qualité. C'est pour ça qu'il faut
-implémenté des tests de données.
+> ⚠️ Le pire scénario dans ce pipeline de valeur est de recevoir des données de mauvaise qualité. 
 
+Le pipeline d'innovation, la donnée est controlée / stable pour éviter les effets de bords pendant les développements.
+Par contre le code sera modifié régulièrement durant cette phase pour arriver à la qualité et au fonctionnement 
+souhaité.  
+➡️ Code variable mais donnée constante (fixée). 
 
+> ⚠️ Le pire scénario dans ce pipeline d'innovation est d'introduire des régressions dans les changements du système 
+> (code). 
 
+Il y aura une dualité sur les tests : 
++ En production, on retrouvera les tests de données et monitoring
++ En développement, on retrouvera les tests unitaires, fonctionnels, performances ...
+
+![dualité de tests](./static/data-testing/dualite-tests.png)
+
+Pour le pipeline d'innovation il est important de mettre en place une stratégie de tests, afin de valider le système et
+de nous assurer de ne pas faire de régressions dans de futurs changements.
+
+Les tests que nous pouvons mettre en place : 
  
-> 💡 **L'orchestration est un composant logiciel qui contrôle l'exécution d'une pipeline de donnée en gérant les exceptions.
+ 
+![img.png](static/data-testing/pyramide-test.png)
+https://jaayap.github.io/Unity_Best_Practices/Fr/Unit_Test_And_TDD.html
 
-![img.png](static/data-testing/value-pipeline-vs-d-innovation-pipeline.png)
-
-Sur le schéma ci-dessus est représenté horizontallement la pipeline de valeur et verticalement la pipeline d'innovation.
-
-Ce qui est important à comprendre c'est pendant le développement d'une nouvelle/modification d'étape dans une pipeline data, la
-donnée est fixée / stable. Tandis que le code va être modifier régulièrement durant cette phase pour arriver au
-fonctionnement souhaité et à la qualité souhaitée. Il est important durant cette phase de mettre en place des tests sur 
-le code. Ces tests peuvent être unitaire, intégration, e2e, sécurité, charge ... Une fois que le développement est terminé
-on passe en production, et à ce moment le code est fixé ("releasé") tandis que la donnée est mise à jour. C'est dans cette phase
-qu'il est important de monitorer et tester la qualité de sa donnée.
-
-![img.png](img.png)
-
+Pour le pipeline de valeur, il faut contrôler la donnée en entrée, en sortie et à la fin de chaque étapes de traitements.
 
 
