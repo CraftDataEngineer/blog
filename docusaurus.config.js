@@ -6,7 +6,7 @@ module.exports = {
     },
     title: 'Data Guru',
     tagline: 'Améliorez vos compétences grâce à nos formations animées par des consultants-formateurs expérimentés. Chez Data Guru, notre objectif est de vous délivrer des formations de "qualité artisanale" avec des professeurs experts dans chaque domaine',
-    url: 'https://dataguru.fr/',
+    url: 'https://www.dataguru.fr',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
@@ -51,12 +51,6 @@ module.exports = {
                     to: '/',
                     activeBasePath: 'accueil',
                     label: "ACCUEIL",
-                    position: 'right',
-                },
-                {
-                    to: 'bootcamp/',
-                    activeBasePath: 'docs',
-                    label: "BOOTCAMP",
                     position: 'right',
                 },
                 {
