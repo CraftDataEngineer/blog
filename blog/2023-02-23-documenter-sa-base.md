@@ -10,7 +10,7 @@ date: 2023-02-23
 + Analyseur de métadonnées pour documenter notre SGBD 
 + Comment industrialiser sa documentation
 
-![img.png](static/doc-data/spyschema_metada_analyzer.png)
+![img.png](static/doc-data/schemaspy_acceuil.png)
 
 
 <!--truncate-->
@@ -38,18 +38,17 @@ La **documentation** d'une base de données est importante pour plusieurs raison
 
 ------------
 
-## Les commentaire sur les objets de base de données
+## Les commentaires sur les objets de base de données
 
 
 Les commentaires sur les objets de base de données sont des descriptions ou des annotations que l'on peut ajouter à des 
-éléments tels que des tables, des colonnes, des vues, des procédures stockées, etc. dans une base de données.   
-Les commentaires peuvent fournir des informations supplémentaires sur l'objet, telles que son but, ses limites, 
-ses exigences, etc. Ils peuvent également aider à la compréhension du code, à la documentation et à la collaboration 
-entre les développeurs.
+éléments tels que des tables, des colonnes, des vues, des procédures stockées, etc…   
+Ils fournissent des informations supplémentaires sur l'objet, telles que son but, ses limites, 
+ses exigences, etc. Ils peuvent également aider à la compréhension du code, à la documentation et à la collaboration.   
 
 La manière de créer et de gérer des commentaires sur les objets de base de données dépend du système de gestion de base 
 de données (SGBD) utilisé. Par exemple, pour ajouter un commentaire à une table dans MySQL, vous pouvez utiliser la 
-commande ALTER TABLE suivante:
+commande ALTER TABLE :
 
 ```sql
 ALTER TABLE table_name COMMENT 'description de la table';
@@ -62,26 +61,24 @@ COMMENT ON TABLE table_name IS 'description de la table';
 ```
 
 Les commentaires sur les objets de base de données peuvent être consultés à l'aide de commandes spécifiques pour chaque
-SGBD ou à l'aide d'outils de gestion de base de données tels que : `phpMyAdmin`, `Oracle SQL Developer`, 
+SGBD ou à l'aide d'outils comme : `phpMyAdmin`, `Oracle SQL Developer`, 
 `Microsoft SQL Server Management Studio`, etc.
 
 
-## Outils de documentation de SGBD
+## Analyseur de métadonnées
 
-Utiliser un analyseur de métadonnées de base de données pour documenter notre SGBD peut être très bénéfique pour plusieurs raisons, notamment :
+Utiliser un analyseur de métadonnées pour documenter notre SGBD peut être très bénéfique pour plusieurs raisons :
 
-1. `Documentation exhaustive` : L'analyseur de métadonnées peut extraire des informations sur la structure, les relations, 
-les types de données, les index et les contraintes de la base de données. 
-Ces informations peuvent être utilisées pour générer une documentation qui fournit une image complète du schéma de la base de données.
-
+1. `Documentation exhaustive` : Il permet d'extraire des informations sur la structure, les relations,  types de données, index et contraintes de la base de données. 
+On peut utiliser ces informations, pour générer une documentation qui fournit une image complète de notre schéma.
+ 
 2. `Gain de temps` : La documentation manuelle d'une base de données peut être une tâche **chronophage**, en particulier 
 pour les bases de données **volumineuses** et **complexes**. L'utilisation d'un analyseur de métadonnées peut 
 permettre de gagner du temps et des efforts en **générant automatiquement** la documentation.
 
-3. `Précision` : L'analyseur de métadonnées peut extraire des informations précises et à jour sur la base de données, 
-garantissant que la documentation est précise et fiable.
+3. `Précision` : Il permet d'extraire des informations précises et fiables sur la base de données.
 
-4. `Standardisation` : L'utilisation d'un analyseur de métadonnées garantit que la documentation est normalisée et 
+4. `Standardisation` : Son utilisation garantit que la documentation est normalisée et 
 cohérente sur l'ensemble de la base de données, ce qui la rend plus facile à comprendre et à maintenir.
 
 5. `Communication` : La documentation générée par un analyseur de métadonnées peut être utilisée pour communiquer la 
@@ -99,7 +96,9 @@ Dans cette section, nous allons explorer comment industrialiser la génération 
 Une fois que vous avez installé `SchemaSpy` en local, vous pouvez générer de la documentation sur vos SGBDs.
 La documentation générée sera sous forme de fichiers statiques `HTML`, `CSS` et `JS`.
 
-Cependant, dans cette section, nous nous concentrerons sur la façon d'industrialiser cette documentation dans une CI. 
+> Suivre le guide d'installation : https://schemaspy.readthedocs.io/en/latest/installation.html
+
+Dans dans cette section, nous nous concentrerons sur la façon d'industrialiser cette documentation dans une `CI` 🚀. 
 
 **Avant de commencer, il est important de se poser les questions suivantes :**
 
@@ -189,10 +188,10 @@ pages:
 
 Workflow d'exécution de la pipeline : 
 
-![img.png](static/doc-data/pipeline-gitlab.png)
+![img.png](static/doc-data/pipeline_gitlab.png)
 
 Et votre documentation sera accessible : `https://username.gitlab.io/repo_name/`
 
-![img.png](static/doc-data/pages.png)
+![img.png](static/doc-data/schemaspy_relation.png)
 
 
