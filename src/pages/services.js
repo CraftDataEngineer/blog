@@ -20,17 +20,13 @@ export default function Home() {
   const {siteConfig = {}} = context;
 
     return (
-    <Layout  title="Data Guru Bootcamp" description="Rejoignez notre Bootcamp pour apprendre à développer correctement et être reconnu par vos pairs">
+    <Layout  title="Enovat Bootcamp" description="Rejoignez notre Bootcamp pour apprendre à développer correctement et être reconnu par vos pairs">
       <main>
           <BootCampHero/>
-          <BootCampCitation/>
-          <BootCampTheoriePratique />
+
           <BootCampDataEngineer />
           <BootCampContenuFormation/>
           <BootCampFormateur/>
-          <BootCampAvis/>
-          <BootCampContact/>
-          <BootCampHesitationFormation/>
           <BootCampPrix/>
       </main>
 

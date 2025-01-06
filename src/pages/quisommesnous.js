@@ -7,7 +7,7 @@ export default function Quisommesnous() {
     const context = useDocusaurusContext();
     const {siteConfig = {}} = context;
     return (
-        <Layout title="Data Guru Qui sommes-nous ?" description="Notre philisophie!">
+        <Layout title="Envoat Qui sommes-nous ?" description="Notre philisophie!">
             <main>
                 <QuiSommesNousHero/>
             </main>

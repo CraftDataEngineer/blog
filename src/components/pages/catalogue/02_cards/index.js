@@ -24,9 +24,9 @@ export default function CatalogueCards() {
                     <div className={classnames("col", styles.colContainer)}>
                         <ImgMediaCard
                             title="Formation Terraform"
-                            titleText="DevOps"
+                            titleText="Formation Terraform"
                             titleIcon={<Devops viewBox="0 -5 25 25"/>}
-                            images={[{src: Terraform, large: true, width: "90px"}]}
+                            images={[]}
                             text="Apprendre l'utilisation de Terraform pour la conception et la mise en place d'une infrastructure pour le cloud computing"
                             cardUrl="/catalogue/content/terraform"
                             badge={null}
@@ -53,7 +53,7 @@ export default function CatalogueCards() {
                             text="Connaître les concepts et les bénéfices de la démarche DevOps"
                             cardUrl="/catalogue/content/devops_basics"
                             tag={"Meilleure vente"}
-                            tagColor={"#77cc11"}
+                            tagColor={"black"}
                             badge={null}
                         />
                     </div>

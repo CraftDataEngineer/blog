@@ -62,7 +62,7 @@ export default function SyllabusForm(props) {
             <div className={classnames("container", styles.titleContainer)}>
                 <div className="row row--no-gutters ">
                     <div className="col col--7 ">
-                        <h6 className={classnames(styles.formTitle)}><span> Data Guru</span></h6>
+                        <h6 className={classnames(styles.formTitle)}><span> Enovat</span></h6>
                         <h3 className={classnames(styles.formTeaser)}>
                             <span>Télécharger le programme complet de la formation<span
                                 style={{color: "#f1bb00"}}>.</span></span>

@@ -1,12 +1,27 @@
 
 .container{
-  padding-top: 10%;
+  padding-top: 5%;
   padding-bottom: 5%;
 }
 
-.citation::before {
-  content: "« ";
+@media screen and (max-width:  996px){
+  .container{
+    padding-top: 1%;
+    padding-bottom: 5%;
+  }
 }
+
+.explain {
+  padding: 5%;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+  font-family: CircularStd-Black,Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 
 .citation {
   padding-top: 5%;
@@ -19,6 +34,11 @@
   margin-left: 5%;
   margin-right: 5%;
 }
+
+.citation::before {
+  content: "« ";
+}
+
 
 .citation::after {
   content: " »";
