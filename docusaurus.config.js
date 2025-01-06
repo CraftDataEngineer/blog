@@ -99,7 +99,7 @@ module.exports = {
                     href: '/quisommesnous',
                 },
             ],
-            copyright: `Copyright © ${new Date().getFullYear()} DB Craft, Inc.`,
+            copyright: `Copyright © ${new Date().getFullYear()} Enovat, Inc.`,
         },
     },
     customFields: {},
