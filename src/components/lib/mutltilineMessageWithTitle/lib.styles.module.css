@@ -6,9 +6,12 @@
 
 .leftPart{
   max-width: 400px;
-  background: #ffffff;
+  background: #f3f3f3;
   border-radius: 7px;
   overflow: hidden;
+  line: black;
+  border-color: black;
+  border-width: 2em;
   padding: 50px 40px 3px 45px;
 }
 

@@ -14,7 +14,7 @@ jobs:
       - name: Setup Yarn
         uses: DerYeger/yarn-setup-action@master
         with:
-          node-version: 17
+          node-version: 18
 
       - name: Build 🛠
         run: yarn build

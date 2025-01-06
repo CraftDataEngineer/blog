@@ -4,14 +4,14 @@ module.exports = {
         defaultLocale: 'fr',
         locales: ['fr'],
     },
-    title: 'Data Guru',
+    title: 'Enovat',
     tagline: 'Améliorez vos compétences grâce à nos formations animées par des consultants-formateurs expérimentés. Chez Data Guru, notre objectif est de vous délivrer des formations de "qualité artisanale" avec des professeurs experts dans chaque domaine',
-    url: 'https://www.dataguru.fr',
+    url: 'https://www.enovat.fr',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/logo.png',
-    organizationName: 'Data Guru', // Usually your GitHub org/user name.
+    organizationName: 'Enovat', // Usually your GitHub org/user name.
     projectName: 'blog', // Usually your repo name.
     themeConfig: {
         announcementBar: {
@@ -38,7 +38,7 @@ module.exports = {
 
             //... other Algolia params
         },
-        metadata: [{name: 'keywords', content: 'data, engineer'}, {name: 'keywords', content: 'dataguru, data guru , Data guru'}],
+        metadata: [{name: 'keywords', content: 'devops, kubernetes'}, {name: 'keywords', content: 'dataguru, data guru , Data guru'}],
         navbar: {
             logo: {
                 alt: 'My Site Logo',
@@ -51,6 +51,12 @@ module.exports = {
                     to: '/',
                     activeBasePath: 'accueil',
                     label: "ACCUEIL",
+                    position: 'right',
+                },
+                {
+                    to: 'services/',
+                    activeBasePath: 'docs',
+                    label: "SERVICES",
                     position: 'right',
                 },
                 {
@@ -93,7 +99,7 @@ module.exports = {
                     href: '/quisommesnous',
                 },
             ],
-            copyright: `Copyright © ${new Date().getFullYear()} Data Guru, Inc.`,
+            copyright: `Copyright © ${new Date().getFullYear()} DB Craft, Inc.`,
         },
     },
     customFields: {},

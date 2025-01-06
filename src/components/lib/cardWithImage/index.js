@@ -35,12 +35,6 @@ export default function cardWithImage({
                         <div>
                             <div>{titleIcon}</div>
                             <h6>{titleText}</h6>
-                            <h2>{images.map(image => <img key="2" alt="" src={image.src}
-                                                          style={{
-                                                              width: image.width !== undefined ? image.width : undefined,
-                                                              height: image.height !== undefined ? image.height : undefined
-                                                          }}
-                                                          className={image.large ? styles.largeIcon : styles.smallIcon}/>)} </h2>
                         </div>
                         <div>
                             <h3> {title}</h3>

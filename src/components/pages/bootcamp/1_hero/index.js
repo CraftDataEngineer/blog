@@ -1,6 +1,6 @@
 import React from "react";
 import stylesModule from './styles.module.css';
-import YourSvg from '../../../../../static/img/header/img.png';
+import YourSvg from '../../../../../static/img/header/offres_header.png';
 import classnames from "classnames";
 import {Button, Chip, Stack} from "@mui/material";
 import DownloadIcon from '@mui/icons-material/Download';
@@ -25,14 +25,11 @@ function BootCampHero() {
 
     const shouldRender = windowSize === 'mobile';
 
-    console.log("heeeeere")
-    console.log(windowSize)
-
     return (
         <header className={classnames('hero hero--primary headTest', stylesModule.heroSection)}>
             <div className="container">
                 <TextLeftImageRight
-                    title={"Bootcamp Data Engineer"}
+                    title={"Nos offres"}
                     description={
                         <Stack
                             direction="column"

@@ -16,17 +16,17 @@ export default function LandingPageHero() {
         <header className={classnames('hero hero--primary headTest', stylesModule.heroSection)}>
             <div className="container">
                 <TextLeftImageRight
-                    title={"Data Guru"}
+                    title={"Enovat"}
                     titleStyle={stylesModule.titleStyle}
                     descriptionStyle={stylesModule.descriptionStyle}
                     description={
                         <div>
                             <div>
                                 <div className={stylesModule.surligne}>
+                                    Faites progresser vos compétences et vos projets grâce à une équipe de <b>passionnés</b> !
 
-                                    Améliorez vos compétences grâce à nos formations dispensées par des <b>consultants formateurs expérimentés</b>.
-                                    Chez Data Guru, nous mettons tout en oeuvre pour être au plus près de vos besoins en vous offrant
-                                    des formations de <b>qualité artisanale</b> avec des professeurs experts dans chaque domaine !
+                                    Nous vous accompagnons avec une approche sur mesure : des formations
+                                    d'<b>excellence</b> et un conseil stratégique assuré par des <b>experts</b> dans leur domaine.
                                 </div>
                             </div>
                         </div>
@@ -36,13 +36,13 @@ export default function LandingPageHero() {
                 <div className={stylesModule.seperator}/>
                 <ThreeItemsAlignedHorizontally
 
-                    firstItem={<ImageWithMessageBelow icon={<CastForEducationIcon/>} label={"Formation Hybride"} headline={"Session en présentiel ou distanciel"}/>}
+                    firstItem={<ImageWithMessageBelow icon={<CastForEducationIcon/>} label={"Formations"} headline={"Des formations adaptées à vos besoins et personnalisables."}/>}
 
-                    secondItem={<ImageWithMessageBelow icon={<PeopleOutlineIcon/>} label={"Formateurs"}
-                                                 headline={"Des experts qui opèrent sur le terrain"}/>}
+                    secondItem={<ImageWithMessageBelow icon={<PeopleOutlineIcon/>} label={"Experts"}
+                                                 headline={"Des professionnels animés par la passion de leur métier"}/>}
 
                     thirdItem={<ImageWithMessageBelow icon={<PsychologyIcon/>} label={"Qualité"}
-                                                headline={"Des parcours pédagogiques bien pensés"}/>}
+                                                headline={"Au cœur de nos priorités et guide chacune de nos actions."}/>}
                 />
             </div>
         </header>

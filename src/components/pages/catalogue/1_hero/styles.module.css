@@ -1,39 +1,84 @@
-.title {
-  margin-top: 5%;
-  font-weight: 900;
-  line-height: 4rem;
-  font-size: 5rem;
-  line-break: loose;
-  letter-spacing: -.025em;
-  display: block;
-  --tw-text-opacity: 1;
-  tab-size: 4;
-  text-align: center;
-  text-transform: capitalize;
+.heroSection {
+  padding-top: 5%;
+  padding-bottom: 0;
+  position: relative;
+  overflow: hidden;
   color: black;
-  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #ffffff;
+  background-position: center;
 }
 
-
-.point {
-  color :  #f1bb00
+.image {
+  height: 110%;
+  width: 100%;
+  margin-top: 5%;
 }
 
-.description {
-  text-align: center;
-  font-size: 1.3em;
-  font-style: normal;
-  font-weight: 300;
-  color: grey;
-  font-family: CircularStd-Book,Graphik Web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+.seperator {
+  height: 5rem;
 }
 
-@media screen and (max-width:  935px){
-
-  .title {
+@media screen and (max-width:  996px){
+  .heroSection {
     text-align: center;
-    font-size: 3rem;
-    line-height: 3rem;
+    background: white;
+    padding-bottom: 0;
   }
 
+  .seperator {
+    display: none;
+  }
 }
+
+
+
+.surligne strong {
+  position: relative;
+  font-weight: inherit;
+  background-color: #ffffe0;
+}
+
+.surligne strong::before {
+  content: "";
+  background-image: url("../../../../../static/img/header/surligner-left.svg");
+  position: absolute;
+  left: -6px;
+  top: 0;
+  width: 7px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+@media screen and (max-width:  768px){
+  .surligne strong::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width:  320px){
+  .surligne strong::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width:  996px){
+  .displayMobile {
+    display: None;
+  }
+}
+
+.buttonDownload {
+  margin-top: 10%;
+}
+
+@media screen and (max-width:  996px){
+  .buttonDownload {
+    margin-top: 5%;
+  }
+}
+
+

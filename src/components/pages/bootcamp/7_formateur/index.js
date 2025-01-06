@@ -29,26 +29,11 @@ export default function BootCampFormateur() {
             </div>
             <div className={classnames("container")}>
                 <h6 className={classnames(styles.formateurTitle)}><span>Formateurs</span></h6>
-                <h3 className={classnames(styles.formateurTeaser)}><span>On partage avec vous notre experience <span
-                    style={{color: "#f1bb00"}}>.</span></span></h3>
+                <h3 className={classnames(styles.formateurTeaser)}><span>Pourquoi Enovat <span
+                    style={{color: "#f1bb00"}}>?</span></span></h3>
             </div>
             <div className={classnames(styles.gridContainer)}>
-                <div className={classnames(styles.featureAvatar)}>
-                    <div className="avatar" style={{paddingLeft: "auto", paddingRight: "auto", display: "block"}}>
-                        <IconButton  color="primary" href={sbeLinkedinUrl}  >
-                            <LinkedInIcon />
-                        </IconButton>
-                        <img
-                            className={classnames(styles.photo)}
-                            src={sbe}/>
-                        <img
-                            className={classnames(styles.photo)}
-                            src={loca}/>
-                        <IconButton  color="primary" href={locaLinkedinUrl} >
-                            <LinkedInIcon  />
-                        </IconButton>
-                    </div>
-                </div>
+
                 <div className={classnames("row")}>
                     <div className={classnames("col ")}>
                         <p className={classnames(styles.formateurDescription)}>
