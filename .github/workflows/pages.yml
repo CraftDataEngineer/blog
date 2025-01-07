@@ -19,6 +19,9 @@ jobs:
         with:
           node-version: 17
 
+      - name: Install 🛠
+        run: npm install
+
       - name: Build 🛠
         run: NODE_OPTIONS=--openssl-legacy-provider npm run build
 
