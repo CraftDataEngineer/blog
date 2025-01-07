@@ -9,7 +9,7 @@ import ComputerIcon from '@mui/icons-material/Computer';
 import StorageIcon from '@mui/icons-material/Storage';
 import PeopleIcon from '@mui/icons-material/People';
 import SchoolIcon from '@mui/icons-material/School';
-import MovingIcon from '@mui/icons-material/Moving';
+import AllInclusiveIcon from '@mui/icons-material/AllInclusive';
 import EuroIcon from '@mui/icons-material/Euro';
 import FilterDramaIcon from '@mui/icons-material/FilterDrama';
 import CloudSyncIcon from '@mui/icons-material/CloudSync';
@@ -41,11 +41,11 @@ export default function LandingPageOffre() {
                                             </h3>
                                         </div>
                     <div className="row ">
-                        <div className={classnames("col")}>
+                        <div className={classnames("col", styles.screenDisplay)}>
                             <MutltilineMessageWithTitle title="DevOps"
                                                         items={[
                                                             {
-                                                                icon: <MovingIcon viewBox="2 -4 24 24"/>,
+                                                                icon: <AllInclusiveIcon viewBox="0 -5 24 24"/>,
                                                                 title: "Devops",
                                                                 text: "Profitez de notre expertise et adoptez les meilleures pratiques pour augmenter votre time to market et garantir la qualité de vos livrables."
                                                             },
@@ -63,7 +63,7 @@ export default function LandingPageOffre() {
                                                         minHeight="31rem"
                             />
                         </div>
-                        <div className={classnames("col")}>
+                        <div className={classnames("col", styles.screenDisplay)}>
                             <MutltilineMessageWithTitle title="Cloud"
                                                         items={[
                                                             {
@@ -87,29 +87,49 @@ export default function LandingPageOffre() {
                                                         minHeight="31rem"
                             />
                         </div>
-                        <div className="col">
-                                                        <MutltilineMessageWithTitle title="Data & IA"
-                                                                                    items={[
-                                                                                        {
-                                                                                            icon: <StorageIcon viewBox="0 -4.2 24 24"/>,
-                                                                                            title: "Data",
-                                                                                            text: "Bénéficiez de notre experience sur le cloud pour des construire architectures flexibles, évolutives, et securisées."
-
-
-                                                                                        },
-                                                                                        {
-                                                                                            icon: <SmartToyIcon viewBox="2 -4 24 24"/>,
-                                                                                            title: "Intelligence artificielle",
-                                                                                            text: "Nous vous accompagnons dans le déploiement de vos solutions, qu’il s’agisse de cloud publique, privé ou hybride."
-                                                                                        },
-                                                                                        {
-                                                                                            icon: <PrecisionManufacturingIcon viewBox="2 -3 24 24"/>,
-                                                                                            title: "MLOPS",
-                                                                                            text: "Nous vous aidons à mettre en place une stratégie FinOps efficace pour optimiser vos coûts cloud."
-                                                                                        },
-                                                                                    ]}
-                                                                                    minHeight="31rem"
-                                                        />
+                        <div className={classnames("col", styles.screenDisplay)}>
+                            <MutltilineMessageWithTitle title="Data & IA"
+                                                        items={[
+                                                            {
+                                                                icon: <StorageIcon viewBox="0 -4.2 24 24"/>,
+                                                                title: "Data",
+                                                                text: "Bénéficiez de notre experience sur le cloud pour des construire architectures flexibles, évolutives, et securisées."
+                                                            },
+                                                            {
+                                                                icon: <SmartToyIcon viewBox="2 -4 24 24"/>,
+                                                                title: "Intelligence artificielle",
+                                                                text: "Nous vous accompagnons dans le déploiement de vos solutions, qu’il s’agisse de cloud publique, privé ou hybride."
+                                                            },
+                                                            {
+                                                                icon: <PrecisionManufacturingIcon viewBox="2 -3 24 24"/>,
+                                                                title: "MLOPS",
+                                                                text: "Nous vous aidons à mettre en place une stratégie FinOps efficace pour optimiser vos coûts cloud."
+                                                            },
+                                                        ]}
+                                                        minHeight="31rem"
+                            />
+                        </div>
+                        <div className={classnames("col", styles.mobileDisplay)}>
+                            <MutltilineMessageWithTitle
+                                                        items={[
+                                                            {
+                                                                icon: <AllInclusiveIcon viewBox="0 -5 24 24"/>,
+                                                                title: "Devops",
+                                                                text: "Profitez de notre expertise et adoptez les meilleures pratiques pour augmenter votre time to market et garantir la qualité de vos livrables."
+                                                            },
+                                                           {
+                                                               icon: <FilterDramaIcon viewBox="0 -4.2 24 24"/>,
+                                                               title: "Cloud",
+                                                               text: "Bénéficiez de notre experience sur le cloud pour des construire architectures flexibles, évolutives, et securisées."
+                                                           },
+                                                            {
+                                                                icon: <PrecisionManufacturingIcon viewBox="2 -3 24 24"/>,
+                                                                title: "Data & IA",
+                                                                text: "Nous vous aidons à mettre en place une stratégie FinOps efficace pour optimiser vos coûts cloud."
+                                                            },
+                                                        ]}
+                                                        minHeight="31rem"
+                            />
                         </div>
                     </div>
 

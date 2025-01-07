@@ -10,7 +10,7 @@ module.exports = {
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
-    favicon: 'img/logo.png',
+    favicon: 'img/favicon.ico',
     organizationName: 'Enovat', // Usually your GitHub org/user name.
     projectName: 'blog', // Usually your repo name.
     themeConfig: {

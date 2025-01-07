@@ -7,7 +7,7 @@ export default function MutltilineMessageWithTitle({title, items,minHeight = "35
 
     return (
         <div className={stylesModule.leftPart}>
-            <h3 className={classnames(stylesModule.title)}> {title} </h3>
+            { title != null && <h3 className={classnames(stylesModule.title)}> {title} </h3> }
             <ul style={{minHeight :minHeight}}>
                 {items.map(item =>
                     <li key={item.title}>

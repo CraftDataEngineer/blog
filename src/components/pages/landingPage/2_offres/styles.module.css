@@ -73,8 +73,24 @@
 
 @media screen and (max-width:  996px) {
 
+  .screenDisplay {
+   display : none;
+  }
 
   .enrollTeaser {
     font-size: 2.5rem;
   }
+}
+
+
+
+
+
+
+@media screen and (min-width:  997px) {
+  .mobileDisplay {
+   margin-top : 10px;
+    display:none;
+  }
+
 }
