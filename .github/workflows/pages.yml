@@ -13,13 +13,13 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Yarn
-        uses: DerYeger/yarn-setup-action@master
+      - name: Setup Npm
+        uses: actions/setup-node@v4
         with:
           node-version: 17
 
       - name: Build 🛠
-        run: yarn build
+        run: NODE_OPTIONS=--openssl-legacy-provider npm run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.5
