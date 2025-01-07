@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.enovat.fr/blog"/>
     <subtitle>Enovat Blog</subtitle>
-    <icon>https://www.enovat.fr/img/logo.png</icon>
+    <icon>https://www.enovat.fr/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Documenter sa base de donnée]]></title>
         <id>/2023/02/23/documenter-sa-base</id>

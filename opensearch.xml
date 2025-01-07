@@ -4,7 +4,7 @@
   <ShortName>Enovat</ShortName>
   <Description>Search Enovat</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://www.enovat.fr/img/logo.png</Image>
+  <Image width="16" height="16" type="image/x-icon">https://www.enovat.fr/img/favicon.ico</Image>
   <Url type="text/html" method="get" template="https://www.enovat.fr/search?q={searchTerms}"/>
   <Url type="application/opensearchdescription+xml" rel="self" template="https://www.enovat.fr/opensearch.xml" />
   <moz:SearchForm>https://www.enovat.fr/</moz:SearchForm>
