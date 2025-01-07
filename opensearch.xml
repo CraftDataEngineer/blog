@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
                        xmlns:moz="http://www.mozilla.org/2006/browser/search/">
-  <ShortName>Data Guru</ShortName>
-  <Description>Search Data Guru</Description>
+  <ShortName>Enovat</ShortName>
+  <Description>Search Enovat</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://www.dataguru.fr/img/logo.png</Image>
-  <Url type="text/html" method="get" template="https://www.dataguru.fr/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://www.dataguru.fr/opensearch.xml" />
-  <moz:SearchForm>https://www.dataguru.fr/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://www.enovat.fr/img/logo.png</Image>
+  <Url type="text/html" method="get" template="https://www.enovat.fr/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://www.enovat.fr/opensearch.xml" />
+  <moz:SearchForm>https://www.enovat.fr/</moz:SearchForm>
 </OpenSearchDescription>
