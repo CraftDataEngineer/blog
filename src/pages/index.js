@@ -11,7 +11,7 @@ import LandingPageProduits from "../components/pages/landingPage/4_produits";
 import LandingPageAvis from "../components/pages/landingPage/5_avis";
 import LandingPageContact from "../components/pages/landingPage/6_contact";
 import LandingPageNous from "../components/pages/landingPage/6_nous";
-import BootCampFormateur from "../components/pages/bootcamp/7_formateur";
+import NosVictoires from "../components/pages/landingPage/7_nos_victoires";
 
 export default function Home() {
   const context = useDocusaurusContext();
@@ -28,7 +28,7 @@ export default function Home() {
           <LandingPageProduits/>
           <LandingPageAvis/>
           <LandingPageNous/>
-          <BootCampFormateur/>
+          <NosVictoires/>
           <LandingPageContact/>
       </main>
 

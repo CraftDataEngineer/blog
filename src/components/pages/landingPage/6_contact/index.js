@@ -16,24 +16,23 @@ import StartIcon from '@mui/icons-material/Start';
 
 const steps = [
     {
-        label: 'Quelles connaissances faut il avoir ?',
-        description: `On demande à nos futurs élèves des connaissances basiques en programmation et en système Linux.
-        Vous devez savoir interagir avec du code pour le bon déroulé du bootcamp.`,
+        label: 'Vous avez besoin d’aide sur un projet ?',
+        description: `Nous mettons à votre disposition notre expertise pour vous accompagner à chaque étape de votre projet. Que ce soit pour définir une stratégie, résoudre des défis techniques, ou garantir un déploiement réussi, nos experts vous apportent des solutions adaptées à vos besoins.`,
         icon : PlaylistAddCheckIcon
     },
     {
-        label: 'Vous n’avez jamais fait de code avant ?',
+        label: "Vous avez besoin d'une formation ?",
         description:
-            'Pas de souci, on a créé une formation en 5 jours pour vous aider à gagner en confiance sur du code python, linux et sql.',
+            'Enovat propose des formations sur mesure, conçues pour répondre précisément à vos besoins et à vos objectifs. Chaque formation est pensée pour être engageante, immersive et directement applicable à vos projets.',
         icon : EmojiObjectsIcon,
-        button : "Découvrir",
-        buttonUrl : "/catalogue/content/dataengineer_basics",
+        button : "Découvrez notre catalogue",
+        buttonUrl : "/catalogue",
         buttonColor : "#f1bb00",
         buttonIcon : StartIcon,
     },
     {
         label: 'Vous avez un doute ?',
-        description: `Contactez-nous, nous pourrons faire une évaluation ensemble et voir ce qui vous correspond le mieux.`,
+        description: `N’hésitez pas à nous contacter pour discuter de vos objectifs et trouver la meilleure façon de les atteindre.`,
         icon : PermPhoneMsgIcon,
         button : "Nous Contacter",
         buttonUrl : "/contact/",
@@ -49,7 +48,7 @@ export default function LandingPageContact() {
                  <div className="col col--1"/>
                  <div className="col col--12">
                      <h3 className={classnames(styles.titleStyle)}>
-                         <span>Un programme fait pour moi </span>
+                         <span>Comment Enovat peut vous accompagner </span>
                          <span className={classnames(styles.point)}> ?</span>
                      </h3>
                      <Box className={styles.boxContainer}>
@@ -67,6 +66,7 @@ export default function LandingPageContact() {
                                                          style={{
                                                              backgroundColor: step.buttonColor,
                                                              borderColor: "transparent",
+                                                             fontWeight: "bold"
                                                          }}>
                                                      {step.button}
                                                  </Button>

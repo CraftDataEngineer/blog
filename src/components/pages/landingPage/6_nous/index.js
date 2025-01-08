@@ -18,9 +18,9 @@ export default function LandingPageNous() {
                         <div>
                             <div>
                                 <div>
-                                    Nous avons la conviction que pour apprendre, il faut pratiquer !
-                                    C'est pourquoi, nous vous proposons une formation <b>équilibrée</b> entre <b>théorie</b>
-                                    , <b>pratique</b> et <b>études de cas</b> pour le meilleur accompagnement <b>personnalisé</b> et <b>immersif</b>.
+                                    Nous avons la conviction que pour apprendre, <b>il faut pratiquer ! </b>
+                                    Notre objectif est de vous aider à grandir, à développer vos compétences et à vous approprier durablement les produits que nous mettons en place ensemble.
+                                    <b> Avec Enovat</b>, vous ne recevez pas seulement une solution, vous en devenez l’acteur principal, prêt à relever vos futurs défis en toute autonomie.
                                 </div>
                             </div>
                         </div>

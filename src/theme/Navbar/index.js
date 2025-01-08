@@ -274,10 +274,9 @@ export default function Navbar() {
                             onChange={colorModeToggle.toggle}
                         />
                     )}
-                    <Link to="/RendezVous/">
+                    <Link to="/contact/">
                         <button
-                            className={classnames("button button--outline button--warning", styles.navbarItem)}>Prendre
-                            rendez-vous
+                            className={classnames("button button--outline button--warning", styles.navbarItem)}>Nous contacter
                         </button>
                     </Link>
 

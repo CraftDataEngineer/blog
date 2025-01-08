@@ -18,12 +18,9 @@ export default function LandingPageMethodo() {
                     description={
                         <div>
                             <div>
-                                <div>
-                                    Nous avons la conviction que pour apprendre, il faut pratiquer !
-                                    C'est pourquoi, nous vous proposons une formation <b>équilibrée</b> entre <b>théorie</b>
-                                    , <b>pratique</b> et <b>études de cas</b> pour le meilleur accompagnement <b>personnalisé</b> et <b>immersif</b>.
-                                </div>
+                                <div>  Chez <b>Enovat</b>, nos formations personnalisées combinent <b>théorie</b>, <b>pratique</b> et cas concrets pour garantir une maîtrise durable des compétences clés. Nos <b>experts</b> vous accompagnent avec des solutions adaptées à vos contraintes organisationnelles et techniques. Que ce soit pour le DevOps, le cloud ou l’intelligence artificielle, nous proposons des approches parfaitement alignées avec vos besoins.  </div>
                             </div>
+
                         </div>
                     }
                     imageSrc={YourSvg}

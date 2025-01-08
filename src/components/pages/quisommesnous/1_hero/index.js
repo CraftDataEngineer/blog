@@ -14,7 +14,7 @@ export default function QuiSommesNousHero() {
                         <span className={classnames(stylesModule.point)}>?</span>
                     </h3>
                     <div className={classnames(stylesModule.description)}>
-                        Enovat est le fruit de l'association de deux passionnés.  Soucieux des bonnes pratiques de développement, nous avons accompagné plusieurs grands comptes sur la conception de plateformes de données et sur l'utilisation des méthodes de collaboration en agile.
+                        Enovat est le fruit de l'association de passionnés.  Soucieux des bonnes pratiques de développement, nous avons accompagné plusieurs grands comptes sur la conception de plateformes de données et sur l'utilisation des méthodes de collaboration en agile.
                     </div>
                 </div>
                 <div className={stylesModule.seperator}/>
@@ -24,7 +24,7 @@ export default function QuiSommesNousHero() {
                         <span className={classnames(stylesModule.point)}>.</span>
                     </h3>
                     <div className={classnames(stylesModule.description)}>
-                        La volonté de Enovat est le partage des connaissances et l’expertise sur les sujets data. Équiper les futurs développeurs de demain avec des connaissances solides en programmation et en Big Data.
+                        Notre objectif est de vous aider à grandir, à développer vos compétences et à vous approprier durablement les produits que nous mettons en place ensemble. Avec Enovat, vous ne recevez pas seulement une solution, vous en devenez l’acteur principal, prêt à relever vos futurs défis en toute autonomie.
                     </div>
                 </div>
             </div>

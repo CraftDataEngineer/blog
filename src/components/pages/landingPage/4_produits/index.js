@@ -14,7 +14,7 @@ export default function LandingPageProduits() {
         <div className={classnames("container", stylesModule.localcontainer)}>
             <ThreeItemsAlignedHorizontally
                 firstItem={<MutltilineMessageWithImage title="Conseil"
-                                                       image={Bootcamp}  headline="Développer de nouvelles compétences solides et durables pour lancer votre carrière en participant à notre Bootcamp."
+                                                       image={Bootcamp}  headline="Bénéficiez de l'accompagnement de nos experts pour construire des solutions sur mesure, avec un time to market optimisé et la garantie de la qualité de chaque livrable."
                                                        action={<a
                                                            className="button button--warning button--outline"
                                                            href={"/bootcamp"}>DÉCOUVRIR </a>}
@@ -24,7 +24,7 @@ export default function LandingPageProduits() {
 
                 secondItem={<MutltilineMessageWithImage title="Formations"
                                                         image={Formations}
-                                                        headline="Nous vous aidons à développer vos compétences numériques grâce à un catalogue complet de formations."
+                                                        headline="Nous vous accompagnons dans le développement de vos compétences en vous proposant un catalogue complet de formations adaptées à vos besoins."
 
                                                         action={<a className="button button--warning button--outline"
                                                                    href={"/catalogue"}>DÉCOUVRIR </a>}

@@ -93,7 +93,7 @@ export default function LandingPageOffre() {
                                                             {
                                                                 icon: <StorageIcon viewBox="0 -4.2 24 24"/>,
                                                                 title: "Data",
-                                                                text: "Bénéficiez de notre experience sur le cloud pour des construire architectures flexibles, évolutives, et securisées."
+                                                                text: "Exploitez le potentiel de vos données et de l'intelligence artificielle pour optimiser vos processus et innover."
                                                             },
                                                             {
                                                                 icon: <SmartToyIcon viewBox="2 -4 24 24"/>,
@@ -125,7 +125,7 @@ export default function LandingPageOffre() {
                                                             {
                                                                 icon: <PrecisionManufacturingIcon viewBox="2 -3 24 24"/>,
                                                                 title: "Data & IA",
-                                                                text: "Nous vous aidons à mettre en place une stratégie FinOps efficace pour optimiser vos coûts cloud."
+                                                                text: "Exploitez le potentiel de vos données et de l'intelligence artificielle pour optimiser vos processus et innover."
                                                             },
                                                         ]}
                                                         minHeight="31rem"
