@@ -1,6 +1,6 @@
 .heroSection {
   padding-top: 5%;
-  padding-bottom: 0;
+  padding-bottom: 5%;
   position: relative;
   overflow: hidden;
   color: black;
@@ -24,7 +24,7 @@
   .heroSection {
     text-align: center;
     background: white;
-    padding-bottom: 0;
+    padding-bottom: 10%;
   }
 
   .seperator {

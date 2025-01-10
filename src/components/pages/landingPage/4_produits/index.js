@@ -17,7 +17,7 @@ export default function LandingPageProduits() {
                                                        image={Bootcamp}  headline="Bénéficiez de l'accompagnement de nos experts pour construire des solutions sur mesure, avec un time to market optimisé et la garantie de la qualité de chaque livrable."
                                                        action={<a
                                                            className="button button--warning button--outline"
-                                                           href={"/bootcamp"}>DÉCOUVRIR </a>}
+                                                           href={"/services"}>DÉCOUVRIR </a>}
 
                 />}
 

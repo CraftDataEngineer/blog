@@ -9,17 +9,15 @@ export default function CatalogueCitation() {
     return (
             <div className={classnames("container" ,stylesModule.container)} >
                 <div className={stylesModule.explain}>
-                    Pour vous distinguer, il ne suffit pas de savoir développer ...
+                    La compréhension est la clé pour surmonter les défis et les incertitudes.
                 </div>
                 <div className={stylesModule.citation}>
-                    N'importe quel fou peut écrire du code qu'un ordinateur peut comprendre. Les bons programmeurs écrivent du code que les humains peuvent comprendre.
-                </div>
+Rien dans la vie n’est à craindre, tout doit être compris. C’est maintenant le moment de comprendre davantage, afin de craindre moins.                </div>
                 <div className={stylesModule.cite}  >
-                    <cite >Martin Fowler</cite>
+                    <cite >Marie Curie</cite>
                 </div>
                     <div className={stylesModule.explain}>
-                        Qualité et  bonnes pratiques, voilà ce qui va vous différencier !
-                    </div>
+                C’est en développant nos compétences et en adoptant les bonnes pratiques que nous transformons les défis technologiques en opportunités                     </div>
             </div>
     );
 }

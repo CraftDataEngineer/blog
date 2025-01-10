@@ -25,7 +25,7 @@ const steps = [
         description:
             'Enovat propose des formations sur mesure, conçues pour répondre précisément à vos besoins et à vos objectifs. Chaque formation est pensée pour être engageante, immersive et directement applicable à vos projets.',
         icon : EmojiObjectsIcon,
-        button : "Découvrez notre catalogue",
+        button : "Notre catalogue",
         buttonUrl : "/catalogue",
         buttonColor : "#f1bb00",
         buttonIcon : StartIcon,

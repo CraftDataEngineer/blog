@@ -33,8 +33,7 @@ function CatalogueHero() {
                             <div>
                                 <div className={stylesModule.surligne}>
 
-                                    Rejoignez notre Bootcamp pour apprendre à développer correctement et être reconnu par vos pairs ! Notre objectif est de vous former à la vie réelle, se concentrer sur l’essentiel et apprendre en pratiquant.
-                                </div>
+Découvrez un catalogue complet de formations adaptées à vos besoins, alliant théorie, pratique et études de cas concrets. Que vous soyez débutant ou expert, nos programmes sont conçus pour vous accompagner à chaque étape de votre montée en compétences.                                </div>
                             </div>
                         </Stack>
                     }

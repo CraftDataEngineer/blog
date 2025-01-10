@@ -185,10 +185,9 @@ function NavbarMobileSidebar({sidebarShown, toggleSidebar}) {
                             <NavbarItem mobile {...item} onClick={toggleSidebar} key={i}/>
                         ))}
                     </ul>
-                    <Link to="/RendezVous/">
+                    <Link to="/contact/">
                         <button
-                            className={classnames("button button--outline button--warning", styles.leftNavbarItem)}>Prendre
-                            rendez-vous
+                            className={classnames("button button--outline button--warning", styles.leftNavbarItem)}>Nous contacter
                         </button>
                     </Link>
                 </div>
