@@ -18,10 +18,10 @@
     <g transform="translate(56.203695148795305 135.37503229645517) rotate(0 69.11669173963037 23.910639304520373)">
         <text x="69.11669173963001" y="33.82127860904131" font-family="Virgil, Segoe UI Emoji"
               font-size="37.43222078622376px" fill="#ffff" text-anchor="middle" style="white-space: pre;"
-              direction="ltr">Théorie</text>
+              direction="ltr">DEV</text>
     </g>
     <g transform="translate(304.8050141988497 132.9818739251732) rotate(0 85.69143270591303 22.734461738303253)">
-        <text x="85.69143270591343" y="31.468923476607138" font-family="Virgil, Segoe UI Emoji" font-size="36.1666234773311px" fill="#ffff" text-anchor="middle" style="white-space: pre;" direction="ltr">Pratique</text>
+        <text x="85.69143270591343" y="31.468923476607138" font-family="Virgil, Segoe UI Emoji" font-size="36.1666234773311px" fill="#ffff" text-anchor="middle" style="white-space: pre;" direction="ltr">OPS</text>
     </g>
     <g id="arrow1" stroke-linecap="round"  style="--order: 1" >
         <g transform="translate(388.70588008006416 283.5078160692574) rotate(353.86323036076186 45.68110195352165 -15.36309647113103)">

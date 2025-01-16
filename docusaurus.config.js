@@ -75,12 +75,6 @@ module.exports = {
         },
         footer: {
             style: 'dark',
-            logo: {
-                alt: 'Qualiopi',
-                src: 'img/footer/qce.png',
-                width: 400,
-                height: 400,
-            },
             links: [
                 {
                     html: ` <a href="https://www.facebook.com/DataGuru-108335435294231" target="_blank" rel="noreferrer noopener" aria-label="DataGuru Facebook">
@@ -109,7 +103,7 @@ module.exports = {
             {
                 docs: false,
                 blog: {
-                    blogTitle: 'DataGuru Blog',
+                    blogTitle: 'Enovat Blog',
                     showReadingTime: true,
                     blogSidebarTitle: 'Les posts',
                     blogSidebarCount: 'ALL',

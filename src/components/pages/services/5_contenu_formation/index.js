@@ -9,18 +9,22 @@ import SpeedIcon from '@mui/icons-material/Speed';
 import MemoryIcon from '@mui/icons-material/Memory';
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
 import GroupsIcon from '@mui/icons-material/Groups';
+import AllInclusiveIcon from '@mui/icons-material/AllInclusive';
 import Octocat from "../../../../../static/img/contenu/Octocat.png";
-import Python from "../../../../../static/img/contenu/python.png";
+import Aws from "../../../../../static/img/contenu/aws.png";
+import Azure from "../../../../../static/img/contenu/azure.png";
 import Elastic from "../../../../../static/img/contenu/elastic.png";
 import Kafka from "../../../../../static/img/contenu/kafka.png";
 import Postgres from "../../../../../static/img/contenu/postgres.png";
 import Spark from "../../../../../static/img/contenu/spark.png";
 import Terraform from "../../../../../static/img/contenu/terraform.png";
-import Jira from "../../../../../static/img/contenu/jira.png";
+import Jira from "../../../../../static/img/contenu/bedrock.png";
 import {Button} from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
 import SyllabusForm from "../form_syllabus/SyllabusFrom";
 import ComplexMessageWithMultipleIcons from "../../../lib/complexMessageWithMultipleIcons";
+import SmartToyIcon from '@mui/icons-material/SmartToy';
+
 
 
 export default function BootCampContenuFormation() {
@@ -42,18 +46,16 @@ export default function BootCampContenuFormation() {
                 <div className="row">
                     <div className="col col--7">
                         <h3 className={classnames(styles.modulesTeaser)}>
-                            <span>Contenu de la formation</span>
+                            <span>Nos expertises</span>
                             <span style={{color: "#f1bb00"}}>.</span>
                         </h3>
                         <p className={classnames(styles.modulesDescription)}>
-                            <span>Détails du parcours d'apprentissage</span>
+                            <span>Des services adaptés à votre innovation technologique.
+                                   </span>
                         </p>
                     </div>
                     <div className="col">
-                        <Button variant="contained" startIcon={<DownloadIcon/>} size="large" onClick={handleClickOpen}
-                                style={{backgroundColor: "#a6a2f7", borderColor: "transparent", marginTop: "5%"}}>
-                            Télécharger le Syllabus
-                        </Button>
+
                         <SyllabusForm
                             open={open}
                             onClose={handleClose}
@@ -65,10 +67,10 @@ export default function BootCampContenuFormation() {
                 <div className={classnames("row", styles.rowContainer)}>
                     <div className={classnames("col", styles.colContainer)}>
                         <ComplexMessageWithMultipleIcons
-                            title="Code"
-                            titleIcon={<TerminalIcon viewBox="0 -5 25 25"/>}
-                            images={[{src: Octocat, large: false}, {src: Python, large: false}]}
-                            text="Développer du code Python de qualité et travailler en équipe avec du Git !"
+                            title="Cloud"
+                            titleIcon={<AllInclusiveIcon viewBox="0 -5 25 25"/>}
+                            images={[{src: Aws, large: false},{src: Azure, large: false}]}
+                            text="Concevez et implémentez des solutions cloud évolutives"
                         />
                     </div>
                     <div className="col col--1"/>
@@ -77,7 +79,7 @@ export default function BootCampContenuFormation() {
                             title="Stockage"
                             titleIcon={<StorageIcon viewBox="0 -4 25 25"/>}
                             images={[{src: Postgres, large: false}, {src: Elastic, large: false}]}
-                            text="Enregistrer et récupérer de la donnée pour toutes les volumétries !"
+                            text="Enregistrer et récupérer de la donnée pour toutes les volumétries "
                         />
                     </div>
                     <div className="col col--2"/>
@@ -88,7 +90,7 @@ export default function BootCampContenuFormation() {
                             title="Batch"
                             titleIcon={<MemoryIcon viewBox="0 -5 25 25"/>}
                             images={[{src: Spark, large: true}]}
-                            text="Manipuler d'importantes volumétries grâce aux traitements distribués !"
+                            text="Manipuler d'importantes volumétries grâce aux traitements distribués"
                         />
                     </div>
                     <div className="col col--1"/>
@@ -97,7 +99,7 @@ export default function BootCampContenuFormation() {
                             title="Streaming"
                             titleIcon={<SpeedIcon viewBox="0 -5 25 25"/>}
                             images={[{src: Kafka, large: true}]}
-                            text=" Traiter et Analyser des données en temps réel grâce au streaming ! "
+                            text=" Traiter et Analyser des données en temps réel grâce au streaming  "
                         />
                     </div>
                     <div className="col col--2"/>
@@ -107,17 +109,17 @@ export default function BootCampContenuFormation() {
                         <ComplexMessageWithMultipleIcons
                             title="DevOps"
                             titleIcon={<PrecisionManufacturingIcon viewBox="0 -5 25 25"/>}
-                            images={[{src: Terraform, large: true}]}
-                            text="Automatiser la création de l'infrastructure et le déploiement du code en production !"
+                            images={[{src: Terraform, large: true},{src: Octocat, large: false} ]}
+                            text="Automatiser la création de l'infrastructure et le déploiement du code en production"
                         />
                     </div>
                     <div className="col col--1"/>
                     <div className={classnames("col", styles.colContainer)}>
                         <ComplexMessageWithMultipleIcons
-                            title="Agile"
-                            titleIcon={<GroupsIcon viewBox="0 -5 25 25"/>}
+                            title="Intelligence Artificielle"
+                            titleIcon={<SmartToyIcon viewBox="0 -5 25 25"/>}
                             images={[{src: Jira, large: false}]}
-                            text="Collaborer en équipe et travailler avec les méthodes agiles !"
+                            text="Optimisez vos process avec l’intelligence artificielle"
                         />
                     </div>
                     <div className="col col--2"/>

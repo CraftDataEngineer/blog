@@ -11,25 +11,16 @@ export default function BootCampPrix() {
     return (
         <div className="container">
             <TextLeftImageRight containerStyle={classnames(stylesModule.backgroundPrix)}
-                                title={"Comment financer la formation "}
+                                title={"Vous avez besoin d’aide sur un projet "}
                                 ponctuation="?"
                                 description={
                                     <div className={classnames(stylesModule.headDescription)}>
-                                        <h2>
-                                             Frais de formation :
-                                             <div className={classnames(stylesModule.text)}/>
-                                                <Chip
-                                                    style={{fontFamily: "CircularStd-Black", fontSize: "24px"}}
-                                                    label="3 495 € "/>
-                                        </h2>
-
                                         <p>
-                                            Vous avez une question sur le financement de la formation :
-                                            prenez contact avec un de nos conseillers pour une étude de votre dossier.
+                                            Nous mettons à votre disposition notre expertise pour vous accompagner à chaque étape de votre projet. Que ce soit pour définir une stratégie, résoudre des défis techniques, ou garantir un déploiement réussi, nos experts vous apportent des solutions adaptées à vos besoins.
                                         </p>
                                         <Link to="/contact/" className={classnames(stylesModule.enrollButton)}>
                                             <Button variant="contained" startIcon={< PhoneIcon />} size="large"
-                                                    style={{backgroundColor: "#a6a2f7", borderColor: "transparent"}}>
+                                                    style={{backgroundColor: "#a6a2f7", borderColor: "transparent", fontWeight: "bold"}}>
                                                 Nous Contacter
                                             </Button>
                                         </Link>

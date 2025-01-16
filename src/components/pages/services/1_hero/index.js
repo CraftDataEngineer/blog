@@ -5,14 +5,15 @@ import classnames from "classnames";
 import {Button, Chip, Stack} from "@mui/material";
 import DownloadIcon from '@mui/icons-material/Download';
 import DevicesIcon from '@mui/icons-material/Devices';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import ViewModuleIcon from '@mui/icons-material/ViewModule';
+import FilterDramaIcon from '@mui/icons-material/FilterDrama';
 import TextLeftImageRight from "../../../lib/textLeftImageRight";
 import ThreeItemsInLine from "../../../lib/threeItemsInLine";
 import MessageWithIcon from "../../../lib/messageWithIcon";
 import {useWindowSize} from "@docusaurus/theme-common";
+import AllInclusiveIcon from '@mui/icons-material/AllInclusive';
 
-function BootCampHero() {
+function ServicesHero() {
 
     const saveFile = () => {
         saveAs(
@@ -29,7 +30,7 @@ function BootCampHero() {
         <header className={classnames('hero hero--primary headTest', stylesModule.heroSection)}>
             <div className="container">
                 <TextLeftImageRight
-                    title={"Nos offres"}
+                    title={"Des solutions sur mesure"}
                     description={
                         <Stack
                             direction="column"
@@ -40,14 +41,7 @@ function BootCampHero() {
                             <div>
                                 <div className={stylesModule.surligne}>
 
-                                    Rejoignez notre Bootcamp pour apprendre à développer correctement et être reconnu par vos pairs ! Notre objectif est de vous former à la vie réelle, se concentrer sur l’essentiel et apprendre en pratiquant.
-                                </div>
-                            </div>
-                            <div className={classnames(stylesModule.buttonDownload)}>
-                                <Button variant="contained" startIcon={<DownloadIcon/>}  onClick={saveFile}
-                                        style={{backgroundColor: "#a6a2f7", borderColor: "transparent"}}>
-                                    Télécharger le programme
-                                </Button>
+Transformez vos projets technologiques avec nos experts. De l’optimisation des infrastructures au déploiement d’algorithmes IA avancés, nous vous accompagnons avec des solutions adaptées à vos défis organisationnelles et techniques.                                </div>
                             </div>
                         </Stack>
                     }
@@ -55,17 +49,17 @@ function BootCampHero() {
                 />
                 <div className={stylesModule.seperator}/>
                 <ThreeItemsInLine
-                    firstItem={<MessageWithIcon icon={<DevicesIcon/>} label={"En ligne"} headline={"Avec des professeurs"}/>}
+                    firstItem={<MessageWithIcon icon={<AllInclusiveIcon/>} label={"DevOps"} headline={"Augmentez votre time to market"}/>}
 
-                    secondItem={<MessageWithIcon icon={<CalendarMonthIcon/>} label={"Rentrée"}
-                                                 headline={"Janvier 16, 2023"}/>}
+                    secondItem={<MessageWithIcon icon={<FilterDramaIcon/>} label={"Cloud"}
+                                                 headline={"Optimisez votre infrastructure"}/>}
 
-                    thirdItem={<MessageWithIcon icon={<ViewModuleIcon/>} label={"Durée"}
-                                                headline={"5 semaines"}/>}
+                    thirdItem={<MessageWithIcon icon={<ViewModuleIcon/>} label={"Data & IA"}
+                                                headline={"Valorisez vos données et process"}/>}
                 />
             </div>
         </header>
     );
 }
 
-export default BootCampHero;
+export default ServicesHero;

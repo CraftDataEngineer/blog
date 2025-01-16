@@ -28,26 +28,21 @@ export default function BootCampFormateur() {
                 </svg>
             </div>
             <div className={classnames("container")}>
-                <h6 className={classnames(styles.formateurTitle)}><span>Formateurs</span></h6>
-                <h3 className={classnames(styles.formateurTeaser)}><span>Pourquoi Enovat <span
-                    style={{color: "#f1bb00"}}>?</span></span></h3>
+                <h3 className={classnames(styles.formateurTeaser)}><span>Nos Atouts<span
+                    style={{color: "#f1bb00"}}>.</span></span></h3>
             </div>
             <div className={classnames(styles.gridContainer)}>
 
                 <div className={classnames("row")}>
                     <div className={classnames("col ")}>
-                        <p className={classnames(styles.formateurDescription)}>
-                            <span>👋 &nbsp; Salut, c'est  <strong style={{fontFamily: "CircularStd-Black"}}>Soufiane et Loïc </strong>... En bref :</span>
-                        </p>
+
                         <div className={classnames(styles.formateurDescriptionPoints)}>
                             <ul className={classnames(styles.formateurDescriptionPoints)}>
-                                <li>🥼 &nbsp; Nous avons plus de 8 ans d'expérience chacun ... 20 missions au
-                                    compteur.
+                                <li>✷ &nbsp; Une approche basée sur l’agilité et la collaboration, nous vous aidons à accélérer vos projets tout en garantissant leur qualité</li>
+                                <li>✷ &nbsp; Nos experts certifiés, avec plus de 8 ans d'expérience sur le terrain, maîtrisent les outils et technologies les plus récents.
                                 </li>
-                                <li>🏗 &nbsp; Nous sommes des passionnés des systèmes et plateformes de données.</li>
-                                <li>👨‍💻 &nbsp; Nous sommes des artisans des bonnes pratiques de développement.</li>
-                                <li>👨‍🔧 &nbsp; Nous intervenons en tant que tech lead chez nos clients.</li>
-                                <li>☁️ &nbsp; Nous sommes tous les 2 certifiés Amazon.</li>
+                                <li>✷ &nbsp; Nous mettons un point d’honneur à concevoir des solutions robustes, optimisées et adaptées à votre environnement.</li>
+                                <li>✷ &nbsp; De la conception à la mise en œuvre, en vous offrant un suivi personnalisé.</li>
                             </ul>
                         </div>
                     </div>

@@ -11,6 +11,18 @@ import ArchitectureIcon from '@mui/icons-material/Architecture';
 import EngineeringIcon from '@mui/icons-material/Engineering';
 import MutltilineMessageWithTitle from "../../../lib/mutltilineMessageWithTitle";
 
+import ComputerIcon from '@mui/icons-material/Computer';
+import StorageIcon from '@mui/icons-material/Storage';
+import PeopleIcon from '@mui/icons-material/People';
+import SchoolIcon from '@mui/icons-material/School';
+import AllInclusiveIcon from '@mui/icons-material/AllInclusive';
+import EuroIcon from '@mui/icons-material/Euro';
+import FilterDramaIcon from '@mui/icons-material/FilterDrama';
+import CloudSyncIcon from '@mui/icons-material/CloudSync';
+import HandymanIcon from '@mui/icons-material/Handyman';
+import SmartToyIcon from '@mui/icons-material/SmartToy';
+import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
+
 export default function BootCampTheoriePratique() {
 
 
@@ -27,12 +39,11 @@ export default function BootCampTheoriePratique() {
             <div className={classnames("container", styles.displayMobileHeader)}>
                 <div className="row">
                     <div className="col">
-                        <h3 className={classnames(styles.teaserTeaser)}><span>En quoi consiste la formation ?</span>
+                        <h3 className={classnames(styles.teaserTeaser)}><span>Nos Domaines d’Expertise.</span>
                         </h3>
                         <p className={classnames(styles.teaserDescription)}>
-                            Une formation qui allie <b style={{color: "#ffff"}}>théorie</b> et <b
-                            style={{color: "#ffff"}}>pratique</b> et un accompagnement
-                            personnalisé pour chaque candidat.
+                          Un conseil stratégique assuré par des <b style={{color: "#ffff"}}>experts</b> dans leur domaine.
+
                         </p>
                     </div>
                     <div className="col col--5">
@@ -43,56 +54,73 @@ export default function BootCampTheoriePratique() {
             <div className={classnames("container", styles.gridContainer)}>
                 <div className="row ">
                     <div className={classnames("col")}>
-                        <MutltilineMessageWithTitle
-                            title={"Théorie"}
-                            items={[
-                                {
-                                    icon: <MenuBookIcon viewBox="0 -4 24 24"/>,
-                                    title: "Théorie",
-                                    text: "Nos cours utilisent un format pédagogique qui vous permettra de maîtriser rapidement l’ensemble des concepts clés nécessaires à votre prochain rôle !"
-                                },
-                                {
-                                    icon: <ArchitectureIcon viewBox="0 -4 24 24"/>,
-                                    title: "Études de cas",
-                                    text: "On travaillera sur plusieurs situations proches du monde du travail qui\n" +
-                                        "                                        permettront de vous projeter facilement dans vos futures missions ! "
-                                },
-                                {
-                                    icon: <SportsKabaddiIcon viewBox="0 -4 24 24"/>,
-                                    title: "Dojo",
-                                    text: "On travaillera en groupe sur des problèmes algorithmiques et d’architectures pour\n" +
-                                        "                                        créer les automatismes indispensables du Data Engineer."
-                                }
-                            ]}
-                        />
+                           <MutltilineMessageWithTitle title="DevOps"
+                                                                                items={[
+                                                                                    {
+                                                                                        icon: <AllInclusiveIcon viewBox="0 -5 24 24"/>,
+                                                                                        title: "Devops",
+                                                                                        text: "Profitez de notre expertise et adoptez les meilleures pratiques pour augmenter votre time to market et garantir la qualité de vos livrables."
+                                                                                    },
+                                                                                    {
+                                                                                        icon: <HandymanIcon viewBox="2 -3.1 24 24"/>,
+                                                                                        title: "Automatisation",
+                                                                                        text: "Déployez une infrastructure automatisée, scalable, pour des systèmes flexibles et toujours prêts à évoluer avec vos besoins."
+                                                                                    },
+                                                                                    {
+                                                                                        icon: <PeopleIcon viewBox="2 -4 24 24"/>,
+                                                                                        title: "CULTURE COLLABORATIVE",
+                                                                                        text: "Favorisez une collaboration fluide au sein de vos équipes grâce à  notre accompagnement."
+                                                                                    },
+                                                                                ]}
+                                                                                minHeight="31rem"
+                                                    />
                     </div>
                     <div className={classnames("col", styles.colContainer)}>
-                        <MutltilineMessageWithTitle
-                            title={"Pratique"}
-                            items={[
-                                {
-                                    icon: <ScienceIcon viewBox="0 -4 24 24"/>,
-                                    title: "Travaux pratiques ",
-                                    text: "Des TPs sont donnés lors des cours afin de dynamiser et d'appliquer les concepts\n" +
-                                        "théoriques."
-                                },
-                                {
-                                    icon: <DashboardIcon viewBox="0 -4 24 24"/>,
-                                    title: "Ateliers Architectures",
-                                    text: "Les ateliers d'architectures sont animés durant les séances live, il faudra\n" +
-                                        "proposer une architecture cible par rapport à un besoin."
-                                },
-                                {
-                                    icon: <EngineeringIcon viewBox="0 -4 24 24"/>,
-                                    title: "Projet fil rouge",
-                                    text: "Un travail de cadrage suivi d'un Proof of concept (PoC) vous sera demandé\n" +
-                                    "sur plusieurs semaines pour finaliser cette formation."
+                         <MutltilineMessageWithTitle title="Cloud"
+                                                                                items={[
+                                                                                    {
+                                                                                        icon: <FilterDramaIcon viewBox="0 -4.2 24 24"/>,
+                                                                                        title: "Cloud",
+                                                                                        text: "Bénéficiez de notre experience sur le cloud pour des construire architectures flexibles, évolutives, et securisées."
 
-                                }
-                            ]}
-                        />
+
+                                                                                    },
+                                                                                    {
+                                                                                        icon: <CloudSyncIcon viewBox="2 -4 24 24"/>,
+                                                                                        title: "PUBLIQUE / PRivé / Hybride",
+                                                                                        text: "Nous vous accompagnons dans le déploiement de vos solutions, qu’il s’agisse de cloud publique, privé ou hybride."
+                                                                                    },
+                                                                                    {
+                                                                                        icon: <EuroIcon viewBox="2 -3 24 24"/>,
+                                                                                        title: "FINOPS",
+                                                                                        text: "Nous vous aidons à mettre en place une stratégie FinOps efficace pour optimiser vos coûts cloud."
+                                                                                    },
+                                                                                ]}
+                                                                                minHeight="31rem"
+                                                    />
                     </div>
-                    <div className="col col--3"/>
+                         <div className={classnames("col", styles.colContainer)}>
+                                       <MutltilineMessageWithTitle title="Data & IA"
+                                                                                              items={[
+                                                                                                  {
+                                                                                                      icon: <StorageIcon viewBox="0 -4.2 24 24"/>,
+                                                                                                      title: "Data",
+                                                                                                      text: "Exploitez le potentiel de vos données et de l'intelligence artificielle pour optimiser vos processus et innover."
+                                                                                                  },
+                                                                                                  {
+                                                                                                      icon: <SmartToyIcon viewBox="2 -4 24 24"/>,
+                                                                                                      title: "Intelligence artificielle",
+                                                                                                      text: "Nous vous accompagnons dans le déploiement de vos solutions, qu’il s’agisse de cloud publique, privé ou hybride."
+                                                                                                  },
+                                                                                                  {
+                                                                                                      icon: <PrecisionManufacturingIcon viewBox="2 -3 24 24"/>,
+                                                                                                      title: "MLOPS",
+                                                                                                      text: "Nous vous aidons à mettre en place une stratégie FinOps efficace pour optimiser vos coûts cloud."
+                                                                                                  },
+                                                                                              ]}
+                                                                                              minHeight="31rem"
+                                                                  />
+</div>
                 </div>
             </div>
         </div>

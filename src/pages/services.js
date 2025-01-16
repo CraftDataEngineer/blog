@@ -3,7 +3,7 @@ import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import "animate.css/animate.min.css";
 import CookieSetter from "../components/global/Cookie";
-import BootCampHero from "../components/pages/services/1_hero";
+import ServicesHero from "../components/pages/services/1_hero";
 import BootCampTheoriePratique from "../components/pages/services/3_theorie_pratique";
 import BootCampContenuFormation from "../components/pages/services/5_contenu_formation";
 import BootCampAvis from "../components/pages/services/6_avis";
@@ -22,8 +22,8 @@ export default function Home() {
     return (
     <Layout  title="Enovat Bootcamp" description="Rejoignez notre Bootcamp pour apprendre à développer correctement et être reconnu par vos pairs">
       <main>
-          <BootCampHero/>
-
+          <ServicesHero/>
+          <BootCampTheoriePratique/>
           <BootCampDataEngineer />
           <BootCampContenuFormation/>
           <BootCampFormateur/>
