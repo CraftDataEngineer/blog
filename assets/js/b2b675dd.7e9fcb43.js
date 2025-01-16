@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdive_into=self.webpackChunkdive_into||[]).push([[533],{8017:e=>{e.exports=JSON.parse('{"permalink":"/blog","page":1,"postsPerPage":3,"totalPages":1,"totalCount":3,"previousPage":null,"nextPage":null,"blogDescription":"Blog","blogTitle":"DataGuru Blog"}')}}]);
