@@ -41,11 +41,10 @@ export default function NosVictoires() {
                         </p>
                         <div className={classnames(styles.formateurDescriptionPoints)}>
                             <ul className={classnames(styles.formateurDescriptionPoints)}>
-                                <li>🏗 &nbsp; Nous sommes animés par la passion et un engagement commun pour construire des solutions innovantes et durables.</li>
-                                <li>🔨 &nbsp; Nous sommes des artisans des bonnes pratiques de développement.</li>
-                                <li>🔧 &nbsp; Nous intervenons en tant que tech lead chez nos clients.</li>
-                                <li>🥼 &nbsp; Nous avons plus de 10 ans d'expérience chacun.</li>
-                                <li>☁️ &nbsp; Nous sommes tous certifiés.</li>
+                                <li>✷ &nbsp; Nous sommes animés par la passion et un engagement commun pour construire des solutions innovantes et durables.</li>
+                                <li>✷️ &nbsp; Nous sommes certifiés, avec plus de 8 ans d'expérience sur le terrain.</li>
+                                <li>✷ &nbsp; Nous sommes des artisans des bonnes pratiques de développement.</li>
+                                <li>✷ &nbsp; Nous intervenons en tant que tech lead chez nos clients.</li>
                             </ul>
                         </div>
                     </div>

@@ -11,7 +11,7 @@ export default function BootCampDataEngineer() {
     return (
         <div className={classnames("container" ,stylesModule.container)}>
             <TextRightImageLeft
-                title={"Pourquoi choisir Enovate "}
+                title={"Pourquoi choisir Enovat "}
                 ponctuation={ "?"}
                 titleStyle={stylesModule.titleStyle}
                 descriptionStyle={stylesModule.descriptionStyle}

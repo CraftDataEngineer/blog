@@ -116,7 +116,7 @@ export default function BootCampContenuFormation() {
                     <div className="col col--1"/>
                     <div className={classnames("col", styles.colContainer)}>
                         <ComplexMessageWithMultipleIcons
-                            title="Intelligence Artificielle"
+                            title="IA & MLOPS"
                             titleIcon={<SmartToyIcon viewBox="0 -5 25 25"/>}
                             images={[{src: Jira, large: false}]}
                             text="Optimisez vos process avec l’intelligence artificielle"

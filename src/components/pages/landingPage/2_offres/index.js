@@ -98,12 +98,12 @@ export default function LandingPageOffre() {
                                                             {
                                                                 icon: <SmartToyIcon viewBox="2 -4 24 24"/>,
                                                                 title: "Intelligence artificielle",
-                                                                text: "Nous vous accompagnons dans le déploiement de vos solutions, qu’il s’agisse de cloud publique, privé ou hybride."
+                                                                text: "Créez de nouvelles opportunités grâce à l’intelligence artificielle et une gestion optimisée de vos données."
                                                             },
                                                             {
                                                                 icon: <PrecisionManufacturingIcon viewBox="2 -3 24 24"/>,
                                                                 title: "MLOPS",
-                                                                text: "Nous vous aidons à mettre en place une stratégie FinOps efficace pour optimiser vos coûts cloud."
+                                                                text: "Automatisez, déployez et scalez vos solutions IA avec efficacité."
                                                             },
                                                         ]}
                                                         minHeight="31rem"

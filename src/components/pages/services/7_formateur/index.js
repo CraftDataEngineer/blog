@@ -39,10 +39,9 @@ export default function BootCampFormateur() {
                         <div className={classnames(styles.formateurDescriptionPoints)}>
                             <ul className={classnames(styles.formateurDescriptionPoints)}>
                                 <li>✷ &nbsp; Une approche basée sur l’agilité et la collaboration, nous vous aidons à accélérer vos projets tout en garantissant leur qualité</li>
-                                <li>✷ &nbsp; Nos experts certifiés, avec plus de 8 ans d'expérience sur le terrain, maîtrisent les outils et technologies les plus récents.
-                                </li>
                                 <li>✷ &nbsp; Nous mettons un point d’honneur à concevoir des solutions robustes, optimisées et adaptées à votre environnement.</li>
                                 <li>✷ &nbsp; De la conception à la mise en œuvre, en vous offrant un suivi personnalisé.</li>
+                                <li>✷ &nbsp; Nos experts certifiés, avec plus de 8 ans d'expérience sur le terrain</li>
                             </ul>
                         </div>
                     </div>
