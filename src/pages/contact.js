@@ -12,7 +12,7 @@ export default function Contact() {
         <Layout title="Enovat Contact" description="Posez nous toutes vos questions !">
             <main>
                 <HomePageTeaser/>
-                <ContactCitation/>
+               {/* <ContactCitation/> */}
                 <ContactUs/>
             </main>
         </Layout>
