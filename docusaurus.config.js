@@ -14,14 +14,14 @@ module.exports = {
     organizationName: 'Enovat', // Usually your GitHub org/user name.
     projectName: 'blog', // Usually your repo name.
     themeConfig: {
-        announcementBar: {
-            id: 'support_us',
-            content:
-                'Participez à nos prochains webinaires pour vous formez gratuitement ! <a target="_blank" rel="noopener noreferrer" href="https://www.meetup.com/fr-FR/data-guru-meetup-group/">Meetup</a>',
-            backgroundColor: '#fafbfc',
-            textColor: '#091E42',
-            isCloseable: true,
-        },
+        //announcementBar: {
+        //    id: 'support_us',
+        //    content:
+        //        'Participez à nos prochains webinaires pour vous formez gratuitement ! <a target="_blank" rel="noopener noreferrer" href="https://www.meetup.com/fr-FR/data-guru-meetup-group/">Meetup</a>',
+        //    backgroundColor: '#fafbfc',
+        //    textColor: '#091E42',
+        //    isCloseable: true,
+        //},
         colorMode: {
             defaultMode: 'light',
             disableSwitch: true,
@@ -76,11 +76,11 @@ module.exports = {
         footer: {
             style: 'dark',
             links: [
-                {
-                    html: ` <a href="https://www.facebook.com/DataGuru-108335435294231" target="_blank" rel="noreferrer noopener" aria-label="DataGuru Facebook">
-                      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/640px-Facebook_f_logo_%282021%29.svg.png" alt="facebook" width="25px" height="2px" />
-                    </a> `,
-                },
+               // {
+               //     html: ` <a href="https://www.facebook.com/DataGuru-108335435294231" target="_blank" rel="noreferrer noopener" aria-label="DataGuru Facebook">
+               //       <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/640px-Facebook_f_logo_%282021%29.svg.png" alt="facebook" width="25px" height="2px" />
+               //     </a> `,
+               // },
                 {
                     html: `
                     <a href="https://www.linkedin.com/company/dataguru" target="_blank" rel="noreferrer noopener" aria-label="DataGuru Linkedin">

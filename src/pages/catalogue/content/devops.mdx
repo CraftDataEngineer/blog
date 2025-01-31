@@ -1,5 +1,5 @@
 ---
-title: DevOps Basics
+title: Devops – culture, piliers et mise en œuvre
 slug: /
 ---
 
@@ -10,10 +10,14 @@ import TabItem from '@theme/TabItem';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import EuroIcon from '@mui/icons-material/Euro';
 import Image from '/img/contenu/devops.png'
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
-# DevOps Basics
+#  DEVOPS – CULTURE, PILIERS ET MISE EN ŒUVRE
 
 ------------
+
+
+
 
 
 export const Highlight = ({children, color}) => (
@@ -28,20 +32,19 @@ export const Highlight = ({children, color}) => (
   </span>
 );
 
-:::note  Date et prix
+:::note  Informations
 <Tabs>
   <TabItem value="standard" label="STANDARD" default>
       <b> Prochaines sessions :</b><br/>
-      <b> <CalendarMonthIcon viewBox="0 -14 36 36"/> Le 16/11/2022 </b><br/>
-      <b> <EuroIcon viewBox="0 -14 36 36"/> 795 </b> <br/>
-      <b> <AccessTimeIcon viewBox="0 -14 36 36"/> 1 jour</b> ( 7 heures ) <br/><br/>
-      <a className="button button--sm button--primary button--outline" href={"/RendezVous"}>Nous contacter</a>
+      <b> <CalendarMonthIcon viewBox="0 -14 36 36"/> Le 17/05/2025</b><br/>
+      <b> <AccessTimeIcon viewBox="0 -14 36 36"/> 3 jours</b> ( 21 heures ) <br/><br/>
+      <a className="button button--sm  button--warning " href={"/contact"}>Nous contacter</a>
   </TabItem>
   <TabItem value="sur-mesure" label="SUR-MESURE">
     <b>FORMATION À LA DEMANDE</b> <br/><br/>
       Cette thématique vous intéresse ?<br/>
       Nos experts conçoivent votre formation sur-mesure<br/><br/>
-      <a className="button button--sm button--primary button--outline" href={"/RendezVous"}>Nous contacter</a>
+      <a className="button button--sm  button--warning " href={"/contact"}>Nous contacter</a>
   </TabItem>
 </Tabs>
 :::
@@ -63,10 +66,11 @@ Au cours de cette formation, nous allons vous présenter les bénéfices du DevO
 
 ## Objectifs
 
-+ Connaître les **concepts** et les **bénéfices** de la démarche DevOps
-+ Découvrir les **patterns** de conception DevOps
-+ Identifier les **enjeux de l'industrialisation** des **déploiements** applicatifs
-+ Savoir **fiabiliser des chaînes de production**
++ Appréhender l’intérêt de la culture DevOps
++ Utiliser la démarche scientifique **Accelerate**
++ Découvrir les piliers de **DevOps**
++ Identifier les enjeux de l’industrialisation des déploiements applicatifs
++ Fluidifier les interactions entre les différentes équipes projet
 
 ----------
 
@@ -112,13 +116,15 @@ Au cours de cette formation, nous allons vous présenter les bénéfices du DevO
 + Patterns de déploiement
 + Introduction au cloud
 
-#### Module 4 : L’infrastructure par le cloud
+#### Module 4 : L’infrastructure par le code
 
 + Définition de l’infrastructure as code
 + Les 3 grandes catégories
 + Les caractéristiques
 + Responsabilités des différents outils
 + Cartographie des outils
++ Terraform + atelier
++ Ansible + atelier
 
 #### Module 5 : Déploiement continu
 
@@ -127,6 +133,7 @@ Au cours de cette formation, nous allons vous présenter les bénéfices du DevO
 + L’importance des tests
 + Étape de construction d’une pipeline
 + Exemple de pipeline
++ Atelier : création d'une CI/CD
 
 ----------
 

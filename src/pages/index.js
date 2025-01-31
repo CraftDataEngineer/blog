@@ -26,7 +26,7 @@ export default function Home() {
           <LandingPageOffre/>
           <LandingPageMethodo/>
           <LandingPageProduits/>
-          <LandingPageAvis/>
+       {/*   <LandingPageAvis/> */}
           <LandingPageNous/>
           <NosVictoires/>
           <LandingPageContact/>
